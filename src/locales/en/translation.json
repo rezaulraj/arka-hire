@@ -1,0 +1,677 @@
+{
+  "navItem": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "ourApproach": {
+      "title": "Our Approach",
+      "subLinks": {
+        "clientConsultation": "Client Consultation",
+        "workerSourcing": "Worker Sourcing",
+        "screeningProcess": "Screening Process",
+        "seamlessIntegration": "Seamless Integration",
+        "employeeWelfareSupport": "Employee Welfare Support"
+      }
+    },
+    "employers": {
+      "title": "Employers",
+      "subLinks": {
+        "recruitmentProcess": "Recruitment Process",
+        "immigrationAssistance": "Immigration Assistance",
+        "mediationInEmployment": "Mediation in Employment",
+        "temporaryRecruitment": "Temporary Recruitment",
+        "legalAssurance": "Legal Assurance"
+      }
+    },
+    "workersAndAgencies": {
+      "title": "Workers and Agencies",
+      "subLinks": {
+        "openJob": "Open Job",
+        "agencyPartnerships": "Agency Partnerships"
+      }
+    },
+    "industries": "Industries",
+    "contactUs": "Contact Us"
+  },
+
+  "home": {
+    "hero": {
+      "workers": [
+        "Carpenters",
+        "Masons",
+        "Electricians",
+        "Plumbers",
+        "Roofers",
+        "Painters",
+        "Site Supervisors",
+        "Drivers",
+        "Truck Drivers",
+        "Bus Drivers",
+        "Courier and Delivery Drivers",
+        "Taxi and Ride-Hailing Drivers",
+        "Construction and Heavy Equipment Drivers",
+        "Healthcare",
+        "Nurses",
+        "Home Care Helpers",
+        "Medical Typists",
+        "Pharmacy Helpers",
+        "Hospital Helpers",
+        "Cleaning Crew",
+        "Food Service Helpers",
+        "Beauty",
+        "Salon Assistants",
+        "Hair Cutter",
+        "Hair Stylist",
+        "Makeup Artist",
+        "Esthetician",
+        "Skincare Specialist",
+        "Beauty Therapist",
+        "Salon Manager",
+        "Spa Therapist",
+        "Massage Therapist",
+        "Denting and Painting",
+        "Denting Technician",
+        "Painting Assistant",
+        "Surface Preparation Worker",
+        "Paint Mixer",
+        "Sanding Specialist",
+        "Spray Painter",
+        "Hospitality",
+        "Chef de Partie",
+        "Sous Chef",
+        "Front Desk Receptionist",
+        "Waiter/Waitress",
+        "Bartender",
+        "Housekeeping Supervisor",
+        "Concierge",
+        "Sommelier",
+        "Welding Industry",
+        "MIG Welders",
+        "TIG Welders",
+        "Arc Welders",
+        "Fabricators",
+        "Welding Inspectors",
+        "Pipefitters",
+        "Structural Welders",
+        "Retail Industry",
+        "Sales Assistant",
+        "Store Manager",
+        "Cashier",
+        "Visual Merchandiser",
+        "Inventory Assistant",
+        "Customer Service Representative",
+        "Shelf Stocker",
+        "Mining Industry",
+        "Excavation Operators",
+        "Drillers",
+        "Blasting Technicians",
+        "Safety Officers",
+        "Geologists",
+        "Surveyors",
+        "Heavy Equipment Operators",
+        "Food Processing and Production",
+        "Food Handlers",
+        "Packers",
+        "Quality Assurance Technicians",
+        "Machine Operators",
+        "Sanitation Workers",
+        "Production Supervisors",
+        "Line Workers",
+        "Garments and Textile",
+        "Manufacturing and Production",
+        "Assembly Line Workers",
+        "Quality Control Inspectors",
+        "Welders",
+        "Forklift Operators",
+        "Cleaning and Housekeeping",
+        "Janitors",
+        "Housekeepers",
+        "Cleaning Staff",
+        "Custodians",
+        "Floor Technicians",
+        "Window Cleaners",
+        "Laundry Attendants",
+        "Agriculture and Plantation",
+        "Planters",
+        "Harvesters",
+        "Farm Maintenance Workers",
+        "Irrigation Technicians",
+        "Livestock Handlers",
+        "Crop Managers",
+        "Agronomists",
+        "Marine and Shipbuilding",
+        "Marine Welders",
+        "Shipfitters",
+        "Marine Electricians",
+        "Pipefitters",
+        "Naval Architects",
+        "Marine Engineers",
+        "Landscaping and Groundskeeping",
+        "Landscapers",
+        "Groundskeepers",
+        "Gardeners",
+        "Landscape Designers",
+        "Arborists",
+        "Lawn Care Specialists",
+        "Excavator Operators",
+        "Bulldozer Operators",
+        "Crane Operators",
+        "Backhoe Operators",
+        "Loader Operators",
+        "Grader Operators",
+        "Paver Operators"
+      ]
+    },
+
+    "services": {
+      "badge": "Our",
+      "title": "Services",
+      "items": [
+        {
+          "name": "Consulting"
+        },
+        {
+          "name": "Worker Acquisition"
+        },
+        {
+          "name": "Train Workers"
+        }
+      ]
+    },
+
+    "workerCollaboration": {
+      "title": "Collaborating with Workers and Agencies",
+      "paragraphs": [
+        "We welcome skilled workers and agencies to partner with us. We value your expertise and commitment.",
+        "Together, we can effectively meet industry demands. By collaborating with us, you will be part of a network that ensures steady and rewarding opportunities.",
+        "We prioritize maintaining high standards of workforce quality, offering the best matches for your skills and needs.",
+        "Let’s join forces to create successful and sustainable employment solutions. Become part of a dynamic and thriving recruitment ecosystem."
+      ],
+      "buttons": {
+        "jobSeekers": "Job Seekers Apply Here",
+        "agents": "Agents Please Contact Us"
+      },
+      "imageAlt": "Collaboration with workers and agencies",
+      "floatingCards": [
+        {
+          "title": "Exciting Opportunities for Global Careers",
+          "desc": "Join Arka Hire for rewarding career opportunities."
+        },
+        {
+          "title": "Collaborate with HR Experts and Visa Support",
+          "desc": "Partner with us to efficiently meet industry demands."
+        },
+        {
+          "title": "Let’s Collaborate",
+          "desc": "Together, we can create successful and sustainable employment solutions."
+        }
+      ]
+    },
+
+    "whyArkaHire": {
+      "title": "4 Reasons Why Partner with Arka Hire?",
+      "description": "A reliable recruitment partnership built on experience, reach, compliance, and dedicated support.",
+      "reasons": [
+        {
+          "num": "01",
+          "title": "Unmatched Expertise",
+          "description": "Decades of experience in workforce solutions."
+        },
+        {
+          "num": "02",
+          "title": "Global Reach",
+          "description": "Access to a worldwide network of skilled professionals."
+        },
+        {
+          "num": "03",
+          "title": "Compliance Assured",
+          "description": "Ensuring all regulatory requirements are met."
+        },
+        {
+          "num": "04",
+          "title": "Dedicated Support",
+          "description": "Comprehensive assistance throughout the hiring process."
+        }
+      ]
+    },
+
+    "servicesOverview": {
+      "title": "Our Services Overview",
+      "subtitle": "Explore our core recruitment services designed to support businesses with trusted workforce solutions.",
+      "viewDetails": "View Details",
+      "serviceLabel": "Service",
+      "items": [
+        {
+          "title": "Worker Acquisition",
+          "path": "/our-approach/worker-sourcing",
+          "description": "We connect businesses with skilled and reliable workers who match their exact workforce needs."
+        },
+        {
+          "title": "Workforce Solutions",
+          "path": "/our-approach/client-consultation",
+          "description": "Complete workforce support designed to help companies hire, manage, and grow teams efficiently."
+        },
+        {
+          "title": "Regulatory Compliance",
+          "path": "/employers/legal-assurance",
+          "description": "We help ensure all recruitment and employment processes follow proper legal and compliance standards."
+        },
+        {
+          "title": "Strategic Workforce Planning",
+          "path": "/our-approach/seamless-integration",
+          "description": "Smart planning solutions that help businesses prepare for future workforce demands and growth."
+        },
+        {
+          "title": "Background Checks",
+          "path": "/our-approach/screening-process",
+          "description": "Thorough verification and screening to ensure candidates are qualified, trusted, and suitable."
+        },
+        {
+          "title": "Skill Training and Development",
+          "path": "/our-approach/employee-welfare-support",
+          "description": "Training support that helps workers improve skills, adapt faster, and perform confidently."
+        }
+      ]
+    },
+
+    "glance": {
+      "title": "Arka Hire At a Glance",
+      "tabs": [
+        {
+          "label": "Short Overview",
+          "content": [
+            "Arka Hire Limited is a leading manpower outsourcing company with over a decade of experience. The company is headquartered in London, UK, to support its international operations and client base.",
+            "We specialize in customized manpower management solutions designed to meet the unique needs of our clients. Our expert team excels at identifying top talent, ensuring a perfect fit for each organization’s specific requirements and budget."
+          ]
+        },
+        {
+          "label": "Vision",
+          "content": [
+            "Our vision is to become a trusted global manpower partner, connecting businesses with reliable, skilled, and committed workers across industries.",
+            "We aim to build long-term recruitment solutions that support business growth and create meaningful employment opportunities worldwide."
+          ]
+        },
+        {
+          "label": "Mission",
+          "content": [
+            "Our mission is to deliver professional manpower outsourcing services through quality recruitment, transparent processes, and continuous support.",
+            "We work closely with clients, agencies, and workers to create sustainable staffing solutions that benefit every partner involved."
+          ]
+        }
+      ],
+      "networkTitle": "Join Our Global Recruitment Network",
+      "networkDescription": "At Arka Hire, we believe that great achievements are built on strong partnerships. Whether you’re a solo agent or part of an agency, now is the perfect time to collaborate with us and deliver exceptional staffing solutions to clients worldwide.",
+      "button": "Contact Us",
+      "imageAlt": "Arka Hire At a Glance",
+      "floatingCard": {
+        "title": "Collaborative Onboarding",
+        "description": "You’ll receive comprehensive guidance right from the start — understand our best practices, client expectations, and support systems."
+      }
+    },
+
+    "letsTalk": {
+      "badge": "Contact",
+      "title": "Do you have any project in mind?",
+      "button": "Let’s Talk"
+    },
+
+    "ourProcess": {
+      "badge": "Our Process",
+      "title": "How We Find the Ideal Match for Your Business",
+      "description": "Six carefully crafted steps to connect you with the world's best talent — efficiently, reliably, and beautifully.",
+      "start": "Start",
+      "end": "Your Ideal Hire",
+      "steps": [
+        {
+          "num": "01",
+          "title": "Initial Consultation",
+          "description": "Our initial consultation enables us to gain a comprehensive understanding of your specific requirements, allowing us to customize our recruitment approach and identify the most suitable global workers for your business."
+        },
+        {
+          "num": "02",
+          "title": "Worker Sourcing",
+          "description": "We connect you with top-tier global workers through an extensive network, ensuring access to high-quality candidates. Our customized solutions are designed to meet your business's specific demands."
+        },
+        {
+          "num": "03",
+          "title": "Screening and Selection",
+          "description": "Our screening and selection process guarantees that you receive only the highest quality workers through background checks, skills assessments, and interviews."
+        },
+        {
+          "num": "04",
+          "title": "Onboarding and Integration",
+          "description": "We offer comprehensive orientation, training, and support to ensure that workers quickly adapt and contribute meaningfully to your team."
+        },
+        {
+          "num": "05",
+          "title": "Accommodation",
+          "description": "We provide reliable accommodation solutions for workers, including sourcing and arranging suitable housing that meets employer requirements."
+        },
+        {
+          "num": "06",
+          "title": "Continuous Support",
+          "description": "We offer ongoing support to ensure the success and satisfaction of both employers and workers."
+        }
+      ]
+    },
+
+    "countrySendWorker": {
+      "badge": "Global Placements",
+      "titleLineOne": "Countries Where",
+      "titleLineTwo": "We Send Workers",
+      "description": "We place skilled workers across Europe's fastest-growing markets — matching talent with the right opportunities in Romania, Germany, Croatia, and the United Kingdom.",
+      "button": "Explore Destinations",
+      "stats": [
+        {
+          "num": "4+",
+          "label": "Countries"
+        },
+        {
+          "num": "500+",
+          "label": "Workers Placed"
+        },
+        {
+          "num": "98%",
+          "label": "Satisfaction Rate"
+        }
+      ],
+      "countries": [
+        {
+          "code": "RO",
+          "title": "Romania",
+          "city": "Bucharest",
+          "subtitle": "Eastern Europe's rising hub"
+        },
+        {
+          "code": "DE",
+          "title": "Germany",
+          "city": "Munich",
+          "subtitle": "Engineering and industrial powerhouse"
+        },
+        {
+          "code": "HR",
+          "title": "Croatia",
+          "city": "Republika Hrvatska",
+          "subtitle": "Adriatic coast and skilled trades"
+        },
+        {
+          "code": "GB",
+          "title": "United Kingdom",
+          "city": "Great Britain",
+          "subtitle": "Global finance and services leader"
+        }
+      ]
+    }
+  },
+
+  "aboutUs": {
+    "hero": {
+      "logoAlt": "Arka Hire",
+      "title": "An Agency Without Borders",
+      "subtitle": "We take pride in anticipating challenges and adapting to the evolving demands of the labor market.",
+      "description": "Our steadfast commitment to the success of our partners is unwavering."
+    },
+    "stats": {
+      "items": [
+        {
+          "number": "1300+",
+          "label": "Workers Replaced in the Last 5 Years"
+        },
+        {
+          "number": "200+",
+          "label": "Happy Employers Who Trusted Us"
+        }
+      ],
+      "title": "Over a Decade of Expertise in Manpower Outsourcing",
+      "description": "Arka Hire is a prominent manpower outsourcing company, headquartered in London, UK. With over a decade of experience, we specialize in providing customized manpower management solutions tailored to meet the unique needs of our clients. Our expert team excels in identifying top talent, ensuring a perfect match for each organization’s specific requirements and budget. We offer a comprehensive range of services, including both temporary and permanent recruitment across various sectors worldwide. Our goal is to be the preferred human resources partner for both public and private sector organizations.",
+      "button": "More About Us"
+    },
+
+    "hrExpert": {
+      "imageAlt": "HR Experts",
+      "title": "HR Experts Committed to Your Success",
+      "points": [
+        {
+          "title": "Tailored Recruitment Solutions",
+          "desc": "We craft our recruitment strategies to align with your specific needs, ensuring that you receive the most qualified candidates."
+        },
+        {
+          "title": "Global Talent Acquisition",
+          "desc": "Our expansive network enables us to source top-tier talent from across the globe for both temporary and permanent roles."
+        },
+        {
+          "title": "Comprehensive Legal Assistance",
+          "desc": "We manage all legal aspects, from securing work permits to ensuring compliance with local regulations."
+        },
+        {
+          "title": "Integration and Support",
+          "desc": "We assist with accommodation, vocational training, and language education to facilitate the smooth integration of new employees."
+        }
+      ]
+    },
+
+    "workforceSolution": {
+      "title": "Our Comprehensive Workforce Solutions for Your Business",
+      "services": [
+        {
+          "title": "Worker Acquisition",
+          "description": "We specialize in identifying and attracting top talent. Our thorough recruitment process ensures we source the best candidates who are a perfect match for your organization's needs."
+        },
+        {
+          "title": "Workforce Solutions",
+          "description": "We offer flexible staffing options to meet diverse requirements, from temporary to permanent placements, ensuring reliability and adaptability in your workforce."
+        },
+        {
+          "title": "Regulatory Compliance",
+          "description": "Our expertise in legal and regulatory compliance guarantees that all hiring processes adhere to both local and international laws, minimizing risks for your business."
+        },
+        {
+          "title": "Strategic Workforce Planning",
+          "description": "We assist in developing and implementing effective workforce strategies that align with your business goals, driving productivity and efficiency."
+        },
+        {
+          "title": "Background Checks",
+          "description": "Our rigorous background checks and vetting processes ensure you hire trustworthy and qualified candidates, offering peace of mind and security."
+        },
+        {
+          "title": "Skills Training and Development",
+          "description": "We provide targeted training and development programs to enhance the skills and capabilities of your workforce, ensuring they are well-prepared for job demands."
+        }
+      ]
+    },
+
+    "companyTimeline": {
+      "badge": "Our Journey",
+      "title": "Company Timeline",
+      "subtitle": "A decade of growth, innovation, and global impact in workforce solutions.",
+      "yearLabel": "Year",
+      "endText": "And Beyond…",
+      "items": [
+        {
+          "year": "2013",
+          "title": "Launch and Foundation",
+          "tag": "Founded",
+          "desc": "Arka Hire was founded in the UK, focusing on providing personalized manpower management services and assembling a skilled team to serve initial clients in the construction and manufacturing sectors.",
+          "icon": "🚀"
+        },
+        {
+          "year": "2016",
+          "title": "Service Expansion",
+          "tag": "Growth",
+          "desc": "We broadened our recruitment services to include both temporary and permanent staffing solutions, expanding into warehousing, logistics, and healthcare, thereby growing our client base significantly.",
+          "icon": "📈"
+        },
+        {
+          "year": "2019",
+          "title": "Industry Diversification",
+          "tag": "Milestone",
+          "desc": "We further expanded our offerings into new industries, including retail, hospitality, and IT, allowing us to cater to a wider range of client needs and market demands.",
+          "icon": "🌿"
+        },
+        {
+          "year": "2023",
+          "title": "Global Expansion",
+          "tag": "Global",
+          "desc": "We enhanced our global presence by entering new international markets, solidifying our reputation as a leading recruitment partner and providing comprehensive manpower solutions worldwide.",
+          "icon": "🌍"
+        }
+      ]
+    }
+  },
+  "ourApproach": {
+    "clientConsultation": {
+      "heading": ["Client", "Consultation"],
+      "heroText": [
+        "At Arka Hire, we recognize that every business has its own set of needs and challenges. Our client consultation services are tailored to provide solutions that are perfectly aligned with your unique requirements and objectives.",
+        "With over 10 years of experience in the manpower outsourcing industry, our expert consultants are equipped to offer strategic advice and support to help you achieve your business goals."
+      ],
+      "points": [
+        "We design customized strategies to address your specific business challenges.",
+        "Our consultants provide informed guidance across sectors including technology, healthcare, and finance.",
+        "We leverage the latest technologies to enhance recruitment and HR processes.",
+        "We offer comprehensive support from initial consultation to seamless implementation.",
+        "Your success is our priority, with clear communication and lasting client relationships."
+      ],
+      "cta": {
+        "buttonText": "Let's Talk",
+        "link": "/contact-us"
+      },
+      "heroImageAlt": "Client consultation",
+      "floatingCard": {
+        "title": "Practical guidance before every hiring decision.",
+        "badge": "Consultation First"
+      },
+      "strategies": {
+        "sectionTitle": "Our Strategies",
+        "sectionBadge": "Our Approach",
+        "cards": [
+          {
+            "title": "Strategic Recruitment Planning",
+            "desc": "We develop complete recruitment strategies aligned with your business goals, workforce needs, and growth plans."
+          },
+          {
+            "title": "Talent Acquisition Management",
+            "desc": "We identify, attract, and retain qualified talent to move your business forward with confidence."
+          },
+          {
+            "title": "Employee Engagement & Retention",
+            "desc": "We implement practical strategies to enhance employee satisfaction, reduce turnover, and improve performance."
+          },
+          {
+            "title": "Workforce Planning & Optimization",
+            "desc": "We optimize your workforce for maximum efficiency, productivity, and long-term business value."
+          }
+        ]
+      }
+    },
+    "workerSourcing": {
+      "heading": "Worker Sourcing",
+      "intro": "We source our workforce from a diverse range of countries, including Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, UAE, Bangladesh, India, Nepal, Sri Lanka, and Malaysia. Workers are deployed to Romania, Croatia, Germany, and the UK, fully prepared to integrate seamlessly.",
+      "points": [
+        "Our Industry Expertise: We offer specialized knowledge across a broad spectrum of sectors, including construction, manufacturing, hospitality, agriculture, logistics, healthcare, and more",
+        "Comprehensive Solutions: We provide end-to-end services, ranging from talent sourcing and screening to compliance and deployment, ensuring a smooth and efficient process.",
+        "Client-Centric Approach: We focus on building strong, lasting relationships with clear communication and tailored services that address your unique needs.",
+        "Your Success, Our Priority: We are fully committed to achieving your goals by delivering excellence and enhancing productivity."
+      ],
+      "cta": {
+        "buttonText": "Let's Discuss Further"
+      },
+      "heroImageAlt": "Worker Sourcing"
+    },
+    "countries": {
+      "heading": [
+        "Countries",
+        "From",
+        "Where",
+        "We",
+        "Collect",
+        "Our",
+        "Workers"
+      ],
+      "intro": "We recruit skilled workers from trusted international talent markets and connect them with reliable opportunities.",
+      "list": [
+        {
+          "name": "UAE",
+          "city": "Dubai",
+          "code": "AE",
+          "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80"
+        },
+        {
+          "name": "Nepal",
+          "city": "Kathmandu",
+          "code": "NP",
+          "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=900&q=80"
+        },
+        {
+          "name": "Oman",
+          "city": "Muscat",
+          "code": "OM",
+          "image": "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=900&q=80"
+        },
+        {
+          "name": "Sri Lanka",
+          "city": "Colombo",
+          "code": "LK",
+          "image": "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=900&q=80"
+        },
+        {
+          "name": "Qatar",
+          "city": "Doha",
+          "code": "QA",
+          "image": "https://images.unsplash.com/photo-1700901742651-6b353164caf3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+          "name": "Bangladesh",
+          "city": "Dhaka",
+          "code": "BD",
+          "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=900&q=80"
+        },
+        {
+          "name": "India",
+          "city": "New Delhi",
+          "code": "IN",
+          "image": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80"
+        },
+        {
+          "name": "Malaysia",
+          "city": "Kuala Lumpur",
+          "code": "MY",
+          "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=900&q=80"
+        }
+      ]
+    },
+    "ourStrategies": {
+      "heading": ["Our", "Strategies"],
+      "tagline": "How We Work",
+      "cards": [
+        {
+          "number": "01",
+          "title": "Tailored Recruitment Plans",
+          "desc": "We design customized strategies to meet your specific workforce needs and project requirements.",
+          "color": "#4ade80",
+          "darkColor": "#16a34a"
+        },
+        {
+          "number": "02",
+          "title": "Comprehensive Screening",
+          "desc": "Our thorough assessment processes ensure the highest standards and the best fit for your projects.",
+          "color": "#facc15",
+          "darkColor": "#ca8a04"
+        },
+        {
+          "number": "03",
+          "title": "Efficient Compliance Handling",
+          "desc": "We expertly manage all necessary paperwork and legal requirements for the international deployment of workers.",
+          "color": "#60a5fa",
+          "darkColor": "#2563eb"
+        },
+        {
+          "number": "04",
+          "title": "Seamless Deployment",
+          "desc": "We ensure a smooth transition and integration of workers into your projects, minimizing disruption and maximizing efficiency.",
+          "color": "#f97316",
+          "darkColor": "#c2410c"
+        }
+      ]
+    }
+  }
+}

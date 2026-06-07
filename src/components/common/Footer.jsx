@@ -9,37 +9,40 @@ import {
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import logo from "../../assets/logowhite.webp";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
   const sectionRef = useRef(null);
-  const colsRef = useRef([]);
   const textRefs = useRef([]);
 
   const servicesLinks = [
-    "Recruitment Process",
-    "Mediation in Employment",
-    "Temporary Recruitment",
-    "Legal Assurance",
-    "Immigration Assistance",
+    { label: "Recruitment Process", path: "/services/recruitment" },
+    { label: "Mediation in Employment", path: "/services/mediation" },
+    { label: "Temporary Recruitment", path: "/services/temporary" },
+    { label: "Legal Assurance", path: "/services/legal-assurance" },
+    { label: "Immigration Assistance", path: "/services/immigration" },
   ];
 
   const importantLinks = [
-    "Contact us",
-    "Agency Partnership",
-    "Open Jobs",
-    "Industries We Serve",
+    { label: "Contact us", path: "/contact" },
+    { label: "Agency Partnership", path: "/agency-partnership" },
+    { label: "Open Jobs", path: "/open-jobs" },
+    { label: "Industries We Serve", path: "/industries" },
   ];
+
   const importantPages = [
-    "Frequently Asked Questions",
-    "Terms and Conditions",
-    "Privacy Policy",
+    {
+      label: "Frequently Asked Questions",
+      path: "/frequently-asked-questions",
+    },
+    { label: "Terms and Conditions", path: "/terms-and-conditions" },
+    { label: "Privacy Policy", path: "/privacy-policy" },
   ];
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       gsap.set(textRefs.current, { y: 30, opacity: 0, filter: "blur(6px)" });
-
       gsap.to(textRefs.current, {
         y: 0,
         opacity: 1,
@@ -72,6 +75,7 @@ const Footer = () => {
           >
             <img src={logo} alt="Arka Hire Logo" className="h-16 w-full" />
           </div>
+
           <div
             ref={(el) => textRefs.current.push(el)}
             className="text-sm text-white/80"
@@ -115,10 +119,10 @@ const Footer = () => {
             <a
               key={i}
               ref={(el) => textRefs.current.push(el)}
-              href="#"
+              href={item.path}
               className="text-sm text-white/80 hover:text-green-400 transition"
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </div>
@@ -135,10 +139,10 @@ const Footer = () => {
             <a
               key={i}
               ref={(el) => textRefs.current.push(el)}
-              href="#"
+              href={item.path}
               className="text-sm text-white/80 hover:text-green-400 transition"
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </div>
@@ -155,10 +159,10 @@ const Footer = () => {
             <a
               key={i}
               ref={(el) => textRefs.current.push(el)}
-              href="#"
+              href={item.path}
               className="text-sm text-white/80 hover:text-green-400 transition"
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </div>

@@ -1,13 +1,13 @@
 import React from "react";
 import HeroSereeningProcess from "./HeroSereeningProcess";
-import OurStrategiesZigZag from "./OurStrategiesZigZag";
+import OurStrategiesSereening from "./OurStrategiesSereening";
 import LetsTalk from "../home/LetsTalk";
 
 const ScreeningProcess = () => {
   return (
     <div>
       <HeroSereeningProcess />
-      <OurStrategiesZigZag />
+      <OurStrategiesSereening />
       <LetsTalk />
     </div>
   );

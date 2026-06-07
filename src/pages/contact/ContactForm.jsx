@@ -42,7 +42,7 @@ const ContactForm = () => {
       ref={sectionRef}
       className="relative w-full h-auto bg-cover bg-center bg-no-repeat py-24 px-4 sm:px-6 lg:px-16 font-montserrat text-white flex flex-col justify-center"
       style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGVtcGxveWVlJTIwb2ZmaWNlfGVufDB8fDB8fA&ixlib=rb-4.0.3&q=80&w=1080')`,
+        backgroundImage: `url('https://images.pexels.com/photos/8867261/pexels-photo-8867261.jpeg')`,
       }}
     >
       <div className="absolute inset-0 bg-black/50"></div>

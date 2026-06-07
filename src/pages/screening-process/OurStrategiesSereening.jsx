@@ -36,7 +36,7 @@ const strategies = [
   },
 ];
 
-const OurStrategiesZigZag = () => {
+const OurStrategiesSereening = () => {
   const sectionRef = useRef(null);
   const cardsRef = useRef([]);
 
@@ -100,4 +100,4 @@ const OurStrategiesZigZag = () => {
   );
 };
 
-export default OurStrategiesZigZag;
+export default OurStrategiesSereening;

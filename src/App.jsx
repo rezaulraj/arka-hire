@@ -16,6 +16,9 @@ import IndustriePage from "./pages/industries/IndustriePage";
 import Contact from "./pages/contact/Contact";
 import OpenJob from "./pages/open-job/OpenJob";
 import AgencyPartner from "./pages/agency-partnerships/AgencyPartner";
+import FaqsPage from "./pages/Faqs/FaqsPage";
+import TermsPage from "./pages/teams/TermsPage";
+import PrivacyPolicy from "./pages/privacypolicy/PrivacyPolicy";
 function App() {
   return (
     <>
@@ -74,6 +77,9 @@ function App() {
             />
             <Route path="/industries" element={<IndustriePage />} />
             <Route path="/contact-us" element={<Contact />} />
+            <Route path="/frequently-asked-questions" element={<FaqsPage />} />
+            <Route path="/terms-and-conditions" element={<TermsPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Route>
         </Routes>
       </Router>

@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -9,24 +10,20 @@ import traing from "../../assets/traing.webp";
 gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
+  const { t } = useTranslation();
+
   const sectionRef = useRef(null);
   const cardsRef = useRef([]);
   const headingRef = useRef(null);
 
-  const services = [
-    {
-      name: "Consulting",
-      image: consulting,
-    },
-    {
-      name: "Worker Acquisition",
-      image: workeraquition,
-    },
-    {
-      name: "Train Workers",
-      image: traing,
-    },
-  ];
+  const serviceImages = [consulting, workeraquition, traing];
+
+  const services = t("home.services.items", {
+    returnObjects: true,
+  }).map((item, index) => ({
+    ...item,
+    image: serviceImages[index],
+  }));
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -56,6 +53,8 @@ const Services = () => {
 
       const activeCard = (activeIndex) => {
         cards.forEach((card, index) => {
+          if (!card) return;
+
           const img = card.querySelector(".service-img");
           const title = card.querySelector(".service-title");
           const dark = card.querySelector(".service-dark");
@@ -148,11 +147,11 @@ const Services = () => {
         className="pointer-events-none absolute left-1/2 top-7 z-30 -translate-x-1/2 text-center sm:top-10 lg:top-12"
       >
         <span className="mb-3 inline-block rounded-full border border-white/35 bg-white/15 px-5 py-2 text-[11px] font-bold uppercase tracking-[0.35em] text-white shadow-xl backdrop-blur-md sm:text-[12px]">
-          Our
+          {t("home.services.badge")}
         </span>
 
         <h2 className="text-[38px] font-black uppercase leading-none tracking-tight text-white drop-shadow-2xl sm:text-[58px] lg:text-[76px]">
-          Services
+          {t("home.services.title")}
         </h2>
       </div>
 

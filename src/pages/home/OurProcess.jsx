@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -11,58 +12,33 @@ import process6 from "../../assets/icons/customer-service-agent.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const steps = [
-  {
-    title: "Initial Consultation",
-    description:
-      "Our initial consultation enables us to gain a comprehensive understanding of your specific requirements, allowing us to customize our recruitment approach and identify the most suitable global workers for your business.",
-    icon: process1,
-    num: "01",
-  },
-  {
-    title: "Worker Sourcing",
-    description:
-      "We connect you with top-tier global workers through an extensive network, ensuring access to high-quality candidates. Our customized solutions are designed to meet your business's specific demands.",
-    icon: process2,
-    num: "02",
-  },
-  {
-    title: "Screening and Selection",
-    description:
-      "Our screening and selection process guarantees that you receive only the highest quality workers through background checks, skills assessments, and interviews.",
-    icon: process3,
-    num: "03",
-  },
-  {
-    title: "Onboarding and Integration",
-    description:
-      "We offer comprehensive orientation, training, and support to ensure that workers quickly adapt and contribute meaningfully to your team.",
-    icon: process4,
-    num: "04",
-  },
-  {
-    title: "Accommodation",
-    description:
-      "We provide reliable accommodation solutions for workers, including sourcing and arranging suitable housing that meets employer requirements.",
-    icon: process5,
-    num: "05",
-  },
-  {
-    title: "Continuous Support",
-    description:
-      "We offer ongoing support to ensure the success and satisfaction of both employers and workers.",
-    icon: process6,
-    num: "06",
-  },
-];
-
 const OurProcess = () => {
+  const { t } = useTranslation();
+
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
   const textRef = useRef(null);
   const cardsRef = useRef([]);
   const pinsRef = useRef([]);
   const lineRef = useRef(null);
+
+  const processIcons = [
+    process1,
+    process2,
+    process3,
+    process4,
+    process5,
+    process6,
+  ];
+
+  const steps = t("home.ourProcess.steps", {
+    returnObjects: true,
+  }).map((item, index) => ({
+    ...item,
+    icon: processIcons[index],
+  }));
+
+  const heading = t("home.ourProcess.title").split(" ");
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -180,18 +156,6 @@ const OurProcess = () => {
     return () => ctx.revert();
   }, []);
 
-  const heading = [
-    "How",
-    "We",
-    "Find",
-    "the",
-    "Ideal",
-    "Match",
-    "for",
-    "Your",
-    "Business",
-  ];
-
   return (
     <section
       ref={sectionRef}
@@ -204,7 +168,7 @@ const OurProcess = () => {
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 backdrop-blur-md">
               <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-yellow-300 shadow-[0_0_8px_rgba(253,224,71,0.9)]" />
               <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#8bea8f]">
-                Our Process
+                {t("home.ourProcess.badge")}
               </span>
             </div>
 
@@ -214,7 +178,7 @@ const OurProcess = () => {
             >
               {heading.map((word, index) => (
                 <span
-                  key={index}
+                  key={`${word}-${index}`}
                   className="mr-3 inline-block overflow-hidden align-bottom"
                 >
                   <span
@@ -235,8 +199,7 @@ const OurProcess = () => {
             ref={textRef}
             className="max-w-sm text-sm font-medium leading-relaxed text-white/75 lg:text-right"
           >
-            Six carefully crafted steps to connect you with the world's best
-            talent — efficiently, reliably, and beautifully.
+            {t("home.ourProcess.description")}
           </p>
         </div>
 
@@ -252,7 +215,7 @@ const OurProcess = () => {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 xl:gap-4">
             {steps.map((step, i) => (
               <div
-                key={i}
+                key={step.num}
                 className="relative z-10 flex flex-col items-center text-center"
               >
                 <div
@@ -261,39 +224,34 @@ const OurProcess = () => {
                   }`}
                 >
                   {/* Card */}
-                  {/* Card */}
                   <div
                     ref={(el) => (cardsRef.current[i] = el)}
                     className="
-    group relative w-full max-w-[190px] overflow-hidden rounded-2xl
-    border border-white/10 bg-[#0f3d18]/95 p-5
-    shadow-[0_18px_50px_rgba(0,0,0,0.22)]
-    transition-all duration-500
-    hover:-translate-y-2 hover:border-yellow-300/60
-    hover:bg-[#123f1b]
-    hover:shadow-[0_0_0_1px_rgba(253,224,71,0.22),0_22px_55px_rgba(0,0,0,0.32)]
-  "
+                      group relative w-full max-w-[190px] overflow-hidden rounded-2xl
+                      border border-white/10 bg-[#0f3d18]/95 p-5
+                      shadow-[0_18px_50px_rgba(0,0,0,0.22)]
+                      transition-all duration-500
+                      hover:-translate-y-2 hover:border-yellow-300/60
+                      hover:bg-[#123f1b]
+                      hover:shadow-[0_0_0_1px_rgba(253,224,71,0.22),0_22px_55px_rgba(0,0,0,0.32)]
+                    "
                   >
-                    {/* Top accent line */}
                     <div className="absolute left-0 top-0 h-[3px] w-14 bg-gradient-to-r from-yellow-300 via-yellow-200 to-transparent" />
 
-                    {/* Soft glow */}
                     <div className="pointer-events-none absolute -right-10 -top-10 h-24 w-24 rounded-full bg-yellow-300/10 blur-2xl transition duration-500 group-hover:bg-yellow-300/20" />
 
-                    {/* Watermark number */}
                     <span className="pointer-events-none absolute bottom-1 right-2 select-none text-[3.2rem] font-black leading-none tracking-tight text-white/[0.06]">
                       {step.num}
                     </span>
 
-                    {/* Icon */}
                     <div
                       className="
-      mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl
-      border border-yellow-300/35 bg-yellow-300/15
-      shadow-[0_0_18px_rgba(253,224,71,0.12)]
-      transition-all duration-300
-      group-hover:scale-110 group-hover:-rotate-6 group-hover:bg-yellow-300/25
-    "
+                        mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl
+                        border border-yellow-300/35 bg-yellow-300/15
+                        shadow-[0_0_18px_rgba(253,224,71,0.12)]
+                        transition-all duration-300
+                        group-hover:scale-110 group-hover:-rotate-6 group-hover:bg-yellow-300/25
+                      "
                     >
                       <img
                         src={step.icon}
@@ -339,10 +297,10 @@ const OurProcess = () => {
 
           <div className="mt-5 hidden justify-between px-2 xl:flex">
             <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/35">
-              Start
+              {t("home.ourProcess.start")}
             </span>
             <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#8bea8f]">
-              Your Ideal Hire →
+              {t("home.ourProcess.end")} →
             </span>
           </div>
         </div>

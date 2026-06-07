@@ -1,8 +1,11 @@
 import React, { useLayoutEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import herologo from "../../assets/logo1.webp";
 
 const HeroAbout = () => {
+  const { t } = useTranslation();
+
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
   const subtitleRef = useRef(null);
@@ -33,13 +36,25 @@ const HeroAbout = () => {
       })
         .to(
           subtitleRef.current,
-          { y: 0, opacity: 1, filter: "blur(0px)", duration: 0.75, ease: "power3.out" },
-          "-=0.5"
+          {
+            y: 0,
+            opacity: 1,
+            filter: "blur(0px)",
+            duration: 0.75,
+            ease: "power3.out",
+          },
+          "-=0.5",
         )
         .to(
           textRef.current,
-          { y: 0, opacity: 1, filter: "blur(0px)", duration: 0.75, ease: "power3.out" },
-          "-=0.5"
+          {
+            y: 0,
+            opacity: 1,
+            filter: "blur(0px)",
+            duration: 0.75,
+            ease: "power3.out",
+          },
+          "-=0.5",
         );
     }, sectionRef);
 
@@ -49,29 +64,33 @@ const HeroAbout = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full bg-[#d2e6d9] px-4 py-20 sm:px-6 lg:px-10 font-montserrat flex flex-col items-center text-center"
+      className="relative flex w-full flex-col items-center bg-[#d2e6d9] px-4 py-20 text-center font-montserrat sm:px-6 lg:px-10"
     >
-      <img src={herologo} alt="Arka Hire" className="mb-8 h-20 w-auto" />
+      <img
+        src={herologo}
+        alt={t("aboutUs.hero.logoAlt")}
+        className="mb-8 h-20 w-auto"
+      />
 
       <h1
         ref={headingRef}
-        className="text-[34px] font-extrabold text-[#1e5b2f] sm:text-[44px] lg:text-[52px] leading-tight"
+        className="text-[34px] font-extrabold leading-tight text-[#1e5b2f] sm:text-[44px] lg:text-[52px]"
       >
-        An Agency Without Borders
+        {t("aboutUs.hero.title")}
       </h1>
 
       <p
         ref={subtitleRef}
-        className="mt-4 max-w-3xl text-[15px] sm:text-[16px] text-[#1a4225] font-medium leading-relaxed"
+        className="mt-4 max-w-3xl text-[15px] font-medium leading-relaxed text-[#1a4225] sm:text-[16px]"
       >
-        We take pride in anticipating challenges and adapting to the evolving demands of the labor market.
+        {t("aboutUs.hero.subtitle")}
       </p>
 
       <p
         ref={textRef}
-        className="mt-2 max-w-3xl text-[14px] sm:text-[15px] text-[#1a4225]/90 leading-relaxed"
+        className="mt-2 max-w-3xl text-[14px] leading-relaxed text-[#1a4225]/90 sm:text-[15px]"
       >
-        Our steadfast commitment to the success of our partners is unwavering.
+        {t("aboutUs.hero.description")}
       </p>
     </section>
   );

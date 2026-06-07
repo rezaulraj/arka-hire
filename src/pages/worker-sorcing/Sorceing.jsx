@@ -1,73 +1,28 @@
 import React, { useLayoutEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ReactCountryFlag from "react-country-flag";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const countries = [
-  {
-    name: "UAE",
-    city: "Dubai",
-    code: "AE",
-    image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "Nepal",
-    city: "Kathmandu",
-    code: "NP",
-    image:
-      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "Oman",
-    city: "Muscat",
-    code: "OM",
-    image:
-      "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "Sri Lanka",
-    city: "Colombo",
-    code: "LK",
-    image:
-      "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "Qatar",
-    city: "Doha",
-    code: "QA",
-    image:
-      "https://images.unsplash.com/photo-1700901742651-6b353164caf3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    name: "Bangladesh",
-    city: "Dhaka",
-    code: "BD",
-    image:
-      "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "India",
-    city: "New Delhi",
-    code: "IN",
-    image:
-      "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "Malaysia",
-    city: "Kuala Lumpur",
-    code: "MY",
-    image:
-      "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=900&q=80",
-  },
-];
-
 const Sorceing = () => {
+  const { t } = useTranslation();
+
   const sectionRef = useRef(null);
   const cardsRef = useRef([]);
   const titleRef = useRef(null);
+
+  const headingData = t("ourApproach.workerSourcing.countries.heading", {
+    returnObjects: true,
+  });
+
+  const countriesData = t("ourApproach.workerSourcing.countries.list", {
+    returnObjects: true,
+  });
+
+  const heading = Array.isArray(headingData) ? headingData : [];
+  const countries = Array.isArray(countriesData) ? countriesData : [];
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -117,16 +72,6 @@ const Sorceing = () => {
     return () => ctx.revert();
   }, []);
 
-  const heading = [
-    "Countries",
-    "From",
-    "Where",
-    "We",
-    "Collect",
-    "Our",
-    "Workers",
-  ];
-
   return (
     <section
       ref={sectionRef}
@@ -141,7 +86,7 @@ const Sorceing = () => {
           >
             {heading.map((word, index) => (
               <span
-                key={index}
+                key={`${word}-${index}`}
                 className="mr-3 inline-block overflow-hidden align-bottom"
               >
                 <span
@@ -158,8 +103,7 @@ const Sorceing = () => {
           </h2>
 
           <p className="mt-5 text-[15px] font-medium leading-7 text-white/75 sm:text-[16px]">
-            We recruit skilled workers from trusted international talent markets
-            and connect them with reliable opportunities.
+            {t("ourApproach.workerSourcing.countries.intro")}
           </p>
         </div>
 
@@ -167,8 +111,10 @@ const Sorceing = () => {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {countries.map((country, index) => (
             <div
-              key={country.code}
-              ref={(el) => (cardsRef.current[index] = el)}
+              key={`${country.code}-${index}`}
+              ref={(el) => {
+                cardsRef.current[index] = el;
+              }}
               className="group relative h-[310px] overflow-hidden rounded-[24px] border border-white/15 bg-white/10 shadow-[0_25px_70px_rgba(0,0,0,0.28)] backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:border-[#d8ffd8]/55 hover:shadow-[0_30px_85px_rgba(0,0,0,0.38)]"
             >
               {/* City image */}
@@ -176,6 +122,7 @@ const Sorceing = () => {
                 src={country.image}
                 alt={`${country.city}, ${country.name}`}
                 className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                loading="lazy"
               />
 
               {/* Overlay */}
@@ -204,7 +151,9 @@ const Sorceing = () => {
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <p className="mb-2 text-[12px] font-black uppercase tracking-[0.25em] text-[#d8ffd8]">
-                  Recruitment Source
+                  {t("ourApproach.workerSourcing.countries.cardLabel", {
+                    defaultValue: "Recruitment Source",
+                  })}
                 </p>
 
                 <h3 className="text-[28px] font-black leading-tight text-white drop-shadow-[0_8px_18px_rgba(0,0,0,0.45)]">

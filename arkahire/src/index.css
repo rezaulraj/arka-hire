@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+@keyframes marqueeMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marqueeMoveReverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.marquee {
+  animation: marqueeMove 180s linear infinite;
+}
+
+.marquee-reverse {
+  animation: marqueeMoveReverse 180s linear infinite;
+}
+
+.marquee-box:hover .marquee,
+.marquee-box:hover .marquee-reverse {
+  animation-play-state: paused;
+}
+
+.service-card,
+.service-img,
+.service-title {
+  will-change: transform, opacity, flex;
+}

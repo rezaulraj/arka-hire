@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -9,37 +10,45 @@ import stategie4 from "../../assets/icons/wel4.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const strategies = [
-  {
-    title: "Health Programs",
-    description: "Access to fitness and mental health support.",
-    icon: stategie1,
-  },
-  {
-    title: "Work-Life Balance",
-    description: "Flexible hours and work following global labor law.",
-    icon: stategie2,
-  },
-  {
-    title: "Support Services",
-    description: "Counseling and employee assistance programs.",
-    icon: stategie3,
-  },
-  {
-    title: "Financial Planning",
-    description: "Resources to help manage and plan finances.",
-    icon: stategie4,
-  },
-];
+const icons = [stategie1, stategie2, stategie3, stategie4];
 
 const WelfareStrategies = () => {
+  const { t } = useTranslation();
+
   const sectionRef = useRef(null);
-  const cardsRef = useRef([]);
+  const desktopCardsRef = useRef([]);
+  const mobileCardsRef = useRef([]);
   const centerRef = useRef(null);
   const lineRef = useRef(null);
 
+  const headingData = t("ourApproach.welfareStrategies.heading", {
+    returnObjects: true,
+  });
+
+  const cardsData = t("ourApproach.welfareStrategies.cards", {
+    returnObjects: true,
+  });
+
+  const heading = Array.isArray(headingData)
+    ? headingData
+    : typeof headingData === "string"
+      ? headingData.split(" ")
+      : [];
+
+  const strategies = Array.isArray(cardsData)
+    ? cardsData.map((item, index) => ({
+        ...item,
+        icon: icons[index],
+      }))
+    : [];
+
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
+      const allCards = [
+        ...desktopCardsRef.current.filter(Boolean),
+        ...mobileCardsRef.current.filter(Boolean),
+      ];
+
       gsap.set(".welfare-word", {
         yPercent: 110,
         opacity: 0,
@@ -51,14 +60,16 @@ const WelfareStrategies = () => {
         filter: "blur(8px)",
       });
 
-      gsap.set(centerRef.current, {
-        scale: 0.7,
-        opacity: 0,
-        rotate: -20,
-        filter: "blur(10px)",
-      });
+      if (centerRef.current) {
+        gsap.set(centerRef.current, {
+          scale: 0.7,
+          opacity: 0,
+          rotate: -20,
+          filter: "blur(10px)",
+        });
+      }
 
-      gsap.set(cardsRef.current, {
+      gsap.set(allCards, {
         y: 80,
         opacity: 0,
         scale: 0.86,
@@ -66,10 +77,18 @@ const WelfareStrategies = () => {
         filter: "blur(12px)",
       });
 
-      gsap.set(lineRef.current, {
-        scaleX: 0,
-        transformOrigin: "center center",
+      gsap.set(".welfare-icon", {
+        scale: 0,
+        rotate: -30,
+        opacity: 0,
       });
+
+      if (lineRef.current) {
+        gsap.set(lineRef.current, {
+          scaleX: 0,
+          transformOrigin: "center center",
+        });
+      }
 
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -95,7 +114,7 @@ const WelfareStrategies = () => {
             duration: 0.7,
             ease: "power3.out",
           },
-          "-=0.45"
+          "-=0.45",
         )
         .to(
           centerRef.current,
@@ -107,7 +126,7 @@ const WelfareStrategies = () => {
             duration: 0.8,
             ease: "back.out(1.7)",
           },
-          "-=0.3"
+          "-=0.3",
         )
         .to(
           lineRef.current,
@@ -116,10 +135,10 @@ const WelfareStrategies = () => {
             duration: 1,
             ease: "power3.out",
           },
-          "-=0.45"
+          "-=0.45",
         )
         .to(
-          cardsRef.current,
+          allCards,
           {
             y: 0,
             opacity: 1,
@@ -130,19 +149,19 @@ const WelfareStrategies = () => {
             stagger: 0.14,
             ease: "back.out(1.4)",
           },
-          "-=0.65"
+          "-=0.65",
         )
-        .from(
+        .to(
           ".welfare-icon",
           {
-            scale: 0,
-            rotate: -30,
-            opacity: 0,
+            scale: 1,
+            rotate: 0,
+            opacity: 1,
             duration: 0.5,
             stagger: 0.09,
             ease: "back.out(1.9)",
           },
-          "-=0.55"
+          "-=0.55",
         )
         .from(
           ".welfare-title",
@@ -153,7 +172,7 @@ const WelfareStrategies = () => {
             stagger: 0.08,
             ease: "power3.out",
           },
-          "-=0.45"
+          "-=0.45",
         )
         .from(
           ".welfare-desc",
@@ -164,24 +183,18 @@ const WelfareStrategies = () => {
             stagger: 0.08,
             ease: "power3.out",
           },
-          "-=0.42"
+          "-=0.42",
         );
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
-
-  const heading = ["Our", "Strategies"];
+  }, [strategies.length, t]);
 
   return (
     <section
       ref={sectionRef}
       className="relative w-full overflow-hidden bg-gradient-to-r from-[#071b0c] via-[#2f7f35] to-[#071b0c] px-4 py-20 font-montserrat text-white sm:px-6 lg:px-10"
     >
-      {/* Background effects */}
-      <div className="pointer-events-none absolute inset-0 opacity-20 [background-image:radial-gradient(rgba(255,255,255,0.55)_1px,transparent_1px)] [background-size:24px_24px]" />
-      <div className="pointer-events-none absolute left-1/2 top-10 h-[420px] w-[760px] -translate-x-1/2 rounded-full bg-[#d8ffd8]/15 blur-[120px]" />
-      <div className="pointer-events-none absolute -bottom-44 left-1/2 h-[360px] w-[900px] -translate-x-1/2 rounded-full bg-black/30 blur-[100px]" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
         {/* Heading */}
@@ -189,12 +202,14 @@ const WelfareStrategies = () => {
           <h2 className="text-[42px] font-black leading-tight tracking-[0.08em] sm:text-[56px] lg:text-[72px]">
             {heading.map((word, index) => (
               <span
-                key={index}
+                key={`${word}-${index}`}
                 className="mr-4 inline-block overflow-hidden align-bottom"
               >
                 <span
                   className={`welfare-word inline-block ${
-                    word === "Strategies" ? "text-[#d8ffd8]" : "text-white"
+                    index === heading.length - 1
+                      ? "text-[#d8ffd8]"
+                      : "text-white"
                   } drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]`}
                 >
                   {word}
@@ -204,14 +219,12 @@ const WelfareStrategies = () => {
           </h2>
 
           <p className="welfare-subtitle mx-auto mt-5 max-w-2xl text-[15px] font-semibold leading-7 text-white/75 sm:text-[16px]">
-            Worker welfare programs built to support health, balance, care, and
-            long-term financial confidence.
+            {t("ourApproach.welfareStrategies.subtitle")}
           </p>
         </div>
 
         {/* Desktop layout */}
         <div className="relative hidden min-h-[520px] lg:block">
-          {/* center line */}
           <div className="absolute left-[12%] right-[12%] top-1/2 h-[3px] -translate-y-1/2 rounded-full bg-white/15">
             <div
               ref={lineRef}
@@ -226,11 +239,13 @@ const WelfareStrategies = () => {
           >
             <div className="absolute inset-3 rounded-full border border-[#d8ffd8]/30" />
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/15 via-transparent to-black/20" />
+
             <p className="relative z-10 text-[12px] font-black uppercase tracking-[0.25em] text-[#d8ffd8]">
-              Welfare
+              {t("ourApproach.welfareStrategies.centerBadge.label")}
             </p>
+
             <h3 className="relative z-10 mt-2 text-[24px] font-black leading-tight text-white">
-              Worker Care
+              {t("ourApproach.welfareStrategies.centerBadge.title")}
             </h3>
           </div>
 
@@ -244,21 +259,26 @@ const WelfareStrategies = () => {
 
             return (
               <div
-                key={item.title}
-                ref={(el) => (cardsRef.current[index] = el)}
+                key={`${item.title}-${index}`}
+                ref={(el) => {
+                  desktopCardsRef.current[index] = el;
+                }}
                 className={`group absolute ${positions[index]} w-[440px]`}
               >
                 <div
                   className={`relative flex min-h-[210px] items-center gap-5 overflow-hidden rounded-[30px] border border-white/20 bg-white/12 p-6 shadow-[0_28px_80px_rgba(0,0,0,0.28)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:border-[#d8ffd8]/70 hover:bg-white/18 hover:shadow-[0_35px_95px_rgba(0,0,0,0.38)] ${
-                    index % 2 === 0 ? "text-left" : "flex-row-reverse text-right"
+                    index % 2 === 0
+                      ? "text-left"
+                      : "flex-row-reverse text-right"
                   }`}
                 >
                   <div className="pointer-events-none absolute -right-16 -top-16 h-36 w-36 rounded-full bg-[#d8ffd8]/18 blur-2xl transition duration-500 group-hover:bg-[#d8ffd8]/30" />
+
                   <span className="pointer-events-none absolute bottom-2 right-4 text-[70px] font-black leading-none text-white/[0.06]">
                     {String(index + 1).padStart(2, "0")}
                   </span>
 
-                  <div className="welfare-icon relative z-10 flex h-24 w-24 shrink-0 items-center justify-center rounded-[28px] border border-white/25 bg-[#d8ffd8]/12 shadow-[0_20px_45px_rgba(0,0,0,0.22)] transition duration-500 group-hover:scale-110 group-hover:-rotate-6 group-hover:bg-[#d8ffd8]/22">
+                  <div className="welfare-icon relative z-10 flex h-24 w-24 shrink-0 items-center justify-center overflow-hidden rounded-[28px] border border-white/25 bg-[#d8ffd8]/12 p-3 shadow-[0_20px_45px_rgba(0,0,0,0.22)] transition duration-500 group-hover:scale-110 group-hover:-rotate-6 group-hover:bg-[#d8ffd8]/22">
                     <img
                       src={item.icon}
                       alt={item.title}
@@ -287,21 +307,23 @@ const WelfareStrategies = () => {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:hidden">
           {strategies.map((item, index) => (
             <div
-              key={item.title}
-              ref={(el) => (cardsRef.current[index] = el)}
+              key={`${item.title}-mobile-${index}`}
+              ref={(el) => {
+                mobileCardsRef.current[index] = el;
+              }}
               className="group relative overflow-hidden rounded-[28px] border border-white/20 bg-white/12 p-6 text-center shadow-[0_24px_70px_rgba(0,0,0,0.28)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:border-[#d8ffd8]/70 hover:bg-white/18"
             >
               <span className="pointer-events-none absolute bottom-2 right-4 text-[64px] font-black leading-none text-white/[0.06]">
                 {String(index + 1).padStart(2, "0")}
               </span>
 
-              <div className="welfare-icon relative z-10 flex h-24 w-24 shrink-0 items-center justify-center rounded-[28px] border border-white/25 bg-[#d8ffd8]/12 shadow-[0_20px_45px_rgba(0,0,0,0.22)]">
-  <img
-    src={item.icon}
-    alt={item.title}
-    className="h-full w-full object-contain"
-  />
-</div>
+              <div className="welfare-icon relative z-10 mx-auto mb-5 flex h-24 w-24 shrink-0 items-center justify-center overflow-hidden rounded-[28px] border border-white/25 bg-[#d8ffd8]/12 p-3 shadow-[0_20px_45px_rgba(0,0,0,0.22)]">
+                <img
+                  src={item.icon}
+                  alt={item.title}
+                  className="h-16 w-16 object-contain"
+                />
+              </div>
 
               <h3 className="welfare-title relative z-10 mb-3 text-[23px] font-black leading-tight text-white">
                 {item.title}

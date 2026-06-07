@@ -1,4 +1,5 @@
 import React, { useRef, useLayoutEffect } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -11,49 +12,25 @@ import worker6 from "../../assets/icons/legal-1.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const services = [
-  {
-    title: "Worker Acquisition",
-    description:
-      "We specialize in identifying and attracting top talent. Our thorough recruitment process ensures we source the best candidates who are a perfect match for your organization's needs.",
-    icon: worker1,
-  },
-  {
-    title: "Workforce Solutions",
-    description:
-      "We offer flexible staffing options to meet diverse requirements, from temporary to permanent placements, ensuring reliability and adaptability in your workforce.",
-    icon: worker2,
-  },
-  {
-    title: "Regulatory Compliance",
-    description:
-      "Our expertise in legal and regulatory compliance guarantees that all hiring processes adhere to both local and international laws, minimizing risks for your business.",
-    icon: worker3,
-  },
-  {
-    title: "Strategic Workforce Planning",
-    description:
-      "We assist in developing and implementing effective workforce strategies that align with your business goals, driving productivity and efficiency.",
-    icon: worker4,
-  },
-  {
-    title: "Background Checks",
-    description:
-      "Our rigorous background checks and vetting processes ensure you hire trustworthy and qualified candidates, offering peace of mind and security.",
-    icon: worker5,
-  },
-  {
-    title: "Skills Training & Development",
-    description:
-      "We provide targeted training and development programs to enhance the skills and capabilities of your workforce, ensuring they are well-prepared for job demands.",
-    icon: worker6,
-  },
-];
-
 const WorkforseSolution = () => {
+  const { t } = useTranslation();
+
   const sectionRef = useRef(null);
   const cardRefs = useRef([]);
   const titleRef = useRef(null);
+
+  const icons = [worker1, worker2, worker3, worker4, worker5, worker6];
+
+  const servicesData = t("aboutUs.workforceSolution.services", {
+    returnObjects: true,
+  });
+
+  const services = Array.isArray(servicesData)
+    ? servicesData.map((item, index) => ({
+        ...item,
+        icon: icons[index],
+      }))
+    : [];
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -62,6 +39,7 @@ const WorkforseSolution = () => {
         opacity: 0,
         textShadow: "0px 0px 0px rgba(0,0,0,0)",
       });
+
       gsap.set(cardRefs.current, {
         y: 50,
         opacity: 0,
@@ -104,31 +82,38 @@ const WorkforseSolution = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full bg-linear-to-r from-[#0C1A0E] via-[#2f7f35] to-[#0C1A0E] px-4 py-20 sm:px-6 lg:px-16 font-montserrat text-white"
+      className="relative w-full bg-gradient-to-r from-[#0C1A0E] via-[#2f7f35] to-[#0C1A0E] px-4 py-20 font-montserrat text-white sm:px-6 lg:px-16"
     >
       <h2
         ref={titleRef}
-        className="mb-16 text-center text-[28px] sm:text-[34px] lg:text-[38px] font-extrabold leading-snug tracking-tight"
+        className="mb-16 text-center text-[28px] font-extrabold leading-snug tracking-tight sm:text-[34px] lg:text-[38px]"
       >
-        Our Comprehensive Workforce Solutions for Your Business
+        {t("aboutUs.workforceSolution.title")}
       </h2>
 
-      <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 items-start">
+      <div className="grid grid-cols-1 items-start gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service, idx) => (
           <div
-            key={idx}
-            ref={(el) => (cardRefs.current[idx] = el)}
-            className="group flex flex-col items-center text-center rounded-xl bg-[#3a6b3d]/80 p-6 shadow-xl hover:scale-105 transition-transform duration-500"
+            key={`${service.title}-${idx}`}
+            ref={(el) => {
+              cardRefs.current[idx] = el;
+            }}
+            className="group flex flex-col items-center rounded-xl bg-[#3a6b3d]/80 p-6 text-center shadow-xl transition-transform duration-500 hover:scale-105"
           >
-            <img
-              src={service.icon}
-              alt={service.title}
-              className="mb-4 h-20 w-20 object-contain"
-            />
+            <div className="mb-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-white p-4 shadow-lg">
+              <img
+                src={service.icon}
+                alt={service.title}
+                className="h-full w-full object-contain"
+                loading="lazy"
+              />
+            </div>
+
             <h3 className="mb-2 text-[16px] font-bold text-white">
               {service.title}
             </h3>
-            <p className="text-[13px] text-white/85 leading-relaxed">
+
+            <p className="text-[13px] leading-relaxed text-white/85">
               {service.description}
             </p>
           </div>

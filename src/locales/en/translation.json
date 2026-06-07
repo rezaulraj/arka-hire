@@ -366,7 +366,7 @@
           "label": "Countries"
         },
         {
-          "num": "500+",
+          "num": "1200+",
           "label": "Workers Placed"
         },
         {
@@ -410,20 +410,22 @@
       "subtitle": "We take pride in anticipating challenges and adapting to the evolving demands of the labor market.",
       "description": "Our steadfast commitment to the success of our partners is unwavering."
     },
-    "stats": {
-      "items": [
-        {
-          "number": "1300+",
-          "label": "Workers Replaced in the Last 5 Years"
-        },
-        {
-          "number": "200+",
-          "label": "Happy Employers Who Trusted Us"
-        }
-      ],
-      "title": "Over a Decade of Expertise in Manpower Outsourcing",
-      "description": "Arka Hire is a prominent manpower outsourcing company, headquartered in London, UK. With over a decade of experience, we specialize in providing customized manpower management solutions tailored to meet the unique needs of our clients. Our expert team excels in identifying top talent, ensuring a perfect match for each organization’s specific requirements and budget. We offer a comprehensive range of services, including both temporary and permanent recruitment across various sectors worldwide. Our goal is to be the preferred human resources partner for both public and private sector organizations.",
-      "button": "More About Us"
+    "aboutStats": {
+      "stats": {
+        "items": [
+          {
+            "number": "1300+",
+            "label": "Workers Replaced in the Last 5 Years"
+          },
+          {
+            "number": "200+",
+            "label": "Happy Employers Who Trusted Us"
+          }
+        ],
+        "title": "Over a Decade of Expertise in Manpower Outsourcing",
+        "description": "Arka Hire is a prominent manpower outsourcing company, headquartered in London, UK. With over a decade of experience, we specialize in providing customized manpower management solutions tailored to meet the unique needs of our clients. Our expert team excels in identifying top talent, ensuring a perfect match for each organization’s specific requirements and budget. We offer a comprehensive range of services, including both temporary and permanent recruitment across various sectors worldwide. Our goal is to be the preferred human resources partner for both public and private sector organizations.",
+        "button": "More About Us"
+      }
     },
 
     "hrExpert": {
@@ -730,7 +732,7 @@
       "heroImageAlt": "Seamless Integration"
     },
     "seamlessStrategies": {
-      "heading": "Our Strategies",
+      "heading": ["Our", "Strategies"],
       "tagline": "A smarter onboarding process designed to help workers settle, perform, and grow with confidence.",
       "cards": [
         {

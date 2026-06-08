@@ -1,5 +1,6 @@
 import React, { useLayoutEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -9,60 +10,40 @@ import followIcon from "../../assets/icons/follow.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const topCards = [
-  {
-    title: "Reaching an Agreement",
-    description:
-      "If both parties reach an agreement, the mediator assists in drafting a written document that outlines the terms of the resolution. This agreement is binding and enforceable in court.",
-    icon: reachIcon,
-  },
-  {
-    title: "Follow-Up",
-    description:
-      "We offer follow-up support to ensure the terms of the agreement are implemented and to address any additional concerns that may arise.",
-    icon: followIcon,
-  },
-];
-
 const WhyArkaMediation = () => {
+  const iconsMap = {
+    agreement: reachIcon,
+    follow: followIcon,
+  };
+  const { t } = useTranslation();
   const sectionRef = useRef(null);
   const cardsRef = useRef([]);
   const imageRef = useRef(null);
   const contentRef = useRef(null);
   const buttonRef = useRef(null);
 
+  const basePath = "employers.mediationEmploymentPage.whyArkaMediation";
+
+  const heading = t(`${basePath}.heading`, { returnObjects: true });
+  const topCards = t(`${basePath}.topCards`, { returnObjects: true });
+
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.set(".why-word", {
-        yPercent: 110,
-        opacity: 0,
-      });
-
+      gsap.set(".why-word", { yPercent: 110, opacity: 0 });
       gsap.set(cardsRef.current, {
         y: 55,
         opacity: 0,
         scale: 0.9,
         filter: "blur(10px)",
       });
-
       gsap.set(imageRef.current, {
         x: -60,
         opacity: 0,
         scale: 0.92,
         filter: "blur(10px)",
       });
-
-      gsap.set(contentRef.current, {
-        x: 60,
-        opacity: 0,
-        filter: "blur(10px)",
-      });
-
-      gsap.set(buttonRef.current, {
-        y: 20,
-        opacity: 0,
-        scale: 0.92,
-      });
+      gsap.set(contentRef.current, { x: 60, opacity: 0, filter: "blur(10px)" });
+      gsap.set(buttonRef.current, { y: 20, opacity: 0, scale: 0.92 });
 
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -90,7 +71,7 @@ const WhyArkaMediation = () => {
             stagger: 0.14,
             ease: "back.out(1.45)",
           },
-          "-=0.35"
+          "-=0.35",
         )
         .to(
           imageRef.current,
@@ -102,7 +83,7 @@ const WhyArkaMediation = () => {
             duration: 0.95,
             ease: "power4.out",
           },
-          "-=0.45"
+          "-=0.45",
         )
         .to(
           contentRef.current,
@@ -113,32 +94,23 @@ const WhyArkaMediation = () => {
             duration: 0.85,
             ease: "power3.out",
           },
-          "-=0.75"
+          "-=0.75",
         )
         .to(
           buttonRef.current,
-          {
-            y: 0,
-            opacity: 1,
-            scale: 1,
-            duration: 0.6,
-            ease: "back.out(1.6)",
-          },
-          "-=0.35"
+          { y: 0, opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.6)" },
+          "-=0.35",
         );
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
-
-  const heading = ["Why", "should", "you", "work", "with", "us?"];
+  }, [heading.length, topCards.length]);
 
   return (
     <section
       ref={sectionRef}
       className="relative w-full overflow-hidden bg-gradient-to-r from-[#071b0c] via-[#2f7f35] to-[#071b0c] px-4 py-16 font-montserrat text-white sm:px-6 lg:px-10 lg:py-20"
     >
-
       <div className="relative z-10 mx-auto max-w-7xl">
         {/* Heading */}
         <div className="mb-10 text-center">
@@ -149,11 +121,7 @@ const WhyArkaMediation = () => {
                 className="mr-3 inline-block overflow-hidden align-bottom"
               >
                 <span
-                  className={`why-word inline-block ${
-                    word === "work" || word === "us?"
-                      ? "text-[#d8ffd8]"
-                      : "text-white"
-                  } drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]`}
+                  className={`why-word inline-block ${index === heading.length - 1 ? "text-[#d8ffd8]" : "text-white"} drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]`}
                 >
                   {word}
                 </span>
@@ -174,7 +142,7 @@ const WhyArkaMediation = () => {
 
               <div className="relative z-10 mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl border border-white/25 bg-[#d8ffd8]/12 shadow-[0_14px_40px_rgba(0,0,0,0.22)] transition duration-500 group-hover:scale-110 group-hover:-rotate-6">
                 <img
-                  src={item.icon}
+                  src={iconsMap[item.icon]}
                   alt={item.title}
                   className="h-11 w-11 object-contain"
                 />
@@ -183,7 +151,6 @@ const WhyArkaMediation = () => {
               <h3 className="relative z-10 mb-2 text-[18px] font-black text-white">
                 {item.title}
               </h3>
-
               <p className="relative z-10 mx-auto max-w-md text-[12px] font-bold leading-5 text-white/78">
                 {item.description}
               </p>
@@ -209,27 +176,20 @@ const WhyArkaMediation = () => {
               alt="Why Arka Hire"
               className="h-[210px] w-full rounded-[10px] object-contain transition duration-700 group-hover:scale-105 sm:h-[260px]"
             />
-
             <div className="pointer-events-none absolute inset-0 rounded-[14px] bg-gradient-to-br from-transparent via-transparent to-[#2f7f35]/10" />
           </div>
 
           {/* Text */}
           <div ref={contentRef}>
             <p className="mb-3 text-[13px] font-black tracking-[0.18em] text-white/90">
-              Why Arka Hire?
+              {t(`${basePath}.badge`) || "Why Arka Hire?"}
             </p>
-
             <h3 className="max-w-xl text-[34px] font-black leading-[1.05] tracking-tight text-white drop-shadow-[0_10px_25px_rgba(0,0,0,0.4)] sm:text-[44px] lg:text-[54px]">
-              The Arka Hire Advantage
+              {t(`${basePath}.title`) || "The Arka Hire Advantage"}
             </h3>
-
             <p className="mt-5 max-w-xl text-[14px] font-bold leading-7 text-white/80">
-              Choosing Arka Hire for your mediation needs means partnering with
-              a team committed to fostering a positive work environment. Our
-              mediators are highly experienced professionals with in-depth
-              knowledge of employment law and conflict resolution. We are
-              dedicated to helping you resolve disputes in a manner that promotes
-              understanding and cooperation.
+              {t(`${basePath}.description`) ||
+                "Choosing Arka Hire for your mediation needs means partnering with a team committed to fostering a positive work environment."}
             </p>
 
             <Link

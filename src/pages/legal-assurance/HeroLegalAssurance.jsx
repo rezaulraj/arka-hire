@@ -1,16 +1,35 @@
 import React, { useLayoutEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// change this image path if your file name is different
 import legalHero from "../../assets/legal.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const HeroLegalAssurance = () => {
+  const { t } = useTranslation();
+
   const sectionRef = useRef(null);
   const imageRef = useRef(null);
   const bottomRef = useRef(null);
+
+  const basePath = "employers.legalAssurancePage.heroLegalAssurance";
+
+  const mainTitleData = t(`${basePath}.heading`, {
+    returnObjects: true,
+  });
+
+  const mainTitle = Array.isArray(mainTitleData)
+    ? mainTitleData
+    : typeof mainTitleData === "string"
+      ? mainTitleData.split(" ")
+      : [];
+
+  const heroTitleText = t(`${basePath}.heroTitle`);
+
+  const heroTitle =
+    typeof heroTitleText === "string" ? heroTitleText.split(" ") : [];
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -63,7 +82,7 @@ const HeroLegalAssurance = () => {
             stagger: 0.12,
             ease: "power3.out",
           },
-          "-=0.45"
+          "-=0.45",
         )
         .to(
           imageRef.current,
@@ -75,7 +94,7 @@ const HeroLegalAssurance = () => {
             duration: 1,
             ease: "power4.out",
           },
-          "-=0.75"
+          "-=0.75",
         )
         .to(
           bottomRef.current,
@@ -86,25 +105,12 @@ const HeroLegalAssurance = () => {
             duration: 0.8,
             ease: "power3.out",
           },
-          "-=0.35"
+          "-=0.35",
         );
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
-
-  const mainTitle = ["Legal", "Assurance", "Service"];
-  const heroTitle = [
-    "Navigating",
-    "the",
-    "complexities",
-    "of",
-    "employment",
-    "laws",
-    "can",
-    "be",
-    "challenging.",
-  ];
+  }, [mainTitle.length, heroTitle.length]);
 
   return (
     <section
@@ -120,12 +126,14 @@ const HeroLegalAssurance = () => {
           <h1 className="text-[30px] font-black leading-tight tracking-tight text-white sm:text-[42px] lg:text-[52px]">
             {mainTitle.map((word, index) => (
               <span
-                key={index}
+                key={`${word}-${index}`}
                 className="mr-3 inline-block overflow-hidden align-bottom"
               >
                 <span
                   className={`legal-word inline-block ${
-                    word === "Assurance" ? "text-[#d8ffd8]" : "text-white"
+                    word.toLowerCase() === "assurance"
+                      ? "text-[#d8ffd8]"
+                      : "text-white"
                   } drop-shadow-[0_10px_25px_rgba(0,0,0,0.4)]`}
                 >
                   {word}
@@ -135,9 +143,7 @@ const HeroLegalAssurance = () => {
           </h1>
 
           <p className="legal-text mx-auto mt-5 max-w-4xl text-[13px] font-bold leading-6 text-white/85 sm:text-[14px]">
-            At Arka Hire, our Legal Assurance services are designed to provide
-            businesses with peace of mind by ensuring compliance with employment
-            laws and minimizing legal risks.
+            {t(`${basePath}.topDescription`)}
           </p>
         </div>
 
@@ -146,13 +152,13 @@ const HeroLegalAssurance = () => {
           {/* Left text */}
           <div>
             <p className="legal-text mb-4 text-[13px] font-black uppercase tracking-[0.22em] text-[#ff3030]">
-              Arka Hire
+              {t(`${basePath}.badge`)}
             </p>
 
             <h2 className="max-w-[560px] text-[34px] font-black leading-[0.98] tracking-tight text-white drop-shadow-[0_10px_25px_rgba(0,0,0,0.4)] sm:text-[46px] lg:text-[54px]">
               {heroTitle.map((word, index) => (
                 <span
-                  key={index}
+                  key={`${word}-${index}`}
                   className="mr-2 inline-block overflow-hidden align-bottom"
                 >
                   <span className="legal-word inline-block">{word}</span>
@@ -161,8 +167,7 @@ const HeroLegalAssurance = () => {
             </h2>
 
             <p className="legal-text mt-7 max-w-lg text-[13px] font-bold leading-6 text-white/88 sm:text-[14px]">
-              That’s why we offer expert legal guidance to help your business
-              remain fully compliant, protecting you from potential legal issues.
+              {t(`${basePath}.description`)}
             </p>
           </div>
 
@@ -173,7 +178,7 @@ const HeroLegalAssurance = () => {
           >
             <img
               src={legalHero}
-              alt="Legal Assurance Service"
+              alt={t(`${basePath}.imageAlt`)}
               className="h-[290px] w-full object-cover transition duration-700 group-hover:scale-105 sm:h-[360px] lg:h-[365px]"
             />
 
@@ -203,18 +208,20 @@ const HeroLegalAssurance = () => {
 
             <div className="space-y-2 text-[13px] font-bold leading-6 text-white/86 sm:text-[14px]">
               <p>
-                <span className="text-[#d8ffd8]">Compliance:</span> Stay
-                updated with the latest employment laws and regulations.
+                <span className="text-[#d8ffd8]">Compliance:</span> Stay updated
+                with the latest employment laws and regulations.
               </p>
 
               <p>
                 <span className="text-[#d8ffd8]">Risk Management:</span>{" "}
-                Identify and mitigate potential legal risks before they escalate.
+                Identify and mitigate potential legal risks before they
+                escalate.
               </p>
 
               <p>
                 <span className="text-[#d8ffd8]">Expert Guidance:</span> Gain
-                access to legal professionals who understand your business needs.
+                access to legal professionals who understand your business
+                needs.
               </p>
             </div>
           </div>

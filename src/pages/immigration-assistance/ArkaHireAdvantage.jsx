@@ -1,15 +1,23 @@
 import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslation } from "react-i18next";
 import advan from "../../assets/imm.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ArkaHireAdvantage = () => {
+  const { t } = useTranslation();
   const sectionRef = useRef(null);
   const textRef = useRef([]);
   const imageRef = useRef(null);
   const buttonRef = useRef(null);
+
+  // Load translations
+  const headingSmall = t("employers.immigrationAssistancePage.arkaHireAdvantage.badge");
+  const headingLarge = t("employers.immigrationAssistancePage.arkaHireAdvantage.title");
+  const description = t("employers.immigrationAssistancePage.arkaHireAdvantage.description");
+  const buttonText = t("employers.immigrationAssistancePage.arkaHireAdvantage.button");
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -71,34 +79,39 @@ const ArkaHireAdvantage = () => {
         >
           <img
             src={advan}
-            alt="Arka Hire Advantage"
+            alt={headingLarge}
             className="w-full h-auto object-cover rounded-xl"
           />
         </div>
 
         {/* Text Content */}
         <div className="flex-1 flex flex-col gap-4">
-          <p ref={(el) => (textRef.current[0] = el)} className="text-red-500 text-base font-bold">
-            The Arka Hire Advantage
+          <p
+            ref={(el) => (textRef.current[0] = el)}
+            className="text-red-500 text-base font-bold"
+          >
+            {headingSmall}
           </p>
+
           <h2
             ref={(el) => (textRef.current[1] = el)}
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-snug"
           >
-            Partnering with Arka Hire offers several benefits
+            {headingLarge}
           </h2>
+
           <p
             ref={(el) => (textRef.current[2] = el)}
             className="text-white/80 text-base sm:text-lg leading-relaxed"
           >
-            Tailored Solutions: We customize our services to meet your specific needs. Experienced Team: Our experts bring years of experience in immigration law. Hassle-Free Process: We handle the complexities, allowing you to focus on your business.
+            {description}
           </p>
 
           <button
             ref={buttonRef}
             className="mt-4 w-max px-6 py-3 bg-red-600 hover:bg-red-700 rounded-lg font-semibold text-white shadow-lg transition-all duration-300"
           >
-            Get In Touch
+            {buttonText}
           </button>
         </div>
       </div>

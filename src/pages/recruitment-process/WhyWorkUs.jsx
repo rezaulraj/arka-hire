@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -8,30 +9,38 @@ import work3 from "../../assets/rec3.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const reasons = [
-  {
-    title: "Industry Expertise",
-    image: work1,
-    description:
-      "We have years of experience in international recruitment. We understand the unique needs of different industries and tailor our services to meet those needs.",
-  },
-  {
-    title: "Customizable Solutions",
-    image: work2,
-    description:
-      "We offer customizable recruitment solutions to meet the unique needs of your business, whether you need temporary staff or permanent employees for long-term growth.",
-  },
-  {
-    title: "Proven Success",
-    image: work3,
-    description:
-      "We have helped numerous businesses find the skilled workers they need to thrive. Our commitment to excellence and satisfaction sets us apart from other recruitment agencies.",
-  },
-];
+const images = {
+  work1,
+  work2,
+  work3,
+};
 
 const WhyWorkUs = () => {
+  const { t } = useTranslation();
+
   const sectionRef = useRef(null);
   const cardsRef = useRef([]);
+
+  const headingData = t("employers.recruitmentPage.whyWorkWithUs.heading", {
+    returnObjects: true,
+  });
+
+  const cardsData = t("employers.recruitmentPage.whyWorkWithUs.cards", {
+    returnObjects: true,
+  });
+
+  const heading = Array.isArray(headingData)
+    ? headingData
+    : typeof headingData === "string"
+      ? headingData.split(" ")
+      : [];
+
+  const reasons = Array.isArray(cardsData)
+    ? cardsData.map((item) => ({
+        ...item,
+        image: images[item.image],
+      }))
+    : [];
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -78,7 +87,7 @@ const WhyWorkUs = () => {
             duration: 0.75,
             ease: "power3.out",
           },
-          "-=0.4"
+          "-=0.4",
         )
         .to(
           cardsRef.current,
@@ -92,7 +101,7 @@ const WhyWorkUs = () => {
             stagger: 0.16,
             ease: "back.out(1.35)",
           },
-          "-=0.35"
+          "-=0.35",
         )
         .from(
           ".work-card-img",
@@ -104,7 +113,7 @@ const WhyWorkUs = () => {
             stagger: 0.12,
             ease: "back.out(1.8)",
           },
-          "-=0.65"
+          "-=0.65",
         )
         .from(
           ".work-card-title",
@@ -115,7 +124,7 @@ const WhyWorkUs = () => {
             stagger: 0.08,
             ease: "power3.out",
           },
-          "-=0.5"
+          "-=0.5",
         )
         .from(
           ".work-card-desc",
@@ -126,14 +135,12 @@ const WhyWorkUs = () => {
             stagger: 0.08,
             ease: "power3.out",
           },
-          "-=0.42"
+          "-=0.42",
         );
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
-
-  const heading = ["Why", "should", "you", "work", "with", "us?"];
+  }, [reasons.length]);
 
   return (
     <section
@@ -146,12 +153,13 @@ const WhyWorkUs = () => {
           <h2 className="text-[34px] font-black leading-tight tracking-wide text-white sm:text-[48px] lg:text-[62px]">
             {heading.map((word, index) => (
               <span
-                key={index}
+                key={`${word}-${index}`}
                 className="mr-3 inline-block overflow-hidden align-bottom"
               >
                 <span
                   className={`work-word inline-block ${
-                    word === "work" || word === "us?"
+                    word.toLowerCase() === "work" ||
+                    word.toLowerCase() === "us?"
                       ? "text-[#d8ffd8]"
                       : "text-white"
                   } drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]`}
@@ -163,10 +171,7 @@ const WhyWorkUs = () => {
           </h2>
 
           <p className="work-subtitle mx-auto mt-5 max-w-4xl text-[14px] font-semibold leading-7 text-white/80 sm:text-[15px]">
-            Our team is well-versed in the specific requirements of the
-            construction and hospitality sectors, ensuring that we provide you
-            with candidates who are not only skilled but also a perfect fit for
-            your industry.
+            {t("employers.recruitmentPage.whyWorkWithUs.subtitle")}
           </p>
         </div>
 
@@ -174,21 +179,20 @@ const WhyWorkUs = () => {
         <div className="grid grid-cols-1 gap-7 md:grid-cols-3">
           {reasons.map((reason, index) => (
             <div
-              key={reason.title}
-              ref={(el) => (cardsRef.current[index] = el)}
+              key={`${reason.title}-${index}`}
+              ref={(el) => {
+                cardsRef.current[index] = el;
+              }}
               className={`group relative overflow-hidden rounded-[28px] border border-white/18 bg-white/10 p-6 text-center shadow-[0_24px_70px_rgba(0,0,0,0.28)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:border-[#d8ffd8]/65 hover:bg-white/15 hover:shadow-[0_34px_90px_rgba(0,0,0,0.38)] ${
                 index === 1 ? "md:mt-10" : ""
               }`}
             >
-              {/* glow */}
               <div className="pointer-events-none absolute -right-16 -top-16 h-36 w-36 rounded-full bg-[#d8ffd8]/18 blur-2xl transition duration-500 group-hover:bg-[#d8ffd8]/30" />
 
-              {/* number */}
               <span className="pointer-events-none absolute bottom-2 right-4 text-[72px] font-black leading-none text-white/[0.06]">
                 {String(index + 1).padStart(2, "0")}
               </span>
 
-              {/* image */}
               <div className="work-card-img relative z-10 mx-auto mb-6 h-[128px] w-[190px] overflow-hidden rounded-full border border-white/25 bg-white/90 p-2 shadow-[0_20px_45px_rgba(0,0,0,0.24)] transition duration-500 group-hover:scale-105 group-hover:-rotate-2">
                 <img
                   src={reason.image}
@@ -205,10 +209,8 @@ const WhyWorkUs = () => {
                 {reason.description}
               </p>
 
-              {/* bottom line */}
               <div className="mx-auto mt-6 h-[2px] w-16 rounded-full bg-[#d8ffd8]/70 transition-all duration-500 group-hover:w-32" />
 
-              {/* hover shine */}
               <div className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/18 to-transparent transition duration-700 group-hover:translate-x-full" />
             </div>
           ))}

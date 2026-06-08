@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import temporaryHero from "../../assets/temp.avif";
@@ -6,8 +7,22 @@ import temporaryHero from "../../assets/temp.avif";
 gsap.registerPlugin(ScrollTrigger);
 
 const HeroTemporary = () => {
+  const { t } = useTranslation();
+
   const sectionRef = useRef(null);
   const imageRef = useRef(null);
+
+  const basePath = "employers.temporaryRecruitmentPage.heroTemporary";
+
+  const headingData = t(`${basePath}.heading`, {
+    returnObjects: true,
+  });
+
+  const heading = Array.isArray(headingData)
+    ? headingData
+    : typeof headingData === "string"
+      ? headingData.split(" ")
+      : [];
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -54,7 +69,7 @@ const HeroTemporary = () => {
             stagger: 0.12,
             ease: "power3.out",
           },
-          "-=0.45"
+          "-=0.45",
         )
         .to(
           imageRef.current,
@@ -66,14 +81,12 @@ const HeroTemporary = () => {
             duration: 1,
             ease: "power4.out",
           },
-          "-=0.75"
+          "-=0.75",
         );
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
-
-  const heading = ["Temporary", "Recruitment", "Services"];
+  }, [heading.length]);
 
   return (
     <section
@@ -90,12 +103,14 @@ const HeroTemporary = () => {
           <h1 className="text-[30px] font-black leading-tight tracking-tight text-white sm:text-[42px] lg:text-[52px]">
             {heading.map((word, index) => (
               <span
-                key={index}
+                key={`${word}-${index}`}
                 className="mr-3 inline-block overflow-hidden align-bottom"
               >
                 <span
                   className={`temp-word inline-block ${
-                    word === "Recruitment" ? "text-[#d8ffd8]" : "text-white"
+                    word.toLowerCase() === "recruitment"
+                      ? "text-[#d8ffd8]"
+                      : "text-white"
                   } drop-shadow-[0_10px_25px_rgba(0,0,0,0.4)]`}
                 >
                   {word}
@@ -105,10 +120,7 @@ const HeroTemporary = () => {
           </h1>
 
           <p className="temp-text mx-auto mt-5 max-w-3xl text-[13px] font-bold leading-6 text-white/85 sm:text-[14px]">
-            Arka Hire offers temporary recruitment services, providing flexible
-            and efficient staffing solutions with access to a pool of qualified
-            candidates. This ensures your business can quickly adapt to changing
-            workforce demands.
+            {t(`${basePath}.topDescription`)}
           </p>
         </div>
 
@@ -117,21 +129,17 @@ const HeroTemporary = () => {
           {/* Left text */}
           <div className="lg:pl-10">
             <p className="temp-text mb-4 text-[13px] font-black uppercase tracking-[0.22em] text-[#ff3030]">
-              Arka Hire
+              {t(`${basePath}.badge`)}
             </p>
 
             <h2 className="max-w-[560px] text-[34px] font-black leading-[0.98] tracking-tight text-white drop-shadow-[0_10px_25px_rgba(0,0,0,0.4)] sm:text-[46px] lg:text-[56px]">
               <span className="temp-text block">
-                At Arka Hire, we recognize that business needs can shift
-                rapidly.
+                {t(`${basePath}.heroTitle`)}
               </span>
             </h2>
 
             <p className="temp-text mt-7 max-w-lg text-[13px] font-bold leading-6 text-white/88 sm:text-[14px]">
-              Whether it&apos;s managing seasonal demands, executing special
-              projects, or covering extended absences, our temporary recruitment
-              services offer the flexibility and skilled workforce required to
-              keep your operations running smoothly.
+              {t(`${basePath}.description`)}
             </p>
           </div>
 
@@ -142,7 +150,7 @@ const HeroTemporary = () => {
           >
             <img
               src={temporaryHero}
-              alt="Temporary Recruitment Services"
+              alt={t(`${basePath}.imageAlt`)}
               className="h-[290px] w-full object-cover transition duration-700 group-hover:scale-105 sm:h-[360px] lg:h-[365px]"
             />
 

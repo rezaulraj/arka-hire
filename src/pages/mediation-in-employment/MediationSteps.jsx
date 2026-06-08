@@ -1,40 +1,30 @@
 import React, { useLayoutEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import bgImage from "../../assets/medi.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const benefits = ["Confidentiality", "Speed", "Cost-Effective", "Voluntary", "Control"];
-
-const steps = [
-  {
-    title: "Initial Consultation",
-    description:
-      "We begin with an initial consultation to assess the nature of the dispute and determine whether mediation is the appropriate approach.",
-    note: "This step involves speaking with both parties to explain the process and answer any questions.",
-  },
-  {
-    title: "Agreement to Mediate",
-    description:
-      "Both parties must agree to participate in mediation. We provide a written agreement outlining the terms and conditions of the mediation process.",
-  },
-  {
-    title: "Scheduling the Mediation",
-    description:
-      "Once both parties agree, we schedule a mediation session at a convenient time and place. Sessions can be conducted in person or virtually, depending on the preferences of the parties involved.",
-  },
-  {
-    title: "Mediation Session",
-    description:
-      "During the session, the mediator facilitates a structured discussion, allowing each party to express their views and concerns. The mediator helps identify common ground and explore potential solutions.",
-  },
-];
-
 const MediationSteps = () => {
+  const { t } = useTranslation();
+
   const sectionRef = useRef(null);
   const leftRef = useRef(null);
   const stepsRef = useRef([]);
+
+  const basePath = "employers.mediationEmploymentPage.mediationSteps";
+
+  const benefitsData = t(`${basePath}.benefits`, {
+    returnObjects: true,
+  });
+
+  const stepsData = t(`${basePath}.steps`, {
+    returnObjects: true,
+  });
+
+  const benefits = Array.isArray(benefitsData) ? benefitsData : [];
+  const steps = Array.isArray(stepsData) ? stepsData : [];
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -44,7 +34,7 @@ const MediationSteps = () => {
         filter: "blur(8px)",
       });
 
-      gsap.set(stepsRef.current, {
+      gsap.set(stepsRef.current.filter(Boolean), {
         x: 50,
         opacity: 0,
         filter: "blur(8px)",
@@ -65,7 +55,7 @@ const MediationSteps = () => {
         duration: 0.85,
         ease: "power4.out",
       }).to(
-        stepsRef.current,
+        stepsRef.current.filter(Boolean),
         {
           x: 0,
           opacity: 1,
@@ -74,12 +64,12 @@ const MediationSteps = () => {
           stagger: 0.16,
           ease: "power3.out",
         },
-        "-=0.45"
+        "-=0.45",
       );
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [steps.length]);
 
   return (
     <section
@@ -101,17 +91,17 @@ const MediationSteps = () => {
         {/* Left */}
         <div ref={leftRef} className="lg:pl-14">
           <p className="mb-3 text-[13px] font-black text-[#ff2d18]">
-            Our Steps
+            {t(`${basePath}.badge`)}
           </p>
 
           <h2 className="max-w-[320px] text-[34px] font-black leading-[0.95] text-white drop-shadow-[0_8px_18px_rgba(0,0,0,0.5)] sm:text-[44px]">
-            Benefits of <br /> Mediation
+            {t(`${basePath}.heading`)}
           </h2>
 
           <ul className="mt-5 space-y-2">
-            {benefits.map((item) => (
+            {benefits.map((item, index) => (
               <li
-                key={item}
+                key={`${item}-${index}`}
                 className="flex items-center gap-2 text-[12px] font-bold text-white/90"
               >
                 <span className="text-[#ff2d18]">»</span>
@@ -128,8 +118,10 @@ const MediationSteps = () => {
           <div className="space-y-7 md:pl-10">
             {steps.map((step, index) => (
               <div
-                key={step.title}
-                ref={(el) => (stepsRef.current[index] = el)}
+                key={`${step.title}-${index}`}
+                ref={(el) => {
+                  stepsRef.current[index] = el;
+                }}
                 className="relative"
               >
                 <span className="absolute -left-[47px] top-1 hidden h-3 w-3 rounded-full bg-[#ff2d18] shadow-[0_0_14px_rgba(255,45,24,0.7)] md:block" />

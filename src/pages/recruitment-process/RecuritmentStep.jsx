@@ -1,25 +1,35 @@
 import React, { useLayoutEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import recruitmentstep from "../../assets/recruitmentfach.avif";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const steps = [
-  "Initial Consultation",
-  "Job Matching",
-  "Application Support",
-  "Interview Preparation",
-  "Visa and Work Permit Assistance",
-  "Pre-Departure Orientation",
-];
-
 const RecuritmentStep = () => {
+  const { t } = useTranslation();
+
   const sectionRef = useRef(null);
   const contentRef = useRef(null);
   const listRef = useRef([]);
   const buttonRef = useRef(null);
+
+  const headingData = t("employers.recruitmentPage.recruitmentSteps.heading", {
+    returnObjects: true,
+  });
+
+  const stepsData = t("employers.recruitmentPage.recruitmentSteps.steps", {
+    returnObjects: true,
+  });
+
+  const heading = Array.isArray(headingData)
+    ? headingData
+    : typeof headingData === "string"
+      ? headingData.split(" ")
+      : [];
+
+  const steps = Array.isArray(stepsData) ? stepsData : [];
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -70,7 +80,7 @@ const RecuritmentStep = () => {
             duration: 0.75,
             ease: "power3.out",
           },
-          "-=0.45"
+          "-=0.45",
         )
         .to(
           listRef.current,
@@ -82,7 +92,7 @@ const RecuritmentStep = () => {
             stagger: 0.09,
             ease: "power3.out",
           },
-          "-=0.4"
+          "-=0.4",
         )
         .to(
           buttonRef.current,
@@ -93,14 +103,12 @@ const RecuritmentStep = () => {
             duration: 0.65,
             ease: "back.out(1.5)",
           },
-          "-=0.3"
+          "-=0.3",
         );
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
-
-  const heading = ["Recruiting", "Process"];
+  }, [steps.length]);
 
   return (
     <section
@@ -110,7 +118,7 @@ const RecuritmentStep = () => {
       {/* Background image */}
       <img
         src={recruitmentstep}
-        alt="Recruitment Process"
+        alt={t("employers.recruitmentPage.recruitmentSteps.imageAlt")}
         className="absolute inset-0 h-full w-full object-cover"
       />
 
@@ -128,18 +136,18 @@ const RecuritmentStep = () => {
         className="relative z-10 mx-auto max-w-4xl text-center"
       >
         <p className="mb-4 text-[13px] font-black uppercase tracking-[0.3em] text-[#ff3030]">
-          Our Steps
+          {t("employers.recruitmentPage.recruitmentSteps.badge")}
         </p>
 
         <h2 className="text-[42px] font-black leading-tight tracking-[0.06em] text-white drop-shadow-[0_12px_30px_rgba(0,0,0,0.55)] sm:text-[58px] lg:text-[76px]">
           {heading.map((word, index) => (
             <span
-              key={index}
+              key={`${word}-${index}`}
               className="mr-4 inline-block overflow-hidden align-bottom"
             >
               <span
                 className={`step-word inline-block ${
-                  word === "Process" ? "text-[#d8ffd8]" : "text-white"
+                  index === heading.length - 1 ? "text-[#d8ffd8]" : "text-white"
                 }`}
               >
                 {word}
@@ -149,16 +157,17 @@ const RecuritmentStep = () => {
         </h2>
 
         <p className="mx-auto mt-5 max-w-2xl text-[15px] font-semibold leading-7 text-white/82 sm:text-[16px]">
-          Our recruitment journey is designed to be clear, supportive, and
-          efficient from the first consultation to final placement.
+          {t("employers.recruitmentPage.recruitmentSteps.description")}
         </p>
 
         {/* Steps */}
         <div className="mx-auto mt-9 grid max-w-3xl grid-cols-1 gap-3 sm:grid-cols-2">
           {steps.map((step, index) => (
             <div
-              key={step}
-              ref={(el) => (listRef.current[index] = el)}
+              key={`${step}-${index}`}
+              ref={(el) => {
+                listRef.current[index] = el;
+              }}
               className="group flex items-center gap-3 rounded-xl border border-white/15 bg-white/10 px-5 py-3 text-left shadow-[0_12px_35px_rgba(0,0,0,0.22)] backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-[#d8ffd8]/50 hover:bg-white/15"
             >
               <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#e60000] text-[11px] font-black text-white shadow-[0_0_18px_rgba(230,0,0,0.45)]">
@@ -174,10 +183,13 @@ const RecuritmentStep = () => {
 
         <Link
           ref={buttonRef}
-          to="/industries"
+          to={t("employers.recruitmentPage.recruitmentSteps.button.path")}
           className="group relative mt-9 inline-flex overflow-hidden rounded-md bg-[#e60000] px-8 py-3.5 text-[13px] font-black uppercase tracking-[0.1em] text-white shadow-[0_18px_45px_rgba(230,0,0,0.3)] transition duration-300 hover:-translate-y-1 hover:bg-[#c90000]"
         >
-          <span className="relative z-10">Industries We Serve</span>
+          <span className="relative z-10">
+            {t("employers.recruitmentPage.recruitmentSteps.button.text")}
+          </span>
+
           <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition duration-500 group-hover:translate-x-full" />
         </Link>
       </div>

@@ -1,37 +1,25 @@
 import React, { useEffect, useRef } from "react";
 import { FaCircle } from "react-icons/fa";
-
-const steps = [
-  {
-    title: "Complete Visa Process",
-    desc: "We manage the entire visa application process for your employees, including preparing and submitting all necessary documents on time.",
-  },
-  {
-    title: "Work Permits",
-    desc: "We assist businesses in obtaining work permits for their employees, ensuring that your team is legally authorized to work.",
-  },
-  {
-    title: "Legal Compliance",
-    desc: "Our experts ensure that all immigration procedures adhere to current laws, keeping you informed about any changes in immigration regulations.",
-  },
-  {
-    title: "Employee Onboarding",
-    desc: "We support the onboarding process for international employees, helping them settle in and understand their legal rights and responsibilities.",
-  },
-  {
-    title: "Ongoing Support",
-    desc: "We provide continuous support for all immigration-related matters, ensuring your business remains compliant at all times.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function AssistanceProcess() {
-  const sectionRef  = useRef(null);
-  const overlayRef  = useRef(null);
-  const labelRef    = useRef(null);
-  const headingRef  = useRef(null);
-  const listRef     = useRef([]);
-  const lineRef     = useRef(null);
-  const rightRefs   = useRef([]);
+  const { t } = useTranslation();
+  const sectionRef = useRef(null);
+  const overlayRef = useRef(null);
+  const labelRef = useRef(null);
+  const headingRef = useRef(null);
+  const listRef = useRef([]);
+  const lineRef = useRef(null);
+  const rightRefs = useRef([]);
+
+  // Fetch steps from i18n JSON
+  const stepsData = t(
+    "employers.immigrationAssistancePage.assistanceProcess.steps",
+    {
+      returnObjects: true,
+    },
+  );
+  const steps = Array.isArray(stepsData) ? stepsData : [];
 
   useEffect(() => {
     const load = async () => {
@@ -45,27 +33,41 @@ export default function AssistanceProcess() {
           defaults: { ease: "power3.out" },
         });
 
-        tl.fromTo(labelRef.current,
+        tl.fromTo(
+          labelRef.current,
           { x: -30, opacity: 0 },
-          { x: 0, opacity: 1, duration: 0.6 })
-          .fromTo(headingRef.current,
-          { x: -50, opacity: 0 },
-          { x: 0, opacity: 1, duration: 0.75 }, "-=0.3")
-          .fromTo(listRef.current,
-          { x: -25, opacity: 0 },
-          { x: 0, opacity: 1, stagger: 0.1, duration: 0.5 }, "-=0.4")
-          .fromTo(lineRef.current,
-          { scaleY: 0, transformOrigin: "top center" },
-          { scaleY: 1, duration: 1, ease: "power2.out" }, "-=0.6")
-          .fromTo(rightRefs.current,
-          { x: 40, opacity: 0 },
-          { x: 0, opacity: 1, stagger: 0.15, duration: 0.65 }, "-=0.9");
+          { x: 0, opacity: 1, duration: 0.6 },
+        )
+          .fromTo(
+            headingRef.current,
+            { x: -50, opacity: 0 },
+            { x: 0, opacity: 1, duration: 0.75 },
+            "-=0.3",
+          )
+          .fromTo(
+            listRef.current,
+            { x: -25, opacity: 0 },
+            { x: 0, opacity: 1, stagger: 0.1, duration: 0.5 },
+            "-=0.4",
+          )
+          .fromTo(
+            lineRef.current,
+            { scaleY: 0, transformOrigin: "top center" },
+            { scaleY: 1, duration: 1, ease: "power2.out" },
+            "-=0.6",
+          )
+          .fromTo(
+            rightRefs.current,
+            { x: 40, opacity: 0 },
+            { x: 0, opacity: 1, stagger: 0.15, duration: 0.65 },
+            "-=0.9",
+          );
       }, sectionRef);
 
       return () => ctx.revert();
     };
     load();
-  }, []);
+  }, [steps.length]);
 
   return (
     <section
@@ -73,9 +75,11 @@ export default function AssistanceProcess() {
       className="relative w-full overflow-hidden"
       style={{ fontFamily: "'Montserrat', sans-serif", minHeight: 420 }}
     >
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');`}</style>
+      <style>
+        {`@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');`}
+      </style>
 
-      {/* ── Unsplash background image ── */}
+      {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -84,24 +88,27 @@ export default function AssistanceProcess() {
         }}
       />
 
-      {/* ── Dark green overlay ── */}
+      {/* Overlay */}
       <div
         ref={overlayRef}
         className="absolute inset-0"
         style={{ background: "rgba(10, 40, 20, 0.82)" }}
       />
 
-      {/* ── Content ── */}
+      {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-14 py-16 grid md:grid-cols-2 gap-12 items-start">
-
         {/* LEFT */}
         <div>
           <p
             ref={labelRef}
             className="text-sm mb-3"
-            style={{ color: "#e03939", fontWeight: 600, letterSpacing: "0.08em" }}
+            style={{
+              color: "#e03939",
+              fontWeight: 600,
+              letterSpacing: "0.08em",
+            }}
           >
-            Immigration
+            {t("employers.immigrationAssistancePage.assistanceProcess.label")}
           </p>
 
           <h2
@@ -109,10 +116,9 @@ export default function AssistanceProcess() {
             className="text-white leading-tight mb-8"
             style={{ fontWeight: 800, fontSize: "clamp(2rem, 4vw, 2.8rem)" }}
           >
-            Assistance<br />Process
+            {t("employers.immigrationAssistancePage.assistanceProcess.heading")}
           </h2>
 
-          {/* Step list */}
           <ul className="space-y-3">
             {steps.map((s, i) => (
               <li
@@ -133,11 +139,13 @@ export default function AssistanceProcess() {
 
         {/* RIGHT – timeline */}
         <div className="relative">
-          {/* Vertical line */}
           <div
             ref={lineRef}
             className="absolute left-0 top-2 bottom-2 w-px"
-            style={{ background: "linear-gradient(to bottom, #e62828, rgba(224, 57, 65, 0.2))" }}
+            style={{
+              background:
+                "linear-gradient(to bottom, #e62828, rgba(224, 57, 65, 0.2))",
+            }}
           />
 
           <div className="space-y-8 pl-8">
@@ -147,7 +155,6 @@ export default function AssistanceProcess() {
                 ref={(el) => (rightRefs.current[i] = el)}
                 className="relative"
               >
-
                 <h3
                   className="text-white mb-1"
                   style={{ fontWeight: 700, fontSize: "0.95rem" }}
@@ -164,7 +171,6 @@ export default function AssistanceProcess() {
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );

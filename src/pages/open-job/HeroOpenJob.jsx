@@ -1,15 +1,30 @@
 import React, { useLayoutEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// change image path if needed
 import openJobHero from "../../assets/openjob.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const HeroOpenJob = () => {
+  const { t } = useTranslation();
+
   const sectionRef = useRef(null);
   const imageRef = useRef(null);
+
+  const basePath = "workerandagencies.openJobPage.heroOpenJob";
+
+  const headingData = t(`${basePath}.heading`, {
+    returnObjects: true,
+  });
+
+  const tagsData = t(`${basePath}.tags`, {
+    returnObjects: true,
+  });
+
+  const heading = Array.isArray(headingData) ? headingData : [];
+  const tags = Array.isArray(tagsData) ? tagsData : [];
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -73,9 +88,7 @@ const HeroOpenJob = () => {
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
-
-  const heading = ["Find", "A", "Job", "that", "Fits", "to", "Your", "Skills"];
+  }, [heading.length, tags.length]);
 
   return (
     <section
@@ -92,12 +105,14 @@ const HeroOpenJob = () => {
           <h1 className="text-[30px] font-black leading-tight tracking-tight text-white sm:text-[42px] lg:text-[54px]">
             {heading.map((word, index) => (
               <span
-                key={index}
+                key={`${word}-${index}`}
                 className="mr-3 inline-block overflow-hidden align-bottom"
               >
                 <span
                   className={`job-word inline-block ${
-                    word === "Skills" ? "text-[#d8ffd8]" : "text-white"
+                    word.toLowerCase() === "skills"
+                      ? "text-[#d8ffd8]"
+                      : "text-white"
                   } drop-shadow-[0_10px_25px_rgba(0,0,0,0.4)]`}
                 >
                   {word}
@@ -107,7 +122,7 @@ const HeroOpenJob = () => {
           </h1>
 
           <p className="job-text mx-auto mt-4 max-w-3xl text-[24px] font-medium leading-tight text-white sm:text-[32px] lg:text-[40px]">
-            We Will Help You to Get that
+            {t(`${basePath}.subtitle`)}
           </p>
         </div>
 
@@ -116,31 +131,26 @@ const HeroOpenJob = () => {
           {/* Left text */}
           <div className="lg:pl-10">
             <p className="job-text mb-4 text-[13px] font-black uppercase tracking-[0.22em] text-[#ff3030]">
-              Arka Hire
+              {t(`${basePath}.badge`)}
             </p>
 
             <h2 className="max-w-[560px] text-[34px] font-black leading-[0.98] tracking-tight text-white drop-shadow-[0_10px_25px_rgba(0,0,0,0.4)] sm:text-[46px] lg:text-[56px]">
-              <span className="job-text block">
-                Please stay tuned! We are updating this page.
-              </span>
+              <span className="job-text block">{t(`${basePath}.title`)}</span>
             </h2>
 
             <p className="job-text mt-7 max-w-lg text-[13px] font-bold leading-6 text-white/82 sm:text-[14px]">
-              Our open job section will be available soon with suitable
-              opportunities matched to your skills and experience.
+              {t(`${basePath}.description`)}
             </p>
 
             <div className="job-text mt-8 flex flex-wrap gap-3">
-              {["New Jobs Coming", "Skill Matched Roles", "Worker Support"].map(
-                (item) => (
-                  <span
-                    key={item}
-                    className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-[12px] font-black uppercase tracking-[0.12em] text-[#d8ffd8] backdrop-blur-md"
-                  >
-                    {item}
-                  </span>
-                ),
-              )}
+              {tags.map((item, index) => (
+                <span
+                  key={`${item}-${index}`}
+                  className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-[12px] font-black uppercase tracking-[0.12em] text-[#d8ffd8] backdrop-blur-md"
+                >
+                  {item}
+                </span>
+              ))}
             </div>
           </div>
 
@@ -151,7 +161,7 @@ const HeroOpenJob = () => {
           >
             <img
               src={openJobHero}
-              alt="Open Job"
+              alt={t(`${basePath}.imageAlt`)}
               className="h-[290px] w-full object-cover transition duration-700 group-hover:scale-105 sm:h-[360px] lg:h-[365px]"
             />
 
@@ -160,7 +170,7 @@ const HeroOpenJob = () => {
 
             <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/15 bg-black/35 p-5 backdrop-blur-md">
               <p className="text-[13px] font-bold leading-6 text-white/88">
-                We are preparing better job opportunities for skilled workers.
+                {t(`${basePath}.imageCardText`)}
               </p>
             </div>
 

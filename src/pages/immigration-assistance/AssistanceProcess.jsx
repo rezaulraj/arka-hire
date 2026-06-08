@@ -108,7 +108,7 @@ export default function AssistanceProcess() {
               letterSpacing: "0.08em",
             }}
           >
-            {t("employers.immigrationAssistancePage.assistanceProcess.label")}
+            {t("employers.immigrationAssistancePage.assistanceProcess.badge")}
           </p>
 
           <h2

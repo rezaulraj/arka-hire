@@ -3,13 +3,13 @@ import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
 import en from "./locales/en/translation.json";
-import cnr from "./locales/cnr/translation.json";
+import me from "./locales/me/translation.json";
 import de from "./locales/de/translation.json";
 import el from "./locales/el/translation.json";
 import hr from "./locales/hr/translation.json";
 import mk from "./locales/mk/translation.json";
 import ro from "./locales/ro/translation.json";
-import sr from "./locales/sr/translation.json";
+import rs from "./locales/rs/translation.json";
 
 const detectCountry = async () => {
   try {
@@ -26,13 +26,13 @@ const initializeI18n = async () => {
   const country = await detectCountry();
 
   const languageMap = {
-    CNR: "cnr",
+    me: "me",
     DE: "de",
     EL: "el",
     HR: "hr",
     MK: "mk",
     RO: "ro",
-    SR: "sr",
+    RS: "rs",
   };
 
   i18n
@@ -41,13 +41,13 @@ const initializeI18n = async () => {
     .init({
       resources: {
         en: { translation: en },
-        cnr: { translation: cnr },
+        me: { translation: me },
         de: { translation: de },
         el: { translation: el },
         hr: { translation: hr },
         mk: { translation: mk },
         ro: { translation: ro },
-        sr: { translation: sr },
+        rs: { translation: rs },
       },
       lng: languageMap[country] || "en",
       fallbackLng: "en",

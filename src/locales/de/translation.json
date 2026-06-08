@@ -1,35 +1,1840 @@
 {
   "navItem": {
-    "home": "Home",
-    "aboutUs": "About Us",
+    "home": "Startseite",
+    "aboutUs": "Über uns",
     "ourApproach": {
-      "title": "Our Approach",
+      "title": "Unser Ansatz",
       "subLinks": {
-        "clientConsultation": "Client Consultation",
-        "workerSourcing": "Worker Sourcing",
-        "screeningProcess": "Screening Process",
-        "seamlessIntegration": "Seamless Integration",
-        "employeeWelfareSupport": "Employee Welfare Support"
+        "clientConsultation": "Kundenberatung",
+        "workerSourcing": "Mitarbeiterbeschaffung",
+        "screeningProcess": "Auswahlverfahren",
+        "seamlessIntegration": "Nahtlose Integration",
+        "employeeWelfareSupport": "Unterstützung des Mitarbeiterwohls"
       }
     },
     "employers": {
-      "title": "Employers",
+      "title": "Arbeitgeber",
       "subLinks": {
-        "recruitmentProcess": "Recruitment Process",
-        "immigrationAssistance": "Immigration Assistance",
-        "mediationInEmployment": "Mediation in Employment",
-        "temporaryRecruitment": "Temporary Recruitment",
-        "legalAssurance": "Legal Assurance"
+        "recruitmentProcess": "Rekrutierungsprozess",
+        "immigrationAssistance": "Einwanderungshilfe",
+        "mediationInEmployment": "Mediation im Arbeitsverhältnis",
+        "temporaryRecruitment": "Zeitarbeit",
+        "legalAssurance": "Rechtliche Absicherung"
       }
     },
     "workersAndAgencies": {
-      "title": "Workers and Agencies",
+      "title": "Arbeitnehmer und Agenturen",
       "subLinks": {
-        "openJob": "Open Job",
-        "agencyPartnerships": "Agency Partnerships"
+        "openJob": "Offene Stellen",
+        "agencyPartnerships": "Agenturpartnerschaften"
       }
     },
-    "industries": "Industries",
-    "contactUs": "Contact Us"
+    "industries": "Branchen",
+    "contactUs": "Kontaktieren Sie uns"
+  },
+  "home": {
+    "hero": {
+      "workers": [
+        "Zimmerleute",
+        "Maurer",
+        "Elektriker",
+        "Klempner",
+        "Dachdecker",
+        "Maler",
+        "Bauleiter",
+        "Fahrer",
+        "Lkw-Fahrer",
+        "Busfahrer",
+        "Kurier- und Lieferfahrer",
+        "Taxi- und Fahrdienstfahrer",
+        "Bau- und Schwermaschinenfahrer",
+        "Gesundheitswesen",
+        "Pflegekräfte",
+        "Häusliche Pflegehelfer",
+        "Medizinische Schreibkräfte",
+        "Apothekenhelfer",
+        "Krankenhaushelfer",
+        "Reinigungsteam",
+        "Gastronomiehelfer",
+        "Schönheitsbranche",
+        "Salonassistenten",
+        "Friseur",
+        "Haarstylist",
+        "Make-up-Artist",
+        "Kosmetiker",
+        "Hautpflege-Spezialist",
+        "Beauty-Therapeut",
+        "Salonmanager",
+        "Spa-Therapeut",
+        "Massagetherapeut",
+        "Ausbeulen und Lackieren",
+        "Ausbeultechniker",
+        "Lackierassistent",
+        "Mitarbeiter Oberflächenvorbereitung",
+        "Lackmischer",
+        "Schleifspezialist",
+        "Spritzlackierer",
+        "Gastgewerbe",
+        "Chef de Partie",
+        "Sous-Chef",
+        "Rezeptionist",
+        "Kellner/Kellnerin",
+        "Barkeeper",
+        "Housekeeping Supervisor",
+        "Concierge",
+        "Sommelier",
+        "Schweißindustrie",
+        "MIG-Schweißer",
+        "TIG-Schweißer",
+        "Lichtbogenschweißer",
+        "Fabricators",
+        "Schweißinspektoren",
+        "Rohrschlosser",
+        "Konstruktionsschweißer",
+        "Einzelhandel",
+        "Verkaufsassistent",
+        "Filialleiter",
+        "Kassierer",
+        "Visual Merchandiser",
+        "Lagerbestandsassistent",
+        "Kundendienstmitarbeiter",
+        "Regalauffüller",
+        "Bergbauindustrie",
+        "Baggerführer",
+        "Bohrer",
+        "Sprengtechniker",
+        "Sicherheitsbeauftragte",
+        "Geologen",
+        "Vermesser",
+        "Bediener schwerer Maschinen",
+        "Lebensmittelverarbeitung und Produktion",
+        "Lebensmittelbearbeiter",
+        "Verpacker",
+        "Qualitätssicherungstechniker",
+        "Maschinenbediener",
+        "Sanitär-/Reinigungsarbeiter",
+        "Produktionsleiter",
+        "Produktionslinienarbeiter",
+        "Bekleidung und Textil",
+        "Fertigung und Produktion",
+        "Fließbandarbeiter",
+        "Qualitätskontrolleure",
+        "Schweißer",
+        "Gabelstaplerfahrer",
+        "Reinigung und Housekeeping",
+        "Hausmeister",
+        "Zimmer-/Haushaltspersonal",
+        "Reinigungspersonal",
+        "Gebäudebetreuer",
+        "Bodentechniker",
+        "Fensterreiniger",
+        "Wäschereimitarbeiter",
+        "Landwirtschaft und Plantagen",
+        "Pflanzer",
+        "Erntearbeiter",
+        "Farm Maintenance Workers",
+        "Bewässerungstechniker",
+        "Viehbetreuer",
+        "Pflanzenbaumanager",
+        "Agronomen",
+        "Marine und Schiffbau",
+        "Marineschweißer",
+        "Schiffbauer",
+        "Marineelektriker",
+        "Rohrschlosser",
+        "Schiffsarchitekten",
+        "Schiffsingenieure",
+        "Landschaftsbau und Grundstückspflege",
+        "Landschaftsgärtner",
+        "Platz-/Grundstückspfleger",
+        "Gärtner",
+        "Landschaftsdesigner",
+        "Baumpfleger",
+        "Rasenpflegespezialisten",
+        "Baggerführer",
+        "Bulldozerfahrer",
+        "Kranführer",
+        "Baggerladerfahrer",
+        "Laderfahrer",
+        "Graderfahrer",
+        "Fertigerfahrer"
+      ]
+    },
+    "services": {
+      "badge": "unsere",
+      "title": "Dienstleistungen",
+      "items": [
+        {
+          "name": "Beratung"
+        },
+        {
+          "name": "Mitarbeitergewinnung"
+        },
+        {
+          "name": "Arbeiter schulen"
+        }
+      ]
+    },
+    "workerCollaboration": {
+      "title": "Zusammenarbeit mit Arbeitern und Agenturen",
+      "paragraphs": [
+        "Wir heißen qualifizierte Arbeiter und Agenturen willkommen, mit uns zusammenzuarbeiten. Wir schätzen Ihre Fachkompetenz und Ihr Engagement.",
+        "Gemeinsam können wir Branchenanforderungen effektiv erfüllen. Durch die Zusammenarbeit mit uns werden Sie Teil eines Netzwerks, das stabile und lohnende Möglichkeiten bietet.",
+        "Wir legen großen Wert auf hohe Qualitätsstandards in der Belegschaft und bieten die besten Übereinstimmungen für Ihre Fähigkeiten und Bedürfnisse.",
+        "Lassen Sie uns unsere Kräfte bündeln, um erfolgreiche und nachhaltige Beschäftigungslösungen zu schaffen. Werden Sie Teil eines dynamischen und wachsenden Rekrutierungsökosystems."
+      ],
+      "buttons": {
+        "jobSeekers": "Jobsuchende bewerben sich hier",
+        "agents": "Agenten kontaktieren Sie uns bitte"
+      },
+      "imageAlt": "Zusammenarbeit mit Arbeitern und Agenturen",
+      "floatingCards": [
+        {
+          "title": "Spannende Möglichkeiten für globale Karrieren",
+          "desc": "Schließen Sie sich Arka Hire für lohnende Karrieremöglichkeiten an."
+        },
+        {
+          "title": "Zusammenarbeit mit HR-Experten und Visa-Unterstützung",
+          "desc": "Arbeiten Sie mit uns zusammen, um Branchenanforderungen effizient zu erfüllen."
+        },
+        {
+          "title": "Lassen Sie uns zusammenarbeiten",
+          "desc": "Gemeinsam können wir erfolgreiche und nachhaltige Beschäftigungslösungen schaffen."
+        }
+      ]
+    },
+    "whyArkaHire": {
+      "title": "4 Gründe für eine Partnerschaft mit Arka Hire",
+      "description": "Eine zuverlässige Rekrutierungspartnerschaft, die auf Erfahrung, Reichweite, Compliance und engagierter Unterstützung basiert.",
+      "reasons": [
+        {
+          "num": "01",
+          "title": "Unübertroffene Fachkompetenz",
+          "description": "Jahrzehntelange Erfahrung in Personallösungen."
+        },
+        {
+          "num": "02",
+          "title": "Globale Reichweite",
+          "description": "Zugang zu einem weltweiten Netzwerk qualifizierter Fachkräfte."
+        },
+        {
+          "num": "03",
+          "title": "Compliance gesichert",
+          "description": "Wir stellen sicher, dass alle gesetzlichen Anforderungen erfüllt werden."
+        },
+        {
+          "num": "04",
+          "title": "Engagierte Unterstützung",
+          "description": "Umfassende Unterstützung während des gesamten Einstellungsprozesses."
+        }
+      ]
+    },
+    "servicesOverview": {
+      "title": "Überblick über unsere Dienstleistungen",
+      "subtitle": "Entdecken Sie unsere wichtigsten Rekrutierungsdienste, die Unternehmen mit vertrauenswürdigen Personallösungen unterstützen.",
+      "viewDetails": "Details ansehen",
+      "serviceLabel": "Dienstleistung",
+      "items": [
+        {
+          "title": "Mitarbeitergewinnung",
+          "path": "/our-approach/worker-sourcing",
+          "description": "Wir verbinden Unternehmen mit qualifizierten und zuverlässigen Arbeitern, die genau zu ihrem Personalbedarf passen."
+        },
+        {
+          "title": "Personallösungen",
+          "path": "/our-approach/client-consultation",
+          "description": "Umfassende Personalunterstützung, die Unternehmen hilft, Teams effizient einzustellen, zu verwalten und auszubauen."
+        },
+        {
+          "title": "Einhaltung gesetzlicher Vorschriften",
+          "path": "/employers/legal-assurance",
+          "description": "Wir helfen sicherzustellen, dass alle Rekrutierungs- und Beschäftigungsprozesse den richtigen Rechts- und Compliance-Standards entsprechen."
+        },
+        {
+          "title": "Strategische Personalplanung",
+          "path": "/our-approach/seamless-integration",
+          "description": "Intelligente Planungslösungen, die Unternehmen helfen, sich auf künftigen Personalbedarf und Wachstum vorzubereiten."
+        },
+        {
+          "title": "Hintergrundprüfungen",
+          "path": "/our-approach/screening-process",
+          "description": "Gründliche Überprüfung und Auswahl, um sicherzustellen, dass Kandidaten qualifiziert, vertrauenswürdig und geeignet sind."
+        },
+        {
+          "title": "Qualifizierung und Entwicklung",
+          "path": "/our-approach/employee-welfare-support",
+          "description": "Schulungsunterstützung, die Arbeitern hilft, Fähigkeiten zu verbessern, sich schneller anzupassen und sicher zu arbeiten."
+        }
+      ]
+    },
+    "glance": {
+      "title": "Arka Hire auf einen Blick",
+      "tabs": [
+        {
+          "label": "Kurzer Überblick",
+          "content": [
+            "Arka Hire Limited ist ein führendes Unternehmen für Personal-Outsourcing mit über einem Jahrzehnt Erfahrung. Das Unternehmen hat seinen Hauptsitz in London, UK, um seine internationalen Aktivitäten und Kundenbasis zu unterstützen.",
+            "Wir sind auf maßgeschneiderte Personalmanagementlösungen spezialisiert, die auf die einzigartigen Bedürfnisse unserer Kunden zugeschnitten sind. Unser Expertenteam ist besonders stark darin, Top-Talente zu identifizieren und die perfekte Übereinstimmung mit den spezifischen Anforderungen und Budgets jeder Organisation sicherzustellen."
+          ]
+        },
+        {
+          "label": "Vision",
+          "content": [
+            "Unsere Vision ist es, ein vertrauenswürdiger globaler Personalpartner zu werden, der Unternehmen branchenübergreifend mit zuverlässigen, qualifizierten und engagierten Arbeitern verbindet.",
+            "Wir möchten langfristige Rekrutierungslösungen aufbauen, die Unternehmenswachstum unterstützen und weltweit sinnvolle Beschäftigungsmöglichkeiten schaffen."
+          ]
+        },
+        {
+          "label": "Mission",
+          "content": [
+            "Unsere Mission ist es, professionelle Personal-Outsourcing-Dienstleistungen durch hochwertige Rekrutierung, transparente Prozesse und kontinuierliche Unterstützung zu liefern.",
+            "Wir arbeiten eng mit Kunden, Agenturen und Arbeitern zusammen, um nachhaltige Personallösungen zu schaffen, von denen alle beteiligten Partner profitieren."
+          ]
+        }
+      ],
+      "networkTitle": "Treten Sie unserem globalen Rekrutierungsnetzwerk bei",
+      "networkDescription": "Bei Arka Hire glauben wir, dass große Erfolge auf starken Partnerschaften beruhen. Ob Sie Einzelagent oder Teil einer Agentur sind, jetzt ist der ideale Zeitpunkt, mit uns zusammenzuarbeiten und Kunden weltweit außergewöhnliche Personallösungen zu bieten.",
+      "button": "Kontaktieren Sie uns",
+      "imageAlt": "Arka Hire auf einen Blick",
+      "floatingCard": {
+        "title": "Kollaboratives Onboarding",
+        "description": "Sie erhalten von Anfang an umfassende Anleitung — lernen Sie unsere Best Practices, Kundenerwartungen und Unterstützungssysteme kennen."
+      }
+    },
+    "letsTalk": {
+      "badge": "Kontakt",
+      "title": "Haben Sie ein Projekt im Kopf?",
+      "button": "Lassen Sie uns sprechen"
+    },
+    "ourProcess": {
+      "badge": "Unser Prozess",
+      "title": "Wie wir die ideale Besetzung für Ihr Unternehmen finden",
+      "description": "Sechs sorgfältig entwickelte Schritte, um Sie effizient, zuverlässig und professionell mit den besten Talenten der Welt zu verbinden.",
+      "start": "Start",
+      "end": "Ihre ideale Einstellung",
+      "steps": [
+        {
+          "num": "01",
+          "title": "Erstberatung",
+          "description": "Unsere Erstberatung ermöglicht es uns, Ihre spezifischen Anforderungen umfassend zu verstehen, sodass wir unseren Rekrutierungsansatz anpassen und die passendsten globalen Arbeitskräfte für Ihr Unternehmen identifizieren können."
+        },
+        {
+          "num": "02",
+          "title": "Mitarbeiterbeschaffung",
+          "description": "Wir verbinden Sie über ein umfangreiches Netzwerk mit erstklassigen globalen Arbeitskräften und sichern so den Zugang zu hochwertigen Kandidaten. Unsere maßgeschneiderten Lösungen sind auf die spezifischen Anforderungen Ihres Unternehmens ausgerichtet."
+        },
+        {
+          "num": "03",
+          "title": "Prüfung und Auswahl",
+          "description": "Unser Prüfungs- und Auswahlprozess garantiert, dass Sie nur Arbeitskräfte höchster Qualität erhalten – durch Hintergrundprüfungen, Kompetenzbewertungen und Interviews."
+        },
+        {
+          "num": "04",
+          "title": "Onboarding und Integration",
+          "description": "Wir bieten umfassende Orientierung, Schulung und Unterstützung, damit sich Arbeiter schnell anpassen und sinnvoll zu Ihrem Team beitragen können."
+        },
+        {
+          "num": "05",
+          "title": "Unterkunft",
+          "description": "Wir bieten zuverlässige Unterkunftslösungen für Arbeiter, einschließlich der Beschaffung und Organisation geeigneter Unterkünfte, die den Anforderungen der Arbeitgeber entsprechen."
+        },
+        {
+          "num": "06",
+          "title": "Kontinuierliche Unterstützung",
+          "description": "Wir bieten laufende Unterstützung, um den Erfolg und die Zufriedenheit von Arbeitgebern und Arbeitern sicherzustellen."
+        }
+      ]
+    },
+    "countrySendWorker": {
+      "badge": "Globale Vermittlungen",
+      "titleLineOne": "Länder, in die",
+      "titleLineTwo": "wir Arbeiter entsenden",
+      "description": "Wir vermitteln qualifizierte Arbeitskräfte in Europas am schnellsten wachsende Märkte — und verbinden Talente mit den richtigen Chancen in Rumänien, Deutschland, Kroatien und dem Vereinigten Königreich.",
+      "button": "Ziele entdecken",
+      "stats": [
+        {
+          "num": "4+",
+          "label": "Länder"
+        },
+        {
+          "num": "1200+",
+          "label": "Vermittelte Arbeiter"
+        },
+        {
+          "num": "98%",
+          "label": "Zufriedenheitsrate"
+        }
+      ],
+      "countries": [
+        {
+          "code": "RO",
+          "title": "Rumänien",
+          "city": "Bukarest",
+          "subtitle": "Aufstrebendes Zentrum Osteuropas"
+        },
+        {
+          "code": "DE",
+          "title": "Deutschland",
+          "city": "München",
+          "subtitle": "Zentrum für Ingenieurwesen und Industrie"
+        },
+        {
+          "code": "HR",
+          "title": "Kroatien",
+          "city": "Republik Kroatien",
+          "subtitle": "Adriaküste und qualifizierte Handwerke"
+        },
+        {
+          "code": "GB",
+          "title": "Vereinigtes Königreich",
+          "city": "Großbritannien",
+          "subtitle": "Führend in globalen Finanz- und Dienstleistungen"
+        }
+      ]
+    }
+  },
+  "aboutUs": {
+    "hero": {
+      "logoAlt": "Arka Hire",
+      "title": "Eine Agentur ohne Grenzen",
+      "subtitle": "Wir sind stolz darauf, Herausforderungen vorauszusehen und uns an die sich wandelnden Anforderungen des Arbeitsmarktes anzupassen.",
+      "description": "Unser festes Engagement für den Erfolg unserer Partner ist unerschütterlich."
+    },
+    "aboutStats": {
+      "stats": {
+        "items": [
+          {
+            "number": "1300+",
+            "label": "Arbeiter Replaced in die Last 5 Years"
+          },
+          {
+            "number": "200+",
+            "label": "Happy Arbeitgeber Who Vertrauenswürdige uns"
+          }
+        ],
+        "title": "Over a Decade of Fachkompetenz in Manpower Outsourcing",
+        "description": "Arka Hire ist ein führendes Unternehmen für Personal-Outsourcing mit Hauptsitz in London, UK. Mit über einem Jahrzehnt Erfahrung bieten wir maßgeschneiderte Personalmanagementlösungen, die auf die besonderen Bedürfnisse unserer Kunden zugeschnitten sind. Unser Expertenteam identifiziert Top-Talente und sorgt für die passende Besetzung gemäß den spezifischen Anforderungen und Budgets jeder Organisation. Wir bieten ein umfassendes Leistungsspektrum, darunter temporäre und dauerhafte Rekrutierung in verschiedenen Branchen weltweit. Unser Ziel ist es, der bevorzugte HR-Partner für öffentliche und private Organisationen zu sein.",
+        "button": "Mehr über uns"
+      }
+    },
+    "hrExpert": {
+      "imageAlt": "HR-Experten",
+      "title": "HR-Experten, die sich Ihrem Erfolg verpflichten",
+      "points": [
+        {
+          "title": "Maßgeschneiderte Rekrutierungslösungen",
+          "desc": "Wir richten unsere Rekrutierungsstrategien an Ihren spezifischen Bedürfnissen aus, damit Sie die am besten qualifizierten Kandidaten erhalten."
+        },
+        {
+          "title": "Globale Talentgewinnung",
+          "desc": "unsere expansive Netzwerk enables us zu source top-tier talent von across die globe für both temporäre und dauerhafte roles."
+        },
+        {
+          "title": "Umfassende rechtliche Unterstützung",
+          "desc": "Wir übernehmen alle rechtlichen Aspekte, von der Sicherung von Arbeitserlaubnissen bis zur Einhaltung lokaler Vorschriften."
+        },
+        {
+          "title": "Integration und Unterstützung",
+          "desc": "unterstützen wir mit accommodation, vocational training, und language education zu facilitate die smooth integration of new Mitarbeiter."
+        }
+      ]
+    },
+    "workforceSolution": {
+      "title": "Unsere umfassenden Personallösungen für Ihr Unternehmen",
+      "services": [
+        {
+          "title": "Mitarbeitergewinnung",
+          "description": "Wir sind darauf spezialisiert, Top-Talente zu identifizieren und zu gewinnen. Unser gründlicher Rekrutierungsprozess stellt sicher, dass wir die besten Kandidaten finden, die perfekt zu den Anforderungen Ihrer Organisation passen."
+        },
+        {
+          "title": "Personallösungen",
+          "description": "bieten wir flexible staffing options zu meet diverse Anforderungen, von temporäre zu dauerhafte placements, ensuring reliability und adaptability in Ihre workforce."
+        },
+        {
+          "title": "Einhaltung gesetzlicher Vorschriften",
+          "description": "Unsere Expertise in Rechts- und Compliance-Fragen stellt sicher, dass alle Einstellungsprozesse lokale und internationale Gesetze einhalten und Risiken für Ihr Unternehmen minimiert werden."
+        },
+        {
+          "title": "Strategische Personalplanung",
+          "description": "Wir unterstützen die Entwicklung und Umsetzung wirksamer Personalstrategien, die auf Ihre Geschäftsziele abgestimmt sind und Produktivität sowie Effizienz fördern."
+        },
+        {
+          "title": "Hintergrundprüfungen",
+          "description": "Unsere strengen Hintergrund- und Eignungsprüfungen stellen sicher, dass Sie vertrauenswürdige und qualifizierte Kandidaten einstellen, was Sicherheit und Vertrauen schafft."
+        },
+        {
+          "title": "Fähigkeiten Schulung und Entwicklung",
+          "description": "Wir bieten gezielte Schulungs- und Entwicklungsprogramme, um die Fähigkeiten Ihrer Belegschaft zu verbessern und sie optimal auf die beruflichen Anforderungen vorzubereiten."
+        }
+      ]
+    },
+    "companyTimeline": {
+      "badge": "Unsere Reise",
+      "title": "Unternehmenszeitachse",
+      "subtitle": "Ein Jahrzehnt des Wachstums, der Innovation und globalen Wirkung im Bereich Personallösungen.",
+      "yearLabel": "Jahr",
+      "endText": "und darüber hinaus…",
+      "items": [
+        {
+          "year": "2013",
+          "title": "Start und Gründung",
+          "tag": "Gegründet",
+          "desc": "Arka Hire was founded in die UK, focusing on providing personalized manpower management Dienstleistungen und assembling a skilled team zu serve initial Kunden in die construction und manufacturing sectors.",
+          "icon": "🚀"
+        },
+        {
+          "year": "2016",
+          "title": "Serviceerweiterung",
+          "tag": "Wachstum",
+          "desc": "Wir erweiterten unsere Rekrutierungsdienste um temporäre und dauerhafte Personallösungen und expandierten in Lagerhaltung, Logistik und Gesundheitswesen, wodurch unsere Kundenbasis deutlich wuchs.",
+          "icon": "📈"
+        },
+        {
+          "year": "2019",
+          "title": "Branchendiversifizierung",
+          "tag": "Meilenstein",
+          "desc": "Wir erweiterten unser Angebot auf neue Branchen wie Einzelhandel, Gastgewerbe und IT, um ein breiteres Spektrum an Kundenbedürfnissen und Marktanforderungen abzudecken.",
+          "icon": "🌿"
+        },
+        {
+          "year": "2023",
+          "title": "Globale Expansion",
+          "tag": "Global",
+          "desc": "Wir stärkten unsere globale Präsenz durch den Eintritt in neue internationale Märkte, festigten unseren Ruf als führender Rekrutierungspartner und boten weltweit umfassende Personallösungen.",
+          "icon": "🌍"
+        }
+      ]
+    }
+  },
+  "ourApproach": {
+    "clientConsultation": {
+      "heading": ["Kunde", "Beratung"],
+      "heroText": [
+        "Bei Arka Hire erkennen wir, dass jedes Unternehmen eigene Bedürfnisse und Herausforderungen hat. Unsere Kundenberatung ist darauf ausgerichtet, Lösungen zu bieten, die genau auf Ihre besonderen Anforderungen und Ziele abgestimmt sind.",
+        "Mit über 10 Jahren Erfahrung in der Personal-Outsourcing-Branche sind unsere Expertenberater bestens ausgestattet, um strategische Beratung und Unterstützung zur Erreichung Ihrer Geschäftsziele zu bieten."
+      ],
+      "points": [
+        "Wir entwickeln maßgeschneiderte Strategien, um Ihre spezifischen geschäftlichen Herausforderungen zu lösen.",
+        "unsere consultants provide informed guidance across sectors including technology, healthcare, und finance.",
+        "Wir nutzen moderne Technologien, um Rekrutierungs- und HR-Prozesse zu verbessern.",
+        "bieten wir umfassend Unterstützung von initial consultation zu seamless implementation.",
+        "Ihr Erfolg ist unsere Priorität – mit klarer Kommunikation und langfristigen Kundenbeziehungen."
+      ],
+      "cta": {
+        "buttonText": "Lassen Sie uns sprechen",
+        "link": "/contact-us"
+      },
+      "heroImageAlt": "Kunde consultation",
+      "floatingCard": {
+        "title": "Practical guidance before every hiring decision.",
+        "badge": "Beratung First"
+      },
+      "strategies": {
+        "sectionTitle": "Unsere Strategien",
+        "sectionBadge": "Unser Ansatz",
+        "cards": [
+          {
+            "title": "Strategische Rekrutierung Planung",
+            "desc": "Wir entwickeln vollständige Rekrutierungsstrategien, die auf Ihre Geschäftsziele, Personalbedürfnisse und Wachstumspläne abgestimmt sind."
+          },
+          {
+            "title": "Talent Acquisition Management",
+            "desc": "Wir identifizieren, gewinnen und halten qualifizierte Talente, damit Ihr Unternehmen sicher vorankommt."
+          },
+          {
+            "title": "Mitarbeiter Engagement & Retention",
+            "desc": "Wir setzen praktische Strategien ein, um Mitarbeiterzufriedenheit zu steigern, Fluktuation zu reduzieren und Leistung zu verbessern."
+          },
+          {
+            "title": "Workforce Planung & Optimization",
+            "desc": "Wir optimieren Ihre Belegschaft für maximale Effizienz, Produktivität und langfristigen Unternehmenswert."
+          }
+        ]
+      }
+    },
+    "workerSourcing": {
+      "heading": "Mitarbeiterbeschaffung",
+      "intro": "Wir gewinnen unsere Arbeitskräfte aus vielen verschiedenen Ländern, darunter Bahrain, Kuwait, Oman, Katar, Saudi-Arabien, die VAE, Bangladesch, Indien, Nepal, Sri Lanka und Malaysia. Die Arbeiter werden nach Rumänien, Kroatien, Deutschland und in das Vereinigte Königreich entsandt und sind vollständig auf eine nahtlose Integration vorbereitet.",
+      "points": [
+        "unsere Branche Fachkompetenz: bieten wir specialized knowledge across a broad spectrum of sectors, including construction, manufacturing, hospitality, agriculture, logistics, healthcare, und more",
+        "umfassend Lösungen: bieten wir end-zu-end Dienstleistungen, ranging von talent sourcing und screening zu compliance und deployment, ensuring a smooth und effizient Prozess.",
+        "Kundenorientierter Ansatz: Wir konzentrieren uns auf den Aufbau starker, dauerhafter Beziehungen mit klarer Kommunikation und maßgeschneiderten Dienstleistungen für Ihre besonderen Bedürfnisse.",
+        "Ihr Erfolg, unsere Priorität: Wir sind vollständig darauf ausgerichtet, Ihre Ziele durch Exzellenz und höhere Produktivität zu erreichen."
+      ],
+      "cta": {
+        "buttonText": "Lassen Sie uns weiter sprechen"
+      },
+      "heroImageAlt": "Mitarbeiterbeschaffung",
+      "countries": {
+        "heading": [
+          "Länder",
+          "aus",
+          "woher",
+          "wir",
+          "gewinnen",
+          "unsere",
+          "Arbeiter"
+        ],
+        "intro": "rekrutieren wir qualifizierte Arbeiter von trusted international talent markets und connect them mit zuverlässig Möglichkeiten.",
+        "list": [
+          {
+            "name": "UAE",
+            "city": "Dubai",
+            "code": "AE",
+            "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "Nepal",
+            "city": "Kathmandu",
+            "code": "NP",
+            "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "Oman",
+            "city": "Muscat",
+            "code": "OM",
+            "image": "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "Sri Lanka",
+            "city": "Colombo",
+            "code": "LK",
+            "image": "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "Qatar",
+            "city": "Doha",
+            "code": "QA",
+            "image": "https://images.unsplash.com/photo-1700901742651-6b353164caf3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Bangladesh",
+            "city": "Dhaka",
+            "code": "BD",
+            "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "India",
+            "city": "New Delhi",
+            "code": "IN",
+            "image": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "Malaysia",
+            "city": "Kuala Lumpur",
+            "code": "MY",
+            "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=900&q=80"
+          }
+        ]
+      },
+      "ourStrategies": {
+        "heading": ["unsere", "Strategies"],
+        "tagline": "Wie wir arbeiten",
+        "cards": [
+          {
+            "number": "01",
+            "title": "Maßgeschneiderte Rekrutierungspläne",
+            "desc": "Wir entwickeln maßgeschneiderte Strategien, die auf Ihren spezifischen Personalbedarf und Ihre Projektanforderungen abgestimmt sind.",
+            "color": "#4ade80",
+            "darkColor": "#16a34a"
+          },
+          {
+            "number": "02",
+            "title": "Umfassende Prüfung",
+            "desc": "Unsere gründlichen Bewertungsprozesse sichern höchste Standards und die beste Passung für Ihre Projekte.",
+            "color": "#facc15",
+            "darkColor": "#ca8a04"
+          },
+          {
+            "number": "03",
+            "title": "Effiziente Compliance-Abwicklung",
+            "desc": "Wir verwalten fachkundig alle erforderlichen Unterlagen und rechtlichen Anforderungen für die internationale Entsendung von Arbeitern.",
+            "color": "#60a5fa",
+            "darkColor": "#2563eb"
+          },
+          {
+            "number": "04",
+            "title": "Nahtlose Entsendung",
+            "desc": "Wir sorgen für einen reibungslosen Übergang und die Integration von Arbeitern in Ihre Projekte, um Störungen zu minimieren und Effizienz zu maximieren.",
+            "color": "#f97316",
+            "darkColor": "#c2410c"
+          }
+        ]
+      }
+    },
+    "screeningProcess": {
+      "heading": "Auswahlverfahren",
+      "intro": "Bei Arka Hire ist unser Auswahlverfahren gründlich und effizient. Es ist darauf ausgelegt, Ihnen zuverlässige, hochwertige Kandidaten zu liefern, die Ihren spezifischen Projektanforderungen entsprechen. Jeder Schritt konzentriert sich auf die Bewertung von Fähigkeiten, Erfahrung und Kompatibilität mit Ihren Anforderungen. Wir behandeln jedes Detail sorgfältig, damit Sie die bestmögliche Belegschaft erhalten. Unser Team nutzt moderne Tools und Methoden, um eine optimale Übereinstimmung für Ihre Projekte sicherzustellen. Von der ersten Bewertung bis zur endgültigen Auswahl verwalten wir jeden Schritt, damit Sie eine Belegschaft erhalten, der Sie für erfolgreiche Projektabschlüsse vertrauen können.",
+      "points": [
+        "Detaillierte Bewertung: Wir prüfen Fähigkeiten und Erfahrung sorgfältig, um Ihre genauen Anforderungen zu erfüllen",
+        "Hintergrundprüfungen: Umfassende Prüfungen werden durchgeführt, um Zuverlässigkeit sicherzustellen.",
+        "Fähigkeitstests: Kandidaten absolvieren praktische Tests, um ihre Fähigkeiten nachzuweisen.",
+        "Interviews: Wir führen ausführliche Gespräche, um Eignung und Teamfit zu bewerten.",
+        "Ihr Erfolg ist unsere Priorität, und wir pflegen klare Kommunikation sowie starke Kundenbeziehungen."
+      ],
+      "cta": {
+        "buttonText": "Lassen Sie uns weiter sprechen"
+      },
+      "heroImageAlt": "Auswahlverfahren"
+    },
+    "ourStrategiesScreening": {
+      "heading": "Unsere Strategien",
+      "cards": [
+        {
+          "title": "Fortgeschrittene Sourcing-Techniken",
+          "description": "Wir nutzen moderne Tools, um schnell und effizient Top-Talente zu finden.",
+          "icon": "sourcingIcon"
+        },
+        {
+          "title": "Umfassende Prüfung",
+          "description": "Unser strenger Auswahlprozess stellt sicher, dass nur die besten Kandidaten ausgewählt werden.",
+          "icon": "screeningIcon"
+        },
+        {
+          "title": "Gezielte Rekrutierungskampagnen",
+          "description": "Wir entwickeln gezielte Kampagnen, um Kandidaten anzusprechen, die Ihren spezifischen Anforderungen entsprechen.",
+          "icon": "targetedIcon"
+        },
+        {
+          "title": "Kontinuierliche Verbesserung",
+          "description": "Wir aktualisieren unsere Strategien regelmäßig, um voraus zu bleiben und außergewöhnliche Ergebnisse zu liefern.",
+          "icon": "improvementIcon"
+        }
+      ]
+    },
+    "seamlessIntegration": {
+      "heading": "Nahtlose Integration",
+      "intro": "Bei Arka Hire sorgen wir für eine nahtlose Integration Ihrer neuen Mitarbeiter. Unser effizienter Ansatz garantiert ein reibungsloses Onboarding, minimiert Störungen im Betrieb und bietet allen Beteiligten eine unkomplizierte Erfahrung. Unser engagiertes Team unterstützt neue Mitarbeiter vom ersten Tag an und sorgt für einen reibungslosen Übergang in ihre Rollen. Wir konzentrieren uns darauf, den Onboarding-Prozess zu vereinfachen, damit Sie sich auf Ihre Geschäftsziele konzentrieren können.",
+      "points": [
+        "Personalisierte Onboarding-Pläne: Abgestimmt auf die besonderen Bedürfnisse und Kultur Ihres Unternehmens.",
+        "Engagierte Unterstützung: Unser Team steht bei jedem Schritt des Integrationsprozesses zur Verfügung.",
+        "Effiziente Dokumentation: Wir bearbeiten alle notwendigen Unterlagen schnell und genau, um Verzögerungen zu vermeiden.",
+        "Schulungsprogramme: Umfassende Schulungen stellen sicher, dass Mitarbeiter vom ersten Tag an einsatzbereit sind.",
+        "Ihr Erfolg ist unsere Priorität, und wir pflegen klare Kommunikation sowie starke Kundenbeziehungen."
+      ],
+      "cta": {
+        "buttonText": "Lassen Sie uns weiter sprechen"
+      },
+      "heroImageAlt": "Nahtlose Integration"
+    },
+    "seamlessStrategies": {
+      "heading": ["unsere", "Strategies"],
+      "tagline": "Ein smarterer Onboarding-Prozess, der Arbeitern hilft, sich einzugewöhnen, Leistung zu bringen und selbstbewusst zu wachsen.",
+      "cards": [
+        {
+          "title": "Personalisierte Onboarding-Pläne",
+          "description": "Wir entwickeln maßgeschneiderte Onboarding-Pläne, die auf die besonderen Bedürfnisse und Kultur Ihres Unternehmens abgestimmt sind.",
+          "icon": "stategie1"
+        },
+        {
+          "title": "Engagiertes Support-Team",
+          "description": "Unser Team bietet praktische Unterstützung in jeder Phase und sorgt für einen reibungslosen Übergang neuer Mitarbeiter.",
+          "icon": "stategie2"
+        },
+        {
+          "title": "Effizientes Dokumentenmanagement",
+          "description": "Wir verwalten alle notwendigen Dokumente zeitnah und genau, um Verzögerungen zu vermeiden.",
+          "icon": "stategie3"
+        },
+        {
+          "title": "Umfassende Schulungsprogramme",
+          "description": "Wir bieten intensive Schulungen, damit neue Mitarbeiter vom ersten Tag an produktiv und gut vorbereitet sind.",
+          "icon": "stategie4"
+        }
+      ]
+    },
+    "employeeWelfareSupport": {
+      "heading": "Mitarbeiterwohl-Unterstützung",
+      "intro": "Bei Arka Hire widmet sich unser Mitarbeiterwohl-Service dem umfassenden Wohlbefinden unserer Belegschaft. Wir bieten zahlreiche Gesundheits- und Wellnessinitiativen, fördern ein ausgewogenes Arbeitsumfeld und stellen maßgeschneiderte Unterstützungsdienste bereit. Unser Ziel ist es, eine fördernde Umgebung zu schaffen, in der Mitarbeiter persönlich und beruflich erfolgreich sein können. Von Fitnessprogrammen und psychischer Unterstützung bis hin zu flexiblen Arbeitsmodellen und Finanzplanungshilfe erfüllen wir die vielfältigen Bedürfnisse unserer Mitarbeiter.",
+      "points": [
+        "Maßgeschneiderte Gesundheits- und Wellnessprogramme für individuelle Anforderungen.",
+        "Flexible Work-Life-Balance-Optionen für unterschiedliche Lebensstile.",
+        "Umfassende Unterstützungsdienste, einschließlich Beratung und Mitarbeiterhilfsprogrammen.",
+        "Finanzplanungsressourcen, die Mitarbeitern helfen, ihre Finanzen effektiv zu verwalten."
+      ],
+      "cta": {
+        "buttonText": "Lassen Sie uns weiter sprechen"
+      },
+      "heroImageAlt": "Mitarbeiterwohl-Unterstützung"
+    },
+    "welfareStrategies": {
+      "heading": "Unsere Strategien",
+      "subtitle": "Programme für Arbeiterwohlfahrt, die Gesundheit, Balance, Betreuung und langfristige finanzielle Sicherheit unterstützen.",
+      "centerBadge": {
+        "label": "Wohlergehen",
+        "title": "Arbeiterbetreuung"
+      },
+      "cards": [
+        {
+          "title": "Gesundheitsprogramme",
+          "description": "Zugang zu Fitness- und mentaler Gesundheitsunterstützung.",
+          "icon": "stategie1"
+        },
+        {
+          "title": "Work-Life-Balance",
+          "description": "Flexible Arbeitszeiten und Arbeit gemäß globalem Arbeitsrecht.",
+          "icon": "stategie2"
+        },
+        {
+          "title": "Unterstützungsdienste",
+          "description": "Beratung und Mitarbeiterhilfsprogramme.",
+          "icon": "stategie3"
+        },
+        {
+          "title": "Finanzplanung",
+          "description": "Ressourcen zur Verwaltung und Planung der Finanzen.",
+          "icon": "stategie4"
+        }
+      ]
+    }
+  },
+  "employers": {
+    "recruitmentPage": {
+      "heroRecruitment": {
+        "heading": ["Rekrutierung", "Prozess", "in"],
+        "topDescription": "Wir sind stolz darauf, Herausforderungen vorauszusehen und uns an die ständig wechselnden Anforderungen des Arbeitsmarktes anzupassen. Unser unerschütterliches Engagement für den Erfolg unserer Partner kennt keine Grenzen.",
+        "badge": "Arka Hire",
+        "title": "Wir verstehen, dass die Suche nach den richtigen Arbeitern entscheidend für den Erfolg Ihres Unternehmens ist.",
+        "description": "Unser Rekrutierungsprozess ist darauf ausgelegt, in jeder Phase reibungslos, transparent und unterstützend zu sein.",
+        "tags": [
+          "Reibungsloser Prozess",
+          "Vertrauenswürdige Arbeiter",
+          "Zuverlässige Unterstützung"
+        ],
+        "imageAlt": "Rekrutierungsprozess",
+        "imageBadge": "Rekrutierung",
+        "imageCardText": "Ein klarer Rekrutierungsweg von der Beschaffung bis zur erfolgreichen Entsendung."
+      },
+      "recruitmentSteps": {
+        "badge": "Unsere Schritte",
+        "heading": ["Rekrutierung", "Prozess"],
+        "description": "Unser Rekrutierungsweg ist klar, unterstützend und effizient gestaltet – von der ersten Beratung bis zur endgültigen Platzierung.",
+        "button": {
+          "text": "Branchen, die wir bedienen",
+          "path": "/industries"
+        },
+        "imageAlt": "Rekrutierungsprozess",
+        "steps": [
+          "Erstberatung",
+          "Jobabgleich",
+          "Bewerbungsunterstützung",
+          "Interviewvorbereitung",
+          "Visa- und Arbeitserlaubnishilfe",
+          "Vorbereitende Orientierung vor der Abreise"
+        ]
+      },
+      "whyArka": {
+        "badge": "Warum Arka Hire?",
+        "title": "Gründe, beim Arka-Hire-Prozess zu bleiben",
+        "texts": [
+          "Wir verfügen über jahrelange Erfahrung in internationaler Rekrutierung.",
+          "Wir verstehen die besonderen Bedürfnisse verschiedener Branchen und passen unsere Dienstleistungen daran an."
+        ],
+        "button": "Kontakt aufnehmen",
+        "imageAlt": "Warum Arka Hire"
+      },
+      "whyWorkWithUs": {
+        "heading": ["Warum", "sollten", "Sie", "arbeiten", "mit", "uns?"],
+        "subtitle": "Unser Team kennt die spezifischen Anforderungen der Bau- und Gastgewerbebranche genau und stellt sicher, dass wir Ihnen Kandidaten bieten, die nicht nur qualifiziert sind, sondern auch perfekt zu Ihrer Branche passen.",
+        "cards": [
+          {
+            "title": "Branchenkompetenz",
+            "description": "Wir verfügen über jahrelange Erfahrung in internationaler Rekrutierung. Wir verstehen die besonderen Bedürfnisse verschiedener Branchen und passen unsere Dienstleistungen daran an.",
+            "image": "work1"
+          },
+          {
+            "title": "Anpassbare Lösungen",
+            "description": "Wir bieten anpassbare Rekrutierungslösungen für die besonderen Bedürfnisse Ihres Unternehmens, egal ob Sie temporäre Mitarbeiter oder dauerhafte Mitarbeiter für langfristiges Wachstum benötigen.",
+            "image": "work2"
+          },
+          {
+            "title": "Bewährter Erfolg",
+            "description": "Wir haben zahlreichen Unternehmen geholfen, die qualifizierten Arbeiter zu finden, die sie für Wachstum benötigen. Unser Engagement für Exzellenz und Zufriedenheit hebt uns von anderen Rekrutierungsagenturen ab.",
+            "image": "work3"
+          }
+        ]
+      }
+    },
+    "immigrationAssistancePage": {
+      "heroImmigration": {
+        "heading": "Einwanderungshilfe",
+        "subtitle": "Wir verstehen, dass die Navigation durch den Einwanderungsprozess für Ihre Mitarbeiter komplex und stressig sein kann.",
+        "badge": "Why Choose unsere Einwanderung Hilfe?",
+        "title": "Einwanderungsgesetze können schwierig zu handhaben sein. Deshalb sind unsere Dienstleistungen die ideale Lösung für Ihr Unternehmen.",
+        "description": "Unser Rekrutierungsprozess ist so gestaltet, dass er in jeder Phase nahtlos, transparent und unterstützend ist.",
+        "imageAlt": "Einwanderung Consulting",
+        "imageLabels": ["Einwanderung", "Beratung"],
+        "features": [
+          {
+            "title": "Expertenberatung",
+            "desc": "Unser Team bleibt über die neuesten Einwanderungsgesetze und Richtlinien auf dem Laufenden.",
+            "icon": "FaArrowRight"
+          },
+          {
+            "title": "Umfassende Unterstützung",
+            "desc": "Wir kümmern uns um alles – von den Unterlagen bis zur rechtlichen Compliance.",
+            "icon": "FaCogs"
+          },
+          {
+            "title": "Sorgenfreiheit",
+            "desc": "Konzentrieren Sie sich auf das Wachstum Ihres Unternehmens, während wir die rechtlichen Details übernehmen.",
+            "icon": "FaBrain"
+          },
+          {
+            "title": "Rechtliche Compliance",
+            "desc": "Unsere Spezialisten stellen sicher, dass alle Einwanderungsverfahren strikt den geltenden Gesetzen entsprechen.",
+            "icon": "FaBalanceScale"
+          }
+        ]
+      },
+      "assistanceProcess": {
+        "badge": "Einwanderung",
+        "heading": "Hilfsprozess",
+        "steps": [
+          {
+            "title": "Vollständiger Visa-Prozess",
+            "desc": "Wir verwalten den gesamten Visumantragsprozess für Ihre Mitarbeiter, einschließlich der fristgerechten Vorbereitung und Einreichung aller erforderlichen Dokumente."
+          },
+          {
+            "title": "Arbeitserlaubnisse",
+            "desc": "Wir unterstützen Unternehmen bei der Beschaffung von Arbeitserlaubnissen für ihre Mitarbeiter und stellen sicher, dass Ihr Team rechtlich zur Arbeit berechtigt ist."
+          },
+          {
+            "title": "Rechtliche Compliance",
+            "desc": "Unsere Experten stellen sicher, dass alle Einwanderungsverfahren den geltenden Gesetzen entsprechen, und informieren Sie über Änderungen der Einwanderungsbestimmungen."
+          },
+          {
+            "title": "Mitarbeiter-Onboarding",
+            "desc": "Wir unterstützen den Onboarding-Prozess internationaler Mitarbeiter, damit sie sich einleben und ihre gesetzlichen Rechte und Pflichten verstehen."
+          },
+          {
+            "title": "Laufende Unterstützung",
+            "desc": "Wir bieten kontinuierliche Unterstützung in allen einwanderungsbezogenen Fragen, damit Ihr Unternehmen jederzeit compliant bleibt."
+          }
+        ]
+      },
+      "arkaHireAdvantage": {
+        "badge": "Der Arka-Hire-Vorteil",
+        "title": "Partnering mit Arka Hire offers several benefits",
+        "description": "Maßgeschneiderte Lösungen: Wir passen unsere Dienstleistungen an Ihre spezifischen Bedürfnisse an. Erfahrenes Team: Unsere Experten bringen jahrelange Erfahrung im Einwanderungsrecht mit. Stressfreier Prozess: Wir übernehmen die Komplexität, damit Sie sich auf Ihr Unternehmen konzentrieren können.",
+        "button": "Kontakt aufnehmen",
+        "imageAlt": "Arka Hire Advantage"
+      },
+      "partnerWithArkaHire": {
+        "heading": "Partnerschaft mit Arka Hire",
+        "subtitle": "Wir unterstützen Sie dabei, Ihre Einwanderungsbedürfnisse effizient zu verwalten. Unsere umfassenden Dienstleistungen stellen sicher, dass Ihre Mitarbeiter alle gesetzlichen Anforderungen erfüllen und Sie die nötige Unterstützung für reibungslose Abläufe erhalten.",
+        "cards": [
+          {
+            "title": "Branchenkompetenz",
+            "description": "Wir verfügen über jahrelange Erfahrung in internationaler Rekrutierung. Wir verstehen die besonderen Bedürfnisse verschiedener Branchen und passen unsere Dienstleistungen daran an.",
+            "image": "work1"
+          },
+          {
+            "title": "Anpassbare Lösungen",
+            "description": "Wir bieten anpassbare Rekrutierungslösungen für die besonderen Bedürfnisse Ihres Unternehmens, egal ob Sie temporäre Mitarbeiter für ein kurzfristiges Projekt oder dauerhafte Mitarbeiter für langfristiges Wachstum benötigen.",
+            "image": "work2"
+          },
+          {
+            "title": "Bewährter Erfolg",
+            "description": "Wir haben zahlreichen Unternehmen geholfen, die qualifizierten Arbeiter zu finden, die sie für Wachstum benötigen. Unser Engagement für Exzellenz und Kundenzufriedenheit hebt uns von anderen Rekrutierungsagenturen ab.",
+            "image": "work3"
+          }
+        ]
+      }
+    },
+    "mediationEmploymentPage": {
+      "heroMediation": {
+        "mainTitle": ["Mediation", "in", "Beschäftigung"],
+        "topDescription": "Arka Hire bietet Mediationsdienste im Arbeitsumfeld an, um Arbeitsplatzkonflikte zu lösen und die Kommunikation zu verbessern. Unsere erfahrenen Mediatoren schaffen positive Arbeitsumgebungen und fördern einvernehmliche Lösungen für Arbeitgeber und Mitarbeiter.",
+        "badge": "Arka Hire",
+        "heroTitle": "Bei Arka Hire glauben wir, dass ein harmonischer Arbeitsplatz entscheidend für Produktivität und Mitarbeiterzufriedenheit ist.",
+        "description": "Unsere Mediationsdienste helfen dabei, Konflikte und Streitigkeiten fair, effizient und vertraulich zu lösen.",
+        "imageAlt": "Mediation im Arbeitsverhältnis",
+        "imageCardText": "Building better conversations für stronger workplace relationships.",
+        "mediationBox": {
+          "title": "Was ist Mediation?",
+          "paragraphs": [
+            "Mediation ist ein informeller und vertraulicher Prozess, bei dem ein neutraler Mediator die Streitparteien dabei unterstützt, ihre Unterschiede zu besprechen und eine einvernehmliche Lösung zu finden.",
+            "Der Mediator trifft keine Entscheidungen und weist keine Schuld zu, sondern erleichtert die Kommunikation, damit die Parteien eigene Lösungen finden."
+          ]
+        }
+      },
+      "mediationSteps": {
+        "badge": "Unsere Schritte",
+        "heading": "Vorteile der Mediation",
+        "benefits": [
+          "Vertraulichkeit",
+          "Schnelligkeit",
+          "Kosteneffizient",
+          "Freiwillig",
+          "Kontrolle"
+        ],
+        "steps": [
+          {
+            "title": "Erstberatung",
+            "description": "Wir beginnen mit einer Erstberatung, um die Art des Konflikts zu bewerten und festzustellen, ob Mediation der geeignete Ansatz ist.",
+            "note": "In diesem Schritt sprechen wir mit beiden Parteien, erklären den Prozess und beantworten Fragen."
+          },
+          {
+            "title": "Vereinbarung zur Mediation",
+            "description": "Both parties must agree zu participate in mediation. bieten wir a written agreement outlining die terms und conditions of die mediation Prozess."
+          },
+          {
+            "title": "Terminierung der Mediation",
+            "description": "Sobald beide Parteien zustimmen, planen wir eine Mediationssitzung zu einer passenden Zeit und an einem passenden Ort. Sitzungen können je nach Präferenz der Beteiligten persönlich oder virtuell stattfinden."
+          },
+          {
+            "title": "Mediationssitzung",
+            "description": "During die session, die mediator facilitates a structured discussion, allowing each party zu express their views und concerns. die mediator helps identify common ground und explore potential Lösungen."
+          }
+        ]
+      },
+      "whyArkaMediation": {
+        "heading": ["Warum", "sollten", "Sie", "arbeiten", "mit", "uns?"],
+        "topCards": [
+          {
+            "title": "Eine Einigung erzielen",
+            "description": "Wenn beide Parteien eine Einigung erzielen, unterstützt der Mediator bei der Erstellung eines schriftlichen Dokuments, das die Bedingungen der Lösung festhält. Diese Vereinbarung ist bindend und gerichtlich durchsetzbar.",
+            "icon": "reachIcon"
+          },
+          {
+            "title": "Nachverfolgung",
+            "description": "Wir bieten Nachbetreuung, um sicherzustellen, dass die Bedingungen der Vereinbarung umgesetzt werden, und um zusätzliche Anliegen zu klären.",
+            "icon": "followIcon"
+          }
+        ],
+        "imageAlt": "Warum Arka Hire",
+        "badge": "Warum Arka Hire?",
+        "title": "Der Arka-Hire-Vorteil",
+        "description": "Arka Hire für Ihre Mediationsbedürfnisse zu wählen bedeutet, mit einem Team zusammenzuarbeiten, das sich für ein positives Arbeitsumfeld einsetzt. Unsere Mediatoren sind erfahrene Fachleute mit fundiertem Wissen im Arbeitsrecht und in Konfliktlösung. Wir helfen Ihnen, Streitigkeiten so zu lösen, dass Verständnis und Zusammenarbeit gefördert werden.",
+        "button": {
+          "text": "Kontakt aufnehmen",
+          "path": "/contact-us"
+        }
+      }
+    },
+    "temporaryRecruitmentPage": {
+      "heroTemporary": {
+        "heading": ["Temporäre", "Rekrutierung", "Dienstleistungen"],
+        "topDescription": "Arka Hire bietet temporäre Rekrutierungsdienste und flexible, effiziente Personallösungen mit Zugang zu einem Pool qualifizierter Kandidaten. So kann sich Ihr Unternehmen schnell an veränderte Personalbedarfe anpassen.",
+        "badge": "Arka Hire",
+        "heroTitle": "Bei Arka Hire erkennen wir, dass sich Geschäftsanforderungen schnell ändern können.",
+        "description": "Ob saisonale Anforderungen, Sonderprojekte oder längere Abwesenheiten – unsere temporären Rekrutierungsdienste bieten die Flexibilität und qualifizierte Belegschaft, die Sie benötigen, um Ihren Betrieb reibungslos aufrechtzuerhalten.",
+        "imageAlt": "temporäre Rekrutierung Dienstleistungen"
+      },
+      "tempProcess": {
+        "badge": "Unsere Schritte",
+        "heading": "Rekrutierungsprozess",
+        "leftSteps": [
+          "Beratung und Bedarfsanalyse",
+          "Kandidatensuche",
+          "Prüfung und Auswahl",
+          "Vermittlung und Onboarding",
+          "Laufende Unterstützung"
+        ],
+        "processSteps": [
+          {
+            "title": "Beratung und Bedarfsanalyse",
+            "description": "Wir beginnen damit, Ihre spezifischen geschäftlichen Anforderungen zu verstehen und die benötigten Fähigkeiten zu identifizieren. Unser Team arbeitet eng mit Ihnen zusammen, um das ideale Kandidatenprofil zu definieren."
+          },
+          {
+            "title": "Kandidatensuche",
+            "description": "Utilizing unsere extensive Netzwerk, beschaffen wir Kandidaten who match Ihre criteria. unsere diverse database includes highly qualifizierte Arbeiter ready zu take on temporäre roles."
+          },
+          {
+            "title": "Prüfung und Auswahl",
+            "description": "Wir führen umfassende Prüfungen einschließlich Hintergrundchecks und Kompetenzbewertungen durch, damit Sie nur hochwertige Kandidaten erhalten. Unser mehrstufiger Auswahlprozess garantiert, dass die von uns bereitgestellten Arbeiter kompetent und zuverlässig sind."
+          },
+          {
+            "title": "Vermittlung und Onboarding",
+            "description": "Sobald die passenden Kandidaten ausgewählt sind, verwalten wir den Vermittlungs- und Onboarding-Prozess. Dazu gehören alle notwendigen Unterlagen und Orientierung, um einen nahtlosen Übergang in Ihr Team zu ermöglichen."
+          }
+        ]
+      },
+      "temporaryAdvantage": {
+        "heading": ["die", "Arka", "Hire", "Advantage"],
+        "topBadge": "Warum wir?",
+        "topTitle": "Warum Arka Hire für temporäre Personalbesetzung wählen?",
+        "topDescription": "Eine Partnerschaft mit Arka Hire für Ihre temporären Personalbedürfnisse bedeutet, mit einem engagierten Team zusammenzuarbeiten. Unser strategischer Ansatz stellt sicher, dass Sie hochwertige Kandidaten erhalten, die sich nahtlos in Ihr Unternehmen integrieren und Ihnen helfen, Produktivität zu erhalten und Ziele zu erreichen.",
+        "button": {
+          "text": "Kontakt aufnehmen",
+          "path": "/contact-us"
+        },
+        "cards": [
+          {
+            "title": "Personalisierter Service",
+            "description": "Wir passen unsere Rekrutierungsstrategien an Ihre spezifischen geschäftlichen Bedürfnisse an.",
+            "image": "work1"
+          },
+          {
+            "title": "Branchenkompetenz",
+            "description": "Unser Team possesses extensive Erfahrung across various Branchen, allowing us zu understand und address Ihre unique challenges.",
+            "image": "work2"
+          },
+          {
+            "title": "Engagement für Exzellenz",
+            "description": "Wir setzen uns dafür ein, herausragenden Service zu liefern und vollständige Kundenzufriedenheit sicherzustellen.",
+            "image": "work3"
+          }
+        ]
+      }
+    },
+    "legalAssurancePage": {
+      "heroLegalAssurance": {
+        "heading": ["Rechtliche", "Absicherung", "Dienstleistung"],
+        "topDescription": "Bei Arka Hire sind unsere rechtlichen Absicherungsdienste darauf ausgerichtet, Unternehmen Sicherheit zu geben, indem sie die Einhaltung von Arbeitsgesetzen gewährleisten und rechtliche Risiken minimieren.",
+        "badge": "Arka Hire",
+        "heroTitle": "Die Komplexität von Arbeitsgesetzen zu bewältigen kann herausfordernd sein.",
+        "description": "Deshalb bieten wir fachkundige rechtliche Beratung, damit Ihr Unternehmen vollständig compliant bleibt und vor potenziellen Rechtsproblemen geschützt ist.",
+        "imageAlt": "Rechtliche Absicherungsdienstleistung"
+      },
+      "legalProcess": {
+        "badge": "Unsere Schritte",
+        "heading": "Sie erhalten",
+        "leftItems": [
+          "Arbeitsverträge",
+          "Richtlinienentwicklung",
+          "Rechtsaudits",
+          "Konfliktlösung",
+          "Schulungen und Workshops"
+        ],
+        "processSteps": [
+          {
+            "title": "Arbeitsverträge",
+            "description": "Wir unterstützen bei der Erstellung klarer und rechtlich konformer Arbeitsverträge, die wesentliche Bedingungen festlegen und sowohl Arbeitgeber als auch Mitarbeiter schützen."
+          },
+          {
+            "title": "Richtlinienentwicklung",
+            "description": "Unser Team hilft bei der Erstellung von Arbeitsplatzrichtlinien, die gesetzlichen Standards entsprechen und Bereiche wie Antidiskriminierung, Arbeitssicherheit und Arbeitnehmerrechte abdecken."
+          },
+          {
+            "title": "Rechtsaudits",
+            "description": "Wir führen regelmäßige Rechtsaudits durch, um potenzielle Probleme frühzeitig zu erkennen, Ihre aktuellen Praktiken zu prüfen und umsetzbare Empfehlungen zu geben."
+          },
+          {
+            "title": "Konfliktlösung",
+            "description": "Wenn Arbeitsplatzkonflikte auftreten, helfen unsere Mediations- und Schlichtungsdienste, Konflikte effizient zu lösen und faire, einvernehmliche Lösungen ohne langwierige Rechtsstreitigkeiten zu fördern."
+          }
+        ]
+      },
+      "arkaAdvanced": {
+        "heading": ["Reasons zu Stay mit", "Arka Hire Prozess"],
+        "topTitle": "Gründe, beim Arka-Hire-Prozess zu bleiben",
+        "topDescription": "Partnering mit Arka Hire means working mit a team committed zu Ihre Unternehmen's rechtliche Compliance und protection. angepasst Lösungen, experienced team, und ongoing Unterstützung.",
+        "button": {
+          "text": "Kontakt aufnehmen"
+        },
+        "cards": [
+          {
+            "title": "Kartentitel 1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+            "image": "legal-card1.webp"
+          },
+          {
+            "title": "Kartentitel 2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+            "image": "legal-card2.webp"
+          },
+          {
+            "title": "Kartentitel 3",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+            "image": "legal-card3.webp"
+          }
+        ],
+        "heroImage": "legalHero.webp"
+      }
+    }
+  },
+  "workerandagencies": {
+    "openJobPage": {
+      "heroOpenJob": {
+        "heading": [
+          "Finden",
+          "einen",
+          "Job",
+          "der",
+          "passt",
+          "zu",
+          "Ihren",
+          "Fähigkeiten"
+        ],
+        "subtitle": "Wir helfen Ihnen, das zu erreichen",
+        "badge": "Arka Hire",
+        "title": "Bleiben Sie dran! Wir aktualisieren diese Seite.",
+        "description": "Unser Bereich für offene Stellen wird bald mit passenden Möglichkeiten verfügbar sein, die auf Ihre Fähigkeiten und Erfahrung abgestimmt sind.",
+        "tags": [
+          "Neue Jobs kommen",
+          "Passende Rollen nach Fähigkeiten",
+          "Arbeiterunterstützung"
+        ],
+        "imageAlt": "Offene Stellen",
+        "imageCardText": "Wir bereiten bessere Jobmöglichkeiten für qualifizierte Arbeiter vor."
+      }
+    },
+    "agencyPartnerPage": {
+      "heroAgencyPartner": {
+        "heading": "Rekrutierungsprozess",
+        "topDescription": "Bei Arka Hire setzen wir uns für starke, langfristige Partnerschaften mit Rekrutierungsagenten ein. Unser strukturiertes Programm bietet die notwendige Unterstützung und Ressourcen, damit Sie erfolgreich sind. Lassen Sie uns zusammenarbeiten, um Unternehmen mit den qualifizierten Talenten zu verbinden, die sie benötigen.",
+        "badge": "Arka Hire",
+        "title": "Bei Arka Hire, glauben wir in die power of collaboration.",
+        "paragraphs": [
+          "Sind Sie ein Einzelagent oder eine Organisation, die ihre Reichweite in der Rekrutierungsbranche erweitern möchte?",
+          "Bei Arka Hire bieten wir Ihnen die Möglichkeit, mit uns zusammenzuarbeiten und Ihr Geschäft auszubauen.",
+          "Durch die Zusammenarbeit mit uns können Sie auf ein breites Netzwerk von Möglichkeiten zugreifen, Ihre Vermittlungen steigern und langfristige Beziehungen in der Branche aufbauen.",
+          "Lassen Sie uns die Details übernehmen, während Sie sich auf die Beschaffung der besten Talente konzentrieren."
+        ],
+        "imageAlt": "Agenturpartner"
+      },
+      "partnershipBenefits": {
+        "badge": "Unsere Schritte",
+        "heading": "Vorteile der Partnerschaft",
+        "steps": [
+          {
+            "title": "Kundenzugang",
+            "desc": "Erweitern Sie Ihre Reichweite, indem Sie mit Unternehmen aus verschiedenen Branchen in Kontakt kommen. Wir stellen Ihnen Arbeitgeber vor, die aktiv qualifizierte Arbeiter suchen."
+          },
+          {
+            "title": "Vereinfachte Rekrutierung",
+            "desc": "unsere streamlined platform simplifies die Rekrutierungsprozess, handling everything von candidate sourcing zu placement für a hassle-free Erfahrung."
+          },
+          {
+            "title": "Schulungen und Ressourcen",
+            "desc": "Erhalten Sie Zugang zu umfassenden Schulungsprogrammen, Webinaren, Anleitungsvideos und Marketingmaterialien, um Ihre Rekrutierungsfähigkeiten zu verbessern."
+          },
+          {
+            "title": "Pünktliche Zahlungen",
+            "desc": "Receive prompt payments für erfolgreich placements. unsere effizient system ensures faster transactions compared zu standard Branche timelines."
+          }
+        ]
+      },
+      "partnerCollaboration": {
+        "imageAlt": "Partnerschaft",
+        "badge": "Why Partner mit Arka Hire?",
+        "title": "Die Zusammenarbeit mit Arka Hire bietet zahlreiche Vorteile. Deshalb sollten Sie unserem Netzwerk beitreten.",
+        "points": [
+          {
+            "label": "Exklusive Möglichkeiten",
+            "text": "Gain access zu a wide range of job openings und an extensive client base."
+          },
+          {
+            "label": "Kollaboratives Netzwerk",
+            "text": "Werden Sie Teil einer professionellen Community, die sich für Exzellenz in der Rekrutierung einsetzt."
+          },
+          {
+            "label": "Berufliches Wachstum",
+            "text": "Enhance Ihre expertise und expand Ihre Unternehmen mit unsere expert guidance."
+          }
+        ],
+        "button": {
+          "text": "Kontakt aufnehmen",
+          "path": "/contact-us"
+        }
+      },
+      "faqs": {
+        "badge": "Hilfecenter",
+        "heading": "Häufig gestellte Fragen",
+        "contactText": "Noch Fragen? Kontaktieren Sie uns.",
+        "button": {
+          "text": "Kontaktieren Sie uns",
+          "path": "/contact-us"
+        },
+        "items": [
+          {
+            "question": "Was ist das Arka-Hire-Partnerprogramm?",
+            "answer": "Bei Arka Hire bemühen wir uns, Kunden mit den besten Mitarbeitern zu verbinden. Wir prüfen potenzielle Agenturpartner sorgfältig und stellen sicher, dass sie unsere strengen Kriterien und hohen Standards erfüllen, bevor wir Kooperationen eingehen."
+          },
+          {
+            "question": "Wann kann ich Kandidaten zu einem Gespräch mit Arka-Hire-Beratern schicken?",
+            "answer": "Sie können Kandidaten nach der ersten Prüfung und Dokumentenprüfung senden. Unsere Berater führen Sie durch die erforderlichen Schritte und den Interviewplan."
+          },
+          {
+            "question": "Wer trägt die Beschäftigungskosten?",
+            "answer": "Beschäftigungskosten hängen von der Vereinbarung zwischen Arbeitgeber, Agenturpartner und Kandidat ab. Unser Team stellt sicher, dass alles vor dem nächsten Schritt klar kommuniziert wird."
+          },
+          {
+            "question": "Gibt es Nationalitätsanforderungen für das Arka-Hire-Partnerprogramm?",
+            "answer": "Anforderungen können je nach Kunde, Stellenrolle und Zielland variieren. Wir prüfen jeden Fall sorgfältig und geben unseren Partnern klare Orientierung."
+          }
+        ]
+      },
+      "arkaHireAdvantage": {
+        "heading": ["die", "Arka", "Hire", "Advantage"],
+        "subtitle": "Wir verfügen über umfassende Expertise in der Bau- und Gastgewerbebranche und können Unternehmen mit hochqualifizierten Kandidaten verbinden, die perfekt zu ihren Branchenbedürfnissen passen.",
+        "cards": [
+          {
+            "title": "Exklusive Möglichkeiten",
+            "description": "Erhalten Sie Zugang zu erstklassigen Stellenangeboten und einem breiten Netzwerk seriöser Kunden, um kontinuierliches Wachstum und Erfolg zu sichern.",
+            "icon": "icon1"
+          },
+          {
+            "title": "Kollaboratives Netzwerk",
+            "description": "Join a professional community of recruiters und Branche experts dedicated zu maintaining excellence in talent acquisition.",
+            "icon": "icon2"
+          },
+          {
+            "title": "Berufliches Wachstum",
+            "description": "Erweitern Sie Ihre Rekrutierungskompetenz mit unserer Unterstützung, unseren Ressourcen und unserer Beratung, damit Sie Ihre Fähigkeiten verbessern und Ihr Geschäft effektiv ausbauen können.",
+            "icon": "icon3"
+          }
+        ]
+      }
+    }
+  },
+  "industriesPage": {
+    "badge": "Wählen Sie aus unseren besten Arbeitern",
+    "heading": ["Branchen", "wir", "bedienen"],
+    "subtitle": "Eine hochwertige Rekrutierungspräsentation für vertrauenswürdige Branchen, qualifizierte Arbeiter und zuverlässige Personallösungen.",
+    "activeIndustryLabel": "Aktive Branche",
+    "activeWorkersTitle": "Qualifizierte Rollen bereit für Ihr Unternehmen",
+    "viewRoles": "Rollen ansehen",
+    "industries": [
+      {
+        "title": "Baubranche",
+        "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Arbeiter",
+          "Zimmerleute",
+          "Maurer",
+          "Elektriker",
+          "Klempner",
+          "Dachdecker",
+          "Maler",
+          "Bauleiter"
+        ]
+      },
+      {
+        "title": "Fahrer",
+        "image": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Lkw-Fahrer",
+          "Busfahrer",
+          "Kurier- und Lieferfahrer",
+          "Taxi- und Fahrdienstfahrer",
+          "Bau- und Schwermaschinenfahrer"
+        ]
+      },
+      {
+        "title": "Gesundheitswesen",
+        "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Pflegekräfte",
+          "Häusliche Pflegehelfer",
+          "Medizinische Schreibkräfte",
+          "Apothekenhelfer",
+          "Krankenhaushelfer",
+          "Reinigungsteam",
+          "Gastronomiehelfer"
+        ]
+      },
+      {
+        "title": "Schönheitsbranche",
+        "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Salonassistenten",
+          "Friseur",
+          "Haarstylist",
+          "Make-up-Artist",
+          "Kosmetiker",
+          "Beauty-Therapeut",
+          "Salonmanager",
+          "Spa-Therapeut",
+          "Massagetherapeut"
+        ]
+      },
+      {
+        "title": "Ausbeulen und Lackieren",
+        "image": "https://images.unsplash.com/photo-1598860024867-a1cb3a858427?q=80&w=915&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "workers": [
+          "Ausbeultechniker",
+          "Lackierassistent",
+          "Mitarbeiter Oberflächenvorbereitung",
+          "Lackmischer",
+          "Schleifspezialist",
+          "Spritzlackierer"
+        ]
+      },
+      {
+        "title": "Gastgewerbe",
+        "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Chef de Partie",
+          "Sous-Chef",
+          "Rezeptionist",
+          "Kellner/Kellnerin",
+          "Barkeeper",
+          "Housekeeping Supervisor",
+          "Concierge",
+          "Sommelier"
+        ]
+      },
+      {
+        "title": "Schweißindustrie",
+        "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "MIG-Schweißer",
+          "TIG-Schweißer",
+          "Lichtbogenschweißer",
+          "Fabricators",
+          "Schweißinspektoren",
+          "Rohrschlosser",
+          "Konstruktionsschweißer"
+        ]
+      },
+      {
+        "title": "Einzelhandel",
+        "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Verkaufsassistent",
+          "Filialleiter",
+          "Kassierer",
+          "Visual Merchandiser",
+          "Lagerbestandsassistent",
+          "Kundendienstmitarbeiter",
+          "Regalauffüller"
+        ]
+      },
+      {
+        "title": "Bergbauindustrie",
+        "image": "https://images.unsplash.com/photo-1523848309072-c199db53f137?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "workers": [
+          "Baggerführer",
+          "Bohrer",
+          "Sprengtechniker",
+          "Sicherheitsbeauftragte",
+          "Geologen",
+          "Vermesser",
+          "Bediener schwerer Maschinen"
+        ]
+      },
+      {
+        "title": "Lebensmittelverarbeitung und Produktion",
+        "image": "https://images.unsplash.com/photo-1651525670114-2b8117390b28?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "workers": [
+          "Lebensmittelbearbeiter",
+          "Verpacker",
+          "Qualitätssicherungstechniker",
+          "Maschinenbediener",
+          "Sanitär-/Reinigungsarbeiter",
+          "Produktionsleiter",
+          "Produktionslinienarbeiter"
+        ]
+      },
+      {
+        "title": "Bekleidung und Textil",
+        "image": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Textilarbeiter",
+          "Nähmaschinenbediener",
+          "Zuschneidermeister",
+          "Qualitätsprüfer",
+          "Bügelarbeiter",
+          "Verpackungsarbeiter",
+          "Produktionshelfer"
+        ]
+      },
+      {
+        "title": "Fertigung und Produktion",
+        "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Fließbandarbeiter",
+          "Maschinenbediener",
+          "Qualitätskontrolleure",
+          "Produktionsleiter",
+          "Schweißer",
+          "Fabricators",
+          "Gabelstaplerfahrer"
+        ]
+      },
+      {
+        "title": "Reinigung und Housekeeping",
+        "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Hausmeister",
+          "Zimmer-/Haushaltspersonal",
+          "Reinigungspersonal",
+          "Gebäudebetreuer",
+          "Bodentechniker",
+          "Fensterreiniger",
+          "Wäschereimitarbeiter"
+        ]
+      },
+      {
+        "title": "Landwirtschaft und Plantagen",
+        "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Pflanzer",
+          "Erntearbeiter",
+          "Farm Maintenance Workers",
+          "Bewässerungstechniker",
+          "Viehbetreuer",
+          "Pflanzenbaumanager",
+          "Agronomen"
+        ]
+      },
+      {
+        "title": "Marine und Schiffbau",
+        "image": "https://images.unsplash.com/photo-1602575051429-c502cac0d3e8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "workers": [
+          "Marineschweißer",
+          "Fabricators",
+          "Schiffbauer",
+          "Marineelektriker",
+          "Rohrschlosser",
+          "Schiffsarchitekten",
+          "Schiffsingenieure"
+        ]
+      },
+      {
+        "title": "Landschaftsbau und Grundstückspflege",
+        "image": "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Landschaftsgärtner",
+          "Platz-/Grundstückspfleger",
+          "Gärtner",
+          "Bewässerungstechniker",
+          "Landschaftsdesigner",
+          "Baumpfleger",
+          "Rasenpflegespezialisten"
+        ]
+      },
+      {
+        "title": "Bediener schwerer Maschinen",
+        "image": "https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Baggerführer",
+          "Bulldozerfahrer",
+          "Kranführer",
+          "Baggerladerfahrer",
+          "Laderfahrer",
+          "Graderfahrer",
+          "Fertigerfahrer"
+        ]
+      }
+    ]
+  },
+  "contactPage": {
+    "contactForm": {
+      "title": "Kontakt für Personallösungen!",
+      "subtitle": "Brauchen Sie Hilfe? Senden Sie uns eine Anfrage",
+      "description": "Füllen Sie das Formular aus, und unser Team wird sich so schnell wie möglich bei Ihnen melden.",
+      "email": "info@arkahire.com",
+      "form": {
+        "fullNamePlaceholder": "Vollständiger Name",
+        "phonePlaceholder": "Telefonnummer",
+        "emailPlaceholder": "E-Mail",
+        "messagePlaceholder": "Nachricht",
+        "submitButton": "Senden"
+      },
+      "office": {
+        "label": "HAUPTSITZ - UK",
+        "address": "Surbiton, Vereinigtes Königreich, KT6 7TE"
+      },
+      "backgroundImage": "https://images.pexels.com/photos/8867261/pexels-photo-8867261.jpeg"
+    },
+    "locationPage": {
+      "heading": "Besuchen Sie unser Büro",
+      "subheading": "Finden Sie unten unseren Bürostandort und die Kontaktdaten.",
+      "sectionLabel": "Unser Standort",
+      "office": {
+        "name": "Hauptsitz - UK",
+        "address": "Surbiton, Vereinigtes Königreich, KT6 7TE",
+        "email": "info@arkahire.com",
+        "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Surbiton%2C%20United%20Kingdom%2C%20KT6%207TE"
+      },
+      "contactItems": [
+        {
+          "icon": "FaBuilding",
+          "label": "Adresse",
+          "value": "Surbiton, Vereinigtes Königreich, KT6 7TE"
+        },
+        {
+          "icon": "FaEnvelope",
+          "label": "E-Mail",
+          "value": "info@arkahire.com",
+          "mailto": "mailto:info@arkahire.com"
+        }
+      ],
+      "map": {
+        "iframeSrc": "https://www.google.com/maps?q=Surbiton%2C%20United%20Kingdom%2C%20KT6%207TE&output=embed",
+        "title": "Arka-Hire-Standort - Surbiton"
+      }
+    }
+  },
+  "faqsPage": {
+    "badge": "Hilfecenter",
+    "heading": "Häufig gestellte Fragen",
+    "description": "Finden Sie Antworten zu Arka-Hire-Rekrutierungsdiensten, Verträgen, Personalbesetzung, internationaler Einstellung und Kandidatenunterstützung.",
+    "helpBox": {
+      "label": "Benötigen Sie weitere Hilfe?",
+      "email": "info@arkahire.com"
+    },
+    "contactButton": {
+      "text": "Kontaktieren Sie uns",
+      "path": "/contact-us"
+    },
+    "search": {
+      "placeholder": "Fragen suchen..."
+    },
+    "emptyState": {
+      "title": "Keine FAQ gefunden.",
+      "description": "Versuchen Sie es mit einem anderen Suchbegriff."
+    },
+    "bottomNote": {
+      "textBeforeEmail": "Wenn Sie weitere Fragen haben oder zusätzliche Informationen benötigen, kontaktieren Sie uns bitte unter",
+      "email": "info@arkahire.com"
+    },
+    "faqs": [
+      {
+        "question": "Mit welchen Arten von Kunden/Aufträgen arbeiten Sie?",
+        "answer": "Bei Arka Hire arbeiten wir mit einer Vielzahl von Kunden aus unterschiedlichen Branchen, darunter IT, Gesundheitswesen, Finanzen, Ingenieurwesen und mehr. Wir übernehmen Aufträge von temporären und vertraglichen Positionen bis hin zu dauerhaften Vermittlungen. Ob Sie kurzfristige Projektunterstützung oder eine langfristige Ergänzung Ihres Teams benötigen, wir können das passende Talent für Ihre Bedürfnisse bereitstellen."
+      },
+      {
+        "question": "Wie lange dauern Ihre typischen Verträge?",
+        "answer": "Die Dauer unserer Verträge hängt von den spezifischen Anforderungen unserer Kunden und der Art des Auftrags ab. Temporäre Einsätze können von wenigen Wochen bis zu mehreren Monaten dauern, während Vertragspositionen sechs Monate bis ein Jahr oder länger dauern können. Dauerhafte Vermittlungen sind langfristig angelegt. Wir arbeiten eng mit unseren Kunden zusammen, um die passende Vertragsdauer für jeden Auftrag festzulegen."
+      },
+      {
+        "question": "Warum sollte ich mit einer Personalagentur zusammenarbeiten, um einen Job zu finden?",
+        "answer": "Die Zusammenarbeit mit einer Personalagentur wie Arka Hire gibt Ihnen Zugang zu nicht öffentlich ausgeschriebenen Stellen, Expertenberatung, Karriereberatung, Lebenslaufprüfung, Interviewvorbereitung, starken Arbeitgeberkontakten und flexiblen Joboptionen einschließlich temporärer, vertraglicher und dauerhafter Rollen."
+      },
+      {
+        "question": "Wie arbeiten Rekrutierungsagenturen?",
+        "answer": "Rekrutierungsagenturen fungieren als Vermittler zwischen Arbeitgebern und Jobsuchenden. Unser Prozess umfasst Kundenberatung, Kandidatensuche, Prüfung und Interviews, Kundenpräsentation, Onboarding und Nachverfolgung, um einen reibungslosen Übergang sicherzustellen."
+      },
+      {
+        "question": "Welche Gebühren sind mit Rekrutierungsdiensten verbunden?",
+        "answer": "Wir nehmen von Arbeitgebern kein Geld für Vermittlungen. Stattdessen zahlen Arbeitgeber eine einmalige Gebühr zur Deckung der Kosten für die Beschaffung der erforderlichen Arbeitserlaubnisse von der Regierung. Wir sind transparent in Bezug auf unsere Gebühren und stellen während der Erstberatung eine detaillierte Aufschlüsselung bereit."
+      },
+      {
+        "question": "Gibt es eine Exklusivitätsklausel in den Rekrutierungsverträgen?",
+        "answer": "Exklusivitätsklauseln sind optional und hängen von der Vereinbarung zwischen Arka Hire und dem Kunden ab. Einige Kunden arbeiten lieber exklusiv mit uns, während andere mit mehreren Agenturen arbeiten. Wir passen unseren Ansatz an Ihre Bedürfnisse an."
+      },
+      {
+        "question": "Muss eine Anzahlung für Ihre Dienstleistungen geleistet werden?",
+        "answer": "In der Regel verlangen wir keine Anzahlung für unsere Rekrutierungsdienste. Unsere einmalige Gebühr wird bei Beginn des Arbeitserlaubnisprozesses fällig und in unserer Vereinbarung klar beschrieben."
+      },
+      {
+        "question": "Wie sieht der Einstellungsprozess mit Ihrer Agentur aus?",
+        "answer": "unsere hiring Prozess includes initial consultation, candidate search, screening, shortlisting, client interviews, selection, offer Unterstützung, und onboarding assistance zu ensure smooth integration."
+      },
+      {
+        "question": "Wie stellen Sie die Qualität der Kandidaten sicher?",
+        "answer": "Wir verwenden einen strengen Auswahlprozess mit Lebenslaufprüfung, Telefoninterviews, ausführlichen persönlichen oder virtuellen Interviews, Fähigkeitstests bei Bedarf, Referenzprüfungen und kontinuierlichem Feedback von Kunden und Kandidaten."
+      },
+      {
+        "question": "Wie gehen Sie mit Vertraulichkeit um?",
+        "answer": "Wir nehmen Vertraulichkeit sehr ernst. Kunden- und Kandidateninformationen werden mit größter Diskretion behandelt. Wir befolgen strenge Datenschutzrichtlinien und teilen Informationen nur mit autorisiertem Personal, das am Rekrutierungsprozess beteiligt ist."
+      },
+      {
+        "question": "Können Sie bei internationaler Rekrutierung helfen?",
+        "answer": "Ja, Arka Hire kann bei internationaler Rekrutierung unterstützen. Wir verfügen über ein globales Netzwerk und können Kandidaten aus verschiedenen Ländern beschaffen."
+      },
+      {
+        "question": "Wie lautet Ihre Richtlinie zu Vielfalt und Inklusion?",
+        "answer": "Arka Hire verpflichtet sich, Vielfalt und Inklusion am Arbeitsplatz zu fördern. Wir glauben, dass vielfältige Teams innovativer und effektiver sind. Wir bieten allen Kandidaten gleiche Chancen und stellen sicher, dass unsere Prozesse frei von Voreingenommenheit sind."
+      },
+      {
+        "question": "Wie gehen Sie mit Streitigkeiten oder Problemen während des Rekrutierungsprozesses um?",
+        "answer": "Wir verfügen über ein klares Lösungsprotokoll. Wir fördern offene Kommunikation und arbeiten eng mit Kunden und Kandidaten zusammen, um Anliegen schnell und fair zu lösen."
+      },
+      {
+        "question": "Welche Unterstützung bieten Sie nach der Platzierung eines Kandidaten?",
+        "answer": "unsere Unterstützung continues after placement. bieten wir follow-up meetings, performance assessments, und ongoing Unterstützung zu both Arbeitgeber und new hires during die initial employment period."
+      },
+      {
+        "question": "Wie bleiben Sie über Branchentrends auf dem Laufenden?",
+        "answer": "Unser Team stays updated through continuous professional development, Branche conferences, relevant publications, und insights von a Netzwerk of Branche experts."
+      },
+      {
+        "question": "Können Sie temporäre Personallösungen anbieten?",
+        "answer": "Yes, bieten wir temporäre staffing Lösungen für short-term Unterstützung, seasonal workloads, employee absence coverage, und specialized project Bedürfnisse."
+      },
+      {
+        "question": "Wie passen Sie Kandidaten an Jobrollen an?",
+        "answer": "Wir ordnen Kandidaten anhand detaillierter Stellenanalyse, Kandidatenprofiling, moderner Matching-Technologien, kultureller Passung und langfristiger Potenzialbewertung den passenden Rollen zu."
+      },
+      {
+        "question": "Wie hoch ist Ihre Erfolgsquote bei der Platzierung von Kandidaten?",
+        "answer": "Unsere Erfolgsquote ist hoch, dank unseres strengen Auswahlprozesses und unseres tiefen Verständnisses der Kundenbedürfnisse. Wir überwachen und verbessern unsere Prozesse kontinuierlich, um starke Vermittlungsergebnisse und Zufriedenheit sicherzustellen."
+      }
+    ]
+  },
+  "termsPage": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "sections": [
+      {
+        "title": "Gegenstand und Annahme",
+        "content": "Diese Nutzungsbedingungen regeln die Nutzung der Website arkahire.com von Arka Hire. Jede Person, die auf die Website zugreift, akzeptiert hiermit die zum Zeitpunkt des Besuchs geltenden Nutzungsbedingungen."
+      },
+      {
+        "title": "Nutzung der Website",
+        "content": "Sie erklären sich hiermit freiwillig und ausdrücklich damit einverstanden, die Website ausschließlich auf eigenes Risiko zu nutzen. Sie sind dafür verantwortlich, Benutzer-ID und Passwort vertraulich zu behandeln."
+      },
+      {
+        "title": "Inhalt",
+        "content": "Wir sind nicht verpflichtet, die Richtigkeit der Inhalte zu überprüfen, und gewährleisten nicht deren Nützlichkeit, Richtigkeit, Vollständigkeit oder Relevanz. Alle Entscheidungen auf Grundlage der Inhalte liegen in Ihrer Verantwortung."
+      },
+      {
+        "title": "Rechte an geistigem Eigentum",
+        "content": "Alle Inhalte auf der Website sind weltweit durch Urheberrecht, Designrecht, Markenrecht und andere Rechte des geistigen Eigentums geschützt. Sie dürfen diese ohne Genehmigung nicht kopieren, weiterverbreiten oder verwenden."
+      },
+      {
+        "title": "Links und Verlinkung",
+        "content": "Die Website kann Links zu Websites Dritter enthalten. Eine Verlinkung zu solchen Websites bedeutet keine Gewährleistung für diese Seiten. Die Nutzung erfolgt auf eigenes Risiko."
+      },
+      {
+        "title": "Personenbezogene Daten",
+        "content": "Die Erhebung und Nutzung personenbezogener Daten wird durch unsere Datenschutzerklärung geregelt: https://arkahire.com/privacy-policy"
+      },
+      {
+        "title": "Recht und Gerichtsstand",
+        "content": "Diese Nutzungsbedingungen unterliegen den Gesetzen von Katar und der ausschließlichen Zuständigkeit des Gerichts in Doha."
+      },
+      {
+        "title": "Kontakt",
+        "content": "Fragen, Kommentare und Anfragen zu diesen Bedingungen können an Arka Hire, Al-Barqiya, Building 379, Zone, 57 Street 41, Ar-Rayyan, Katar, info@arkahire.com gesendet werden."
+      }
+    ]
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "sections": [
+      {
+        "title": "Unsere Datenschutzerklärung",
+        "content": "Wir bei Arka Hire, ansässig in Al-Barqiya, Building 379, Zone, 57 Street 41, Ar-Rayyan, Katar, möchten Ihre Privatsphäre schützen. Diese Richtlinie legt dar, welche personenbezogenen Informationen wir von Ihnen erfassen und wie wir sie verwenden."
+      },
+      {
+        "title": "Personenbezogene Informationen, die wir erfassen können",
+        "content": "Wir erfassen Informationen aus Ihren Besuchen auf der Website, einschließlich Verkehrsdaten, Standort und Inhalte aus Kontaktformularen. Pflichtfelder sind mit * markiert, optionale Felder sind Ihre Wahl."
+      },
+      {
+        "title": "Wie wir Ihre personenbezogenen Daten verwenden",
+        "content": "Wir verwenden Ihre Daten, um Inhalte anzupassen, Anfragen zu beantworten, interaktive Funktionen bereitzustellen und die Website zu verbessern. In der Regel speichern wir Daten 2 Jahre, um gesetzlichen Verpflichtungen nachzukommen."
+      },
+      {
+        "title": "Marketingnachrichten",
+        "content": "Mit Ihrer Einwilligung können wir Marketingnachrichten per E-Mail senden. Sie können sich jederzeit über den Abmeldelink oder durch Kontaktaufnahme mit info@arkahire.com abmelden."
+      },
+      {
+        "title": "Weitergabe an Dritte",
+        "content": "Wir können Daten an Lieferanten, Auftragnehmer oder Behörden weitergeben, wenn dies gesetzlich erforderlich ist. Alle Dritten müssen Datenschutzpflichten respektieren."
+      },
+      {
+        "title": "IP-Adressen und Cookies",
+        "content": "Wir erfassen technische Daten wie IP-Adressen und Browsertyp, um die Website zu verbessern. Cookies werden verwendet, um personalisierte Inhalte bereitzustellen. Bitte verwenden Sie „Angemeldet bleiben“ nicht auf gemeinsam genutzten Geräten."
+      },
+      {
+        "title": "Ihre Rechte",
+        "content": "Sie können auf Ihre personenbezogenen Daten zugreifen, sie korrigieren, löschen oder deren Verarbeitung einschränken. Sie können Ihre Einwilligung jederzeit widerrufen oder eine Beschwerde bei den zuständigen Behörden einreichen."
+      },
+      {
+        "title": "Richtlinie Changes",
+        "content": "Wir können diese Richtlinie von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Website veröffentlicht oder über andere Kanäle mitgeteilt."
+      },
+      {
+        "title": "Kontakt",
+        "content": "Fragen zu dieser Richtlinie können an Arka Hire unter info@arkahire.com gesendet werden."
+      }
+    ]
+  },
+  "footer": {
+    "logo": {
+      "src": "../../assets/logowhite.webp",
+      "alt": "Arka Hire Logo"
+    },
+    "contactEmail": "info@arkahire.com",
+    "socialTitle": "Follow uns",
+    "socialLinks": [
+      {
+        "platform": "Facebook",
+        "icon": "FaFacebookF",
+        "url": "#"
+      },
+      {
+        "platform": "Twitter",
+        "icon": "FaTwitter",
+        "url": "#"
+      },
+      {
+        "platform": "YouTube",
+        "icon": "FaYoutube",
+        "url": "#"
+      },
+      {
+        "platform": "LinkedIn",
+        "icon": "FaLinkedinIn",
+        "url": "#"
+      },
+      {
+        "platform": "Pinterest",
+        "icon": "FaPinterestP",
+        "url": "#"
+      }
+    ],
+    "copyright": "Arka Hire 2013-2026. Alle Rechte vorbehalten",
+    "sections": [
+      {
+        "title": "Dienstleistungen",
+        "links": [
+          {
+            "label": "Rekrutierungsprozess",
+            "path": "/employers/recruitment-process"
+          },
+          {
+            "label": "Mediation im Arbeitsverhältnis",
+            "path": "/employers/mediation-in-employment"
+          },
+          {
+            "label": "Temporäre Rekrutierung",
+            "path": "/employers/temporary-recruitment"
+          },
+          {
+            "label": "Rechtliche Absicherung",
+            "path": "/employers/legal-assurance"
+          },
+          {
+            "label": "Einwanderungshilfe",
+            "path": "/employers/immigration-assistance"
+          }
+        ]
+      },
+      {
+        "title": "Important Links",
+        "links": [
+          {
+            "label": "Kontaktieren Sie uns",
+            "path": "/contact-us"
+          },
+          {
+            "label": "Agentur Partnerschaft",
+            "path": "/agency-partnership"
+          },
+          {
+            "label": "Offene Jobs",
+            "path": "/open-jobs"
+          },
+          {
+            "label": "Branchen, die wir bedienen",
+            "path": "/industries"
+          }
+        ]
+      },
+      {
+        "title": "Important Pages",
+        "links": [
+          {
+            "label": "Häufig gestellte Fragen",
+            "path": "/frequently-asked-questions"
+          },
+          {
+            "label": "Allgemeine Geschäftsbedingungen",
+            "path": "/terms-and-conditions"
+          },
+          {
+            "label": "Datenschutzerklärung",
+            "path": "/privacy-policy"
+          }
+        ]
+      }
+    ]
   }
 }

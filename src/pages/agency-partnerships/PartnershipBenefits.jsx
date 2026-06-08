@@ -2,31 +2,18 @@ import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import partnershipBg from "../../assets/partnership.avif";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const PartnershipBenefits = () => {
+  const { t } = useTranslation();
   const sectionRef = useRef(null);
   const textRef = useRef([]);
 
-  const steps = [
-    {
-      title: "Client Access",
-      desc: "Expand your reach by connecting with businesses across multiple industries. We introduce you to employers actively seeking skilled workers.",
-    },
-    {
-      title: "Simplified Recruitment",
-      desc: "Our streamlined platform simplifies the recruitment process, handling everything from candidate sourcing to placement for a hassle-free experience.",
-    },
-    {
-      title: "Training and Resources",
-      desc: "Access comprehensive training programs, webinars, instructional videos, and marketing materials to enhance your recruitment skills.",
-    },
-    {
-      title: "Timely Payments",
-      desc: "Receive prompt payments for successful placements. Our efficient system ensures faster transactions compared to standard industry timelines.",
-    },
-  ];
+  const basePath = "workerandagencies.agencyPartnerPage.partnershipBenefits";
+
+  const steps = t(`${basePath}.steps`, { returnObjects: true });
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -45,7 +32,7 @@ const PartnershipBenefits = () => {
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [steps.length]);
 
   return (
     <section
@@ -57,10 +44,10 @@ const PartnershipBenefits = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto py-24 px-6 sm:px-10 lg:px-16 text-white">
         <h2 className="text-xl sm:text-2xl font-bold text-red-600 mb-2 text-left">
-          Our Steps
+          {t(`${basePath}.badge`) || "Our Steps"}
         </h2>
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 text-left">
-          Partnership Benefits
+          {t(`${basePath}.heading`) || "Partnership Benefits"}
         </h1>
 
         <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">

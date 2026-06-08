@@ -1,13 +1,18 @@
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useLayoutEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+
   const sectionRef = useRef(null);
   const infoRef = useRef(null);
   const formRef = useRef(null);
+
+  const basePath = "contactPage.contactForm";
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -40,74 +45,78 @@ const ContactForm = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full h-auto bg-cover bg-center bg-no-repeat py-24 px-4 sm:px-6 lg:px-16 font-montserrat text-white flex flex-col justify-center"
+      className="relative flex h-auto w-full flex-col justify-center bg-cover bg-center bg-no-repeat px-4 py-24 font-montserrat text-white sm:px-6 lg:px-16"
       style={{
-        backgroundImage: `url('https://images.pexels.com/photos/8867261/pexels-photo-8867261.jpeg')`,
+        backgroundImage: `url('${t(`${basePath}.backgroundImage`)}')`,
       }}
     >
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/50" />
 
-      <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 gap-12 lg:grid-cols-2">
         {/* Left Info */}
         <div ref={infoRef} className="flex flex-col justify-start gap-6">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
-            Contact for Workforce Solutions!
+          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+            {t(`${basePath}.title`)}
           </h2>
-          <h3 className="text-xl sm:text-2xl font-semibold">
-            Need help? Send us an inquiry
-          </h3>
-          <p className="text-white/70">
-            Fill out the form and our team will get back to you as soon as
-            possible
-          </p>
 
-          <div className="flex items-center gap-3 text-white/90 mt-6">
-            <span className="text-red-600 font-bold">📧</span>
-            <span className="font-medium">info@arkahire.com</span>
+          <h3 className="text-xl font-semibold sm:text-2xl">
+            {t(`${basePath}.subtitle`)}
+          </h3>
+
+          <p className="text-white/70">{t(`${basePath}.description`)}</p>
+
+          <div className="mt-6 flex items-center gap-3 text-white/90">
+            <span className="font-bold text-red-600">📧</span>
+            <span className="font-medium">{t(`${basePath}.email`)}</span>
           </div>
         </div>
 
         {/* Right Form */}
         <div
           ref={formRef}
-          className="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg"
+          className="rounded-xl bg-white/10 p-6 shadow-lg backdrop-blur-md"
         >
           <form className="grid grid-cols-1 gap-4">
             <input
               type="text"
-              placeholder="Full Name"
-              className="w-full px-4 py-3 rounded-md bg-white/20 placeholder-white/70 text-white focus:bg-white/30 focus:ring-2 focus:ring-[#2f7f35] focus:outline-none transition"
+              placeholder={t(`${basePath}.form.fullNamePlaceholder`)}
+              className="w-full rounded-md bg-white/20 px-4 py-3 text-white placeholder-white/70 transition focus:bg-white/30 focus:outline-none focus:ring-2 focus:ring-[#2f7f35]"
             />
-            <div className="grid grid-cols-2 gap-4">
+
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <input
                 type="text"
-                placeholder="Phone Number"
-                className="w-full px-4 py-3 rounded-md bg-white/20 placeholder-white/70 text-white focus:bg-white/30 focus:ring-2 focus:ring-[#2f7f35] focus:outline-none transition"
+                placeholder={t(`${basePath}.form.phonePlaceholder`)}
+                className="w-full rounded-md bg-white/20 px-4 py-3 text-white placeholder-white/70 transition focus:bg-white/30 focus:outline-none focus:ring-2 focus:ring-[#2f7f35]"
               />
+
               <input
                 type="email"
-                placeholder="Email"
-                className="w-full px-4 py-3 rounded-md bg-white/20 placeholder-white/70 text-white focus:bg-white/30 focus:ring-2 focus:ring-[#2f7f35] focus:outline-none transition"
+                placeholder={t(`${basePath}.form.emailPlaceholder`)}
+                className="w-full rounded-md bg-white/20 px-4 py-3 text-white placeholder-white/70 transition focus:bg-white/30 focus:outline-none focus:ring-2 focus:ring-[#2f7f35]"
               />
             </div>
+
             <textarea
-              placeholder="Message"
-              className="w-full px-4 py-3 rounded-md bg-white/20 placeholder-white/70 text-white h-32 resize-none focus:bg-white/30 focus:ring-2 focus:ring-[#2f7f35] focus:outline-none transition"
+              placeholder={t(`${basePath}.form.messagePlaceholder`)}
+              className="h-32 w-full resize-none rounded-md bg-white/20 px-4 py-3 text-white placeholder-white/70 transition focus:bg-white/30 focus:outline-none focus:ring-2 focus:ring-[#2f7f35]"
             />
+
             <button
               type="submit"
-              className="mt-2 w-full bg-[#60c865] hover:bg-[#4caf52] text-white font-bold py-3 rounded-md shadow-lg transition duration-300"
+              className="mt-2 w-full rounded-md bg-[#60c865] py-3 font-bold text-white shadow-lg transition duration-300 hover:bg-[#4caf52]"
             >
-              Send
+              {t(`${basePath}.form.submitButton`)}
             </button>
           </form>
         </div>
       </div>
 
       {/* Footer Address */}
-      <div className="mt-12 text-center relative z-10">
-        <p className="text-sm bg-white/10 inline-block px-6 py-2 rounded-md border border-white/30">
-          HEAD OFFICE - UK <br /> Surbiton, United Kingdom, KT6 7TE
+      <div className="relative z-10 mt-12 text-center">
+        <p className="inline-block rounded-md border border-white/30 bg-white/10 px-6 py-2 text-sm">
+          {t(`${basePath}.office.label`)} <br />
+          {t(`${basePath}.office.address`)}
         </p>
       </div>
     </section>

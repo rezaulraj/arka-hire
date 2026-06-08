@@ -6,6 +6,7 @@ const LocationPage = () => {
 
   return (
     <section className="relative w-full overflow-hidden bg-white px-4 py-16 font-montserrat text-[#123817] sm:px-6 lg:px-10">
+      {/* Decorative gradient blur */}
       <div className="pointer-events-none absolute left-1/2 top-0 h-[300px] w-[700px] -translate-x-1/2 rounded-full bg-[#2f7f35]/10 blur-[100px]" />
 
       <div className="relative z-10 mx-auto max-w-7xl">

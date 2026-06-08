@@ -1,4 +1,6 @@
 import React, { useLayoutEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import {
   FaFacebookF,
   FaTwitter,
@@ -12,38 +14,38 @@ import logo from "../../assets/logowhite.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const iconMap = {
+  FaFacebookF,
+  FaTwitter,
+  FaYoutube,
+  FaLinkedinIn,
+  FaPinterestP,
+};
+
 const Footer = () => {
+  const { t } = useTranslation();
   const sectionRef = useRef(null);
   const textRefs = useRef([]);
 
-  const servicesLinks = [
-    { label: "Recruitment Process", path: "/services/recruitment" },
-    { label: "Mediation in Employment", path: "/services/mediation" },
-    { label: "Temporary Recruitment", path: "/services/temporary" },
-    { label: "Legal Assurance", path: "/services/legal-assurance" },
-    { label: "Immigration Assistance", path: "/services/immigration" },
-  ];
+  const footerData = t("footer", { returnObjects: true });
 
-  const importantLinks = [
-    { label: "Contact us", path: "/contact" },
-    { label: "Agency Partnership", path: "/agency-partnership" },
-    { label: "Open Jobs", path: "/open-jobs" },
-    { label: "Industries We Serve", path: "/industries" },
-  ];
+  const sections = Array.isArray(footerData.sections)
+    ? footerData.sections
+    : [];
 
-  const importantPages = [
-    {
-      label: "Frequently Asked Questions",
-      path: "/frequently-asked-questions",
-    },
-    { label: "Terms and Conditions", path: "/terms-and-conditions" },
-    { label: "Privacy Policy", path: "/privacy-policy" },
-  ];
+  const socialLinks = Array.isArray(footerData.socialLinks)
+    ? footerData.socialLinks
+    : [];
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.set(textRefs.current, { y: 30, opacity: 0, filter: "blur(6px)" });
-      gsap.to(textRefs.current, {
+      gsap.set(textRefs.current.filter(Boolean), {
+        y: 30,
+        opacity: 0,
+        filter: "blur(6px)",
+      });
+
+      gsap.to(textRefs.current.filter(Boolean), {
         y: 0,
         opacity: 1,
         filter: "blur(0px)",
@@ -59,113 +61,108 @@ const Footer = () => {
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [sections.length, socialLinks.length]);
 
   return (
     <footer
       ref={sectionRef}
-      className="relative bg-[#8a0707] px-6 py-12 sm:px-10 lg:px-20 font-montserrat text-white"
+      className="relative bg-[#8a0707] px-6 py-12 font-montserrat text-white sm:px-10 lg:px-20"
     >
-      <div className="mx-auto max-w-7xl grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-        {/* Logo & Social */}
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Logo + Social */}
         <div className="flex flex-col gap-4">
           <div
-            ref={(el) => textRefs.current.push(el)}
-            className="flex items-center gap-2 text-2xl font-extrabold text-white"
+            ref={(el) => {
+              textRefs.current[0] = el;
+            }}
           >
-            <img src={logo} alt="Arka Hire Logo" className="h-16 w-full" />
+            <img
+              src={logo}
+              alt={footerData.logo?.alt || "Arka Hire Logo"}
+              className="h-16 w-full object-contain"
+            />
           </div>
+
+          <a
+            ref={(el) => {
+              textRefs.current[1] = el;
+            }}
+            href={`mailto:${footerData.contactEmail}`}
+            className="text-sm text-white/80 transition hover:text-green-400"
+          >
+            {footerData.contactEmail}
+          </a>
 
           <div
-            ref={(el) => textRefs.current.push(el)}
-            className="text-sm text-white/80"
+            ref={(el) => {
+              textRefs.current[2] = el;
+            }}
           >
-            info@arkahire.com
+            <h4 className="mb-3 text-sm font-bold text-white">
+              {footerData.socialTitle}
+            </h4>
+
+            <div className="flex gap-3">
+              {socialLinks.map((item, index) => {
+                const Icon = iconMap[item.icon];
+
+                if (!Icon) return null;
+
+                return (
+                  <a
+                    key={`${item.platform}-${index}`}
+                    href={item.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={item.platform}
+                    className="transition hover:text-green-400"
+                  >
+                    <Icon className="h-5 w-5" />
+                  </a>
+                );
+              })}
+            </div>
           </div>
 
-          <div className="flex gap-3 mt-2">
-            {[
-              FaFacebookF,
-              FaTwitter,
-              FaYoutube,
-              FaLinkedinIn,
-              FaPinterestP,
-            ].map((Icon, i) => (
-              <Icon
-                key={i}
-                ref={(el) => textRefs.current.push(el)}
-                className="h-5 w-5 cursor-pointer transition hover:text-green-400"
-              />
-            ))}
-          </div>
-
-          <div
-            ref={(el) => textRefs.current.push(el)}
+          <p
+            ref={(el) => {
+              textRefs.current[3] = el;
+            }}
             className="mt-6 text-xs text-white/50"
           >
-            Arka Hire 2013-2026. All Rights Reserved
+            {footerData.copyright}
+          </p>
+        </div>
+
+        {/* Footer Sections */}
+        {sections.map((section, sectionIndex) => (
+          <div
+            key={`${section.title}-${sectionIndex}`}
+            className="flex flex-col gap-2"
+          >
+            <h4
+              ref={(el) => {
+                textRefs.current[10 + sectionIndex] = el;
+              }}
+              className="mb-2 text-lg font-bold text-white"
+            >
+              {section.title}
+            </h4>
+
+            {section.links?.map((link, linkIndex) => (
+              <a
+                key={`${link.label}-${linkIndex}`}
+                ref={(el) => {
+                  textRefs.current[20 + sectionIndex * 10 + linkIndex] = el;
+                }}
+                href={link.path}
+                className="text-sm text-white/80 transition hover:text-green-400"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
-        </div>
-
-        {/* Services */}
-        <div className="flex flex-col gap-2">
-          <h4
-            ref={(el) => textRefs.current.push(el)}
-            className="font-bold text-white text-lg mb-2"
-          >
-            Services
-          </h4>
-          {servicesLinks.map((item, i) => (
-            <a
-              key={i}
-              ref={(el) => textRefs.current.push(el)}
-              href={item.path}
-              className="text-sm text-white/80 hover:text-green-400 transition"
-            >
-              {item.label}
-            </a>
-          ))}
-        </div>
-
-        {/* Important Links */}
-        <div className="flex flex-col gap-2">
-          <h4
-            ref={(el) => textRefs.current.push(el)}
-            className="font-bold text-white text-lg mb-2"
-          >
-            Important Links
-          </h4>
-          {importantLinks.map((item, i) => (
-            <a
-              key={i}
-              ref={(el) => textRefs.current.push(el)}
-              href={item.path}
-              className="text-sm text-white/80 hover:text-green-400 transition"
-            >
-              {item.label}
-            </a>
-          ))}
-        </div>
-
-        {/* Important Pages */}
-        <div className="flex flex-col gap-2">
-          <h4
-            ref={(el) => textRefs.current.push(el)}
-            className="font-bold text-white text-lg mb-2"
-          >
-            Important Pages
-          </h4>
-          {importantPages.map((item, i) => (
-            <a
-              key={i}
-              ref={(el) => textRefs.current.push(el)}
-              href={item.path}
-              className="text-sm text-white/80 hover:text-green-400 transition"
-            >
-              {item.label}
-            </a>
-          ))}
-        </div>
+        ))}
       </div>
     </footer>
   );

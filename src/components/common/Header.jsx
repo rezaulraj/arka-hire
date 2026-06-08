@@ -14,13 +14,13 @@ const Header = () => {
 
   const languages = [
     { code: "en", country: "GB", name: "English" },
-    { code: "cnr", country: "ME", name: "CNR" },
+    { code: "me", country: "ME", name: "Montenegrin" },
     { code: "de", country: "DE", name: "Deutsch" },
     { code: "el", country: "GR", name: "Ελληνικά" },
     { code: "hr", country: "HR", name: "Hrvatski" },
     { code: "mk", country: "MK", name: "Македонски" },
     { code: "ro", country: "RO", name: "Română" },
-    { code: "sr", country: "RS", name: "Српски" },
+    { code: "rs", country: "RS", name: "Српски" },
   ];
 
   const changeLanguage = (langCode) => {

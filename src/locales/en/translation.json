@@ -1290,6 +1290,7 @@
       }
     }
   },
+
   "industriesPage": {
     "badge": "Pick from Our Top Workers",
     "heading": ["Industries", "We", "Serve"],
@@ -1522,6 +1523,7 @@
       }
     ]
   },
+
   "contactPage": {
     "contactForm": {
       "title": "Contact for Workforce Solutions!",
@@ -1570,6 +1572,7 @@
       }
     }
   },
+  
   "faqsPage": {
     "badge": "Help Center",
     "heading": "Frequently Asked Questions",
@@ -1752,6 +1755,7 @@
       "alt": "Arka Hire Logo"
     },
     "contactEmail": "info@arkahire.com",
+    "socialTitle": "Follow Us",
     "socialLinks": [
       { "platform": "Facebook", "icon": "FaFacebookF", "url": "#" },
       { "platform": "Twitter", "icon": "FaTwitter", "url": "#" },
@@ -1764,17 +1768,32 @@
       {
         "title": "Services",
         "links": [
-          { "label": "Recruitment Process", "path": "/services/recruitment" },
-          { "label": "Mediation in Employment", "path": "/services/mediation" },
-          { "label": "Temporary Recruitment", "path": "/services/temporary" },
-          { "label": "Legal Assurance", "path": "/services/legal-assurance" },
-          { "label": "Immigration Assistance", "path": "/services/immigration" }
+          {
+            "label": "Recruitment Process",
+            "path": "/employers/recruitment-process"
+          },
+          {
+            "label": "Mediation in Employment",
+            "path": "/employers/mediation-in-employment"
+          },
+          {
+            "label": "Temporary Recruitment",
+            "path": "/employers/temporary-recruitment"
+          },
+          {
+            "label": "Legal Assurance",
+            "path": "/employers/legal-assurance"
+          },
+          {
+            "label": "Immigration Assistance",
+            "path": "/employers/immigration-assistance"
+          }
         ]
       },
       {
         "title": "Important Links",
         "links": [
-          { "label": "Contact us", "path": "/contact" },
+          { "label": "Contact us", "path": "/contact-us" },
           { "label": "Agency Partnership", "path": "/agency-partnership" },
           { "label": "Open Jobs", "path": "/open-jobs" },
           { "label": "Industries We Serve", "path": "/industries" }
@@ -1787,8 +1806,14 @@
             "label": "Frequently Asked Questions",
             "path": "/frequently-asked-questions"
           },
-          { "label": "Terms and Conditions", "path": "/terms-and-conditions" },
-          { "label": "Privacy Policy", "path": "/privacy-policy" }
+          {
+            "label": "Terms and Conditions",
+            "path": "/terms-and-conditions"
+          },
+          {
+            "label": "Privacy Policy",
+            "path": "/privacy-policy"
+          }
         ]
       }
     ]

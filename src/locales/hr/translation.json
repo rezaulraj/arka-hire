@@ -1,35 +1,1424 @@
 {
   "navItem": {
-    "home": "Home",
-    "aboutUs": "About Us",
+    "home": "Početna",
+    "aboutUs": "O nama",
     "ourApproach": {
-      "title": "Our Approach",
+      "title": "Naš pristup",
       "subLinks": {
-        "clientConsultation": "Client Consultation",
-        "workerSourcing": "Worker Sourcing",
-        "screeningProcess": "Screening Process",
-        "seamlessIntegration": "Seamless Integration",
-        "employeeWelfareSupport": "Employee Welfare Support"
+        "clientConsultation": "Savjetovanje s klijentima",
+        "workerSourcing": "Pronalaženje radnika",
+        "screeningProcess": "Proces provjere",
+        "seamlessIntegration": "Besprijekorna integracija",
+        "employeeWelfareSupport": "Podrška dobrobiti zaposlenika"
       }
     },
     "employers": {
-      "title": "Employers",
+      "title": "Poslodavci",
       "subLinks": {
-        "recruitmentProcess": "Recruitment Process",
-        "immigrationAssistance": "Immigration Assistance",
-        "mediationInEmployment": "Mediation in Employment",
-        "temporaryRecruitment": "Temporary Recruitment",
-        "legalAssurance": "Legal Assurance"
+        "recruitmentProcess": "Proces zapošljavanja",
+        "immigrationAssistance": "Pomoć pri imigraciji",
+        "mediationInEmployment": "Medijacija u zapošljavanju",
+        "temporaryRecruitment": "Privremeno zapošljavanje",
+        "legalAssurance": "Pravna sigurnost"
       }
     },
     "workersAndAgencies": {
-      "title": "Workers and Agencies",
+      "title": "Radnici i agencije",
       "subLinks": {
-        "openJob": "Open Job",
-        "agencyPartnerships": "Agency Partnerships"
+        "openJob": "Otvoreno radno mjesto",
+        "agencyPartnerships": "Partnerstva s agencijama"
       }
     },
-    "industries": "Industries",
-    "contactUs": "Contact Us"
+    "industries": "Industrije",
+    "contactUs": "Kontaktirajte nas"
+  },
+  "home": {
+    "hero": {
+      "workers": [
+        "Stolari",
+        "Zidari",
+        "Električari",
+        "Vodoinstalateri",
+        "Krojači krovova",
+        "Moleri",
+        "Nadzornici gradilišta",
+        "Vozači",
+        "Vozači kamiona",
+        "Vozači autobusa",
+        "Kuriri i dostavljači",
+        "Vozači taksija i ride-hailing",
+        "Vozači građevinske i teške opreme",
+        "Zdravstvo",
+        "Medicinske sestre",
+        "Pomoćnici za kućnu njegu",
+        "Medicinski tipografi",
+        "Pomoćnici u ljekarnama",
+        "Pomoćnici u bolnicama",
+        "Osoblje za čišćenje",
+        "Pomoćnici u prehrambenim uslugama",
+        "Ljepota",
+        "Pomoćnici u salonima",
+        "Frizeri",
+        "Stilist frizura",
+        "Šminker",
+        "Estetičar",
+        "Specijalist za njegu kože",
+        "Terapijski stručnjak za ljepotu",
+        "Upravitelj salona",
+        "Spa terapeut",
+        "Masera",
+        "Limarstvo i bojenje",
+        "Limarski tehničar",
+        "Pomoćnik za bojenje",
+        "Radnik za pripremu površina",
+        "Miješač boja",
+        "Specijalist za brušenje",
+        "Sprej boja",
+        "Ugostiteljstvo",
+        "Chef de Partie",
+        "Sous Chef",
+        "Recepcioner",
+        "Konobar/konobarica",
+        "Barmen",
+        "Nadzornik kućnih poslova",
+        "Konzijerž",
+        "Sommelier",
+        "Industrija zavarivanja",
+        "MIG zavarivači",
+        "TIG zavarivači",
+        "Zavarivači s lukom",
+        "Fabrikatori",
+        "Inspektori zavarivanja",
+        "Cjevovoditelji",
+        "Strukturni zavarivači",
+        "Maloprodajna industrija",
+        "Pomoćnik u prodaji",
+        "Upravitelj trgovine",
+        "Blagajnik",
+        "Vizualni merchandiser",
+        "Asistent za inventar",
+        "Predstavnik korisničke podrške",
+        "Radnik na polici",
+        "Rudarska industrija",
+        "Operateri iskopa",
+        "Bušači",
+        "Tehničari za eksplozije",
+        "Službenici za sigurnost",
+        "Geolozi",
+        "Geodeti",
+        "Operateri teške opreme",
+        "Prerada i proizvodnja hrane",
+        "Rukovatelji hranom",
+        "Pakeri",
+        "Tehničari za kontrolu kvalitete",
+        "Operateri strojeva",
+        "Sanitarni radnici",
+        "Nadzornici proizvodnje",
+        "Radnici na proizvodnoj liniji",
+        "Odjeća i tekstil",
+        "Tekstilni radnici",
+        "Operatori šivaćih strojeva",
+        "Majstori rezanja",
+        "Inspektori kvalitete",
+        "Radnici za glačanje",
+        "Radnici za pakiranje",
+        "Pomoćnici u proizvodnji",
+        "Proizvodnja i industrijska izrada",
+        "Radnici na proizvodnoj liniji",
+        "Operateri strojeva",
+        "Inspektori kontrole kvalitete",
+        "Zavarivači",
+        "Fabrikatori",
+        "Vozači viljuškara",
+        "Čišćenje i održavanje kuće",
+        "Domari",
+        "Kućne pomoćnice",
+        "Osoblje za čišćenje",
+        "Čuvari",
+        "Tehničari za podove",
+        "Čistači prozora",
+        "Osoblje za praonicu rublja",
+        "Poljoprivreda i plantaže",
+        "Saditelji",
+        "Berbači",
+        "Radnici za održavanje farmi",
+        "Tehničari za navodnjavanje",
+        "Rukovatelji stokom",
+        "Menadžeri usjeva",
+        "Agronomi",
+        "Morska i brodograđevna industrija",
+        "Morski zavarivači",
+        "Brodograditelji",
+        "Morski električari",
+        "Monteri cjevovoda",
+        "Pomorski arhitekti",
+        "Pomorski inženjeri",
+        "Uređenje okoliša i održavanje",
+        "Urednici krajolika",
+        "Održavatelji terena",
+        "Vrtlari",
+        "Dizajneri krajolika",
+        "Arboristi",
+        "Specijalisti za travnjake",
+        "Operateri bagera",
+        "Operateri buldožera",
+        "Operateri dizalica",
+        "Operateri rovokopača",
+        "Operateri utovarivača",
+        "Operateri grejdera",
+        "Operateri asfaltera"
+      ]
+    }
+  },
+  "aboutUs": {
+    "hero": {
+      "logoAlt": "Arka Hire",
+      "title": "Agencija bez granica",
+      "subtitle": "Ponosimo se predviđanjem izazova i prilagođavanjem na promjenjive zahtjeve tržišta rada.",
+      "description": "Naša čvrsta posvećenost uspjehu naših partnera je nepokolebljiva."
+    },
+    "aboutStats": {
+      "stats": {
+        "items": [
+          {
+            "number": "1300+",
+            "label": "Radnici zamijenjeni u posljednjih 5 godina"
+          },
+          {
+            "number": "200+",
+            "label": "Sretni poslodavci koji su nam vjerovali"
+          }
+        ],
+        "title": "Više od desetljeća stručnosti u outsourcingu radne snage",
+        "description": "Arka Hire je istaknuta kompanija za outsourcing radne snage sa sjedištem u Londonu, UK. Sa više od deset godina iskustva, specijalizirani smo za pružanje prilagođenih rješenja za upravljanje radnom snagom koja zadovoljavaju jedinstvene potrebe naših klijenata. Naš stručni tim izvrsno prepoznaje vrhunske talente, osiguravajući savršeno podudaranje za specifične zahtjeve i budžet svake organizacije. Nudimo širok spektar usluga, uključujući privremeno i stalno zapošljavanje u raznim sektorima širom svijeta. Naš cilj je biti preferirani partner za ljudske resurse za javni i privatni sektor.",
+        "button": "Više o nama"
+      }
+    },
+    "hrExpert": {
+      "imageAlt": "HR stručnjaci",
+      "title": "HR stručnjaci posvećeni vašem uspjehu",
+      "points": [
+        {
+          "title": "Prilagođena rješenja za zapošljavanje",
+          "desc": "Naše strategije zapošljavanja prilagođavamo vašim specifičnim potrebama, osiguravajući da dobijete najkvalificiranije kandidate."
+        },
+        {
+          "title": "Globalno stjecanje talenata",
+          "desc": "Naša široka mreža omogućava nam da pronađemo vrhunske talente širom svijeta za privremene i stalne uloge."
+        },
+        {
+          "title": "Sveobuhvatna pravna podrška",
+          "desc": "Upravljamo svim pravnim aspektima, od dobivanja radnih dozvola do osiguranja usklađenosti s lokalnim propisima."
+        },
+        {
+          "title": "Integracija i podrška",
+          "desc": "Pomažemo u smještaju, stručnom osposobljavanju i jezičnom obrazovanju kako bismo olakšali nesmetanu integraciju novih zaposlenika."
+        }
+      ]
+    },
+    "workforceSolution": {
+      "title": "Naša sveobuhvatna rješenja za radnu snagu za vaš posao",
+      "services": [
+        {
+          "title": "Stjecanje radnika",
+          "description": "Specijalizirani smo za identifikaciju i privlačenje vrhunskih talenata. Naš temeljit proces zapošljavanja osigurava da pronalazimo najbolje kandidate koji savršeno odgovaraju potrebama vaše organizacije."
+        },
+        {
+          "title": "Rješenja za radnu snagu",
+          "description": "Nudimo fleksibilne opcije zapošljavanja kako bismo zadovoljili raznovrsne zahtjeve, od privremenih do stalnih pozicija, osiguravajući pouzdanost i prilagodljivost vaše radne snage."
+        },
+        {
+          "title": "Usklađenost s propisima",
+          "description": "Naša stručnost u pravnoj i regulatornoj usklađenosti garantira da svi procesi zapošljavanja poštuju lokalne i međunarodne zakone, minimizirajući rizike za vaš posao."
+        },
+        {
+          "title": "Strateško planiranje radne snage",
+          "description": "Pomažemo u razvoju i implementaciji učinkovitih strategija radne snage koje su usklađene s ciljevima vašeg poslovanja, povećavajući produktivnost i učinkovitost."
+        },
+        {
+          "title": "Provjere pozadine",
+          "description": "Naše rigorozne provjere pozadine i procesi ocjenjivanja osiguravaju da zaposlite pouzdane i kvalificirane kandidate, pružajući vam mir i sigurnost."
+        },
+        {
+          "title": "Obuka i razvoj vještina",
+          "description": "Pružamo ciljanje programe obuke i razvoja kako bismo poboljšali vještine i sposobnosti vaše radne snage, osiguravajući da budu dobro pripremljeni za zahtjeve posla."
+        }
+      ]
+    },
+    "companyTimeline": {
+      "badge": "Naše putovanje",
+      "title": "Vremenska linija kompanije",
+      "subtitle": "Desetljeće rasta, inovacija i globalnog utjecaja u rješenjima za radnu snagu.",
+      "yearLabel": "Godina",
+      "endText": "I dalje…",
+      "items": [
+        {
+          "year": "2013",
+          "title": "Pokretanje i osnivanje",
+          "tag": "Osnovano",
+          "desc": "Arka Hire je osnovan u UK, fokusirajući se na pružanje personaliziranih usluga upravljanja radnom snagom i okupljanje kvalificiranog tima za početne klijente u građevinskom i proizvodnom sektoru.",
+          "icon": "🚀"
+        },
+        {
+          "year": "2016",
+          "title": "Proširenje usluga",
+          "tag": "Rast",
+          "desc": "Proširili smo naše usluge zapošljavanja kako bi uključivali privremena i stalna rješenja, šireći se u skladištenju, logistici i zdravstvenoj zaštiti, čime smo značajno povećali bazu klijenata.",
+          "icon": "📈"
+        },
+        {
+          "year": "2019",
+          "title": "Diversifikacija industrije",
+          "tag": "Prekretnica",
+          "desc": "Dalje smo proširili naše ponude u nove industrije, uključujući maloprodaju, ugostiteljstvo i IT, omogućujući nam da zadovoljimo širi spektar potreba klijenata i tržišnih zahtjeva.",
+          "icon": "🌿"
+        },
+        {
+          "year": "2023",
+          "title": "Globalno širenje",
+          "tag": "Globalno",
+          "desc": "Povećali smo naš globalni prisutnost ulaskom na nova međunarodna tržišta, učvršćujući naš ugled kao vodećeg partnera za zapošljavanje i pružajući sveobuhvatna rješenja radne snage širom svijeta.",
+          "icon": "🌍"
+        }
+      ]
+    }
+  },
+  "ourApproach": {
+    "clientConsultation": {
+      "heading": ["Savjetovanje", "s klijentima"],
+      "heroText": [
+        "U Arka Hire prepoznajemo da svako poslovanje ima svoje potrebe i izazove. Naše usluge savjetovanja s klijentima prilagođene su da pruže rješenja koja savršeno odgovaraju vašim jedinstvenim zahtjevima i ciljevima.",
+        "Sa više od 10 godina iskustva u industriji outsourcinga radne snage, naši stručni konzultanti su opremljeni da ponude strateške savjete i podršku kako biste postigli svoje poslovne ciljeve."
+      ],
+      "points": [
+        "Dizajniramo prilagođene strategije za rješavanje specifičnih poslovnih izazova.",
+        "Naši konzultanti pružaju informirane smjernice u sektorima uključujući tehnologiju, zdravstvo i financije.",
+        "Koristimo najnovije tehnologije za poboljšanje procesa zapošljavanja i HR-a.",
+        "Pružamo sveobuhvatnu podršku od početnog savjetovanja do besprijekorne implementacije.",
+        "Vaš uspjeh je naš prioritet, uz jasnu komunikaciju i dugotrajne odnose s klijentima."
+      ],
+      "cta": {
+        "buttonText": "Razgovarajmo",
+        "link": "/contact-us"
+      },
+      "heroImageAlt": "Savjetovanje s klijentima",
+      "floatingCard": {
+        "title": "Praktične smjernice prije svake odluke o zapošljavanju.",
+        "badge": "Savjetovanje Prvo"
+      },
+      "strategies": {
+        "sectionTitle": "Naše strategije",
+        "sectionBadge": "Naš pristup",
+        "cards": [
+          {
+            "title": "Strateško planiranje zapošljavanja",
+            "desc": "Razvijamo kompletne strategije zapošljavanja usklađene s ciljevima vašeg poslovanja, potrebama radne snage i planovima rasta."
+          },
+          {
+            "title": "Upravljanje stjecanjem talenata",
+            "desc": "Identificiramo, privlačimo i zadržavamo kvalificirane talente kako bi vaše poslovanje napredovalo s povjerenjem."
+          },
+          {
+            "title": "Angažman i zadržavanje zaposlenika",
+            "desc": "Implementiramo praktične strategije za povećanje zadovoljstva zaposlenika, smanjenje fluktuacije i poboljšanje performansi."
+          },
+          {
+            "title": "Planiranje i optimizacija radne snage",
+            "desc": "Optimiziramo vašu radnu snagu za maksimalnu učinkovitost, produktivnost i dugoročnu poslovnu vrijednost."
+          }
+        ]
+      }
+    },
+    "workerSourcing": {
+      "heading": "Pronalaženje radnika",
+      "intro": "Našu radnu snagu pronalazimo iz raznih zemalja, uključujući Bahrein, Kuvajt, Oman, Katar, Saudijsku Arabiju, UAE, Bangladeš, Indiju, Nepal, Šri Lanku i Maleziju. Radnici se upućuju u Rumunjsku, Hrvatsku, Njemačku i UK, potpuno spremni za besprijekornu integraciju.",
+      "points": [
+        "Naša stručnost u industriji: Nudimo specijalizirano znanje u širokom spektru sektora, uključujući graditeljstvo, proizvodnju, ugostiteljstvo, poljoprivredu, logistiku, zdravstvo i više",
+        "Sveobuhvatna rješenja: Pružamo usluge od početka do kraja, od pronalaženja i selekcije kandidata do usklađenosti i implementacije, osiguravajući glatki i učinkovit proces.",
+        "Pristup usmjeren na klijenta: Fokusiramo se na izgradnju snažnih, dugotrajnih odnosa s jasnom komunikacijom i prilagođenim uslugama koje odgovaraju vašim jedinstvenim potrebama.",
+        "Vaš uspjeh, naš prioritet: Potpuno smo posvećeni postizanju vaših ciljeva pružajući izvrsnost i povećavajući produktivnost."
+      ],
+      "cta": {
+        "buttonText": "Detaljnije razgovarajmo"
+      },
+      "heroImageAlt": "Pronalaženje radnika",
+      "countries": {
+        "heading": ["Zemlje", "Iz", "Kojih", "Pronalazimo", "Naše", "Radnike"],
+        "intro": "Regrutiramo kvalificirane radnike s pouzdanih međunarodnih tržišta talenata i povezujemo ih s pouzdanim prilikama.",
+        "list": [
+          {
+            "name": "UAE",
+            "city": "Dubai",
+            "code": "AE",
+            "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "Nepal",
+            "city": "Kathmandu",
+            "code": "NP",
+            "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "Oman",
+            "city": "Muscat",
+            "code": "OM",
+            "image": "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "Sri Lanka",
+            "city": "Colombo",
+            "code": "LK",
+            "image": "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "Qatar",
+            "city": "Doha",
+            "code": "QA",
+            "image": "https://images.unsplash.com/photo-1700901742651-6b353164caf3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Bangladesh",
+            "city": "Dhaka",
+            "code": "BD",
+            "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "India",
+            "city": "New Delhi",
+            "code": "IN",
+            "image": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "Malaysia",
+            "city": "Kuala Lumpur",
+            "code": "MY",
+            "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=900&q=80"
+          }
+        ]
+      }
+    }
+  },
+  "employers": {
+    "recruitmentPage": {
+      "heroRecruitment": {
+        "heading": ["Zapošljavanje", "Proces", "u"],
+        "topDescription": "Ponosimo se time što ostajemo ispred izazova i prilagođavamo se stalno promjenjivim potrebama tržišta rada. Naša nepokolebljiva predanost uspjehu naših partnera nema granica.",
+        "badge": "Arka Hire",
+        "title": "Razumijemo da je pronalazak pravih radnika ključan za uspjeh vašeg poslovanja.",
+        "description": "Naš proces zapošljavanja osmišljen je da bude jednostavan, transparentan i podržavajući u svakom koraku.",
+        "tags": ["Jednostavan proces", "Pouzdani radnici", "Pouzdana podrška"],
+        "imageAlt": "Proces zapošljavanja",
+        "imageBadge": "Zapošljavanje",
+        "imageCardText": "Jasan put zapošljavanja od pronalaska kandidata do uspješnog raspoređivanja."
+      },
+
+      "recruitmentSteps": {
+        "badge": "Naši koraci",
+        "heading": ["Proces", "zapošljavanja"],
+        "description": "Naš put zapošljavanja osmišljen je da bude jasan, podržavajući i učinkovit od prve konzultacije do konačnog zapošljavanja.",
+        "button": {
+          "text": "Industrije koje opslužujemo",
+          "path": "/industries"
+        },
+        "imageAlt": "Proces zapošljavanja",
+        "steps": [
+          "Početna konzultacija",
+          "Usklađivanje s radnim mjestom",
+          "Podrška pri prijavi",
+          "Priprema za intervju",
+          "Pomoć oko vize i radne dozvole",
+          "Orijentacija prije odlaska"
+        ]
+      },
+
+      "whyArka": {
+        "badge": "Zašto Arka Hire?",
+        "title": "Razlozi za ostanak uz proces Arka Hire",
+        "texts": [
+          "Imamo godine iskustva u međunarodnom zapošljavanju.",
+          "Razumijemo jedinstvene potrebe različitih industrija i prilagođavamo naše usluge kako bismo ih zadovoljili."
+        ],
+        "button": "Kontaktirajte nas",
+        "imageAlt": "Zašto Arka Hire"
+      },
+
+      "whyWorkWithUs": {
+        "heading": ["Zašto", "biste", "trebali", "raditi", "s", "nama?"],
+        "subtitle": "Naš tim dobro poznaje specifične zahtjeve građevinskog i ugostiteljskog sektora, osiguravajući da vam pružimo kandidate koji nisu samo kvalificirani, već i savršeno odgovaraju vašoj industriji.",
+        "cards": [
+          {
+            "title": "Stručnost u industriji",
+            "description": "Imamo godine iskustva u međunarodnom zapošljavanju. Razumijemo jedinstvene potrebe različitih industrija i prilagođavamo naše usluge kako bismo ih zadovoljili.",
+            "image": "work1"
+          },
+          {
+            "title": "Prilagodljiva rješenja",
+            "description": "Nudimo prilagodljiva rješenja zapošljavanja kako bismo zadovoljili jedinstvene potrebe vašeg poslovanja, bilo da trebate privremeno osoblje ili stalne zaposlenike za dugoročni rast.",
+            "image": "work2"
+          },
+          {
+            "title": "Dokazan uspjeh",
+            "description": "Pomogli smo brojnim tvrtkama pronaći kvalificirane radnike koji su im potrebni za uspjeh. Naša predanost izvrsnosti i zadovoljstvu izdvaja nas od drugih agencija za zapošljavanje.",
+            "image": "work3"
+          }
+        ]
+      }
+    },
+
+    "immigrationAssistancePage": {
+      "heroImmigration": {
+        "heading": "Pomoć pri imigraciji",
+        "subtitle": "Razumijemo da snalaženje u imigracijskom procesu za vaše zaposlenike može biti složeno i stresno.",
+        "badge": "Zašto odabrati našu pomoć pri imigraciji?",
+        "title": "Imigracijski zakoni mogu biti zahtjevni za upravljanje. Evo zašto su naše usluge idealno rješenje za vaše poslovanje",
+        "description": "Naš proces zapošljavanja osmišljen je da bude besprijekoran, transparentan i podržavajući u svakoj fazi.",
+        "imageAlt": "Imigracijsko savjetovanje",
+        "imageLabels": ["Imigracija", "Savjetovanje"],
+        "features": [
+          {
+            "title": "Stručno vodstvo",
+            "desc": "Naš tim ostaje ažuriran s najnovijim imigracijskim zakonima i pravilima.",
+            "icon": "FaArrowRight"
+          },
+          {
+            "title": "Sveobuhvatna podrška",
+            "desc": "Brinemo se o svemu, od dokumentacije do pravne usklađenosti.",
+            "icon": "FaCogs"
+          },
+          {
+            "title": "Mir i sigurnost",
+            "desc": "Usredotočite se na rast svog poslovanja dok mi rješavamo pravne detalje.",
+            "icon": "FaBrain"
+          },
+          {
+            "title": "Pravna usklađenost",
+            "desc": "Naši stručnjaci osiguravaju da su svi imigracijski postupci strogo u skladu s važećim zakonima.",
+            "icon": "FaBalanceScale"
+          }
+        ]
+      },
+
+      "assistanceProcess": {
+        "badge": "Imigracija",
+        "heading": "Proces pomoći",
+        "steps": [
+          {
+            "title": "Cjelovit proces vize",
+            "desc": "Upravljamo cijelim procesom prijave za vizu za vaše zaposlenike, uključujući pripremu i pravovremenu predaju svih potrebnih dokumenata."
+          },
+          {
+            "title": "Radne dozvole",
+            "desc": "Pomažemo tvrtkama u dobivanju radnih dozvola za njihove zaposlenike, osiguravajući da vaš tim ima zakonsko pravo na rad."
+          },
+          {
+            "title": "Pravna usklađenost",
+            "desc": "Naši stručnjaci osiguravaju da svi imigracijski postupci poštuju važeće zakone, informirajući vas o svim promjenama u imigracijskim propisima."
+          },
+          {
+            "title": "Uvođenje zaposlenika",
+            "desc": "Podržavamo proces uvođenja međunarodnih zaposlenika, pomažući im da se smjeste i razumiju svoja zakonska prava i odgovornosti."
+          },
+          {
+            "title": "Stalna podrška",
+            "desc": "Pružamo kontinuiranu podršku za sva pitanja povezana s imigracijom, osiguravajući da vaše poslovanje uvijek ostane usklađeno."
+          }
+        ]
+      },
+
+      "arkaHireAdvantage": {
+        "badge": "Prednost Arka Hire",
+        "title": "Partnerstvo s Arka Hire donosi brojne prednosti",
+        "description": "Prilagođena rješenja: Naše usluge prilagođavamo vašim specifičnim potrebama. Iskusan tim: Naši stručnjaci donose godine iskustva u imigracijskom pravu. Proces bez komplikacija: Mi rješavamo složenosti, omogućujući vam da se usredotočite na svoje poslovanje.",
+        "button": "Kontaktirajte nas",
+        "imageAlt": "Prednost Arka Hire"
+      },
+
+      "partnerWithArkaHire": {
+        "heading": "Partnerstvo s Arka Hire",
+        "subtitle": "Posvećeni smo pomoći vam u učinkovitom upravljanju vašim imigracijskim potrebama. Naše sveobuhvatne usluge osiguravaju da vaši zaposlenici budu usklađeni sa svim pravnim zahtjevima, pružajući podršku potrebnu za nesmetano poslovanje.",
+        "cards": [
+          {
+            "title": "Stručnost u industriji",
+            "description": "Imamo godine iskustva u međunarodnom zapošljavanju. Razumijemo jedinstvene potrebe različitih industrija i prilagođavamo naše usluge kako bismo ih zadovoljili.",
+            "image": "work1"
+          },
+          {
+            "title": "Prilagodljiva rješenja",
+            "description": "Nudimo prilagodljiva rješenja zapošljavanja kako bismo zadovoljili jedinstvene potrebe vašeg poslovanja. Bilo da trebate privremeno osoblje za kratkoročni projekt ili stalne zaposlenike za dugoročni rast.",
+            "image": "work2"
+          },
+          {
+            "title": "Dokazan uspjeh",
+            "description": "Pomogli smo brojnim tvrtkama pronaći kvalificirane radnike koji su im potrebni za uspjeh. Naša predanost izvrsnosti i zadovoljstvu klijenata izdvaja nas od drugih agencija za zapošljavanje.",
+            "image": "work3"
+          }
+        ]
+      }
+    },
+
+    "mediationEmploymentPage": {
+      "heroMediation": {
+        "mainTitle": ["Medijacija", "u", "zapošljavanju"],
+        "topDescription": "Arka Hire nudi usluge medijacije u radnom okruženju kako bi se riješili sukobi na radnom mjestu i poboljšala komunikacija. Naši iskusni medijatori stvaraju pozitivna radna okruženja, olakšavajući obostrano korisne dogovore za poslodavce i zaposlenike.",
+        "badge": "Arka Hire",
+        "heroTitle": "U Arka Hire vjerujemo da je skladno radno mjesto ključno za produktivnost i zadovoljstvo zaposlenika.",
+        "description": "Naše usluge medijacije osmišljene su kako bi pomogle u rješavanju sukoba i sporova na pravedan, učinkovit i povjerljiv način.",
+        "imageAlt": "Medijacija u zapošljavanju",
+        "imageCardText": "Izgradnja boljih razgovora za snažnije radne odnose.",
+        "mediationBox": {
+          "title": "Što je medijacija?",
+          "paragraphs": [
+            "Medijacija je neformalan i povjerljiv proces u kojem neutralni medijator pomaže stranama u sporu da razgovaraju o svojim razlikama i rade prema obostrano prihvatljivom rješenju.",
+            "Medijator ne donosi odluke niti dodjeljuje krivnju, već olakšava komunikaciju kako bi stranama pomogao pronaći vlastita rješenja."
+          ]
+        }
+      },
+
+      "mediationSteps": {
+        "badge": "Naši koraci",
+        "heading": "Prednosti medijacije",
+        "benefits": [
+          "Povjerljivost",
+          "Brzina",
+          "Isplativost",
+          "Dobrovoljnost",
+          "Kontrola"
+        ],
+        "steps": [
+          {
+            "title": "Početna konzultacija",
+            "description": "Započinjemo početnom konzultacijom kako bismo procijenili prirodu spora i utvrdili je li medijacija prikladan pristup.",
+            "note": "Ovaj korak uključuje razgovor s obje strane radi objašnjenja procesa i odgovaranja na sva pitanja."
+          },
+          {
+            "title": "Dogovor o medijaciji",
+            "description": "Obje strane moraju pristati sudjelovati u medijaciji. Pružamo pisani sporazum koji opisuje uvjete i pravila procesa medijacije."
+          },
+          {
+            "title": "Zakazivanje medijacije",
+            "description": "Nakon što se obje strane slože, zakazujemo sesiju medijacije u prikladno vrijeme i na prikladnom mjestu. Sesije se mogu održati osobno ili virtualno, ovisno o preferencijama uključenih strana."
+          },
+          {
+            "title": "Sesija medijacije",
+            "description": "Tijekom sesije medijator vodi strukturiranu raspravu, omogućujući svakoj strani da izrazi svoje stavove i brige. Medijator pomaže identificirati zajedničku osnovu i istražiti moguća rješenja."
+          }
+        ]
+      },
+
+      "whyArkaMediation": {
+        "heading": ["Zašto", "biste", "trebali", "raditi", "s", "nama?"],
+        "topCards": [
+          {
+            "title": "Postizanje dogovora",
+            "description": "Ako obje strane postignu dogovor, medijator pomaže u izradi pisanog dokumenta koji opisuje uvjete rješenja. Ovaj dogovor je obvezujući i provediv na sudu.",
+            "icon": "reachIcon"
+          },
+          {
+            "title": "Praćenje",
+            "description": "Nudimo naknadnu podršku kako bismo osigurali provedbu uvjeta dogovora i riješili dodatne brige koje se mogu pojaviti.",
+            "icon": "followIcon"
+          }
+        ],
+        "imageAlt": "Zašto Arka Hire",
+        "badge": "Zašto Arka Hire?",
+        "title": "Prednost Arka Hire",
+        "description": "Odabir Arka Hire za vaše potrebe medijacije znači partnerstvo s timom posvećenim stvaranju pozitivnog radnog okruženja. Naši medijatori su vrlo iskusni profesionalci s dubokim znanjem radnog prava i rješavanja sukoba. Posvećeni smo pomoći vam u rješavanju sporova na način koji promiče razumijevanje i suradnju.",
+        "button": {
+          "text": "Kontaktirajte nas",
+          "path": "/contact-us"
+        }
+      }
+    },
+
+    "temporaryRecruitmentPage": {
+      "heroTemporary": {
+        "heading": ["Privremene", "usluge", "zapošljavanja"],
+        "topDescription": "Arka Hire nudi usluge privremenog zapošljavanja, pružajući fleksibilna i učinkovita kadrovska rješenja s pristupom bazi kvalificiranih kandidata. To osigurava da se vaše poslovanje može brzo prilagoditi promjenjivim potrebama radne snage.",
+        "badge": "Arka Hire",
+        "heroTitle": "U Arka Hire prepoznajemo da se poslovne potrebe mogu brzo mijenjati.",
+        "description": "Bilo da se radi o upravljanju sezonskim potrebama, izvođenju posebnih projekata ili pokrivanju dužih odsutnosti, naše usluge privremenog zapošljavanja nude fleksibilnost i kvalificiranu radnu snagu potrebnu za nesmetano poslovanje.",
+        "imageAlt": "Usluge privremenog zapošljavanja"
+      },
+      "tempProcess": {
+        "badge": "Naši koraci",
+        "heading": "Proces zapošljavanja",
+        "leftSteps": [
+          "Konzultacija i procjena potreba",
+          "Pronalaženje kandidata",
+          "Provjera i odabir",
+          "Raspoređivanje i uvođenje",
+          "Stalna podrška"
+        ],
+        "processSteps": [
+          {
+            "title": "Konzultacija i procjena potreba",
+            "description": "Započinjemo razumijevanjem vaših specifičnih poslovnih zahtjeva i identificiranjem potrebnih vještina. Naš tim blisko surađuje s vama kako bi definirao idealan profil kandidata."
+          },
+          {
+            "title": "Pronalaženje kandidata",
+            "description": "Koristeći našu široku mrežu, pronalazimo kandidate koji odgovaraju vašim kriterijima. Naša raznolika baza podataka uključuje visoko kvalificirane radnike spremne za privremene uloge."
+          },
+          {
+            "title": "Provjera i odabir",
+            "description": "Provodeći sveobuhvatnu provjeru, uključujući provjere prošlosti i procjene vještina, osiguravamo da dobijete samo vrhunske kandidate. Naš višerazinski proces odabira jamči da su radnici koje pružamo kompetentni i pouzdani."
+          },
+          {
+            "title": "Raspoređivanje i uvođenje",
+            "description": "Nakon što su pravi kandidati odabrani, upravljamo procesom raspoređivanja i uvođenja. To uključuje obradu sve potrebne dokumentacije i orijentaciju kako bi se omogućio besprijekoran prijelaz u vaš tim."
+          }
+        ]
+      },
+      "temporaryAdvantage": {
+        "heading": ["Prednost", "Arka", "Hire"],
+        "topBadge": "Zašto mi?",
+        "topTitle": "Zašto odabrati Arka Hire za privremeno osoblje?",
+        "topDescription": "Partnerstvo s Arka Hire za vaše potrebe privremenog osoblja znači rad s timom posvećenim vašem uspjehu. Naš strateški pristup osigurava da dobijete visokokvalitetne kandidate koji se besprijekorno integriraju u vaše poslovanje, pomažući vam održati produktivnost i ostvariti ciljeve.",
+        "button": {
+          "text": "Kontaktirajte nas",
+          "path": "/contact-us"
+        },
+        "cards": [
+          {
+            "title": "Personalizirana usluga",
+            "description": "Prilagođavamo naše strategije zapošljavanja vašim specifičnim poslovnim potrebama.",
+            "image": "work1"
+          },
+          {
+            "title": "Stručnost u industriji",
+            "description": "Naš tim ima opsežno iskustvo u različitim industrijama, što nam omogućuje razumijevanje i rješavanje vaših jedinstvenih izazova.",
+            "image": "work2"
+          },
+          {
+            "title": "Predanost izvrsnosti",
+            "description": "Posvećeni smo pružanju izvrsne usluge i osiguravanju potpunog zadovoljstva klijenata.",
+            "image": "work3"
+          }
+        ]
+      }
+    },
+
+    "legalAssurancePage": {
+      "heroLegalAssurance": {
+        "heading": ["Pravna", "sigurnost", "usluga"],
+        "topDescription": "U Arka Hire naše usluge pravne sigurnosti osmišljene su kako bi tvrtkama pružile mir osiguravanjem usklađenosti sa zakonima o radu i smanjenjem pravnih rizika.",
+        "badge": "Arka Hire",
+        "heroTitle": "Snalaženje u složenosti zakona o radu može biti izazovno.",
+        "description": "Zato nudimo stručno pravno vodstvo kako bismo pomogli vašem poslovanju da ostane potpuno usklađeno, štiteći vas od potencijalnih pravnih problema.",
+        "imageAlt": "Usluga pravne sigurnosti"
+      },
+      "legalProcess": {
+        "badge": "Naši koraci",
+        "heading": "Što ćete dobiti",
+        "leftItems": [
+          "Ugovori o radu",
+          "Razvoj politika",
+          "Pravne revizije",
+          "Rješavanje sporova",
+          "Obuke i radionice"
+        ],
+        "processSteps": [
+          {
+            "title": "Ugovori o radu",
+            "description": "Pomažemo u izradi jasnih i pravno usklađenih ugovora o radu koji definiraju osnovne uvjete, osiguravajući zaštitu i za poslodavce i za zaposlenike."
+          },
+          {
+            "title": "Razvoj politika",
+            "description": "Naš tim pomaže u stvaranju politika radnog mjesta koje poštuju pravne standarde, pokrivajući područja kao što su zabrana diskriminacije, sigurnost na radu i prava zaposlenika."
+          },
+          {
+            "title": "Pravne revizije",
+            "description": "Provodeći redovite pravne revizije, identificiramo potencijalne probleme prije nego što se pojave, pregledavamo vaše trenutne prakse i pružamo provedive preporuke."
+          },
+          {
+            "title": "Rješavanje sporova",
+            "description": "Ako dođe do sporova na radnom mjestu, naše usluge medijacije i arbitraže pomažu učinkovito riješiti sukobe, promičući pravedna i obostrano prihvatljiva rješenja bez dugotrajnih sudskih postupaka."
+          }
+        ]
+      },
+      "arkaAdvanced": {
+        "heading": ["Razlozi za ostanak uz", "proces Arka Hire"],
+        "topTitle": "Razlozi za ostanak uz proces Arka Hire",
+        "topDescription": "Partnerstvo s Arka Hire znači rad s timom posvećenim pravnoj usklađenosti i zaštiti vašeg poslovanja. Prilagođena rješenja, iskusan tim i stalna podrška.",
+        "button": {
+          "text": "Kontaktirajte nas"
+        },
+        "cards": [
+          {
+            "title": "Naslov kartice 1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+            "image": "legal-card1.webp"
+          },
+          {
+            "title": "Naslov kartice 2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+            "image": "legal-card2.webp"
+          },
+          {
+            "title": "Naslov kartice 3",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+            "image": "legal-card3.webp"
+          }
+        ],
+        "heroImage": "legalHero.webp"
+      }
+    }
+  },
+  "workerandagencies": {
+    "openJobPage": {
+      "heroOpenJob": {
+        "heading": [
+          "Pronađite",
+          "Posao",
+          "koji",
+          "odgovara",
+          "Vašim",
+          "Vještinama"
+        ],
+        "subtitle": "Pomoći ćemo vam da ga pronađete",
+        "badge": "Arka Hire",
+        "title": "Ostanite s nama! Ažuriramo ovu stranicu.",
+        "description": "Naš odjel otvorenih radnih mjesta bit će uskoro dostupan s prilikama koje odgovaraju vašim vještinama i iskustvu.",
+        "tags": [
+          "Novi poslovi uskoro",
+          "Uloge prema vještinama",
+          "Podrška radnicima"
+        ],
+        "imageAlt": "Otvoreno radno mjesto",
+        "imageCardText": "Pripremamo bolje mogućnosti zapošljavanja za kvalificirane radnike."
+      }
+    },
+    "agencyPartnerPage": {
+      "heroAgencyPartner": {
+        "heading": "Proces zapošljavanja",
+        "topDescription": "U Arka Hire posvećeni smo izgradnji snažnih, dugoročnih partnerstava s agencijama za zapošljavanje. Naš strukturirani program pruža potrebnu podršku i resurse kako biste uspješno ostvarili ciljeve. Povežimo poslodavce s kvalificiranim talentima koji su im potrebni.",
+        "badge": "Arka Hire",
+        "title": "U Arka Hire vjerujemo u snagu suradnje.",
+        "paragraphs": [
+          "Jeste li samostalni agent ili organizacija koja želi proširiti svoj doseg u industriji zapošljavanja?",
+          "U Arka Hire nudimo vam priliku da postanete naš partner i razvijete svoje poslovanje.",
+          "Udruživanjem s nama, možete pristupiti širokoj mreži prilika, povećati broj zapošljavanja i izgraditi dugotrajne odnose u industriji.",
+          "Prepustite detalje nama dok se vi fokusirate na pronalaženje najboljih talenata."
+        ],
+        "imageAlt": "Partnerska agencija"
+      },
+      "partnershipBenefits": {
+        "badge": "Naši koraci",
+        "heading": "Prednosti partnerstva",
+        "steps": [
+          {
+            "title": "Pristup klijentima",
+            "desc": "Proširite svoj doseg povezivanjem s tvrtkama u različitim industrijama. Predstavljamo vas poslodavcima koji aktivno traže kvalificirane radnike."
+          },
+          {
+            "title": "Pojednostavljeno zapošljavanje",
+            "desc": "Naša pojednostavljena platforma olakšava proces zapošljavanja, od pronalaženja kandidata do raspoređivanja, za iskustvo bez poteškoća."
+          },
+          {
+            "title": "Obuka i resursi",
+            "desc": "Pristupite sveobuhvatnim programima obuke, webinarima, uputama i marketinškim materijalima za poboljšanje vaših vještina zapošljavanja."
+          },
+          {
+            "title": "Pravovremena plaćanja",
+            "desc": "Primajte brza plaćanja za uspješno zapošljavanje. Naš učinkovit sustav osigurava brže transakcije u usporedbi sa standardnim industrijskim rokovima."
+          }
+        ]
+      },
+      "partnerCollaboration": {
+        "imageAlt": "Partnerstvo",
+        "badge": "Zašto partnerstvo s Arka Hire?",
+        "title": "Suradnja s Arka Hire donosi brojne prednosti. Evo zašto biste se trebali pridružiti našoj mreži",
+        "points": [
+          {
+            "label": "Ekskluzivne prilike",
+            "text": "Pristupite širokom rasponu otvorenih radnih mjesta i opsežnoj bazi klijenata."
+          },
+          {
+            "label": "Suradnička mreža",
+            "text": "Postanite dio profesionalne zajednice posvećene izvrsnosti u zapošljavanju."
+          },
+          {
+            "label": "Profesionalni rast",
+            "text": "Unaprijedite svoje vještine i proširite poslovanje uz našu stručnu podršku."
+          }
+        ],
+        "button": {
+          "text": "Kontaktirajte nas",
+          "path": "/contact-us"
+        }
+      },
+      "faqs": {
+        "badge": "Centar za pomoć",
+        "heading": "Najčešća pitanja",
+        "contactText": "Još uvijek imate pitanja? Kontaktirajte nas.",
+        "button": {
+          "text": "Kontaktirajte nas",
+          "path": "/contact-us"
+        },
+        "items": [
+          {
+            "question": "Što je Arka Hire partnerski program?",
+            "answer": "U Arka Hire nastojimo povezati klijente s najboljim zaposlenicima. Pažljivo procjenjujemo potencijalne partnere agencije, osiguravajući da zadovoljavaju naše stroge kriterije i visoke standarde prije uspostavljanja suradnje."
+          },
+          {
+            "question": "Kada mogu poslati kandidate na intervju kod Arka Hire konzultanata?",
+            "answer": "Kandidate možete poslati nakon inicijalnog pregleda i provjere dokumentacije. Naši konzultanti vodit će vas kroz potrebne korake i raspored intervjua."
+          },
+          {
+            "question": "Tko pokriva trošak zapošljavanja?",
+            "answer": "Troškovi zapošljavanja ovise o dogovoru između poslodavca, partnerske agencije i kandidata. Naš tim osigurava da je sve jasno komunicirano prije nastavka."
+          },
+          {
+            "question": "Postoje li zahtjevi za nacionalnost za Arka Hire partnerski program?",
+            "answer": "Zahtjevi se mogu razlikovati ovisno o klijentu, radnoj poziciji i zemlji odredišta. Pažljivo pregledavamo svaki slučaj i pružamo jasne smjernice našim partnerima."
+          }
+        ]
+      },
+      "arkaHireAdvantage": {
+        "heading": ["Prednosti", "Arka", "Hire"],
+        "subtitle": "Imamo opsežno iskustvo u građevinskom i ugostiteljskom sektoru, što nam omogućuje povezivanje tvrtki s visoko kvalificiranim kandidatima koji savršeno odgovaraju potrebama industrije.",
+        "cards": [
+          {
+            "title": "Ekskluzivne prilike",
+            "description": "Pristupite vrhunskim radnim mjestima i širokoj mreži renomiranih klijenata, osiguravajući kontinuirani rast i uspjeh.",
+            "icon": "icon1"
+          },
+          {
+            "title": "Suradnička mreža",
+            "description": "Pridružite se profesionalnoj zajednici regrutera i stručnjaka iz industrije posvećenih održavanju izvrsnosti u stjecanju talenata.",
+            "icon": "icon2"
+          },
+          {
+            "title": "Profesionalni razvoj",
+            "description": "Proširite svoje stručne vještine u zapošljavanju uz našu podršku, resurse i smjernice, pomažući vam učinkovito razviti svoje vještine i poslovanje.",
+            "icon": "icon3"
+          }
+        ]
+      }
+    }
+  },
+  "industriesPage": {
+    "badge": "Odaberite iz naših najboljih radnika",
+    "heading": ["Industrije", "Koje", "Opslužujemo"],
+    "subtitle": "Premium prikaz zapošljavanja za pouzdane industrije, kvalificirane radnike i pouzdana rješenja radne snage.",
+    "activeIndustryLabel": "Aktivna industrija",
+    "activeWorkersTitle": "Kvalificirane uloge spremne za vaše poslovanje",
+    "viewRoles": "Pogledajte uloge",
+    "industries": [
+      {
+        "title": "Građevinska industrija",
+        "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Radnici",
+          "Stolari",
+          "Zidari",
+          "Električari",
+          "Vodoinstalateri",
+          "Krojači",
+          "Slikari",
+          "Nadzornici gradilišta"
+        ]
+      },
+      {
+        "title": "Vozači",
+        "image": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Vozači kamiona",
+          "Vozači autobusa",
+          "Kuriri i dostavljači",
+          "Vozači taksija i prijevoza po zahtjevu",
+          "Vozači građevinske i teške mehanizacije"
+        ]
+      },
+      {
+        "title": "Zdravstvo",
+        "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Medicinske sestre",
+          "Pomoćnici u kućnoj njezi",
+          "Medicinski tipkari",
+          "Pomoćnici u ljekarnama",
+          "Pomoćnici u bolnici",
+          "Osoblje za čišćenje",
+          "Pomoćnici u prehrambenoj službi"
+        ]
+      },
+      {
+        "title": "Ljepota",
+        "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Pomoćnici u salonu",
+          "Frizeri",
+          "Stilizatori kose",
+          "Šminkeri",
+          "Estetičari",
+          "Terapeuti za ljepotu",
+          "Menadžeri salona",
+          "Spa terapeuti",
+          "Masažni terapeuti"
+        ]
+      },
+      {
+        "title": "Autolakiranje i farbanje",
+        "image": "https://images.unsplash.com/photo-1598860024867-a1cb3a858427?q=80&w=915&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "workers": [
+          "Tehničar za auto-lim",
+          "Pomoćnik slikara",
+          "Radnik za pripremu površine",
+          "Mikser boje",
+          "Specijalist brušenja",
+          "Praškasti slikar"
+        ]
+      },
+      {
+        "title": "Ugostiteljstvo",
+        "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Šef odjela",
+          "Pomoćni kuhar",
+          "Recepcioner na recepciji",
+          "Konobar/ica",
+          "Barmen",
+          "Nadzornik kućnog osoblja",
+          "Konzijerž",
+          "Sommelier"
+        ]
+      },
+      {
+        "title": "Industrija zavarivanja",
+        "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "MIG zavarivači",
+          "TIG zavarivači",
+          "Zavarivači lukom",
+          "Proizvođači",
+          "Inspektori zavarivanja",
+          "Cjevoklepači",
+          "Strukturni zavarivači"
+        ]
+      },
+      {
+        "title": "Maloprodaja",
+        "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Prodajni asistenti",
+          "Voditelji trgovina",
+          "Blagajnici",
+          "Vizualni merchandiseri",
+          "Pomoćnici u inventuri",
+          "Predstavnici korisničke službe",
+          "Osoblje za slaganje polica"
+        ]
+      },
+      {
+        "title": "Rudarska industrija",
+        "image": "https://images.unsplash.com/photo-1523848309072-c199db53f137?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "workers": [
+          "Operateri iskopavanja",
+          "Bušači",
+          "Tehničari za miniranje",
+          "Službenici sigurnosti",
+          "Geolozi",
+          "Geodeti",
+          "Operateri teške mehanizacije"
+        ]
+      },
+      {
+        "title": "Prerađivačka i prehrambena industrija",
+        "image": "https://images.unsplash.com/photo-1651525670114-2b8117390b28?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "workers": [
+          "Radnici u prehrambenoj industriji",
+          "Pakirnici",
+          "Tehničari kontrole kvalitete",
+          "Operateri strojeva",
+          "Radnici za higijenu",
+          "Nadzornici proizvodnje",
+          "Radnici na proizvodnoj liniji"
+        ]
+      },
+      {
+        "title": "Tekstilna industrija",
+        "image": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Tekstilni radnici",
+          "Operateri šivanja",
+          "Majstori rezanja",
+          "Inspektori kvalitete",
+          "Radnici za peglanje",
+          "Radnici za pakiranje",
+          "Pomoćnici u proizvodnji"
+        ]
+      },
+      {
+        "title": "Proizvodnja i industrija",
+        "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Radnici na proizvodnoj liniji",
+          "Operateri strojeva",
+          "Inspektori kontrole kvalitete",
+          "Nadzornici proizvodnje",
+          "Zavarivači",
+          "Proizvođači",
+          "Vozači viličara"
+        ]
+      },
+      {
+        "title": "Čišćenje i kućna njega",
+        "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Domari",
+          "Domaćice",
+          "Osoblje za čišćenje",
+          "Kustos",
+          "Tehničari poda",
+          "Čistači prozora",
+          "Pomoćnici u praonici"
+        ]
+      },
+      {
+        "title": "Poljoprivreda i plantaže",
+        "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Saditelji",
+          "Berbači",
+          "Radnici na održavanju farme",
+          "Tehničari za navodnjavanje",
+          "Upravitelji stoke",
+          "Menadžeri usjeva",
+          "Agronomi"
+        ]
+      },
+      {
+        "title": "Pomorska i brodogradnja",
+        "image": "https://images.unsplash.com/photo-1602575051429-c502cac0d3e8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "workers": [
+          "Pomorski zavarivači",
+          "Proizvođači",
+          "Brodograditelji",
+          "Pomorski električari",
+          "Cjevoklepači",
+          "Pomorski arhitekti",
+          "Pomorski inženjeri"
+        ]
+      },
+      {
+        "title": "Uređenje okoliša i hortikultura",
+        "image": "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Urednici krajolika",
+          "Upravljivači zemljišta",
+          "Vrtlari",
+          "Tehničari za navodnjavanje",
+          "Dizajneri krajolika",
+          "Arboristi",
+          "Specijalisti za travnjake"
+        ]
+      },
+      {
+        "title": "Operateri teške mehanizacije",
+        "image": "https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Operateri bagera",
+          "Operateri buldožera",
+          "Operateri dizalica",
+          "Operateri rovokopača",
+          "Operateri utovarivača",
+          "Operateri glodalica",
+          "Operateri valjkača"
+        ]
+      }
+    ]
+  },
+  "contactPage": {
+    "contactForm": {
+      "title": "Kontakt za rješenja radne snage!",
+      "subtitle": "Trebate pomoć? Pošaljite upit",
+      "description": "Ispunite obrazac i naš tim će vam se javiti što je prije moguće",
+      "email": "info@arkahire.com",
+      "form": {
+        "fullNamePlaceholder": "Puno ime",
+        "phonePlaceholder": "Broj telefona",
+        "emailPlaceholder": "Email",
+        "messagePlaceholder": "Poruka",
+        "submitButton": "Pošalji"
+      },
+      "office": {
+        "label": "SJEDILO - UK",
+        "address": "Surbiton, Ujedinjeno Kraljevstvo, KT6 7TE"
+      },
+      "backgroundImage": "https://images.pexels.com/photos/8867261/pexels-photo-8867261.jpeg"
+    },
+    "locationPage": {
+      "heading": "Posjetite naš ured",
+      "subheading": "Pronađite lokaciju našeg ureda i kontakt informacije u nastavku.",
+      "sectionLabel": "Naša lokacija",
+      "office": {
+        "name": "Središnji ured - UK",
+        "address": "Surbiton, Ujedinjeno Kraljevstvo, KT6 7TE",
+        "email": "info@arkahire.com",
+        "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Surbiton%2C%20United%20Kingdom%2C%20KT6%207TE"
+      },
+      "contactItems": [
+        {
+          "icon": "FaBuilding",
+          "label": "Adresa",
+          "value": "Surbiton, Ujedinjeno Kraljevstvo, KT6 7TE"
+        },
+        {
+          "icon": "FaEnvelope",
+          "label": "Email",
+          "value": "info@arkahire.com",
+          "mailto": "mailto:info@arkahire.com"
+        }
+      ],
+      "map": {
+        "iframeSrc": "https://www.google.com/maps?q=Surbiton%2C%20United%20Kingdom%2C%20KT6%207TE&output=embed",
+        "title": "Lokacija Arka Hire - Surbiton"
+      }
+    },
+    "faqsPage": {
+      "badge": "Centar za pomoć",
+      "heading": "Najčešća pitanja",
+      "description": "Pronađite odgovore o uslugama zapošljavanja Arka Hire, ugovorima, osoblju, međunarodnom zapošljavanju i podršci kandidatima.",
+      "helpBox": {
+        "label": "Trebate dodatnu pomoć?",
+        "email": "info@arkahire.com"
+      },
+      "contactButton": {
+        "text": "Kontaktirajte nas",
+        "path": "/contact-us"
+      },
+      "search": {
+        "placeholder": "Pretraži pitanja..."
+      },
+      "emptyState": {
+        "title": "Nema pronađenih FAQ-ova.",
+        "description": "Pokušajte pretraživati s drugom ključnom riječi."
+      },
+      "bottomNote": {
+        "textBeforeEmail": "Ako imate dodatnih pitanja ili trebate više informacija, slobodno nas kontaktirajte na",
+        "email": "info@arkahire.com"
+      },
+      "faqs": [
+        {
+          "question": "S kakvim tipovima klijenata/zadataka radite?",
+          "answer": "U Arka Hire radimo s različitim klijentima u raznim industrijama, uključujući IT, zdravstvo, financije, inženjering i druge. Obradjujemo zadatke od privremenih i ugovornih pozicija do stalnih zapošljavanja. Bilo da vam je potrebna kratkoročna podrška za projekt ili dugoročno proširenje tima, možemo pružiti prave talente za vaše specifične potrebe."
+        },
+        {
+          "question": "Koliko obično traju vaši ugovori?",
+          "answer": "Trajanje naših ugovora varira ovisno o specifičnim zahtjevima klijenata i prirodi zadatka. Privremeni zadaci mogu trajati od nekoliko tjedana do nekoliko mjeseci, dok ugovorne pozicije mogu trajati od šest mjeseci do godine ili više. Stalne pozicije namijenjene su dugoročnom angažmanu. Blisko surađujemo s klijentima kako bismo odredili odgovarajuću duljinu ugovora za svaki zadatak."
+        },
+        {
+          "question": "Zašto bih trebao raditi s agencijom za zapošljavanje da pronađem posao?",
+          "answer": "Rad s agencijom za zapošljavanje poput Arka Hire daje vam pristup neobjavljenim poslovima, stručnim savjetima, savjetovanju u karijeri, pregledima životopisa, pripremi za intervjue, snažnim vezama s poslodavcima i fleksibilnim opcijama zapošljavanja uključujući privremene, ugovorne i stalne uloge."
+        },
+        {
+          "question": "Kako rade agencije za zapošljavanje?",
+          "answer": "Agencije za zapošljavanje služe kao posrednici između poslodavaca i tražitelja posla. Naš proces uključuje konzultacije s klijentom, pronalaženje kandidata, selekciju i intervjue, prezentaciju klijentu, onboarding i praćenje kako bi prijelaz bio glatki."
+        },
+        {
+          "question": "Koje su naknade povezane s uslugama zapošljavanja?",
+          "answer": "Ne uzimamo novac od poslodavaca za zapošljavanja. Umjesto toga, poslodavci plaćaju jednokratnu naknadu koja pokriva trošak pribavljanja potrebnih radnih dozvola od vlade. Transparentni smo u vezi s naknadama i pružamo detaljan prikaz tijekom inicijalne konzultacije."
+        },
+        {
+          "question": "Postoji li klauzula o ekskluzivnosti u ugovorima o zapošljavanju?",
+          "answer": "Klauzule o ekskluzivnosti su opcionalne i ovise o dogovoru između Arka Hire i klijenta. Neki klijenti preferiraju rad isključivo s nama, dok drugi rade s više agencija. Prilagođavamo pristup vašim potrebama."
+        },
+        {
+          "question": "Je li potrebno uplatiti depozit za vaše usluge?",
+          "answer": "Obično ne zahtijevamo depozit za naše usluge zapošljavanja. Naša jednokratna naknada plaća se prilikom pokretanja procesa radne dozvole i bit će jasno navedena u našem ugovoru."
+        },
+        {
+          "question": "Kakav je proces zapošljavanja u vašoj agenciji?",
+          "answer": "Naš proces zapošljavanja uključuje inicijalne konzultacije, pretraživanje kandidata, selekciju, shortlistu, intervjue s klijentom, podršku pri ponudi i pomoć u onboarding-u kako bi integracija bila glatka."
+        },
+        {
+          "question": "Kako osiguravate kvalitetu kandidata?",
+          "answer": "Koristimo rigorozan proces provjere uključujući pregled životopisa, telefonske intervjue, detaljne intervjue uživo ili virtualno, testiranje vještina gdje je potrebno, provjeru referenci i kontinuirane povratne informacije od klijenata i kandidata."
+        },
+        {
+          "question": "Kako rukujete povjerljivošću?",
+          "answer": "Povjerljivost shvaćamo vrlo ozbiljno. Informacije o klijentima i kandidatima obrađujemo s najvećom diskrecijom. Pridržavamo se stroge politike zaštite podataka i dijelimo informacije samo s ovlaštenim osobama uključenim u proces zapošljavanja."
+        },
+        {
+          "question": "Možete li pomoći s međunarodnim zapošljavanjem?",
+          "answer": "Da, Arka Hire može pomoći s međunarodnim zapošljavanjem. Imamo globalnu mrežu i možemo pronaći kandidate iz različitih zemalja."
+        },
+        {
+          "question": "Koja je vaša politika raznolikosti i uključivanja?",
+          "answer": "Arka Hire je predan promicanju raznolikosti i uključivanja na radnom mjestu. Vjerujemo da su raznoliki timovi inovativniji i učinkovitiji. Osiguravamo jednake mogućnosti za sve kandidate i da naši procesi budu bez pristranosti."
+        },
+        {
+          "question": "Kako rješavate sporove ili probleme tijekom procesa zapošljavanja?",
+          "answer": "Imamo jasan protokol rješavanja. Potičemo otvorenu komunikaciju i blisko surađujemo s klijentima i kandidatima kako bismo brzo i pravedno riješili sve probleme."
+        },
+        {
+          "question": "Koju podršku nudite nakon što je kandidat postavljen?",
+          "answer": "Naša podrška se nastavlja i nakon postavljanja. Pružamo praćenje sastanaka, procjene učinkovitosti i stalnu podršku i poslodavcima i novozaposlenima tijekom inicijalnog razdoblja zaposlenja."
+        },
+        {
+          "question": "Kako ostajete ažurni s trendovima u industriji?",
+          "answer": "Naš tim ostaje ažuran kroz kontinuirani profesionalni razvoj, industrijske konferencije, relevantne publikacije i uvide iz mreže stručnjaka u industriji."
+        },
+        {
+          "question": "Možete li pružiti privremena rješenja zapošljavanja?",
+          "answer": "Da, nudimo privremena rješenja zapošljavanja za kratkoročnu podršku, sezonski rad, pokrivanje odsutnosti zaposlenika i specijalizirane projektne potrebe."
+        },
+        {
+          "question": "Kako usklađujete kandidate s radnim mjestima?",
+          "answer": "Kandidate usklađujemo putem detaljne analize poslova, profiliranja kandidata, naprednih tehnologija usklađivanja, procjene kulturne kompatibilnosti i procjene dugoročnog potencijala."
+        },
+        {
+          "question": "Kolika je vaša stopa uspjeha u postavljanju kandidata?",
+          "answer": "Naša stopa uspjeha je visoka zbog rigoroznog procesa provjere i dubokog razumijevanja potreba klijenata. Kontinuirano pratimo i poboljšavamo naše procese kako bismo održali snažne rezultate i zadovoljstvo u zapošljavanju."
+        }
+      ]
+    }
+  },
+  "termsPage": {
+    "title": "Uvjeti i odredbe",
+    "sections": [
+      {
+        "title": "Predmet i prihvaćanje",
+        "content": "Ovi Uvjeti korištenja („Uvjeti korištenja“) reguliraju korištenje web stranice arkahire.com tvrtke Arka Hire. Svaka osoba koja pristupi web stranici („vi“) ovime prihvaća Uvjete korištenja na snazi u trenutku posjeta."
+      },
+      {
+        "title": "Korištenje web stranice",
+        "content": "Ovim izričito i dobrovoljno prihvaćate korištenje web stranice isključivo na vlastiti rizik. Odgovorni ste za čuvanje korisničkog ID-a i lozinke u povjerljivosti."
+      },
+      {
+        "title": "Sadržaj",
+        "content": "Nismo obavezni provjeravati točnost sadržaja i ne jamčimo korisnost, točnost, potpunost ili relevantnost sadržaja. Sve odluke temeljene na sadržaju su vaša odgovornost."
+      },
+      {
+        "title": "Prava intelektualnog vlasništva",
+        "content": "Sav sadržaj na web stranici zaštićen je širom svijeta zakonima o autorskim pravima, dizajnu, zaštitnim znakovima i drugim zakonima o intelektualnom vlasništvu. Ne smijete kopirati, distribuirati niti koristiti sadržaj bez dopuštenja."
+      },
+      {
+        "title": "Poveznice i linkovi",
+        "content": "Web stranica može sadržavati poveznice na web stranice trećih strana. Linkanje na takve stranice ne implicira naše jamstvo za te stranice. Korištenje je na vlastiti rizik."
+      },
+      {
+        "title": "Osobni podaci",
+        "content": "Prikupljanje i korištenje osobnih podataka regulirano je našom Politikom privatnosti: https://arkahire.com/privacy-policy"
+      },
+      {
+        "title": "Pravo i nadležnost",
+        "content": "Ovi Uvjeti korištenja regulirani su zakonima Katara i podliježu isključivoj nadležnosti suda u Dohi."
+      },
+      {
+        "title": "Kontakt",
+        "content": "Pitanja, komentari i zahtjevi vezani uz ove Uvjete mogu se poslati na Arka Hire, Al-Barqiya, Building 379, zone, 57 Street 41, Ar-Rayyan, Qatar, info@arkahire.com"
+      }
+    ]
+  },
+  "privacyPolicy": {
+    "title": "Politika privatnosti",
+    "sections": [
+      {
+        "title": "Naša politika privatnosti",
+        "content": "Mi u Arka Hire, sa sjedištem u Al-Barqiya, Building 379, zone, 57 Street 41, Ar-Rayyan, Qatar, nastojimo zaštititi vašu privatnost. Ova Politika određuje koje osobne podatke prikupljamo od vas i kako ih koristimo."
+      },
+      {
+        "title": "Osobni podaci koje možemo prikupiti",
+        "content": "Prikupljamo informacije s vaših posjeta web stranici, uključujući podatke o prometu, lokaciju i sadržaj iz kontakt obrazaca. Obavezna polja označena su *, a neobavezna polja su po vašem izboru."
+      },
+      {
+        "title": "Kako koristimo vaše osobne podatke",
+        "content": "Vaše podatke koristimo za prilagodbu sadržaja, odgovore na upite, pružanje interaktivnih funkcija i poboljšanje web stranice. Podatke obično čuvamo 2 godine kako bismo se uskladili s zakonskim obvezama."
+      },
+      {
+        "title": "Marketinške poruke",
+        "content": "Uz vaš pristanak, možemo slati marketinške poruke putem e-pošte. Možete se odjaviti u bilo kojem trenutku koristeći link za odjavu ili kontaktirajući info@arkahire.com."
+      },
+      {
+        "title": "Dijeljenje s trećim stranama",
+        "content": "Podatke možemo otkriti dobavljačima, izvođačima ili državnim tijelima ako je to zakonski potrebno. Sve treće strane moraju poštivati obveze privatnosti."
+      },
+      {
+        "title": "IP adrese i kolačići",
+        "content": "Prikupljamo tehničke podatke poput IP adresa i vrste preglednika kako bismo poboljšali web stranicu. Kolačići se koriste za personalizirani sadržaj. Molimo vas da ne koristite opciju 'zapamti me' na zajedničkim uređajima."
+      },
+      {
+        "title": "Vaša prava",
+        "content": "Možete pristupiti, ispraviti, izbrisati ili ograničiti obradu svojih osobnih podataka. Pristanak možete povući u bilo kojem trenutku ili podnijeti pritužbu relevantnim tijelima."
+      },
+      {
+        "title": "Promjene politike",
+        "content": "Ovu Politiku možemo povremeno ažurirati. Promjene će biti objavljene na ovoj web stranici ili putem drugih kanala."
+      },
+      {
+        "title": "Kontakt",
+        "content": "Pitanja o ovoj Politici mogu se poslati na Arka Hire na info@arkahire.com."
+      }
+    ]
+  },
+  "footer": {
+    "logo": {
+      "src": "../../assets/logowhite.webp",
+      "alt": "Arka Hire Logo"
+    },
+    "contactEmail": "info@arkahire.com",
+    "socialTitle": "Pratite nas",
+    "socialLinks": [
+      { "platform": "Facebook", "icon": "FaFacebookF", "url": "#" },
+      { "platform": "Twitter", "icon": "FaTwitter", "url": "#" },
+      { "platform": "YouTube", "icon": "FaYoutube", "url": "#" },
+      { "platform": "LinkedIn", "icon": "FaLinkedinIn", "url": "#" },
+      { "platform": "Pinterest", "icon": "FaPinterestP", "url": "#" }
+    ],
+    "copyright": "Arka Hire 2013-2026. Sva prava pridržana",
+    "sections": [
+      {
+        "title": "Usluge",
+        "links": [
+          {
+            "label": "Proces zapošljavanja",
+            "path": "/employers/recruitment-process"
+          },
+          {
+            "label": "Posredovanje u zapošljavanju",
+            "path": "/employers/mediation-in-employment"
+          },
+          {
+            "label": "Privremeno zapošljavanje",
+            "path": "/employers/temporary-recruitment"
+          },
+          {
+            "label": "Pravna sigurnost",
+            "path": "/employers/legal-assurance"
+          },
+          {
+            "label": "Pomoć pri imigraciji",
+            "path": "/employers/immigration-assistance"
+          }
+        ]
+      },
+      {
+        "title": "Važne poveznice",
+        "links": [
+          { "label": "Kontaktirajte nas", "path": "/contact-us" },
+          { "label": "Partnerstvo s agencijom", "path": "/agency-partnership" },
+          { "label": "Otvoreni poslovi", "path": "/open-jobs" },
+          { "label": "Industrije koje opslužujemo", "path": "/industries" }
+        ]
+      },
+      {
+        "title": "Važne stranice",
+        "links": [
+          {
+            "label": "Najčešća pitanja",
+            "path": "/frequently-asked-questions"
+          },
+          {
+            "label": "Uvjeti i odredbe",
+            "path": "/terms-and-conditions"
+          },
+          {
+            "label": "Politika privatnosti",
+            "path": "/privacy-policy"
+          }
+        ]
+      }
+    ]
   }
 }

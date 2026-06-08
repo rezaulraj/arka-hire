@@ -1,35 +1,1811 @@
 {
   "navItem": {
-    "home": "Home",
-    "aboutUs": "About Us",
+    "home": "Acasă",
+    "aboutUs": "Despre noi",
     "ourApproach": {
-      "title": "Our Approach",
+      "title": "Abordarea noastră",
       "subLinks": {
-        "clientConsultation": "Client Consultation",
-        "workerSourcing": "Worker Sourcing",
-        "screeningProcess": "Screening Process",
-        "seamlessIntegration": "Seamless Integration",
-        "employeeWelfareSupport": "Employee Welfare Support"
+        "clientConsultation": "Consultanță clienți",
+        "workerSourcing": "Sourcing lucrători",
+        "screeningProcess": "Proces de selecție",
+        "seamlessIntegration": "Integrare perfectă",
+        "employeeWelfareSupport": "Sprijin pentru bunăstarea angajaților"
       }
     },
     "employers": {
-      "title": "Employers",
+      "title": "Angajatori",
       "subLinks": {
-        "recruitmentProcess": "Recruitment Process",
-        "immigrationAssistance": "Immigration Assistance",
-        "mediationInEmployment": "Mediation in Employment",
-        "temporaryRecruitment": "Temporary Recruitment",
-        "legalAssurance": "Legal Assurance"
+        "recruitmentProcess": "Proces de recrutare",
+        "immigrationAssistance": "Asistență pentru imigrare",
+        "mediationInEmployment": "Mediere în muncă",
+        "temporaryRecruitment": "Recrutare temporară",
+        "legalAssurance": "Asigurare legală"
       }
     },
     "workersAndAgencies": {
-      "title": "Workers and Agencies",
+      "title": "Lucrători și agenții",
       "subLinks": {
-        "openJob": "Open Job",
-        "agencyPartnerships": "Agency Partnerships"
+        "openJob": "Locuri de muncă vacante",
+        "agencyPartnerships": "Parteneriate cu agenții"
       }
     },
-    "industries": "Industries",
-    "contactUs": "Contact Us"
+    "industries": "Industrii",
+    "contactUs": "Contactați-ne"
+  },
+  "home": {
+    "hero": {
+      "workers": [
+        "Dulgheri / Tâmplari",
+        "Zidari",
+        "Electricieni",
+        "Instalatori",
+        "Atelierişti / Dulgheri acoperișuri",
+        "Zugravi / Vopsitori",
+        "Supervizori de șantier",
+        "Șoferi",
+        "Șoferi de camion",
+        "Șoferi de autobuz",
+        "Curieri și șoferi de livrări",
+        "Șoferi de taxi și ride-hailing",
+        "Șoferi de utilaje de construcții și echipamente grele",
+        "Sănătate / Îngrijire medicală",
+        "Asistenți medicali",
+        "Îngrijitori la domiciliu",
+        "Dactilografi medicali",
+        "Asistenți de farmacie",
+        "Asistenți de spital / Infirmieri",
+        "Personal de curățenie",
+        "Ajutori în servicii alimentare",
+        "Frumusețe / Estetică",
+        "Asistenți de salon",
+        "Frizeri",
+        "Stiliști protezieni / Coafori",
+        "Make-up artiști",
+        "Esteticieni",
+        "Specialiști în îngrijirea pielii",
+        "Terapeuți de înfrumusețare",
+        "Manageri de salon",
+        "Terapeuți spa",
+        "Terapeuți de masaj",
+        "Tinichigerie și vopsitorie auto",
+        "Tehnicieni tinichigii",
+        "Asistenți vopsitorie",
+        "Lucrători pregătire suprafețe",
+        "Preparatori de vopsea",
+        "Specialiști șlefuire",
+        "Vopsitori prin pulverizare",
+        "Horeca / Ospitalitate",
+        "Chef de Partie",
+        "Sous Chef",
+        "Recepționeri",
+        "Chelneri / Ospătari",
+        "Barmani",
+        "Supervizori curățenie / Housekeeping",
+        "Concierge",
+        "Sommelieri",
+        "Industria sudurii",
+        "Sudori MIG",
+        "Sudori TIG",
+        "Sudori cu arc electric",
+        "Confecționeri metalici",
+        "Inspectori de sudură",
+        "Montatori de țevi / Tubulatori",
+        "Sudori structuri metalice",
+        "Comerț / Retail",
+        "Asistenți de vânzări",
+        "Manageri de magazin",
+        "Casieri",
+        "Visual merchandiseri",
+        "Asistenți inventar",
+        "Reprezentanți serviciu clienți",
+        "Lucrători comerciali / Aranjatori raft",
+        "Industria minieră",
+        "Operatori excavare",
+        "Foratori",
+        "Tehnicieni pirotehniști / Dinamitatori",
+        "Ofițeri de siguranță",
+        "Geologi",
+        "Topografi / Inspectori de teren",
+        "Operatori utilaje grele",
+        "Procesarea și producția alimentară",
+        "Manipulatori de alimente",
+        "Ambalatori",
+        "Tehnicieni de asigurare a calității",
+        "Operatori utilaje",
+        "Lucrători igienizare / Salubritate",
+        "Supervizori de producție",
+        "Lucrători la linie de producție",
+        "Confecții și textile",
+        "Fabrică și producție",
+        "Lucrători la linie de asamblare",
+        "Inspectori control calitate",
+        "Sudori",
+        "Operatori motostivuitor",
+        "Curățenie și întreținere",
+        "Îngrijitori clădiri / Administratori",
+        "Menajere / Housekeeperi",
+        "Personal de curățenie",
+        "Custozi / Personal de pază și întreținere",
+        "Tehnicieni întreținere pardoseli",
+        "Spălători de geamuri",
+        "Spălători de rufe",
+        "Agricultură și plantații",
+        "Muncitori plantații",
+        "Culegători / Lucrători recoltare",
+        "Muncitori întreținere ferme",
+        "Tehnicieni sisteme de irigații",
+        "Îngrijitori de animale",
+        "Manageri de culturi",
+        "Agronomi",
+        "Sectorul maritim și șantiere navale",
+        "Sudori maritimi",
+        "Lacătuși constructori navali",
+        "Electricieni maritimi",
+        "Tubulatori navali",
+        "Arhitecți navali",
+        "Ingineri marini",
+        "Peisagistică și întreținere spații verzi",
+        "Peisagiști",
+        "Îngrijitori spații verzi",
+        "Grădinari",
+        "Designeri peisagiști",
+        "Arboriști",
+        "Specialiști în îngrijirea gazonului",
+        "Operatori excavator",
+        "Operatori buldozer",
+        "Operatori macara",
+        "Operatori buldoexcavator",
+        "Operatori încărcător",
+        "Operatori autogreder",
+        "Operatori finisor asflat"
+      ]
+    },
+
+    "services": {
+      "badge": "Serviciile",
+      "title": "Noastre",
+      "items": [
+        {
+          "name": "Consultanță"
+        },
+        {
+          "name": "Recrutare lucrători"
+        },
+        {
+          "name": "Instruire lucrători"
+        }
+      ]
+    },
+
+    "workerCollaboration": {
+      "title": "Colaborarea cu lucrătorii și agențiile",
+      "paragraphs": [
+        "Întâmpinăm cu brațele deschise lucrătorii calificați și agențiile care doresc să devină partenerii noștri. Apreciem expertiza și implicarea dumneavoastră.",
+        "Împreună, putem răspunde eficient cerințelor pieței. Colaborând cu noi, veți face parte dintr-o rețea care asigură oportunități stabile și avantajoase.",
+        "Prioritatea noastră este menținerea unor standarde înalte de calitate a forței de muncă, oferind cele mai bune potriviri pentru abilitățile și nevoile dumneavoastră.",
+        "Să ne unim forțele pentru a crea soluții de angajare de succes și durabile. Deveniți parte dintr-un ecosistem de recrutare dinamic și în continuă dezvoltare."
+      ],
+      "buttons": {
+        "jobSeekers": "Candidații pot aplica aici",
+        "agents": "Agenții sunt rugați să ne contacteze"
+      },
+      "imageAlt": "Colaborare cu lucrătorii și agențiile",
+      "floatingCards": [
+        {
+          "title": "Oportunități excelente pentru cariere internaționale",
+          "desc": "Alăturați-vă Arka Hire pentru oportunități de carieră avantajoase."
+        },
+        {
+          "title": "Colaborați cu experți în resurse umane și asistență pentru vize",
+          "desc": "Parteneriați cu noi pentru a răspunde eficient cerințelor industriei."
+        },
+        {
+          "title": "Haideți să colaborăm",
+          "desc": "Împreună, putem crea soluții de angajare de succes și durabile."
+        }
+      ]
+    },
+
+    "whyArkaHire": {
+      "title": "4 motive pentru care să parteneriați cu Arka Hire?",
+      "description": "Un parteneriat de recrutare de încredere, clădit pe experiență, acoperire globală, conformitate legală și asistență dedicată.",
+      "reasons": [
+        {
+          "num": "01",
+          "title": "Expertiză de neegalat",
+          "description": "Decenii de experiență în soluții privind forța de muncă."
+        },
+        {
+          "num": "02",
+          "title": "Acoperire globală",
+          "description": "Acces la o rețea mondială de profesioniști calificați."
+        },
+        {
+          "num": "03",
+          "title": "Conformitate garantată",
+          "description": "Asigurarea respectării tuturor cerințelor de reglementare."
+        },
+        {
+          "num": "04",
+          "title": "Asistență dedicată",
+          "description": "Sprijin complet pe parcursul întregului proces de angajare."
+        }
+      ]
+    },
+
+    "servicesOverview": {
+      "title": "Prezentarea serviciilor noastre",
+      "subtitle": "Explorați serviciile noastre principale de recrutare, concepute pentru a sprijini companiile cu soluții de încredere pentru forța de muncă.",
+      "viewDetails": "Vezi detalii",
+      "serviceLabel": "Serviciu",
+      "items": [
+        {
+          "title": "Recrutare lucrători",
+          "path": "/our-approach/worker-sourcing",
+          "description": "Conectăm companiile cu lucrători calificați și de încredere, care se potrivesc exact nevoilor lor de personal."
+        },
+        {
+          "title": "Soluții pentru forța de muncă",
+          "path": "/our-approach/client-consultation",
+          "description": "Asistență completă pentru forța de muncă, concepută pentru a ajuta companiile să angajeze, să gestioneze și să dezvolte echipe în mod eficient."
+        },
+        {
+          "title": "Conformitate cu reglementările",
+          "path": "/employers/legal-assurance",
+          "description": "Vă ajutăm să vă asigurați că toate procesele de recrutare și angajare respectă standardele legale și de conformitate."
+        },
+        {
+          "title": "Planificare strategică a forței de muncă",
+          "path": "/our-approach/seamless-integration",
+          "description": "Soluții inteligente de planificare care ajută companiile să se pregătească pentru cerințele viitoare de personal și dezvoltare."
+        },
+        {
+          "title": "Verificări de fond",
+          "path": "/our-approach/screening-process",
+          "description": "Verificare și selecție amănunțită pentru a ne asigura că toți candidații sunt calificați, de încredere și potriviți."
+        },
+        {
+          "title": "Instruire și dezvoltare profesională",
+          "path": "/our-approach/employee-welfare-support",
+          "description": "Suport prin instruire care ajută lucrătorii să își îmbunătățească abilitățile, să se adapteze mai rapid și să performeze cu încredere."
+        }
+      ]
+    },
+
+    "glance": {
+      "title": "Arka Hire pe scurt",
+      "tabs": [
+        {
+          "label": "Prezentare generală",
+          "content": [
+            "Arka Hire Limited este o companie de top în outsourcing-ul forței de muncă, având o experiență de peste un deceniu. Compania are sediul central în Londra, Marea Britanie, pentru a-și susține operațiunile internaționale și portofoliul de clienți.",
+            "Suntem specializați în soluții personalizate de gestionare a forței de muncă, concepute pentru a răspunde nevoilor unice ale clienților noștri. Echipa noastră de experți excelează în identificarea talentelor de top, asigurând o potrivire perfectă cu cerințele specifice și bugetul fiecărei organizații."
+          ]
+        },
+        {
+          "label": "Viziune",
+          "content": [
+            "Viziunea noastră este să devenim un partener global de încredere în furnizarea de forță de muncă, conectând companiile cu lucrători serioși, calificați și dedicați din toate industriile.",
+            "Ne propunem să construim soluții de recrutare pe termen lung care să sprijine creșterea afacerilor și să creeze oportunități de angajare semnificative la nivel mondial."
+          ]
+        },
+        {
+          "label": "Misiune",
+          "content": [
+            "Misiunea noastră este de a oferi servicii profesionale de outsourcing al forței de muncă prin recrutare de calitate, procese transparente și asistență continuă.",
+            "Lucrăm îndeaproape cu clienții, agențiile și lucrătorii pentru a crea soluții durabile de personal, de pe urma cărora beneficiază fiecare partener implicat."
+          ]
+        }
+      ],
+      "networkTitle": "Alăturați-vă rețelei noastre globale de recrutare",
+      "networkDescription": "La Arka Hire, credem că marile realizări se bazează pe parteneriate puternice. Fie că sunteți un agent independent sau faceți parte dintr-o agenție, acum este momentul perfect să colaborați cu noi și să oferiți soluții excepționale de personal clienților din întreaga lume.",
+      "button": "Contactați-ne",
+      "imageAlt": "Arka Hire pe scurt",
+      "floatingCard": {
+        "title": "Integrare colaborativă",
+        "description": "Veți primi îndrumare completă chiar de la început — înțelegeți bunele noastre practici, așteptările clienților și sistemele de asistență."
+      }
+    },
+
+    "letsTalk": {
+      "badge": "Contact",
+      "title": "Aveți vreun proiect în minte?",
+      "button": "Să vorbim"
+    },
+
+    "ourProcess": {
+      "badge": "Procesul nostru",
+      "title": "Cum găsim potrivirea ideală pentru afacerea dumneavoastră",
+      "description": "Șase pași atent structurați pentru a vă conecta cu cele mai bune talente din lume — în mod eficient, fiabil și impecabil.",
+      "start": "Start",
+      "end": "Angajatul dumneavoastră ideal",
+      "steps": [
+        {
+          "num": "01",
+          "title": "Consultanță inițială",
+          "description": "Consultanța noastră inițială ne permite să dobândim o înțelegere cuprinzătoare a cerințelor dumneavoastră specifice, permițându-ne să ne personalizăm abordarea de recrutare și să identificăm cei mai potriviți lucrători globali pentru afacerea dumneavoastră."
+        },
+        {
+          "num": "02",
+          "title": "Sourcing lucrători",
+          "description": "Vă conectăm cu lucrători globali de top printr-o rețea extinsă, asigurând accesul la candidați de înaltă calitate. Soluțiile noastre personalizate sunt concepute pentru a răspunde cerințelor specifice ale afacerii dumneavoastră."
+        },
+        {
+          "num": "03",
+          "title": "Selecție și screening",
+          "description": "Procesul nostru de screening și selecție garantează că veți primi doar lucrători de cea mai înaltă calitate, prin verificări de fond, evaluări ale competențelor și interviuri."
+        },
+        {
+          "num": "04",
+          "title": "Onboarding și integrare",
+          "description": "Oferim orientare completă, instruire și asistență pentru a ne asigura că lucrătorii se adaptează rapid și aduc o contribuție semnificativă echipei dumneavoastră."
+        },
+        {
+          "num": "05",
+          "title": "Cazare",
+          "description": "Oferim soluții sigure de cazare pentru lucrători, inclusiv identificarea și amenajarea unor locuințe adecvate care să respecte cerințele angajatorului."
+        },
+        {
+          "num": "06",
+          "title": "Asistență continuă",
+          "description": "Oferim sprijin continuu pentru a asigura succesul și satisfacția atât a angajatorilor, cât și a lucrătorilor."
+        }
+      ]
+    },
+
+    "countrySendWorker": {
+      "badge": "Plasări globale",
+      "titleLineOne": "Țările în care",
+      "titleLineTwo": "Trimitem lucrători",
+      "description": "Plasăm lucrători calificați pe piețele cu cea mai rapidă creștere din Europa — corelând talentul cu oportunitățile potrivite din România, Germania, Croația și Marea Britanie.",
+      "button": "Explorați destinațiile",
+      "stats": [
+        {
+          "num": "4+",
+          "label": "Țări"
+        },
+        {
+          "num": "1200+",
+          "label": "Lucrători plasați"
+        },
+        {
+          "num": "98%",
+          "label": "Rată de satisfacție"
+        }
+      ],
+      "countries": [
+        {
+          "code": "RO",
+          "title": "România",
+          "city": "București",
+          "subtitle": "Centrul în plină ascensiune al Europei de Est"
+        },
+        {
+          "code": "DE",
+          "title": "Germania",
+          "city": "München",
+          "subtitle": "Pilonul industrial și de inginerie al Europei"
+        },
+        {
+          "code": "HR",
+          "title": "Croația",
+          "city": "Republica Croația",
+          "subtitle": "Coasta Adriatică și meserii calificate"
+        },
+        {
+          "code": "GB",
+          "title": "Marea Britanie",
+          "city": "Marea Britanie",
+          "subtitle": "Lider global în finanțe și servicii"
+        }
+      ]
+    }
+  },
+  "aboutUs": {
+    "hero": {
+      "logoAlt": "Arka Hire",
+      "title": "O agenție fără granițe",
+      "subtitle": "Ne mândrim cu anticiparea provocărilor și adaptarea la cerințele în continuă evoluție ale pieței muncii.",
+      "description": "Angajamentul nostru ferm față de succesul partenerilor noștri este de nezdruncinat."
+    },
+    "aboutStats": {
+      "stats": {
+        "items": [
+          {
+            "number": "1300+",
+            "label": "Lucrători plasați în ultimii 5 ani"
+          },
+          {
+            "number": "200+",
+            "label": "Angajatori mulțumiți care au avut încredere în noi"
+          }
+        ],
+        "title": "Peste un deceniu de expertiză în externalizarea forței de muncă",
+        "description": "Arka Hire este o companie proeminentă de outsourcing al forței de muncă, cu sediul central în Londra, Marea Britanie. Cu o experiență de peste un deceniu, suntem specializați în furnizarea de soluții personalizate de gestionare a personalului, adaptate pentru a răspunde nevoilor unice ale clienților noștri. Echipa noastră de experți excelează în identificarea talentelor de top, asigurând o potrivire perfectă pentru cerințele specifice și bugetul fiecărei organizații. Oferim o gamă cuprinzătoare de servicii, inclusiv recrutare temporară și permanentă în diverse sectoare din întreaga lume. Scopul nostru este de a fi partenerul preferat de resurse umane atât pentru organizațiile din sectorul public, cât și din cel privat.",
+        "button": "Mai multe despre noi"
+      }
+    },
+
+    "hrExpert": {
+      "imageAlt": "Experți HR",
+      "title": "Experți HR dedicați succesului dumneavoastră",
+      "points": [
+        {
+          "title": "Soluții de recrutare personalizate",
+          "desc": "Ne structurăm strategiile de recrutare pentru a se alinia nevoilor dumneavoastră specifice, asigurându-ne că primiți cei mai calificați candidați."
+        },
+        {
+          "title": "Achiziție globală de talente",
+          "desc": "Rețeaua noastră extinsă ne permite să recrutăm talente de top de pe tot globul, atât pentru roluri temporare, cât si permanente."
+        },
+        {
+          "title": "Asistență juridică cuprinzătoare",
+          "desc": "Gestionăm toate aspectele legale, de la obținerea permiselor de muncă până la asigurarea conformității cu reglementările locale."
+        },
+        {
+          "title": "Integrare și asistență",
+          "desc": "Oferim sprijin pentru cazare, formare profesională și cursuri de limbă pentru a facilita integrarea rapidă a noilor angajați."
+        }
+      ]
+    },
+
+    "workforceSolution": {
+      "title": "Soluțiile noastre cuprinzătoare de forță de muncă pentru afacerea dumneavoastră",
+      "services": [
+        {
+          "title": "Recrutare lucrători",
+          "description": "Suntem specializați în identificarea și atragerea talentelor de top. Procesul nostru amănunțit de recrutare asigură selectarea celor mai buni candidați, care se potrivesc perfect nevoilor organizației dumneavoastră."
+        },
+        {
+          "title": "Soluții pentru forța de muncă",
+          "description": "Oferim opțiuni flexibile de personal pentru a satisface cerințe diverse, de la plasări temporare la permanente, asigurând fiabilitate și adaptabilitate în echipa dumneavoastră."
+        },
+        {
+          "title": "Conformitate cu reglementările",
+          "description": "Expertiza noastră în conformitatea legală și de reglementare garantează că toate procesele de angajare respectă atât legile locale, cât și pe cele internaționale, minimizând riscurile pentru afacerea dumneavoastră."
+        },
+        {
+          "title": "Planificare strategică a forței de muncă",
+          "description": "Asistăm în dezvoltarea și implementarea unor strategii eficiente de personal care se aliniază cu obiectivele afacerii dumneavoastră, stimulând productivitatea și eficiența."
+        },
+        {
+          "title": "Verificări de fond",
+          "description": "Verificările noastre riguroase de fond și procesele de selecție vă asigură că angajați candidați de încredere și calificați, oferindu-vă liniște și siguranță."
+        },
+        {
+          "title": "Instruire și dezvoltare profesională",
+          "description": "Oferim programe de formare și dezvoltare dedicate pentru a îmbunătăți abilitățile și capacitățile forței de muncă, asigurându-ne că aceștia sunt bine pregătiți pentru cerințele postului."
+        }
+      ]
+    },
+
+    "companyTimeline": {
+      "badge": "Călătoria noastră",
+      "title": "Cronologia companiei",
+      "subtitle": "Un deceniu de creștere, inovație și impact global în soluții pentru forța de muncă.",
+      "yearLabel": "An",
+      "endText": "Și nu numai...",
+      "items": [
+        {
+          "year": "2013",
+          "title": "Lansare și fundamente",
+          "tag": "Fondată",
+          "desc": "Arka Hire a fost fondată în Marea Britanie, concentrându-se pe furnizarea de servicii personalizate de gestionare a forței de muncă și pe formarea unei echipe calificate pentru a servi primii clienți din sectoarele construcțiilor și producției.",
+          "icon": "🚀"
+        },
+        {
+          "year": "2016",
+          "title": "Extinderea serviciilor",
+          "tag": "Creștere",
+          "desc": "Ne-am lărgit serviciile de recrutare pentru a include atât soluții de personal temporar, cât și permanent, extinzându-ne în depozitare, logistică și servicii medicale, crescându-ne astfel semnificativ baza de clienți.",
+          "icon": "📈"
+        },
+        {
+          "year": "2019",
+          "title": "Diversificarea industriilor",
+          "tag": "Etapă importantă",
+          "desc": "Ne-am extins și mai mult oferta în noi industrii, inclusiv comerț, ospitalitate (Horeca) și IT, permițându-ne să răspundem unei game mai largi de nevoi ale clienților și cerințelor pieței.",
+          "icon": "🌿"
+        },
+        {
+          "year": "2023",
+          "title": "Extindere globală",
+          "tag": "Global",
+          "desc": "Ne-am consolidat prezența globală prin intrarea pe noi piețe internaționale, consolidându-ne reputația de partener de top în recrutare și oferind soluții cuprinzătoare de forță de muncă la nivel mondial.",
+          "icon": "🌍"
+        }
+      ]
+    }
+  },
+  "ourApproach": {
+    "clientConsultation": {
+      "heading": ["Consultanță", "Clienți"],
+      "heroText": [
+        "La Arka Hire, recunoaștem că fiecare afacere are propriul set de nevoi și provocări. Serviciile noastre de consultanță pentru clienți sunt personalizate pentru a oferi soluții perfect aliniate cu cerințele și obiectivele dumneavoastră unice.",
+        "Cu o experiență de peste 10 ani în industria outsourcing-ului de forță de muncă, consultanții noștri experți sunt pregătiți să vă ofere sfaturi strategice și asistență pentru a vă ajuta să vă atingeți obiectivele de afaceri."
+      ],
+      "points": [
+        "Concepem strategii personalizate pentru a aborda provocările specifice ale afacerii dumneavoastră.",
+        "Consultanții noștri oferă îndrumare avizată în diverse sectoare, inclusiv tehnologie, sănătate și finanțe.",
+        "Mizăm pe cele mai recente tehnologii pentru a îmbunătăți procesele de recrutare și resurse umane.",
+        "Oferim asistență completă, de la consultanța inițială până la implementarea perfectă.",
+        "Succesul dumneavoastră este prioritatea noastră, prin intermediul unei comunicări clare și al unor relații durabile cu clienții."
+      ],
+      "cta": {
+        "buttonText": "Să vorbim",
+        "link": "/contact-us"
+      },
+      "heroImageAlt": "Consultanță clienți",
+      "floatingCard": {
+        "title": "Îndrumare practică înainte de fiecare decizie de angajare.",
+        "badge": "Mai întâi consultanța"
+      },
+      "strategies": {
+        "sectionTitle": "Strategiile noastre",
+        "sectionBadge": "Abordarea noastră",
+        "cards": [
+          {
+            "title": "Planificare strategică a recrutării",
+            "desc": "Dezvoltăm strategii complete de recrutare aliniate cu obiectivele dumneavoastră de afaceri, nevoile de personal și planurile de creștere."
+          },
+          {
+            "title": "Gestionarea achiziției de talente",
+            "desc": "Identificăm, atragem și reținem talente calificate pentru a vă ajuta afacerea să înainteze cu încredere."
+          },
+          {
+            "title": "Implicarea și retenția angajaților",
+            "desc": "Implementăm strategii practice pentru a crește satisfacția angajaților, a reduce fluctuația de personal și a îmbunătăți performanța."
+          },
+          {
+            "title": "Planificarea și optimizarea forței de muncă",
+            "desc": "Vă optimizăm personalul pentru eficiență maximă, productivitate și valoare pe termen lung a afacerii."
+          }
+        ]
+      }
+    },
+    "workerSourcing": {
+      "heading": "Sourcing lucrători",
+      "intro": "Ne recrutăm forța de muncă dintr-o gamă diversă de țări, inclusiv Bahrain, Kuweit, Oman, Qatar, Arabia Saudită, EAU, Bangladesh, India, Nepal, Sri Lanka și Malaysia. Lucrătorii sunt plasați în România, Croația, Germania și Marea Britanie, fiind pe deplin pregătiți să se integreze perfect.",
+      "points": [
+        "Expertiza noastră în industrie: Oferim cunoștințe specializate într-un spectru larg de sectoare, inclusiv construcții, producție, ospitalitate, agricultură, logistică, sănătate și nu numai.",
+        "Soluții cuprinzătoare: Oferim servicii cap-coadă, de la identificarea și selecția talentelor până la conformitate și plasare, asigurând un proces fluid și eficient.",
+        "Abordare centrată pe client: Ne concentrăm pe construirea unor relații puternice și de durată, prin comunicare clară și servicii personalizate care răspund nevoilor dumneavoastră unice.",
+        "Succesul dumneavoastră, prioritatea noastră: Suntem pe deplin angajați în atingerea obiectivelor dumneavoastră prin furnizarea de excelență și creșterea productivității."
+      ],
+      "cta": {
+        "buttonText": "Să discutăm mai pe îndelete"
+      },
+      "heroImageAlt": "Sourcing lucrători",
+      "countries": {
+        "heading": ["Țările", "De", "Unde", "Recrutăm", "Lucrătorii", "Noștri"],
+        "intro": "Recrutăm lucrători calificați de pe piețe internaționale de talente de încredere și îi conectăm cu oportunități sigure.",
+        "list": [
+          {
+            "name": "EAU",
+            "city": "Dubai",
+            "code": "AE",
+            "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "Nepal",
+            "city": "Kathmandu",
+            "code": "NP",
+            "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "Oman",
+            "city": "Muscat",
+            "code": "OM",
+            "image": "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "Sri Lanka",
+            "city": "Colombo",
+            "code": "LK",
+            "image": "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "Qatar",
+            "city": "Doha",
+            "code": "QA",
+            "image": "https://images.unsplash.com/photo-1700901742651-6b353164caf3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Bangladesh",
+            "city": "Dhaka",
+            "code": "BD",
+            "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "India",
+            "city": "New Delhi",
+            "code": "IN",
+            "image": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80"
+          },
+          {
+            "name": "Malaysia",
+            "city": "Kuala Lumpur",
+            "code": "MY",
+            "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=900&q=80"
+          }
+        ]
+      },
+      "ourStrategies": {
+        "heading": ["Strategiile", "Noastre"],
+        "tagline": "Cum lucrăm",
+        "cards": [
+          {
+            "number": "01",
+            "title": "Planuri de recrutare personalizate",
+            "desc": "Concepem strategii adaptate pentru a răspunde nevoilor dumneavoastră specifice de personal și cerințelor proiectelor.",
+            "color": "#4ade80",
+            "darkColor": "#16a34a"
+          },
+          {
+            "number": "02",
+            "title": "Selecție completă",
+            "desc": "Procesele noastre amănunțite de evaluare asigură cele mai înalte standarde și cea mai bună potrivire pentru proiectele dumneavoastră.",
+            "color": "#facc15",
+            "darkColor": "#ca8a04"
+          },
+          {
+            "number": "03",
+            "title": "Gestionare eficientă a conformității",
+            "desc": "Gestionăm cu profesionalism toate documentele necesare și cerințele legale pentru plasarea internațională a lucrătorilor.",
+            "color": "#60a5fa",
+            "darkColor": "#2563eb"
+          },
+          {
+            "number": "04",
+            "title": "Plasare perfectă",
+            "desc": "Asigurăm o tranziție și o integrare lină a lucrătorilor în proiectele dumneavoastră, minimizând perturbările și maximizând eficiența.",
+            "color": "#f97316",
+            "darkColor": "#c2410c"
+          }
+        ]
+      }
+    },
+    "screeningProcess": {
+      "heading": "Proces de selecție",
+      "intro": "La Arka Hire, procesul nostru de screening este atât amănunțit, cât și eficient, fiind conceput pentru a vă oferi candidați de încredere, de înaltă calitate, care să răspundă nevoilor specifice ale proiectului dumneavoastră. Fiecare pas este axat pe evaluarea abilităților, a experienței și a compatibilității cu cerințele dumneavoastră. Ne asigurăm că fiecare detaliu este gestionat meticulos, astfel încât să beneficiați de cea mai bună forță de muncă posibilă. Echipa noastră utilizează instrumente și metode avansate pentru a asigura o potrivire optimă. De la evaluarea inițială până la selecția finală, gestionăm fiecare etapă a procesului pentru a vă oferi un personal în care puteți avea încredere pentru finalizarea cu succes a proiectelor.",
+      "points": [
+        "Evaluare detaliată: Analizăm cu atenție abilitățile și experiența pentru a corespunde exact nevoilor dumneavoastră.",
+        "Verificări de fond: Se efectuează verificări riguroase de fond pentru a garanta seriozitatea.",
+        "Teste de competență: Candidații trec prin teste practice pentru a-și valida abilitățile.",
+        "Interviuri: Realizăm interviuri aprofundate pentru a evalua compatibilitatea și integrarea cu echipa dumneavoastră.",
+        "Succesul dumneavoastră este prioritatea noastră, motiv pentru care menținem o comunicare clară și relații solide cu clienții."
+      ],
+      "cta": {
+        "buttonText": "Să discutăm mai pe îndelete"
+      },
+      "heroImageAlt": "Proces de selecție"
+    },
+    "ourStrategiesScreening": {
+      "heading": "Strategiile noastre",
+      "cards": [
+        {
+          "title": "Tehnici avansate de sourcing",
+          "description": "Utilizăm cele mai noi instrumente pentru a găsi talente de top rapid și eficient.",
+          "icon": "sourcingIcon"
+        },
+        {
+          "title": "Selecție cuprinzătoare",
+          "description": "Procesul nostru riguros de screening garantează că sunt selectați doar cei mai buni candidați.",
+          "icon": "screeningIcon"
+        },
+        {
+          "title": "Campanii de recrutare dedicate",
+          "description": "Concepem campanii specifice pentru a atrage candidați care corespund întocmai cerințelor dumneavoastră.",
+          "icon": "targetedIcon"
+        },
+        {
+          "title": "Îmbunătățire continuă",
+          "description": "Ne actualizăm periodic strategiile pentru a rămâne în avangardă și a livra rezultate excepționale.",
+          "icon": "improvementIcon"
+        }
+      ]
+    },
+    "seamlessIntegration": {
+      "heading": "Integrare perfectă",
+      "intro": "La Arka Hire, asigurăm un proces de integrare fluid pentru noii dumneavoastră angajați. Abordarea noastră eficientă garantează o experiență de onboarding fără probleme, minimizând întreruperile activității și oferind un parcurs lipsit de bătăi de cap pentru toate părțile implicate. Echipa noastră dedicată sprijină noii angajați încă din prima zi, asigurând o tranziție ușoară spre noile lor roluri. Ne concentrăm pe eficientizarea procesului de integrare, permițându-vă să vă concentrați pe atingerea obiectivelor de afaceri.",
+      "points": [
+        "Planuri de onboarding personalizate: Adaptate pentru a se potrivi culturii și nevoilor unice ale companiei dumneavoastră.",
+        "Asistență dedicată: Echipa noastră este disponibilă pentru a vă ajuta la fiecare pas al procesului de integrare.",
+        "Documentație eficientă: Gestionăm toate documentele necesare rapid și corect pentru a preveni întârzierile.",
+        "Programe de instruire: Formarea cuprinzătoare asigură că angajații sunt pregătiți să contribuie încă din prima zi.",
+        "Succesul dumneavoastră este prioritatea noastră, motiv pentru care menținem o comunicare clară și relații solide cu clienții."
+      ],
+      "cta": {
+        "buttonText": "Să discutăm mai pe îndelete"
+      },
+      "heroImageAlt": "Integrare perfectă"
+    },
+    "seamlessStrategies": {
+      "heading": ["Strategiile", "Noastre"],
+      "tagline": "Un proces de onboarding mai inteligent, conceput pentru a ajuta lucrătorii să se acomodeze, să performeze și să crească cu încredere.",
+      "cards": [
+        {
+          "title": "Planuri de onboarding personalizate",
+          "description": "Dezvoltăm planuri de integrare adaptate, care se aliniază cu nevoile și cultura unică a companiei dumneavoastră.",
+          "icon": "stategie1"
+        },
+        {
+          "title": "Echipă de asistență dedicată",
+          "description": "Echipa noastră oferă asistență practică la fiecare pas, asigurând o tranziție ușoară pentru noii angajați.",
+          "icon": "stategie2"
+        },
+        {
+          "title": "Gestionarea eficientă a documentelor",
+          "description": "Ne ocupăm de toată documentația necesară cu promptitudine și acuratețe pentru a evita orice întârziere.",
+          "icon": "stategie3"
+        },
+        {
+          "title": "Programe cuprinzătoare de instruire",
+          "description": "Oferim cursuri aprofundate de formare pentru a ne asigura că noii angajați sunt productivi și complet echipați încă din prima zi.",
+          "icon": "stategie4"
+        }
+      ]
+    },
+    "employeeWelfareSupport": {
+      "heading": "Sprijin pentru bunăstarea angajaților",
+      "intro": "La Arka Hire, serviciul nostru de sprijin pentru bunăstarea angajaților este dedicat asigurării stării generale de bine a forței noastre de muncă. Oferim o serie de inițiative de sănătate și wellness, încurajăm un mediu echilibrat între viața profesională și cea personală și oferim servicii de asistență personalizate. Obiectivul nostru este de a cultiva o atmosferă de susținere în care angajații pot excela atât pe plan personal, cât și profesional. De la programe de fitness și sprijin pentru sănătatea mintală până la aranjamente flexibile de muncă și asistență pentru planificarea financiară, suntem hotărâți să răspundem nevoilor diverse ale angajaților noștri.",
+      "points": [
+        "Programe de sănătate și wellness personalizate pentru a răspunde cerințelor individuale.",
+        "Opțiuni flexibile de echilibru între viața profesională și personală pentru a se adapta la diverse stiluri de viață.",
+        "Servicii cuprinzătoare de asistență, inclusiv consiliere și programe de ajutor pentru angajați.",
+        "Resurse de planificare financiară concepute pentru a ajuta angajații să își gestioneze eficient finanțele."
+      ],
+      "cta": {
+        "buttonText": "Să discutăm mai pe îndelete"
+      },
+      "heroImageAlt": "Sprijin pentru bunăstarea angajaților"
+    },
+    "welfareStrategies": {
+      "heading": "Strategiile noastre",
+      "subtitle": "Programe de bunăstare a lucrătorilor, create pentru a sprijini sănătatea, echilibrul, îngrijirea și siguranța financiară pe termen lung.",
+      "centerBadge": {
+        "label": "Bunăstare",
+        "title": "Grijă pentru lucrători"
+      },
+      "cards": [
+        {
+          "title": "Programe de sănătate",
+          "description": "Acces la sprijin pentru fitness și sănătate mintală.",
+          "icon": "stategie1"
+        },
+        {
+          "title": "Echilibru viață-muncă",
+          "description": "Program flexibil și condiții de muncă în conformitate cu legislația globală a muncii.",
+          "icon": "stategie2"
+        },
+        {
+          "title": "Servicii de asistență",
+          "description": "Consiliere și programe dedicate de sprijin pentru angajați.",
+          "icon": "stategie3"
+        },
+        {
+          "title": "Planificare financiară",
+          "description": "Resurse utile pentru gestionarea și planificarea eficientă a finanțelor.",
+          "icon": "stategie4"
+        }
+      ]
+    }
+  },
+  "employers": {
+    "recruitmentPage": {
+      "heroRecruitment": {
+        "heading": ["Procesul", "de", "Recrutare", "în"],
+        "topDescription": "Ne mândrim cu faptul că rămânem mereu cu un pas înaintea provocărilor și ne adaptăm la nevoile în continuă schimbare ale pieței muncii. Angajamentul nostru neclintit față de succesul partenerilor noștri nu cunoaște limite.",
+        "badge": "Arka Hire",
+        "title": "Înțelegem că găsirea lucrătorilor potriviți este esențială pentru succesul afacerii dumneavoastră.",
+        "description": "Procesul nostru de recrutare este conceput pentru a fi fluid, transparent și plin de susținere la fiecare pas.",
+        "tags": [
+          "Proces fluid",
+          "Lucrători de încredere",
+          "Suport pe care te poți baza"
+        ],
+        "imageAlt": "Proces de recrutare",
+        "imageBadge": "Recrutare",
+        "imageCardText": "Un parcurs clar de recrutare, de la sourcing până la plasarea cu succes."
+      },
+      "recruitmentSteps": {
+        "badge": "Etapele Noastre",
+        "heading": ["Procesul", "de", "Recrutare"],
+        "description": "Traseul nostru de recrutare este conceput pentru a fi clar, eficient și plin de asistență, de la prima consultanță până la plasarea finală.",
+        "button": {
+          "text": "Industrii Deservite",
+          "path": "/industries"
+        },
+        "imageAlt": "Proces de Recrutare",
+        "steps": [
+          "Consultanță Inițială",
+          "Potrivirea Locurilor de Muncă",
+          "Asistență pentru Aplicații",
+          "Pregătirea pentru Interviu",
+          "Asistență pentru Viză și Permis de Muncă",
+          "Orientare Înainte de Plecare"
+        ]
+      },
+      "whyArka": {
+        "badge": "De ce Arka Hire?",
+        "title": "Motive pentru a alege procesul Arka Hire",
+        "texts": [
+          "Avem ani de experiență în recrutarea internațională.",
+          "Înțelegem nevoile unice ale diferitelor industrii și ne personalizăm serviciile pentru a răspunde acestor cerințe."
+        ],
+        "button": "Contactați-ne",
+        "imageAlt": "De ce Arka Hire"
+      },
+      "whyWorkWithUs": {
+        "heading": ["De", "ce", "să", "lucrați", "cu", "noi?"],
+        "subtitle": "Echipa noastră este bine familiarizată cu cerințele specifice ale sectoarelor de construcții și ospitalitate, asigurându-vă candidați care nu sunt doar calificați, ci și o potrivire perfectă pentru industria dumneavoastră.",
+        "cards": [
+          {
+            "title": "Expertiză în Industrie",
+            "description": "Avem ani de experiență în recrutarea internațională. Înțelegem nevoile unice ale diferitelor industrii și ne adaptăm serviciile pentru a le satisface cu succes.",
+            "image": "work1"
+          },
+          {
+            "title": "Soluții Personalizabile",
+            "description": "Oferim soluții de recrutare personalizabile pentru a răspunde nevoilor unice ale afacerii dumneavoastră, fie că aveți nevoie de personal temporar sau de angajați permanenți pentru o creștere pe termen lung.",
+            "image": "work2"
+          },
+          {
+            "title": "Succes Dovedit",
+            "description": "Am ajutat numeroase afaceri să găsească lucrătorii calificați de care au nevoie pentru a prospera. Angajamentul nostru față de excelență și satisfacție ne diferențiază de alte agenții de recrutare.",
+            "image": "work3"
+          }
+        ]
+      }
+    },
+    "immigrationAssistancePage": {
+      "heroImmigration": {
+        "heading": "Asistență pentru Imigrare",
+        "subtitle": "Înțelegem că gestionarea procesului de imigrare pentru angajații dumneavoastră poate fi complexă și stresantă.",
+        "badge": "De ce să alegeți asistența noastră pentru imigrare?",
+        "title": "Legile privind imigrația pot fi greu de gestionat. Iată de ce serviciile noastre sunt soluția ideală pentru afacerea dumneavoastră",
+        "description": "Procesul nostru de recrutare este conceput pentru a fi perfect integrat, transparent și plin de susținere în fiecare etapă.",
+        "imageAlt": "Consultanță în Imigrare",
+        "imageLabels": ["Imigrare", "Consultanță"],
+        "features": [
+          {
+            "title": "Îndrumare de Specialitate",
+            "desc": "Echipa noastră este la curent cu cele mai recente legi și politici în domeniul imigrației.",
+            "icon": "FaArrowRight"
+          },
+          {
+            "title": "Suport Cuprinzător",
+            "desc": "Ne ocupăm de tot, de la acte și documente până la conformitatea legală.",
+            "icon": "FaCogs"
+          },
+          {
+            "title": "Liniște Sufletească",
+            "desc": "Concentrați-vă pe dezvoltarea afacerii dumneavoastră în timp ce noi ne ocupăm de detaliile legale.",
+            "icon": "FaBrain"
+          },
+          {
+            "title": "Conformitate Legală",
+            "desc": "Specialiștii noștri se asigură că toate procedurile de imigrare sunt în strictă conformitate cu legile în vigoare.",
+            "icon": "FaBalanceScale"
+          }
+        ]
+      },
+      "assistanceProcess": {
+        "badge": "Imigrare",
+        "heading": "Procesul de Asistență",
+        "steps": [
+          {
+            "title": "Procesul Complet de Viză",
+            "desc": "Gestionăm întregul proces de aplicare pentru vize al angajaților dumneavoastră, inclusiv pregătirea și depunerea tuturor documentelor necesare la timp."
+          },
+          {
+            "title": "Permise de Muncă",
+            "desc": "Ajutăm companiile să obțină permise de muncă pentru angajații lor, asigurându-ne că echipa dumneavoastră este autorizată legal să lucreze."
+          },
+          {
+            "title": "Conformitate Legală",
+            "desc": "Experții noștri se asigură că toate procedurile de imigrare respectă legile actuale, ținându-vă la curent cu orice modificare a reglementărilor."
+          },
+          {
+            "title": "Integrarea Angajaților",
+            "desc": "Sprijinim procesul de onboarding pentru angajații internaționali, ajutându-i să se acomodeze și să își înțeleagă drepturile și responsabilitățile legale."
+          },
+          {
+            "title": "Suport Continuu",
+            "desc": "Oferim asistență continuă pentru toate problemele legate de imigrare, asigurându-ne că afacerea dumneavoastră rămâne conformă în orice moment."
+          }
+        ]
+      },
+      "arkaHireAdvantage": {
+        "badge": "Avantajul Arka Hire",
+        "title": "Parteneriatul cu Arka Hire aduce numeroase beneficii",
+        "description": "Soluții personalizate: Ne adaptăm serviciile pentru a răspunde nevoilor dumneavoastră specifice. Echipă experimentată: Experții noștri vin cu ani de experiență în legislația imigrației. Proces fără bătăi de cap: Ne ocupăm de complexități, permițându-vă să vă concentrați pe afacerea dumneavoastră.",
+        "button": "Contactați-ne",
+        "imageAlt": "Avantajul Arka Hire"
+      },
+      "partnerWithArkaHire": {
+        "heading": "Parteneriat cu Arka Hire",
+        "subtitle": "Ne angajăm să vă ajutăm să vă gestionați eficient nevoile de imigrare. Serviciile noastre cuprinzătoare asigură conformitatea angajaților dumneavoastră cu toate cerințele legale, oferindu-vă sprijinul necesar pentru o desfășurare lină a activității.",
+        "cards": [
+          {
+            "title": "Expertiză în Industrie",
+            "description": "Avem ani de experiență în recrutarea internațională. Înțelegem nevoile unice ale diferitelor industrii și ne personalizăm serviciile pentru a le satisface pe deplin.",
+            "image": "work1"
+          },
+          {
+            "title": "Soluții Personalizabile",
+            "description": "Oferim soluții de recrutare adaptabile pentru a satisface nevoile unice ale afacerii dumneavoastră, fie că aveți nevoie de personal temporar pentru un proiect pe termen scurt sau de angajați permanenți pentru o creștere pe termen lung.",
+            "image": "work2"
+          },
+          {
+            "title": "Succes Dovedit",
+            "description": "Am ajutat numeroase companii să găsească lucrătorii calificați de care au nevoie pentru a prospera. Angajamentul nostru față de excelență și satisfacția clienților ne diferențiază de celelalte agenții.",
+            "image": "work3"
+          }
+        ]
+      }
+    },
+    "mediationEmploymentPage": {
+      "heroMediation": {
+        "mainTitle": ["Medierea", "în", "Muncă"],
+        "topDescription": "Arka Hire oferă servicii de mediere în relațiile de muncă pentru a rezolva conflictele de la locul de muncă și a îmbunătăți comunicarea. Mediatorii noștri experimentați creează medii de lucru pozitive, facilitând acorduri reciproc avantajoase atât pentru angajatori, cât și pentru angajați.",
+        "badge": "Arka Hire",
+        "heroTitle": "La Arka Hire, credem că un loc de muncă armonios este esențial pentru productivitate și pentru satisfacția angajaților.",
+        "description": "Serviciile noastre de mediere sunt concepute pentru a ajuta la rezolvarea conflictelor și a disputelor într-un mod echitabil, eficient și confidențial.",
+        "imageAlt": "Medierea în Muncă",
+        "imageCardText": "Construim conversații mai bune pentru relații profesionale mai puternice.",
+        "mediationBox": {
+          "title": "Ce este Medierea?",
+          "paragraphs": [
+            "Medierea este un proces informal și confidențial în care un mediator neutru ajută părțile aflate în dispută să își discute divergențele și să lucreze la o rezoluție acceptabilă pentru ambele părți.",
+            "Mediatorul nu ia decizii și nu atribuie vinovății, ci facilitează comunicarea pentru a ajuta părțile să își găsească propriile soluții."
+          ]
+        }
+      },
+      "mediationSteps": {
+        "badge": "Etapele Noastre",
+        "heading": "Beneficiile Medierii",
+        "benefits": [
+          "Confidențialitate",
+          "Rapiditate",
+          "Costuri Eficiente",
+          "Voluntariat",
+          "Control"
+        ],
+        "steps": [
+          {
+            "title": "Consultanță Inițială",
+            "description": "Începem cu o consultanță inițială pentru a evalua natura disputei și pentru a determina dacă medierea este abordarea potrivită.",
+            "note": "Această etapă implică discuții cu ambele părți pentru a explica procesul și a răspunde la eventualele întrebări."
+          },
+          {
+            "title": "Acordul de Mediere",
+            "description": "Ambele părți trebuie să fie de acord să participe la mediere. Oferim un acord scris care detaliază termenii și condițiile procesului de mediere."
+          },
+          {
+            "title": "Programarea Medierii",
+            "description": "Odată ce ambele părți sunt de acord, stabilim o ședință de mediere la o oră și într-un loc convenabil. Ședințele se pot desfășura în persoană sau virtual, în funcție de preferințele celor implicați."
+          },
+          {
+            "title": "Ședința de Mediere",
+            "description": "În timpul ședinței, mediatorul facilitează o discuție structurată, permițând fiecărei părți să își exprime punctele de vedere și îngrijorările. Mediatorul ajută la identificarea punctelor comune și la explorarea potențialelor soluții."
+          }
+        ]
+      },
+      "whyArkaMediation": {
+        "heading": ["De", "ce", "să", "lucrați", "cu", "noi?"],
+        "topCards": [
+          {
+            "title": "Ajungerea la un Acord",
+            "description": "Dacă ambele părți ajung la o înțelegere, mediatorul ajută la redactarea unui document scris care stabilește termenii rezoluției. Acest acord devine obligatoriu și poate fi aplicat în instanță.",
+            "icon": "reachIcon"
+          },
+          {
+            "title": "Monitorizare și Follow-Up",
+            "description": "Oferim sprijin ulterior pentru a ne asigura că termenii acordului sunt implementați și pentru a aborda orice alte preocupări care ar putea apărea.",
+            "icon": "followIcon"
+          }
+        ],
+        "imageAlt": "De ce Arka Hire",
+        "badge": "De ce Arka Hire?",
+        "title": "Avantajul Arka Hire",
+        "description": "Alegerea Arka Hire pentru nevoile dumneavoastră de mediere înseamnă un parteneriat cu o echipă dedicată cultivării unui mediu de lucru pozitiv. Mediatorii noștri sunt profesioniști cu o vastă experiență și cunoștințe aprofundate în dreptul muncii și soluționarea conflictelor. Suntem dedicați să vă ajutăm să rezolvați disputele într-o manieră care promovează înțelegerea și cooperarea.",
+        "button": {
+          "text": "Contactați-ne",
+          "path": "/contact-us"
+        }
+      }
+    },
+    "temporaryRecruitmentPage": {
+      "heroTemporary": {
+        "heading": ["Servicii", "de", "Recrutare", "Temporară"],
+        "topDescription": "Arka Hire oferă servicii de recrutare temporară, punând la dispoziție soluții flexibile și eficiente de personal, cu acces la o bază extinsă de candidați calificați. Acest lucru asigură adaptarea rapidă a afacerii dumneavoastră la cerințele fluctuante de pe piața muncii.",
+        "badge": "Arka Hire",
+        "heroTitle": "La Arka Hire, recunoaștem că nevoile unei afaceri se pot schimba rapid.",
+        "description": "Fie că este vorba despre gestionarea cererilor sezoniere, derularea unor proiecte speciale sau acoperirea unor absențe prelungite, serviciile noastre de recrutare temporară oferă flexibilitatea și forța de muncă calificată necesare pentru ca operațiunile dumneavoastră să funcționeze fără întrerupere.",
+        "imageAlt": "Servicii de Recrutare Temporară"
+      },
+      "tempProcess": {
+        "badge": "Etapele Noastre",
+        "heading": "Procesul de Recrutare",
+        "leftSteps": [
+          "Consultanță și Evaluarea Nevoilor",
+          "Sourcing Candidați",
+          "Screening și Selecție",
+          "Plasare și Integrare",
+          "Suport Continuu"
+        ],
+        "processSteps": [
+          {
+            "title": "Consultanță și Evaluarea Nevoilor",
+            "description": "Începem prin a înțelege cerințele specifice ale afacerii dumneavoastră și prin identificarea abilităților necesare. Echipa noastră lucrează îndeaproape cu dumneavoastră pentru a defini profilul candidatului ideal."
+          },
+          {
+            "title": "Sourcing Candidați",
+            "description": "Utilizând rețeaua noastră extinsă, identificăm candidați care corespund criteriilor dumneavoastră. Baza noastră de date diversificată include lucrători înalt calificați, pregătiți să preia roluri temporare."
+          },
+          {
+            "title": "Screening și Selecție",
+            "description": "Efectuăm verificări amănunțite, inclusiv analize de fond și evaluări de competențe, asigurându-ne că primiți doar candidați de top. Procesul nostru de selecție pe mai multe niveluri garantează că lucrătorii furnizați sunt competenți și de încredere."
+          },
+          {
+            "title": "Plasare și Integrare",
+            "description": "Odată ce au fost aleși candidații potriviți, gestionăm procesul de plasare și onboarding. Aceasta include rezolvarea tuturor formalităților administrative și orientarea necesară pentru a facilita o tranziție perfectă în echipa dumneavoastră."
+          }
+        ]
+      },
+      "temporaryAdvantage": {
+        "heading": ["Avantajul", "Arka", "Hire"],
+        "topBadge": "De ce noi?",
+        "topTitle": "De ce să alegeți Arka Hire pentru personalul temporar?",
+        "topDescription": "Parteneriatul cu Arka Hire pentru nevoile dumneavoastră de personal temporar înseamnă colaborarea cu o echipă dedicată succesului dumneavoastră. Abordarea noastră strategică vă asigură candidați de înaltă calitate care se integrează perfect în afacerea dumneavoastră, ajutându-vă să mențineți productivitatea și să vă atingeți obiectivele.",
+        "button": {
+          "text": "Contactați-ne",
+          "path": "/contact-us"
+        },
+        "cards": [
+          {
+            "title": "Servicii Personalizate",
+            "description": "Ne adaptăm strategiile de recrutare pentru a le alinia perfect cu obiectivele și nevoile specifice ale afacerii dumneavoastră.",
+            "image": "work1"
+          },
+          {
+            "title": "Expertiză în Industrie",
+            "description": "Echipa noastră deține o experiență vastă în diverse sectoare de activitate, ceea ce ne permite să înțelegem și să abordăm provocările dumneavoastră unice.",
+            "image": "work2"
+          },
+          {
+            "title": "Angajament față de Excelență",
+            "description": "Suntem dedicați furnizării de servicii remarcabile și asigurării satisfacției depline a clienților noștri.",
+            "image": "work3"
+          }
+        ]
+      }
+    },
+    "legalAssurancePage": {
+      "heroLegalAssurance": {
+        "heading": ["Serviciul", "de", "Garanție", "Legală"],
+        "topDescription": "La Arka Hire, serviciile noastre de Garanție Legală sunt concepute pentru a oferi companiilor liniște sufletească, asigurând conformitatea cu legislația muncii și minimizând riscurile juridice.",
+        "badge": "Arka Hire",
+        "heroTitle": "Navigarea prin complexitatea legilor muncii poate fi o adevărată provocare.",
+        "description": "De aceea, vă oferim îndrumare juridică de specialitate pentru a ajuta afacerea dumneavoastră să rămână pe deplin conformă, protejându-vă de potențiale probleme legale.",
+        "imageAlt": "Serviciul de Garanție Legală"
+      },
+      "legalProcess": {
+        "badge": "Etapele Noastre",
+        "heading": "Veți Beneficia De",
+        "leftItems": [
+          "Contracte de Muncă",
+          "Dezvoltarea Politicilor",
+          "Audituri Legale",
+          "Soluționarea Disputelor",
+          "Instruiri și Workshop-uri"
+        ],
+        "processSteps": [
+          {
+            "title": "Contracte de Muncă",
+            "description": "Vă ajutăm să redactați contracte de muncă clare și conforme din punct de vedere legal, care definesc termenii și condițiile esențiale, asigurând protecție atât pentru angajatori, cât și pentru angajați."
+          },
+          {
+            "title": "Dezvoltarea Politicilor",
+            "description": "Echipa noastră vă ajută să creați politici la locul de muncă ce respectă standardele legale, acoperind domenii precum anti-discriminarea, siguranța la locul de muncă și drepturile angajaților."
+          },
+          {
+            "title": "Audituri Legale",
+            "description": "Efectuăm audituri legale periodice pentru a identifica potențialele probleme înainte ca acestea să apară, analizând practicile dumneavoastră actuale și oferind recomandări concrete."
+          },
+          {
+            "title": "Soluționarea Disputelor",
+            "description": "Dacă apar dispute la locul de muncă, serviciile noastre de mediere și arbitraj ajută la rezolvarea eficientă a conflictelor, promovând soluții corecte și reciproc avantajoase, fără litigii prelungite."
+          }
+        ]
+      },
+      "arkaAdvanced": {
+        "heading": ["Motive pentru a alege", "procesul Arka Hire"],
+        "topTitle": "Motive pentru a alege procesul Arka Hire",
+        "topDescription": "Parteneriatul cu Arka Hire înseamnă să lucrați cu o echipă dedicată conformității legale și protecției afacerii dumneavoastră. Soluții personalizate, echipă cu experiență și suport continuu.",
+        "button": {
+          "text": "Contactați-ne"
+        },
+        "cards": [
+          {
+            "title": "Titlu Card 1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+            "image": "legal-card1.webp"
+          },
+          {
+            "title": "Titlu Card 2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+            "image": "legal-card2.webp"
+          },
+          {
+            "title": "Titlu Card 3",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+            "image": "legal-card3.webp"
+          }
+        ],
+        "heroImage": "legalHero.webp"
+      }
+    }
+  },
+  "workerandagencies": {
+    "openJobPage": {
+      "heroOpenJob": {
+        "heading": [
+          "Găsiți",
+          "un",
+          "Loc",
+          "de",
+          "Muncă",
+          "Potrivit",
+          "Abilităților",
+          "Dumneavoastră"
+        ],
+        "subtitle": "Vă vom ajuta să îl obțineți",
+        "badge": "Arka Hire",
+        "title": "Vă rugăm să rămâneți aproape! Actualizăm această pagină.",
+        "description": "Secțiunea noastră de locuri de muncă disponibile va fi activă în curând, oferindu-vă oportunități potrivite pentru abilitățile și experiența dumneavoastră.",
+        "tags": [
+          "Locuri de muncă noi în curând",
+          "Roluri potrivite pe competențe",
+          "Suport pentru lucrători"
+        ],
+        "imageAlt": "Locuri de muncă disponibile",
+        "imageCardText": "Pregătim oportunități de angajare mai bune pentru lucrătorii calificați."
+      }
+    },
+    "agencyPartnerPage": {
+      "heroAgencyPartner": {
+        "heading": "Procesul de Recrutare",
+        "topDescription": "La Arka Hire, ne dedicăm construirii unor parteneriate puternice și de lungă durată cu agenții de recrutare. Programul nostru structurat oferă sprijinul și resursele necesare pentru a vă ajuta să reușiți. Să colaborăm pentru a conecta companiile cu talentele calificate de care au nevoie.",
+        "badge": "Arka Hire",
+        "title": "La Arka Hire, credem în puterea colaborării.",
+        "paragraphs": [
+          "Sunteți un agent independent sau o organizație care dorește să își extindă prezența în industria recrutării?",
+          "La Arka Hire, vă oferim oportunitatea de a deveni partenerul nostru și de a vă dezvolta afacerea.",
+          "Unindu-vă forțele cu noi, puteți accesa o rețea largă de oportunități, puteți crește numărul de plasări și puteți construi relații de durată în domeniu.",
+          "Lăsați detaliile în grija noastră, în timp ce dumneavoastră vă concentrați pe identificarea celor mai bune talente."
+        ],
+        "imageAlt": "Agenție Parteneră"
+      },
+      "partnershipBenefits": {
+        "badge": "Etapele Noastre",
+        "heading": "Beneficiile Parteneriatului",
+        "steps": [
+          {
+            "title": "Acces la Clienți",
+            "desc": "Extindeți-vă aria de acoperire prin conectarea cu companii din multiple industrii. Vă prezentăm angajatori care caută în mod activ lucrători calificați."
+          },
+          {
+            "title": "Recrutare Simplificată",
+            "desc": "Platforma noastră eficientizată simplifică procesul de recrutare, gestionând totul, de la sourcing-ul candidaților până la plasare, pentru o experiență fără bătăi de cap."
+          },
+          {
+            "title": "Instruire și Resurse",
+            "desc": "Accesați programe de formare cuprinzătoare, webinarii, videoclipuri instructive și materiale de marketing pentru a vă îmbunătăți abilitățile de recrutare."
+          },
+          {
+            "title": "Plăți la Timp",
+            "desc": "Primiți plăți prompte pentru plasările de succes. Sistemul nostru eficient asigură tranzacții mai rapide în comparație cu termenele standard din industrie."
+          }
+        ]
+      },
+      "partnerCollaboration": {
+        "imageAlt": "Parteneriat",
+        "badge": "De ce să fiți partener Arka Hire?",
+        "title": "Colaborarea cu Arka Hire oferă numeroase avantaje. Iată de ce ar trebui să vă alăturați rețelei noastre",
+        "points": [
+          {
+            "label": "Oportunități Exclusive",
+            "text": "Obțineți acces la o gamă largă de locuri de muncă vacante și la o bază extinsă de clienți."
+          },
+          {
+            "label": "Rețea de Colaborare",
+            "text": "Deveniți parte dintr-o comunitate profesională dedicată excelenței în recrutare."
+          },
+          {
+            "label": "Dezvoltare Profesională",
+            "text": "Consolidați-vă expertiza și extindeți-vă afacerea cu ajutorul îndrumării specialiștilor noștri."
+          }
+        ],
+        "button": {
+          "text": "Contactați-ne",
+          "path": "/contact-us"
+        }
+      },
+      "faqs": {
+        "badge": "Centru de Ajutor",
+        "heading": "Întrebări Frecvente",
+        "contactText": "Mai aveți întrebări? Contactați-ne.",
+        "button": {
+          "text": "Contactați-ne",
+          "path": "/contact-us"
+        },
+        "items": [
+          {
+            "question": "Ce este programul de afiliere Arka Hire?",
+            "answer": "La Arka Hire, ne străduim să conectăm clienții cu cei mai buni angajați. Evaluăm cu atenție potențialele agenții partenere, asigurându-ne că îndeplinesc criteriile noastre stricte și standardele înalte înainte de a stabili o colaborare."
+          },
+          {
+            "question": "Când pot trimite candidați pentru un interviu cu consultanții Arka Hire?",
+            "answer": "Puteți trimite candidați după screening-ul inițial și verificarea documentației. Consultanții noștri vă vor ghida prin pașii necesari și vă vor comunica programul interviurilor."
+          },
+          {
+            "question": "Cine suportă costurile de angajare?",
+            "answer": "Costurile de angajare depind de acordul stabilit între angajator, agenția parteneră și candidat. Echipa noastră se asigură că toate aspectele sunt comunicate clar înainte de a continua."
+          },
+          {
+            "question": "Există cerințe privind naționalitatea pentru programul de afiliere Arka Hire?",
+            "answer": "Cerințele pot varia în funcție de client, rolul jobului și țara de destinație. Analizăm fiecare caz cu atenție și oferim îndrumări clare partenerilor noștri."
+          }
+        ]
+      },
+      "arkaHireAdvantage": {
+        "heading": ["Avantajul", "Arka", "Hire"],
+        "subtitle": "Deținem o expertiză vastă în sectoarele construcțiilor și ospitalității, ceea ce ne permite să conectăm companiile cu candidați înalt calificați, care se potrivesc perfect nevoilor industriei lor.",
+        "cards": [
+          {
+            "title": "Oportunități Exclusive",
+            "description": "Obțineți acces la locuri de muncă de top și la o rețea largă de clienți de renume, asigurându-vă o creștere și un succes continuu.",
+            "icon": "icon1"
+          },
+          {
+            "title": "Rețea de Colaborare",
+            "description": "Alăturați-vă unei comunități profesionale de recrutori și experți din industrie, dedicați menținerii excelenței în achiziția de talente.",
+            "icon": "icon2"
+          },
+          {
+            "title": "Dezvoltare Profesională",
+            "description": "Extindeți-vă expertiza în recrutare cu ajutorul suportului, resurselor și îndrumării noastre, dezvoltându-vă abilitățile și afacerea în mod eficient.",
+            "icon": "icon3"
+          }
+        ]
+      }
+    }
+  },
+  "industriesPage": {
+    "badge": "Alegeți dintre cei mai buni lucrători ai noștri",
+    "heading": ["Industrii", "pe", "care", "le", "deservim"],
+    "subtitle": "O prezentare premium de recrutare pentru industrii de încredere, lucrători calificați și soluții sigure pentru forța de muncă.",
+    "activeIndustryLabel": "Industrie Activă",
+    "activeWorkersTitle": "Roluri calificate, pregătite pentru afacerea dumneavoastră",
+    "viewRoles": "Vezi Rolurile",
+    "industries": [
+      {
+        "title": "Industria Construcțiilor",
+        "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Muncitori",
+          "Tâmplari",
+          "Zidari",
+          "Electricieni",
+          "Instalatori",
+          "Acoperișari",
+          "Zugravi",
+          "Supervizori de Șantier"
+        ]
+      },
+      {
+        "title": "Șoferi",
+        "image": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Șoferi de Camion",
+          "Șoferi de Autobuz",
+          "Șoferi de Curierat și Livrări",
+          "Șoferi de Taxi și Ride-Hailing",
+          "Operatori de Utilaje Grele și Construcții"
+        ]
+      },
+      {
+        "title": "Sănătate",
+        "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Asistenți Medicali",
+          "Îngrijitori la Domiciliu",
+          "Dactilografi Medicali",
+          "Ajutori de Farmacie",
+          "Asistenți/Ajutori de Spital",
+          "Personal de Curățenie",
+          "Ajutori în Servicii Alimentare"
+        ]
+      },
+      {
+        "title": "Frumusețe și Estetică",
+        "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Asistenți de Salon",
+          "Frizeri",
+          "Hair Stiliști",
+          "Make-up Artiști",
+          "Esteticieni",
+          "Terapeuți de Înfrumusețare",
+          "Manageri de Salon",
+          "Terapeuți Spa",
+          "Maseuri"
+        ]
+      },
+      {
+        "title": "Tinichigerie și Vopsitorie",
+        "image": "https://images.unsplash.com/photo-1598860024867-a1cb3a858427?q=80&w=915&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "workers": [
+          "Tehnicieni Tinichigii",
+          "Asistenți Vopsitorie",
+          "Pregătitori de Suprafață",
+          "Laboranți Vopsele",
+          "Slefuitori Auto",
+          "Vopsitori Auto (Pistol)"
+        ]
+      },
+      {
+        "title": "Ospitalitate (Horeca)",
+        "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Chef de Partie",
+          "Sous Chef",
+          "Recepționeri",
+          "Ospătari / Chelnerițe",
+          "Barmani",
+          "Supervizori Housekeeping",
+          "Concierge",
+          "Sommelieri"
+        ]
+      },
+      {
+        "title": "Industria Sudurii",
+        "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Sudori MIG",
+          "Sudori TIG",
+          "Sudori Electrici (Arc)",
+          "Confecționeri Metalici",
+          "Inspectori de Sudură",
+          "Montatori de Conducte (Țevari)",
+          "Sudori Structuri Metalice"
+        ]
+      },
+      {
+        "title": "Comerț și Retail",
+        "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Asistenți de Vânzări",
+          "Manageri de Magazin",
+          "Casieri",
+          "Visual Merchandiseri",
+          "Asistenți de Inventar",
+          "Reprezentanți Relații Clienți",
+          "Lucrători Comerciali (Aranjare Rafturi)"
+        ]
+      },
+      {
+        "title": "Industria Minieră",
+        "image": "https://images.unsplash.com/photo-1523848309072-c199db53f137?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "workers": [
+          "Operatori Excavare",
+          "Forajiști",
+          "Tehnicieni Artificieri",
+          "Ofițeri de Securitate a Muncii",
+          "Geologi",
+          "Topografi",
+          "Operatori de Utilaje Grele"
+        ]
+      },
+      {
+        "title": "Procesarea și Producția Alimentară",
+        "image": "https://images.unsplash.com/photo-1651525670114-2b8117390b28?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "workers": [
+          "Manipulanți Alimente",
+          "Ambalatori",
+          "Tehnicieni de Control al Calității",
+          "Operatori de Utilaje",
+          "Personal de Igienizare",
+          "Supervizori de Producție",
+          "Lucrători la Linie"
+        ]
+      },
+      {
+        "title": "Confecții și Textile",
+        "image": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Lucrători Textili",
+          "Operatori Mașină de Cusut",
+          "Maeștri Croitori",
+          "Inspectori de Calitate",
+          "Călcători",
+          "Lucrători Ambalare",
+          "Ajutori de Producție"
+        ]
+      },
+      {
+        "title": "Producție și Fabrică",
+        "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Muncitori Linie de Asamblare",
+          "Operatori de Utilaje",
+          "Inspectori de Control al Calității",
+          "Supervizori de Producție",
+          "Sudori",
+          "Confecționeri Metalici",
+          "Stivuitoriști"
+        ]
+      },
+      {
+        "title": "Curățenie și Întreținere",
+        "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Îngrijitori de Clădiri",
+          "Menajere",
+          "Personal de Curățenie",
+          "Administratori / Custozi",
+          "Tehnicieni Întreținere Pardoseli",
+          "Spălători de Geamuri",
+          "Spălători de Rufe"
+        ]
+      },
+      {
+        "title": "Agricultură și Plantații",
+        "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Săditori / Plantatori",
+          "Culegători",
+          "Muncitori Întreținere Fermă",
+          "Tehnicieni Sisteme de Irigații",
+          "Îngrijitori de Animale",
+          "Manageri de Culturi",
+          "Agronomi"
+        ]
+      },
+      {
+        "title": "Sectorul Maritim și Șantiere Navale",
+        "image": "https://images.unsplash.com/photo-1602575051429-c502cac0d3e8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "workers": [
+          "Sudori Maritimi",
+          "Confecționeri Navali",
+          "Montatori Structuri Navale",
+          "Electricieni Navali",
+          "Țevari Navali",
+          "Arhitecți Navali",
+          "Ingineri Maritimi"
+        ]
+      },
+      {
+        "title": "Peisagistică și Îngrijirea Spațiilor Verzi",
+        "image": "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Peisagiști",
+          "Îngrijitori Spații Verzi",
+          "Grădinari",
+          "Tehnicieni Sisteme de Irigații",
+          "Designeri Peisagiști",
+          "Arboricultori",
+          "Specialiști Întreținere Gazon"
+        ]
+      },
+      {
+        "title": "Operatori de Utilaje Grele",
+        "image": "https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=1200&q=80",
+        "workers": [
+          "Operatori Excavator",
+          "Operatori Buldozer",
+          "Macaragii",
+          "Operatori Buldoexcavator",
+          "Operatori Încărcător Frontal",
+          "Operatori Autogreder",
+          "Operatori Finisor Asfalt"
+        ]
+      }
+    ]
+  },
+  "contactPage": {
+    "contactForm": {
+      "title": "Contactați-ne pentru Soluții de Forță de Muncă!",
+      "subtitle": "Aveți nevoie de ajutor? Trimiteți-ne o solicitare",
+      "description": "Completați formularul, iar echipa noastră vă va răspunde în cel mai scurt timp posibil",
+      "email": "info@arkahire.com",
+      "form": {
+        "fullNamePlaceholder": "Nume Complet",
+        "phonePlaceholder": "Număr de Telefon",
+        "emailPlaceholder": "E-mail",
+        "messagePlaceholder": "Mesaj",
+        "submitButton": "Trimite"
+      },
+      "office": {
+        "label": "SEDIUL CENTRAL - UK",
+        "address": "Surbiton, Regatul Unit, KT6 7TE"
+      },
+      "backgroundImage": "https://images.pexels.com/photos/8867261/pexels-photo-8867261.jpeg"
+    },
+    "locationPage": {
+      "heading": "Vizitați Biroul Nostru",
+      "subheading": "Găsiți mai jos locația biroului nostru și datele de contact.",
+      "sectionLabel": "Locația Noastră",
+      "office": {
+        "name": "Sediul Central - UK",
+        "address": "Surbiton, Regatul Unit, KT6 7TE",
+        "email": "info@arkahire.com",
+        "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Surbiton%2C%20United%20Kingdom%2C%20KT6%207TE"
+      },
+      "contactItems": [
+        {
+          "icon": "FaBuilding",
+          "label": "Adresă",
+          "value": "Surbiton, Regatul Unit, KT6 7TE"
+        },
+        {
+          "icon": "FaEnvelope",
+          "label": "E-mail",
+          "value": "info@arkahire.com",
+          "mailto": "mailto:info@arkahire.com"
+        }
+      ],
+      "map": {
+        "iframeSrc": "https://www.google.com/maps?q=Surbiton%2C%20United%20Kingdom%2C%20KT6%207TE&output=embed",
+        "title": "Locație Arka Hire - Surbiton"
+      }
+    }
+  },
+  "faqsPage": {
+    "badge": "Centru de Ajutor",
+    "heading": "Întrebări Frecvente",
+    "description": "Găsiți răspunsuri despre serviciile de recrutare Arka Hire, contracte, personal, angajări internaționale și suport pentru candidați.",
+    "helpBox": {
+      "label": "Aveți nevoie de mai mult ajutor?",
+      "email": "info@arkahire.com"
+    },
+    "contactButton": {
+      "text": "Contactați-ne",
+      "path": "/contact-us"
+    },
+    "search": {
+      "placeholder": "Căutați întrebări..."
+    },
+    "emptyState": {
+      "title": "Nu a fost găsită nicio întrebare.",
+      "description": "Încercați să căutați cu un alt cuvânt cheie."
+    },
+    "bottomNote": {
+      "textBeforeEmail": "Dacă aveți alte întrebări sau aveți nevoie de informații suplimentare, vă rugăm să nu ezitați să ne contactați la",
+      "email": "info@arkahire.com"
+    },
+    "faqs": [
+      {
+        "question": "Cu ce tipuri de clienți/proiecte lucrați?",
+        "answer": "La Arka Hire, lucrăm cu o gamă diversă de clienți din diverse industrii, inclusiv IT, sănătate, finanțe, inginerie și altele. Ne ocupăm de proiecte care variază de la poziții temporare și pe bază de contract, până la plasări permanente. Indiferent dacă aveți nevoie de suport pentru un proiect pe termen scurt sau de un membru pe termen lung în echipa dumneavoastră, vă putem oferi talentul potrivit pentru a vă satisface nevoile specifice."
+      },
+      {
+        "question": "Cât durează, de regulă, contractele dumneavoastră?",
+        "answer": "Durata contractelor noastre variază în funcție de cerințele specifice ale clienților și de natura proiectului. Proiectele temporare pot dura de la câteva săptămâni la câteva luni, în timp ce pozițiile pe bază de contract pot varia de la șase luni la un an sau mai mult. Plasările permanente sunt destinate colaborărilor pe termen lung. Lucrăm îndeaproape cu clienții noștri pentru a determina durata contractuală corespunzătoare pentru fiecare proiect în parte."
+      },
+      {
+        "question": "De ce ar trebui să apelez la o agenție de recrutare pentru a-mi găsi un loc de muncă?",
+        "answer": "Colaborarea cu o agenție de recrutare precum Arka Hire vă oferă acces la locuri de muncă nepublicate, îndrumare din partea experților, consiliere în carieră, revizuirea CV-ului, pregătire pentru interviu, conexiuni solide cu angajatorii și opțiuni flexibile de angajare, inclusiv roluri temporare, contractuale și permanente."
+      },
+      {
+        "question": "Cum funcționează agențiile de recrutare?",
+        "answer": "Agențiile de recrutare servesc ca intermediari între angajatori și persoanele aflate în căutarea unui loc de muncă. Procesul nostru include consultanța cu clientul, identificarea (sourcing) candidaților, screening-ul și interviurile, prezentarea acestora către client, integrarea (onboarding) și monitorizarea ulterioară pentru a asigura o tranziție lină."
+      },
+      {
+        "question": "Care sunt taxele asociate serviciilor de recrutare?",
+        "answer": "Nu percepem bani de la angajatori pentru plasarea propriu-zisă a candidaților. În schimb, angajatorii plătesc o taxă unică pentru a acoperi costurile aferente obținerii permiselor de muncă necesare de la guvern. Suntem transparenți în privința comisioanelor noastre și oferim o defalcare detaliată în timpul consultanței inițiale."
+      },
+      {
+        "question": "Există o clauză de exclusivitate în contractele de recrutare?",
+        "answer": "Clauzele de exclusivitate sunt opționale și depind de acordul stabilit între Arka Hire și client. Unii clienți preferă să lucreze exclusiv cu noi, în timp ce alții pot colabora cu mai multe agenții. Ne adaptăm abordarea în funcție de nevoile dumneavoastră."
+      },
+      {
+        "question": "Trebuie plătit un depozit (avans) pentru serviciile dumneavoastră?",
+        "answer": "De regulă, nu solicităm un depozit pentru serviciile noastre de recrutare. Taxa noastră unică devine exigibilă odată cu inițierea procesului de obținere a permisului de muncă și va fi stipulată în mod clar în acordul nostru."
+      },
+      {
+        "question": "Cum arată procesul de angajare prin intermediul agenției dumneavoastră?",
+        "answer": "Procesul nostru de angajare cuprinde consultanța inițială, căutarea candidaților, screening-ul, selectarea profilurilor potrivite, interviurile cu clientul, selecția finală, suportul la transmiterea ofertei și asistența la integrare pentru a asigura o acomodare perfectă."
+      },
+      {
+        "question": "Cum asigurați calitatea candidaților?",
+        "answer": "Utilizăm un proces riguros de selecție care include analizarea CV-ului, interviuri telefonice, interviuri aprofundate (față în față sau virtuale), testarea competențelor acolo unde este necesar, verificarea recomandărilor și feedback-ul continuu primit de la clienți și candidați."
+      },
+      {
+        "question": "Cum gestionați confidențialitatea?",
+        "answer": "Tratăm confidențialitatea cu cea mai mare seriozitate. Informațiile despre clienți și candidați sunt gestionate cu maximă discreție. Respectăm politici stricte de protecție a datelor și partajăm informațiile doar cu personalul autorizat implicat direct în procesul de recrutare."
+      },
+      {
+        "question": "Puteți ajuta cu recrutarea internațională?",
+        "answer": "Da, Arka Hire vă poate ajuta cu recrutarea internațională. Dispunem de o rețea globală și putem identifica și selecta candidați din diverse țări."
+      },
+      {
+        "question": "Care este politica dumneavoastră privind diversitatea și incluziunea?",
+        "answer": "Arka Hire își asumă un angajament ferm în promovarea diversității și incluziunii la locul de muncă. Credem că echipele diverse sunt mai inovatoare și mai eficiente. Oferim șanse egale tuturor candidaților și ne asigurăm că procesele noastre sunt lipsite de prejudecăți."
+      },
+      {
+        "question": "Cum gestionați disputele sau problemele apărute în timpul procesului de recrutare?",
+        "answer": "Avem implementat un protocol clar de soluționare. Încurajăm comunicarea deschisă și colaborăm strâns cu clienții și candidații pentru a rezolva orice neînțelegere prompt și echitabil."
+      },
+      {
+        "question": "Ce suport oferiți după ce un candidat a fost plasat?",
+        "answer": "Suportul nostru continuă și după plasarea candidatului. Oferim întâlniri de monitorizare, evaluări ale performanței și asistență continuă atât pentru angajatori, cât și pentru noii angajați pe parcursul perioadei inițiale de acomodare."
+      },
+      {
+        "question": "Cum vă mențineți la curent cu tendințele din industrie?",
+        "answer": "Echipa noastră rămâne informată prin dezvoltare profesională continuă, participarea la conferințe din domeniu, urmărirea publicațiilor de specialitate și prin schimbul de informații în cadrul rețelei noastre de experți."
+      },
+      {
+        "question": "Puteți oferi soluții de personal temporar?",
+        "answer": "Da, oferim soluții de personal temporar pentru suport pe termen scurt, perioade cu volum sezonier de muncă, acoperirea absențelor angajaților și nevoi specifice de proiect."
+      },
+      {
+        "question": "Cum potriviți candidații cu rolurile disponibile?",
+        "answer": "Potrivim candidații printr-o analiză detaliată a jobului, profilarea candidatului, tehnologii avansate de matching, evaluarea compatibilității cu cultura organizațională și analiza potențialului pe termen lung."
+      },
+      {
+        "question": "Care este rata dumneavoastră de succes în plasarea candidaților?",
+        "answer": "Rata noastră de succes este ridicată datorită procesului riguros de screening și înțelegerii profunde a nevoilor clienților noștri. Monitorizăm și ne îmbunătățim continuu procesele pentru a menține rezultate excelente și un nivel ridicat de satisfacție."
+      }
+    ]
+  },
+  "termsPage": {
+    "title": "Termeni și Condiții",
+    "sections": [
+      {
+        "title": "Obiectul Contractului și Acceptarea",
+        "content": "Acești Termeni de Utilizare („Termeni de Utilizare”) reglementează utilizarea site-ului web arkahire.com al Arka Hire. Orice persoană care accesează Site-ul web („dumneavoastră”) acceptă prin prezenta Termenii de Utilizare în vigoare la momentul vizitei."
+      },
+      {
+        "title": "Utilizarea Site-ului Web",
+        "content": "Sunteți de acord prin prezenta să acceptați în mod voluntar și expres utilizarea site-ului web exclusiv pe propriul risc. Aveți responsabilitatea de a păstra confidențialitatea oricărui ID de utilizator și a parolei."
+      },
+      {
+        "title": "Conținut",
+        "content": "Nu avem obligația de a verifica acuratețea Conținutului și nu garantăm utilitatea, exactitatea, caracterul complet sau relevanța acestuia. Toate deciziile luate pe baza conținutului sunt responsabilitatea dumneavoastră."
+      },
+      {
+        "title": "Drepturi de Proprietate Intelectuală",
+        "content": "Tot conținutul de pe Site-ul web este protejat la nivel mondial prin drepturi de autor, design, marcă comercială și alte legi privind proprietatea intelectuală. Nu aveți permisiunea de a copia, redistribui sau utiliza acest conținut fără acordul prealabil."
+      },
+      {
+        "title": "Link-uri și Conectare",
+        "content": "Site-ul web poate conține link-uri către site-uri terțe. Conectarea la astfel de site-uri nu implică garanția noastră pentru site-urile respective. Utilizarea acestora se face pe propriul risc."
+      },
+      {
+        "title": "Date cu Caracter Personal",
+        "content": "Colectarea și utilizarea datelor cu caracter personal sunt guvernate de Politica noastră de Confidențialitate: https://arkahire.com/privacy-policy"
+      },
+      {
+        "title": "Legea Aplicabilă și Jurisdicția",
+        "content": "Acești Termeni de Utilizare sunt guvernați de legile din Qatar și sunt supuși jurisdicției exclusive a instanței din Doha."
+      },
+      {
+        "title": "Contact",
+        "content": "Întrebările, comentariile și solicitările legate de acești Termeni pot fi trimise către Arka Hire, Al-Barqiya, Clădirea 379, zona 57, Strada 41, Ar-Rayyan, Qatar, info@arkahire.com"
+      }
+    ]
+  },
+  "privacyPolicy": {
+    "title": "Politica de Confidențialitate",
+    "sections": [
+      {
+        "title": "Politica Noastră de Confidențialitate",
+        "content": "Noi, cei de la Arka Hire, cu sediul în Al-Barqiya, Clădirea 379, zona 57, Strada 41, Ar-Rayyan, Qatar, ne propunem să vă protejăm confidențialitatea. Această Politică stabilește ce informații cu caracter personal colectăm de la dumneavoastră și modul în care le utilizăm."
+      },
+      {
+        "title": "Informații cu Caracter Personal pe Care le Putem Colecta",
+        "content": "Colectăm informații din vizitele dumneavoastră pe Site-ul web, inclusiv date de trafic, locație și conținutul din formularele de contact. Câmpurile obligatorii sunt marcate cu *, iar completarea câmpurilor opționale rămâne la latitudinea dumneavoastră."
+      },
+      {
+        "title": "Cum Utilizăm Informațiile Dumneavoastră cu Caracter Personal",
+        "content": "Utilizăm datele dumneavoastră pentru a personaliza conținutul, pentru a răspunde la solicitări, pentru a oferi funcții interactive și pentru a îmbunătăți site-ul web. În mod obișnuit, păstrăm datele timp de 2 ani pentru a ne conforma obligațiilor legale."
+      },
+      {
+        "title": "Mesaje de Marketing",
+        "content": "Cu acordul dumneavoastră, vă putem trimite mesaje de marketing prin e-mail. Vă puteți dezabona în orice moment folosind link-ul de dezabonare sau contactându-ne la info@arkahire.com."
+      },
+      {
+        "title": "Partajarea Datelor cu Terțe Părți",
+        "content": "Putem dezvălui date către furnizori, contractori sau autorități guvernamentale dacă legea ne impune acest lucru. Toate terțele părți trebuie să respecte obligațiile de confidențialitate."
+      },
+      {
+        "title": "Adrese IP și Cookie-uri",
+        "content": "Colectăm date tehnice, cum ar fost adresele IP și tipul de browser, pentru a îmbunătăți site-ul. Cookie-urile sunt utilizate pentru a oferi conținut personalizat. Vă rugăm să nu folosiți opțiunea „ține-mă minte” pe dispozitivele partajate."
+      },
+      {
+        "title": "Drepturile Dumneavoastră",
+        "content": "Puteți accesa, corecta, șterge sau restricționa prelucrarea datelor dumneavoastră cu caracter personal. Vă puteți retrage consimțământul în orice moment sau puteți depune o plângere la autoritățile competente."
+      },
+      {
+        "title": "Modificări ale Politicii",
+        "content": "Putem actualiza această Politică periodic. Modificările vor fi publicate pe acest site web sau vă vor fi comunicate prin alte canale."
+      },
+      {
+        "title": "Contact",
+        "content": "Întrebările legate de această Politică pot fi trimise către Arka Hire la info@arkahire.com."
+      }
+    ]
+  },
+  "footer": {
+    "logo": {
+      "src": "../../assets/logowhite.webp",
+      "alt": "Logo Arka Hire"
+    },
+    "contactEmail": "info@arkahire.com",
+    "socialTitle": "Urmăriți-ne",
+    "socialLinks": [
+      { "platform": "Facebook", "icon": "FaFacebookF", "url": "#" },
+      { "platform": "Twitter", "icon": "FaTwitter", "url": "#" },
+      { "platform": "YouTube", "icon": "FaYoutube", "url": "#" },
+      { "platform": "LinkedIn", "icon": "FaLinkedinIn", "url": "#" },
+      { "platform": "Pinterest", "icon": "FaPinterestP", "url": "#" }
+    ],
+    "copyright": "Arka Hire 2013-2026. Toate drepturile rezervate",
+    "sections": [
+      {
+        "title": "Servicii",
+        "links": [
+          {
+            "label": "Procesul de Recrutare",
+            "path": "/employers/recruitment-process"
+          },
+          {
+            "label": "Mediere în Plasarea Forței de Muncă",
+            "path": "/employers/mediation-in-employment"
+          },
+          {
+            "label": "Recrutare Personal Temporar",
+            "path": "/employers/temporary-recruitment"
+          },
+          {
+            "label": "Consultanță și Securitate Juridică",
+            "path": "/employers/legal-assurance"
+          },
+          {
+            "label": "Asistență pentru Imigrare",
+            "path": "/employers/immigration-assistance"
+          }
+        ]
+      },
+      {
+        "title": "Link-uri Importante",
+        "links": [
+          { "label": "Contactați-ne", "path": "/contact-us" },
+          { "label": "Parteneriat Agenții", "path": "/agency-partnership" },
+          { "label": "Locuri de Muncă Vacante", "path": "/open-jobs" },
+          { "label": "Industrii Deservite", "path": "/industries" }
+        ]
+      },
+      {
+        "title": "Pagini Importante",
+        "links": [
+          {
+            "label": "Întrebări Frecvente",
+            "path": "/frequently-asked-questions"
+          },
+          {
+            "label": "Termeni și Condiții",
+            "path": "/terms-and-conditions"
+          },
+          {
+            "label": "Politica de Confidențialitate",
+            "path": "/privacy-policy"
+          }
+        ]
+      }
+    ]
   }
 }

@@ -138,7 +138,6 @@ const HeroWorkerSorcing = () => {
           </div>
         </div>
 
-        {/* Right Text */}
         <div className="flex flex-col gap-6">
           <p
             ref={textRef}
@@ -168,12 +167,13 @@ const HeroWorkerSorcing = () => {
       </div>
 
       <div className="flex items-center justify-center">
-        <button
+        <a
+        href="/contact-us"
           ref={buttonRef}
           className="mt-6 w-[220px] rounded-full bg-red-600 px-6 py-3 text-[13px] font-black uppercase text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-red-700"
         >
           {t("ourApproach.workerSourcing.cta.buttonText")}
-        </button>
+        </a>
       </div>
     </section>
   );

@@ -102,7 +102,6 @@ const TemporaryAdvantage = () => {
       className="relative w-full overflow-hidden bg-gradient-to-r from-[#071b0c] via-[#2f7f35] to-[#071b0c] px-4 py-20 font-montserrat text-white sm:px-6 lg:px-10"
     >
       <div className="relative z-10 mx-auto max-w-7xl">
-        {/* Top section */}
         <div className="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14">
           <div
             ref={imageRef}
@@ -138,7 +137,6 @@ const TemporaryAdvantage = () => {
           </div>
         </div>
 
-        {/* Bottom cards */}
         <div className="mt-24 text-center">
           <h2 className="text-[34px] font-black leading-tight tracking-wide text-white sm:text-[46px] lg:text-[56px]">
             {heading.map((word, index) => (

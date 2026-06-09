@@ -82,12 +82,12 @@ const WhyWorkUs = () => {
                       : work1
               }
               alt={card.title}
-              className="h-44 w-44 object-contain rounded-lg mb-4 shadow-md"
+              className="h-56 w-56 object-contain rounded-lg mb-4"
             />
-            <h3 className="text-xl font-bold mb-2 text-[#d8ffd8]">
+            <h3 className="text-xl font-bold mb-2 text-white">
               {card.title}
             </h3>
-            <p className="text-white/70 text-sm leading-relaxed">
+            <p className="text-white/90 text-sm leading-relaxed">
               {card.description}
             </p>
           </div>

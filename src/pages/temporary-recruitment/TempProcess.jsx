@@ -77,17 +77,14 @@ const TempProcess = () => {
       className="relative w-full overflow-hidden bg-cover bg-center font-montserrat text-white"
       style={{ backgroundImage: `url(${bgprocess})` }}
     >
-      {/* Overlay */}
       <div className="absolute inset-0 bg-[#5b612c]/72" />
       <div className="absolute inset-0 bg-black/30" />
       <div className="absolute inset-y-0 left-0 w-full bg-gradient-to-r from-black/35 via-transparent to-black/25" />
 
-      {/* Red top and bottom bars */}
       <div className="absolute left-0 top-0 z-10 h-[8px] w-full bg-[#b94425]/70" />
       <div className="absolute bottom-0 left-0 z-10 h-[20px] w-full bg-[#b94425]/60" />
 
       <div className="relative z-20 mx-auto grid min-h-[360px] max-w-7xl grid-cols-1 items-center gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[0.72fr_1.28fr] lg:px-16">
-        {/* Left */}
         <div ref={leftRef} className="lg:pl-14">
           <p className="mb-3 text-[13px] font-black text-[#ff2d18]">
             {t(`${basePath}.badge`)}
@@ -110,7 +107,6 @@ const TempProcess = () => {
           </ul>
         </div>
 
-        {/* Right timeline */}
         <div className="relative max-w-4xl">
           <div className="absolute left-0 top-2 hidden h-[calc(100%-20px)] w-[2px] bg-[#ff2d18]/75 md:block" />
 

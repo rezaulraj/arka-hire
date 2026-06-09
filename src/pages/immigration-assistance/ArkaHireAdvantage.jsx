@@ -72,7 +72,6 @@ const ArkaHireAdvantage = () => {
       className="relative w-full px-4 py-16 sm:px-6 lg:px-16 font-montserrat text-white bg-gradient-to-r from-[#071b0c] via-[#2f7f35] to-[#071b0c]"
     >
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
-        {/* Image */}
         <div
           ref={imageRef}
           className="flex-1 rounded-xl overflow-hidden shadow-2xl w-full lg:max-w-lg"
@@ -84,7 +83,6 @@ const ArkaHireAdvantage = () => {
           />
         </div>
 
-        {/* Text Content */}
         <div className="flex-1 flex flex-col gap-4">
           <p
             ref={(el) => (textRef.current[0] = el)}
@@ -107,12 +105,13 @@ const ArkaHireAdvantage = () => {
             {description}
           </p>
 
-          <button
+          <a
+          href="/contact-us"
             ref={buttonRef}
             className="mt-4 w-max px-6 py-3 bg-red-600 hover:bg-red-700 rounded-lg font-semibold text-white shadow-lg transition-all duration-300"
           >
             {buttonText}
-          </button>
+          </a>
         </div>
       </div>
     </section>

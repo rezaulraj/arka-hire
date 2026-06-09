@@ -11,10 +11,10 @@ import followIcon from "../../assets/icons/follow.webp";
 gsap.registerPlugin(ScrollTrigger);
 
 const WhyArkaMediation = () => {
-  const iconsMap = {
-    agreement: reachIcon,
-    follow: followIcon,
-  };
+  // const iconsMap = {
+  //   agreement: reachIcon,
+  //   follow: followIcon,
+  // };
   const { t } = useTranslation();
   const sectionRef = useRef(null);
   const cardsRef = useRef([]);
@@ -142,16 +142,16 @@ const WhyArkaMediation = () => {
 
               <div className="relative z-10 mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl border border-white/25 bg-[#d8ffd8]/12 shadow-[0_14px_40px_rgba(0,0,0,0.22)] transition duration-500 group-hover:scale-110 group-hover:-rotate-6">
                 <img
-                  src={iconsMap[item.icon]}
+                  src={item.icon}
                   alt={item.title}
                   className="h-11 w-11 object-contain"
                 />
               </div>
 
-              <h3 className="relative z-10 mb-2 text-[18px] font-black text-white">
+              <h3 className="relative z-10 mb-2 text-[20px] font-black text-white">
                 {item.title}
               </h3>
-              <p className="relative z-10 mx-auto max-w-md text-[12px] font-bold leading-5 text-white/78">
+              <p className="relative z-10 mx-auto max-w-md text-[14px] font-bold leading-5 text-gray-200">
                 {item.description}
               </p>
 

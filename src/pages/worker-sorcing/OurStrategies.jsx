@@ -308,7 +308,7 @@ const StrategyCard = ({ strategy, index, stepLabel, learnMore }) => {
           <p
             className="text-sm leading-relaxed"
             style={{
-              color: "rgba(200,230,210,0.65)",
+              color: "rgba(237, 238, 237, 0.65)",
               fontFamily: "Montserrat, sans-serif",
               fontWeight: 400,
             }}
@@ -451,10 +451,6 @@ const OurStrategies = () => {
       ref={sectionRef}
       className="relative w-full overflow-hidden bg-gradient-to-r from-[#0C1A0E] via-[#2f7f35] to-[#0C1A0E] px-4 py-24 font-montserrat text-white sm:px-8 lg:px-16"
     >
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;900&display=swap');
-      `}</style>
-
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.03]"
         style={{

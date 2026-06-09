@@ -157,7 +157,7 @@ const ServicesOverView = () => {
               >
                 <span
                   className={`overview-word inline-block ${
-                    word === "Services" ? "text-[#d8ffd8]" : "text-white"
+                    word === "Services" ? "text-[#8bea8f]" : "text-white"
                   }`}
                 >
                   {word}

@@ -125,7 +125,6 @@ const HeroSeamless = () => {
       </h2>
 
       <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
-        {/* Left Image */}
         <div className="relative">
           <div ref={imageRef} className="overflow-hidden rounded-xl shadow-xl">
             <img
@@ -138,7 +137,6 @@ const HeroSeamless = () => {
           </div>
         </div>
 
-        {/* Right Text */}
         <div className="flex flex-col gap-6">
           <p
             ref={textRef}
@@ -168,12 +166,13 @@ const HeroSeamless = () => {
       </div>
 
       <div className="flex items-center justify-center">
-        <button
+        <a
+        href="/contact-us"
           ref={buttonRef}
           className="mt-6 w-[220px] rounded-full bg-red-600 px-6 py-3 text-[13px] font-black uppercase text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-red-700"
         >
           {t("ourApproach.seamlessIntegration.cta.buttonText")}
-        </button>
+        </a>
       </div>
     </section>
   );

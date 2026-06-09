@@ -187,7 +187,7 @@ const Glance = () => {
               <span
                 className={`glance-word inline-block ${
                   word === "Arka" || word === "Glance"
-                    ? "text-[#d8ffd8]"
+                    ? "text-[#8bea8f]"
                     : "text-white"
                 }`}
               >

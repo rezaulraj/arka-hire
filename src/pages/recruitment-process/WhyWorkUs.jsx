@@ -14,7 +14,7 @@ const images = {
   work2,
   work3,
 };
-
+console.log("imags", work1, work2, work3)
 const WhyWorkUs = () => {
   const { t } = useTranslation();
 

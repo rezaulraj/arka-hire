@@ -130,12 +130,13 @@ const WhyArka = () => {
             </p>
           ))}
 
-          <button
+          <a
+          href="/contact-us"
             ref={buttonRef}
             className="mt-6 rounded-md bg-red-600 px-6 py-3 font-bold text-white shadow-lg transition-all hover:scale-105 hover:shadow-xl"
           >
             {t("employers.recruitmentPage.whyArka.button")}
-          </button>
+          </a>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
+import { Helmet } from "react-helmet-async";
 
 import HeroHome from "./HeroHome";
 import Services from "./Services";
@@ -35,12 +36,33 @@ const HomePage = () => {
     lenisRef.current = lenis;
 
     return () => {
-      lenis.destroy(); // cleanup
+      lenis.destroy();
     };
   }, []);
 
   return (
     <div>
+      <Helmet>
+        <title>Arka Hire | Grobal Workforce Solutions</title>
+        <meta
+          name="description"
+          content="Arka Hire provides global skilled workers and workforce solutions. Connect with professionals, temporary staff, and recruitment services tailored for your business."
+        />
+        <meta
+          name="keywords"
+          content="Skilled Workers, Workforce Solutions, Recruitment, Temporary Staff, Arka Hire, Global Employment, Worker Sourcing, HR Solutions"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.arkahire.com/" />
+        <meta property="og:title" content="Arka Hire | Grobal Workforce Solutions" />
+        <meta
+          property="og:description"
+          content="Find top global talent and efficient workforce solutions for your business with Arka Hire."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://arkahire.com/" />
+      </Helmet>
+
       <HeroHome />
       <Services />
       <OurProcess />

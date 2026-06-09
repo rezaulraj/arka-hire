@@ -163,7 +163,6 @@ const SeamlessStategies = () => {
       className="relative w-full overflow-hidden bg-gradient-to-r from-[#071b0c] via-[#2f7f35] to-[#071b0c] px-4 py-20 font-montserrat text-white sm:px-6 lg:px-10"
     >
       <div className="relative z-10 mx-auto max-w-7xl">
-        {/* Heading */}
         <div className="mx-auto mb-16 max-w-4xl text-center">
           <h2 className="text-[42px] font-black leading-tight tracking-[0.08em] text-white sm:text-[56px] lg:text-[72px]">
             {heading.map((word, index) => (
@@ -189,7 +188,6 @@ const SeamlessStategies = () => {
           </p>
         </div>
 
-        {/* Desktop progress line */}
         <div className="relative hidden lg:block">
           <div className="absolute left-[8%] right-[8%] top-[92px] h-[3px] rounded-full bg-white/15">
             <div
@@ -199,7 +197,6 @@ const SeamlessStategies = () => {
           </div>
         </div>
 
-        {/* Cards */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
           {strategies.map((item, index) => (
             <div
@@ -211,7 +208,6 @@ const SeamlessStategies = () => {
                 index % 2 === 0 ? "lg:mt-0" : "lg:mt-16"
               }`}
             >
-              {/* Connector dot */}
               <div className="absolute left-1/2 top-[-26px] z-20 hidden h-8 w-8 -translate-x-1/2 items-center justify-center rounded-full border-[5px] border-[#123817] bg-[#d8ffd8] text-[10px] font-black text-[#123817] shadow-[0_0_25px_rgba(216,255,216,0.55)] lg:flex">
                 {String(index + 1).padStart(2, "0")}
               </div>

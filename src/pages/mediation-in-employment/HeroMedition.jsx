@@ -147,7 +147,7 @@ const HeroRecruitment = () => {
               className="mr-4 inline-block overflow-hidden align-bottom"
             >
               <span
-                className={`recruit-word inline-block ${word === "Process" ? "text-[#d8ffd8]" : "text-white"} drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]`}
+                className={`recruit-word inline-block ${word === "Process" ? "text-[#8bea8f]" : "text-white"} drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]`}
               >
                 {word}
               </span>

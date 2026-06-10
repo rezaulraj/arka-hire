@@ -53,7 +53,7 @@ const WhyWorkUs = () => {
           {heading.map((word, idx) => (
             <span
               key={idx}
-              className={`mr-3 ${["work", "us?"].includes(word) ? "text-[#d8ffd8]" : "text-white"}`}
+              className={`mr-3 ${["work", "us?"].includes(word) ? "text-[#8bea8f]" : "text-white"}`}
             >
               {word}
             </span>
@@ -69,7 +69,7 @@ const WhyWorkUs = () => {
           <div
             key={idx}
             ref={(el) => (cardsRef.current[idx] = el)}
-            className="bg-white/10 backdrop-blur-md rounded-xl p-6 flex flex-col items-center text-center shadow-lg hover:scale-105 transition-transform duration-300"
+            className="backdrop-blur-md rounded-xl border-2 border-green-700 p-6 flex flex-col items-center text-center shadow-lg hover:scale-105 transition-transform duration-300"
           >
             <img
               src={

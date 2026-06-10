@@ -22,7 +22,10 @@ const TemporaryAdvantage = () => {
 
   const heading = t(`${basePath}.heading`, { returnObjects: true });
   const cards = t(`${basePath}.cards`, { returnObjects: true });
-
+  const cardsWithImages = cards.map((item, index) => ({
+    ...item,
+    image: [work1, work2, work3][index] || work1,
+  }));
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       gsap.set(".adv-word", { yPercent: 110, opacity: 0 });
@@ -145,7 +148,7 @@ const TemporaryAdvantage = () => {
                 className="mr-3 inline-block overflow-hidden align-bottom"
               >
                 <span
-                  className={`adv-word inline-block ${index === heading.length - 1 ? "text-[#d8ffd8]" : "text-white"} drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]`}
+                  className={`adv-word inline-block ${index === heading.length - 1 ? "text-[#8bea8f]" : "text-white"} drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]`}
                 >
                   {word}
                 </span>
@@ -164,12 +167,11 @@ const TemporaryAdvantage = () => {
               ref={(el) => (cardsRef.current[index] = el)}
               className="group relative overflow-hidden rounded-[22px] border border-white/18 bg-white/8 p-6 text-center shadow-[0_24px_70px_rgba(0,0,0,0.26)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:border-[#d8ffd8]/60 hover:bg-white/12 hover:shadow-[0_34px_90px_rgba(0,0,0,0.38)]"
             >
-              <div className="pointer-events-none absolute -right-16 -top-16 h-36 w-36 rounded-full bg-[#d8ffd8]/16 blur-2xl transition duration-500 group-hover:bg-[#d8ffd8]/28" />
-              <div className="relative z-10 mx-auto mb-5 h-[118px] w-[170px] overflow-hidden rounded-full border border-white/25 bg-white/90 p-2 shadow-[0_18px_45px_rgba(0,0,0,0.24)] transition duration-500 group-hover:scale-105 group-hover:-rotate-2">
+              <div className="relative z-10 mx-auto mb-5 h-[118px] w-[170px]">
                 <img
-                  src={item.image}
+                  src={cardsWithImages[index]?.image || work1}
                   alt={item.title}
-                  className="h-full w-full rounded-full object-cover"
+                  className="h-full w-full object-cover"
                 />
               </div>
               <h3 className="relative z-10 mb-3 text-[20px] font-black leading-tight text-white drop-shadow-[0_8px_18px_rgba(0,0,0,0.35)]">

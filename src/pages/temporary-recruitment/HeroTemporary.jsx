@@ -109,7 +109,7 @@ const HeroTemporary = () => {
                 <span
                   className={`temp-word inline-block ${
                     word.toLowerCase() === "recruitment"
-                      ? "text-[#d8ffd8]"
+                      ? "text-[#8bea8f]"
                       : "text-white"
                   } drop-shadow-[0_10px_25px_rgba(0,0,0,0.4)]`}
                 >

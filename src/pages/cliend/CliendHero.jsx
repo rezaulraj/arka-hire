@@ -203,7 +203,7 @@ const CliendHero = () => {
             >
               <span
                 className={`client-word inline-block ${
-                  word === "Consultation" ? "text-[#d8ffd8]" : "text-white"
+                  word === "Consultation" ? "text-[#8bea8f]" : "text-white"
                 }`}
               >
                 {word}

@@ -126,7 +126,7 @@ const Industries = () => {
       >
         <div className="relative z-10 mx-auto max-w-7xl">
           <div className="mx-auto mb-16 max-w-5xl text-center">
-            <p className="mb-4 text-[12px] font-black uppercase tracking-[0.35em] text-[#d8ffd8]">
+            <p className="mb-4 text-[12px] font-black uppercase tracking-[0.35em] text-[#8bea8f]">
               {t(`${basePath}.badge`)}
             </p>
 
@@ -139,7 +139,7 @@ const Industries = () => {
                   <span
                     className={`industry-word inline-block ${
                       index === heading.length - 1
-                        ? "text-[#d8ffd8]"
+                        ? "text-[#8bea8f]"
                         : "text-white"
                     } drop-shadow-[0_12px_30px_rgba(0,0,0,0.45)]`}
                   >
@@ -167,7 +167,7 @@ const Industries = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-[#2f7f35]/30 via-transparent to-black/15" />
 
               <div className="absolute bottom-0 left-0 right-0 p-7">
-                <p className="mb-2 text-[12px] font-black uppercase tracking-[0.28em] text-[#d8ffd8]">
+                <p className="mb-2 text-[12px] font-black uppercase tracking-[0.28em] text-[#8bea8f]">
                   {t(`${basePath}.activeIndustryLabel`)}
                 </p>
 
@@ -180,7 +180,7 @@ const Industries = () => {
             </div>
 
             <div>
-              <p className="mb-4 text-[13px] font-black uppercase tracking-[0.25em] text-[#d8ffd8]">
+              <p className="mb-4 text-[13px] font-black uppercase tracking-[0.25em] text-[#8bea8f]">
                 {t(`${basePath}.badge`)}
               </p>
 
@@ -192,7 +192,7 @@ const Industries = () => {
                 {activeIndustry.workers?.map((worker) => (
                   <span
                     key={worker}
-                    className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-[13px] font-bold text-white/90 backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-[#d8ffd8]/60 hover:bg-[#d8ffd8]/15"
+                    className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-[13px] font-bold text-white/90 backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-[#8bea8f]/60 hover:bg-[#8bea8f]/15"
                   >
                     {worker}
                   </span>
@@ -219,9 +219,9 @@ const Industries = () => {
                 onClick={() => {
                   setActiveIndex(index);
                 }}
-                className={`group relative min-h-[380px] overflow-hidden rounded-[28px] border text-left shadow-[0_24px_70px_rgba(0,0,0,0.24)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:border-[#d8ffd8]/65 hover:shadow-[0_34px_90px_rgba(0,0,0,0.36)] ${
+                className={`group relative min-h-[380px] overflow-hidden rounded-[28px] border text-left shadow-[0_24px_70px_rgba(0,0,0,0.24)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:border-[#8bea8f]/65 hover:shadow-[0_34px_90px_rgba(0,0,0,0.36)] ${
                   activeIndex === index
-                    ? "border-[#d8ffd8]/80 bg-[#d8ffd8]/15"
+                    ? "border-[#8bea8f]/80 bg-[#8bea8f]/15"
                     : "border-white/15 bg-white/10"
                 }`}
               >
@@ -239,7 +239,7 @@ const Industries = () => {
                 </span>
 
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <p className="mb-2 text-[11px] font-black uppercase tracking-[0.25em] text-[#d8ffd8]">
+                  <p className="mb-2 text-[11px] font-black uppercase tracking-[0.25em] text-[#8bea8f]">
                     {t(`${basePath}.badge`)}
                   </p>
 

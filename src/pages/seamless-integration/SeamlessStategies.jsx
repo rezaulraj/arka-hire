@@ -173,7 +173,7 @@ const SeamlessStategies = () => {
                 <span
                   className={`seamless-word inline-block ${
                     index === heading.length - 1
-                      ? "text-[#d8ffd8]"
+                      ? "text-[#8bea8f]"
                       : "text-white"
                   } drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]`}
                 >

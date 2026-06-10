@@ -119,12 +119,12 @@ const ArkaAdvanced = () => {
             ref={(el) => {
               cardRef.current[idx] = el;
             }}
-            className="flex flex-col items-center gap-3 rounded-xl border border-black p-6 text-center shadow-lg backdrop-blur-md transition-transform duration-500 hover:scale-105"
+            className="flex flex-col items-center gap-3 rounded-xl bg-green-200/10 p-6 text-center shadow-lg backdrop-blur-md transition-transform duration-500 hover:scale-105"
           >
             <img
               src={imageMap[card.image]}
               alt={card.title}
-              className="h-36 w-36 object-contain"
+              className="h-56 w-56 object-contain"
             />
 
             <h3 className="text-lg font-bold text-white">{card.title}</h3>

@@ -1761,11 +1761,36 @@
     "contactEmail": "info@arkahire.com",
     "socialTitle": "Следете нè",
     "socialLinks": [
-      { "platform": "Facebook", "icon": "FaFacebookF", "url": "#" },
-      { "platform": "Twitter", "icon": "FaTwitter", "url": "#" },
-      { "platform": "YouTube", "icon": "FaYoutube", "url": "#" },
-      { "platform": "LinkedIn", "icon": "FaLinkedinIn", "url": "#" },
-      { "platform": "Pinterest", "icon": "FaPinterestP", "url": "#" }
+      {
+        "platform": "Facebook",
+        "icon": "FaFacebookF",
+        "url": "https://www.facebook.com/ArkaHire"
+      },
+      {
+        "platform": "Instagram",
+        "icon": "FaInstagram",
+        "url": "https://www.instagram.com/arka.hire.b2b/"
+      },
+      {
+        "platform": "Twitter",
+        "icon": "FaTwitter",
+        "url": "https://x.com/ArkaHire"
+      },
+      {
+        "platform": "YouTube",
+        "icon": "FaYoutube",
+        "url": "https://www.youtube.com/channel/UCUBIlFJjRENFb04CYFMQTug"
+      },
+      {
+        "platform": "LinkedIn",
+        "icon": "FaLinkedinIn",
+        "url": "https://www.linkedin.com/company/arka-hire/"
+      },
+      {
+        "platform": "Pinterest",
+        "icon": "FaPinterestP",
+        "url": "https://www.pinterest.com/arkahireb2b/"
+      }
     ],
     "copyright": "Arka Hire 2013-2026. Сите права се задржани",
     "sections": [

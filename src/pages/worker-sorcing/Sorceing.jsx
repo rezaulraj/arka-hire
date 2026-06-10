@@ -92,7 +92,7 @@ const Sorceing = () => {
                 <span
                   className={`sourcing-word inline-block ${
                     word === "Workers" || word === "Countries"
-                      ? "text-[#d8ffd8]"
+                      ? "text-[#8bea8f]"
                       : "text-white"
                   }`}
                 >

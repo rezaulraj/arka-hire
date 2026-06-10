@@ -9,17 +9,16 @@ import work3 from "../../assets/rec3.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const images = {
-  work1,
-  work2,
-  work3,
-};
-console.log("imags", work1, work2, work3)
 const WhyWorkUs = () => {
   const { t } = useTranslation();
 
   const sectionRef = useRef(null);
   const cardsRef = useRef([]);
+  const images = {
+    work1,
+    work2,
+    work3,
+  };
 
   const headingData = t("employers.recruitmentPage.whyWorkWithUs.heading", {
     returnObjects: true,
@@ -36,9 +35,9 @@ const WhyWorkUs = () => {
       : [];
 
   const reasons = Array.isArray(cardsData)
-    ? cardsData.map((item) => ({
+    ? cardsData.map((item, index) => ({
         ...item,
-        image: images[item.image],
+        image: [work1, work2, work3][index] || work1, // fallback if undefined
       }))
     : [];
 
@@ -160,7 +159,7 @@ const WhyWorkUs = () => {
                   className={`work-word inline-block ${
                     word.toLowerCase() === "work" ||
                     word.toLowerCase() === "us?"
-                      ? "text-[#d8ffd8]"
+                      ? "text-[#8bea8f]"
                       : "text-white"
                   } drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]`}
                 >
@@ -193,11 +192,11 @@ const WhyWorkUs = () => {
                 {String(index + 1).padStart(2, "0")}
               </span>
 
-              <div className="work-card-img relative z-10 mx-auto mb-6 h-[128px] w-[190px] overflow-hidden rounded-full border border-white/25 bg-white/90 p-2 shadow-[0_20px_45px_rgba(0,0,0,0.24)] transition duration-500 group-hover:scale-105 group-hover:-rotate-2">
+              <div className="work-card-img relative z-10 mx-auto mb-6 h-[128px] w-[190px] ">
                 <img
                   src={reason.image}
                   alt={reason.title}
-                  className="h-full w-full rounded-full object-cover"
+                  className="h-full w-full object-cover"
                 />
               </div>
 

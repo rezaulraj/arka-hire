@@ -117,11 +117,8 @@ const HeroLegalAssurance = () => {
       ref={sectionRef}
       className="relative w-full overflow-hidden bg-gradient-to-r from-[#071b0c] via-[#2f7f35] to-[#071b0c] px-4 py-16 font-montserrat text-white sm:px-6 lg:px-10 lg:py-20"
     >
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#071b0c]/75 via-transparent to-[#071b0c]/75" />
-      <div className="pointer-events-none absolute left-1/2 top-0 h-[330px] w-[760px] -translate-x-1/2 rounded-full bg-white/8 blur-[120px]" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
-        {/* Top heading */}
         <div className="mx-auto mb-24 max-w-5xl text-center">
           <h1 className="text-[30px] font-black leading-tight tracking-tight text-white sm:text-[42px] lg:text-[52px]">
             {mainTitle.map((word, index) => (
@@ -132,7 +129,7 @@ const HeroLegalAssurance = () => {
                 <span
                   className={`legal-word inline-block ${
                     word.toLowerCase() === "assurance"
-                      ? "text-[#d8ffd8]"
+                      ? "text-[#8bea8f]"
                       : "text-white"
                   } drop-shadow-[0_10px_25px_rgba(0,0,0,0.4)]`}
                 >
@@ -147,9 +144,7 @@ const HeroLegalAssurance = () => {
           </p>
         </div>
 
-        {/* Main content */}
         <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
-          {/* Left text */}
           <div>
             <p className="legal-text mb-4 text-[13px] font-black uppercase tracking-[0.22em] text-[#ff3030]">
               {t(`${basePath}.badge`)}

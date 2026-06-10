@@ -109,26 +109,23 @@ export default function HeroImmigration() {
   return (
     <section className="relative w-full overflow-hidden bg-gradient-to-r from-[#071b0c] via-[#2f7f35] to-[#071b0c] px-4 py-20 font-montserrat text-white sm:px-6 lg:px-10">
       <div className="mx-auto max-w-6xl px-6 py-14">
-        {/* Top heading */}
         <div className="mb-10 text-center">
           <h1
             ref={titleRef}
-            className="mb-3 text-3xl font-semibold text-white md:text-4xl"
+            className="mb-3 text-3xl font-bold text-white md:text-5xl"
           >
             {t(`${basePath}.heading`)}
           </h1>
 
           <p
             ref={subTitleRef}
-            className="mx-auto max-w-xl text-sm font-normal text-green-200"
+            className="mx-auto max-w-xl text-sm font-normal text-white"
           >
             {t(`${basePath}.subtitle`)}
           </p>
         </div>
 
-        {/* Two columns */}
         <div className="mb-14 grid items-center gap-10 md:grid-cols-2">
-          {/* Left */}
           <div>
             <p className="mb-3 text-sm font-semibold text-[#ff6b35]">
               {t(`${basePath}.badge`)}
@@ -143,13 +140,12 @@ export default function HeroImmigration() {
 
             <p
               ref={paraRef}
-              className="text-sm font-normal leading-relaxed text-green-200"
+              className="text-sm font-normal leading-relaxed text-white"
             >
               {t(`${basePath}.description`)}
             </p>
           </div>
 
-          {/* Right image card */}
           <div ref={imageRef} className="flex justify-center md:justify-end">
             <div className="w-full max-w-[340px] overflow-hidden rounded-2xl bg-white p-3 shadow-[0_8px_40px_rgba(0,0,0,0.25)]">
               <div className="mb-2 text-center">
@@ -172,7 +168,6 @@ export default function HeroImmigration() {
           </div>
         </div>
 
-        {/* Feature cards */}
         <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
           {features.map((feature, index) => (
             <div
@@ -201,7 +196,7 @@ export default function HeroImmigration() {
                 {feature.title}
               </h3>
 
-              <p className="text-xs font-normal leading-relaxed text-green-200">
+              <p className="text-xs font-normal leading-relaxed text-white/90">
                 {feature.desc}
               </p>
             </div>

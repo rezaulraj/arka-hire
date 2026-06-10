@@ -141,7 +141,7 @@ export default function AssistanceProcess() {
         <div className="relative">
           <div
             ref={lineRef}
-            className="absolute left-0 top-2 bottom-2 w-px"
+            className="absolute left-0 top-2 bottom-2 w-[5px]"
             style={{
               background:
                 "linear-gradient(to bottom, #e62828, rgba(224, 57, 65, 0.2))",
@@ -157,12 +157,12 @@ export default function AssistanceProcess() {
               >
                 <h3
                   className="text-white mb-1"
-                  style={{ fontWeight: 700, fontSize: "0.95rem" }}
+                  style={{ fontWeight: 700, fontSize: "1.5rem" }}
                 >
                   {s.title}
                 </h3>
                 <p
-                  className="text-green-200 text-xs leading-relaxed"
+                  className="text-white text-sm leading-relaxed"
                   style={{ fontWeight: 400 }}
                 >
                   {s.desc}

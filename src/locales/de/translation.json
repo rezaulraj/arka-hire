@@ -1747,27 +1747,32 @@
       {
         "platform": "Facebook",
         "icon": "FaFacebookF",
-        "url": "#"
+        "url": "https://www.facebook.com/ArkaHire"
+      },
+      {
+        "platform": "Instagram",
+        "icon": "FaInstagram",
+        "url": "https://www.instagram.com/arka.hire.b2b/"
       },
       {
         "platform": "Twitter",
         "icon": "FaTwitter",
-        "url": "#"
+        "url": "https://x.com/ArkaHire"
       },
       {
         "platform": "YouTube",
         "icon": "FaYoutube",
-        "url": "#"
+        "url": "https://www.youtube.com/channel/UCUBIlFJjRENFb04CYFMQTug"
       },
       {
         "platform": "LinkedIn",
         "icon": "FaLinkedinIn",
-        "url": "#"
+        "url": "https://www.linkedin.com/company/arka-hire/"
       },
       {
         "platform": "Pinterest",
         "icon": "FaPinterestP",
-        "url": "#"
+        "url": "https://www.pinterest.com/arkahireb2b/"
       }
     ],
     "copyright": "Arka Hire 2013-2026. Alle Rechte vorbehalten",

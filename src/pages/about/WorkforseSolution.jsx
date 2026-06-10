@@ -98,9 +98,9 @@ const WorkforseSolution = () => {
             ref={(el) => {
               cardRefs.current[idx] = el;
             }}
-            className="group flex flex-col items-center rounded-xl bg-[#3a6b3d]/80 p-6 text-center shadow-xl transition-transform duration-500 hover:scale-105"
+            className="group flex items-center gap-4 p-6 text-center border-1 rounded-xl border-red-300/50 transition-transform duration-500 hover:scale-105"
           >
-            <div className="mb-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-white p-4 shadow-lg">
+            <div className="mb-4 flex h-24 w-56 items-center justify-center rounded-2xl bg-white p-4 shadow-lg">
               <img
                 src={service.icon}
                 alt={service.title}
@@ -108,7 +108,7 @@ const WorkforseSolution = () => {
                 loading="lazy"
               />
             </div>
-
+            <div>
             <h3 className="mb-2 text-[16px] font-bold text-white">
               {service.title}
             </h3>
@@ -116,6 +116,7 @@ const WorkforseSolution = () => {
             <p className="text-[13px] leading-relaxed text-white/85">
               {service.description}
             </p>
+            </div>
           </div>
         ))}
       </div>

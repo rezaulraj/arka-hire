@@ -147,7 +147,7 @@ const RecuritmentStep = () => {
             >
               <span
                 className={`step-word inline-block ${
-                  index === heading.length - 1 ? "text-[#d8ffd8]" : "text-white"
+                  index === heading.length - 1 ? "text-[#8bea8f]" : "text-white"
                 }`}
               >
                 {word}

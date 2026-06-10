@@ -119,7 +119,7 @@ const HeroSeamless = () => {
     >
       <h2
         ref={headingRef}
-        className="pb-10 text-center text-[28px] font-extrabold leading-snug tracking-tight sm:text-[32px] lg:text-[36px]"
+        className="pb-10 text-center text-[28px] font-extrabold leading-snug tracking-tight sm:text-[32px] lg:text-5xl"
       >
         {t("ourApproach.seamlessIntegration.heading")}
       </h2>
@@ -140,7 +140,7 @@ const HeroSeamless = () => {
         <div className="flex flex-col gap-6">
           <p
             ref={textRef}
-            className="text-[14px] leading-relaxed text-white/85 sm:text-[15px]"
+            className="text-[14px] leading-relaxed text-white sm:text-base"
           >
             {t("ourApproach.seamlessIntegration.intro")}
           </p>

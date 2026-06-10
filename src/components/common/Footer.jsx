@@ -7,6 +7,7 @@ import {
   FaYoutube,
   FaLinkedinIn,
   FaPinterestP,
+  FaInstagram
 } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -16,6 +17,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const iconMap = {
   FaFacebookF,
+  FaInstagram,
   FaTwitter,
   FaYoutube,
   FaLinkedinIn,

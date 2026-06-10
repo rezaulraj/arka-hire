@@ -93,7 +93,7 @@ const HeroOpenJob = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full overflow-hidden bg-[#143f1f] px-4 py-16 font-montserrat text-white sm:px-6 lg:px-10 lg:py-20"
+      className="relative w-full overflow-hidden bg-gradient-to-r from-[#071b0c] via-[#2f7f35] to-[#071b0c] px-4 py-16 font-montserrat text-white sm:px-6 lg:px-10 lg:py-20"
     >
       {/* Background effects */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#071b0c]/75 via-transparent to-[#071b0c]/75" />
@@ -111,7 +111,7 @@ const HeroOpenJob = () => {
                 <span
                   className={`job-word inline-block ${
                     word.toLowerCase() === "skills"
-                      ? "text-[#d8ffd8]"
+                      ? "text-[#8bea8f]"
                       : "text-white"
                   } drop-shadow-[0_10px_25px_rgba(0,0,0,0.4)]`}
                 >

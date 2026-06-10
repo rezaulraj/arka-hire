@@ -11,10 +11,11 @@ import followIcon from "../../assets/icons/follow.webp";
 gsap.registerPlugin(ScrollTrigger);
 
 const WhyArkaMediation = () => {
-  // const iconsMap = {
-  //   agreement: reachIcon,
-  //   follow: followIcon,
-  // };
+
+  const iconsMap = {
+  reachIcon,
+  followIcon,
+};
   const { t } = useTranslation();
   const sectionRef = useRef(null);
   const cardsRef = useRef([]);
@@ -26,7 +27,10 @@ const WhyArkaMediation = () => {
 
   const heading = t(`${basePath}.heading`, { returnObjects: true });
   const topCards = t(`${basePath}.topCards`, { returnObjects: true });
-
+  const topCardsWithIcons = topCards.map((card) => ({
+  ...card,
+  iconSrc: iconsMap[card.icon],
+}));
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       gsap.set(".why-word", { yPercent: 110, opacity: 0 });
@@ -132,7 +136,7 @@ const WhyArkaMediation = () => {
 
         {/* Top cards */}
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2">
-          {topCards.map((item, index) => (
+          {topCardsWithIcons.map((item, index) => (
             <div
               key={item.title}
               ref={(el) => (cardsRef.current[index] = el)}
@@ -140,12 +144,14 @@ const WhyArkaMediation = () => {
             >
               <div className="pointer-events-none absolute -right-14 -top-14 h-32 w-32 rounded-full bg-[#d8ffd8]/16 blur-2xl transition duration-500 group-hover:bg-[#d8ffd8]/28" />
 
-              <div className="relative z-10 mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl border border-white/25 bg-[#d8ffd8]/12 shadow-[0_14px_40px_rgba(0,0,0,0.22)] transition duration-500 group-hover:scale-110 group-hover:-rotate-6">
-                <img
-                  src={item.icon}
-                  alt={item.title}
-                  className="h-11 w-11 object-contain"
-                />
+              <div className="relative z-10 mx-auto mb-4 flex h-22 w-22 items-center justify-center rounded-2xl border border-white/25 bg-[#d8ffd8]/12 shadow-[0_14px_40px_rgba(0,0,0,0.22)] transition duration-500 group-hover:scale-110 group-hover:-rotate-6">
+                {item.iconSrc && (
+                  <img
+                    src={item.iconSrc}
+                    alt={item.title}
+                    className="h-18 w-18 object-contain"
+                  />
+                )}
               </div>
 
               <h3 className="relative z-10 mb-2 text-[20px] font-black text-white">

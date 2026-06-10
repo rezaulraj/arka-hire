@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -141,7 +141,6 @@ const Services = () => {
       ref={sectionRef}
       className="relative flex w-full items-center overflow-hidden bg-[#2f7f35] font-montserrat"
     >
-      {/* Center Top Overlay Heading */}
       <div
         ref={headingRef}
         className="pointer-events-none absolute left-1/2 top-7 z-30 -translate-x-1/2 text-center sm:top-10 lg:top-12"
@@ -156,7 +155,6 @@ const Services = () => {
       </div>
 
       <div className="w-full">
-        {/* Desktop */}
         <div className="hidden h-[520px] w-full gap-0 overflow-hidden rounded-none lg:flex">
           {services.map((service, index) => (
             <div
@@ -183,7 +181,6 @@ const Services = () => {
           ))}
         </div>
 
-        {/* Mobile / Tablet */}
         <div className="grid gap-5 lg:hidden">
           {services.map((service) => (
             <div

@@ -10,6 +10,9 @@ const Header = () => {
 
   const [openMenu, setOpenMenu] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeDesktopDropdown, setActiveDesktopDropdown] = useState(null);
+  const [isClosing, setIsClosing] = useState(null);
+
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
 
   const languages = [
@@ -111,6 +114,23 @@ const Header = () => {
     },
   ];
 
+  const handleMouseEnter = (index) => {
+    if (isClosing === index) setIsClosing(null);
+    setActiveDesktopDropdown(index);
+  };
+  const handleMouseLeave = (index) => {
+    setIsClosing(index);
+    setTimeout(() => {
+      setIsClosing((prev) => {
+        if (prev === index) {
+          setActiveDesktopDropdown((curr) => (curr === index ? null : curr));
+          return null;
+        }
+        return prev;
+      });
+    }, 200);
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full font-montserrat shadow-md">
       <div className="w-full bg-[#2f7f35]">
@@ -128,7 +148,12 @@ const Header = () => {
 
           <nav className="hidden flex-1 items-center justify-center gap-7 px-6 lg:flex xl:gap-5">
             {navLinks.map((item, index) => (
-              <div key={index} className="group relative">
+              <div
+                key={index}
+                className="relative"
+                onMouseEnter={() => item.subLinks && handleMouseEnter(index)}
+                onMouseLeave={() => item.subLinks && handleMouseLeave(index)}
+              >
                 {item.path ? (
                   <Link
                     to={item.path}
@@ -141,26 +166,38 @@ const Header = () => {
                     {item.name}
                     <ChevronDown
                       size={14}
-                      className="mt-[2px] transition-transform duration-300 group-hover:rotate-180"
+                      className={`mt-[2px] transition-transform duration-300 ${
+                        activeDesktopDropdown === index ? "rotate-180" : ""
+                      }`}
                     />
                   </button>
                 )}
 
                 {item.subLinks && (
-                  <div className="invisible absolute left-1/2 top-full z-50 -translate-x-1/2 translate-y-3 pt-5 opacity-0 transition-all duration-300 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                  <div
+                    className={`absolute left-1/2 top-full z-50 -translate-x-1/2 pt-5 transition-all duration-200 ${
+                      activeDesktopDropdown === index && isClosing !== index
+                        ? "visible translate-y-0 opacity-100"
+                        : "invisible translate-y-3 opacity-0"
+                    }`}
+                  >
                     <div
                       className="
-                        relative w-[270px] overflow-visible rounded-xl border border-gray-100 bg-white shadow-2xl
-                        before:absolute before:-top-2 before:left-1/2 before:h-4 before:w-4
-                        before:-translate-x-1/2 before:rotate-45 before:border-l before:border-t
-                        before:border-gray-100 before:bg-white before:content-['']
-                      "
+              relative w-[270px] overflow-visible rounded-xl border border-gray-100 bg-white shadow-2xl
+              before:absolute before:-top-2 before:left-1/2 before:h-4 before:w-4
+              before:-translate-x-1/2 before:rotate-45 before:border-l before:border-t
+              before:border-gray-100 before:bg-white before:content-['']
+            "
                     >
                       <div className="relative z-10 overflow-hidden rounded-xl bg-white">
                         {item.subLinks.map((sub, subIndex) => (
                           <Link
                             key={subIndex}
                             to={sub.path}
+                            onClick={() => {
+                              setActiveDesktopDropdown(null);
+                              setIsClosing(null);
+                            }}
                             className="block border-b border-gray-100 px-5 py-3.5 text-[14px] font-semibold text-gray-700 transition last:border-b-0 hover:bg-[#2f7f35] hover:text-white"
                           >
                             {sub.name}

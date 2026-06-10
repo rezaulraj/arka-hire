@@ -19,12 +19,16 @@ import AgencyPartner from "./pages/agency-partnerships/AgencyPartner";
 import FaqsPage from "./pages/Faqs/FaqsPage";
 import TermsPage from "./pages/teams/TermsPage";
 import PrivacyPolicy from "./pages/privacypolicy/PrivacyPolicy";
+import ScrollToTop from "./components/common/ScrollToTop";
+import NotFoundPage from "./components/common/NotFoundPage";
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
+            <Route path="*" element={<NotFoundPage />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/about-us" element={<AboutPage />} />
             <Route

@@ -6,6 +6,7 @@ import en from "./locales/en/translation.json";
 import me from "./locales/me/translation.json";
 import de from "./locales/de/translation.json";
 import el from "./locales/el/translation.json";
+import cy from "./locales/cy/translation.json";
 import hr from "./locales/hr/translation.json";
 import mk from "./locales/mk/translation.json";
 import ro from "./locales/ro/translation.json";
@@ -29,6 +30,7 @@ const initializeI18n = async () => {
     me: "me",
     DE: "de",
     EL: "el",
+    CY: "cl",
     HR: "hr",
     MK: "mk",
     RO: "ro",
@@ -44,6 +46,7 @@ const initializeI18n = async () => {
         me: { translation: me },
         de: { translation: de },
         el: { translation: el },
+        cy: { translation: cy },
         hr: { translation: hr },
         mk: { translation: mk },
         ro: { translation: ro },

@@ -71,7 +71,6 @@ const Footer = () => {
       className="relative bg-[#8a0707] px-6 py-12 font-montserrat text-white sm:px-10 lg:px-20"
     >
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-        {/* Logo + Social */}
         <div className="flex flex-col gap-4">
           <div
             ref={(el) => {
@@ -136,7 +135,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Footer Sections */}
         {sections.map((section, sectionIndex) => (
           <div
             key={`${section.title}-${sectionIndex}`}

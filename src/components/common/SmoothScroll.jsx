@@ -1,7 +1,6 @@
 import { useEffect, useRef, forwardRef } from "react";
 import Lenis from "@studio-freight/lenis";
 
-// Forward ref so HomePage can optionally use it
 const SmoothScroll = forwardRef(({ children }, ref) => {
   const scrollRef = ref || useRef(null);
 
@@ -32,7 +31,7 @@ const SmoothScroll = forwardRef(({ children }, ref) => {
       ref={scrollRef}
       style={{
         height: "100vh",
-        overflow: "hidden", // Lenis manages scroll
+        overflow: "hidden",
       }}
     >
       {children}

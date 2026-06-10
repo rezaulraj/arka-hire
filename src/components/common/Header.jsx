@@ -17,6 +17,7 @@ const Header = () => {
     { code: "me", country: "ME", name: "Montenegrin" },
     { code: "de", country: "DE", name: "Deutsch" },
     { code: "el", country: "GR", name: "Ελληνικά" },
+    { code: "cy", country: "CY", name: "Greek" },
     { code: "hr", country: "HR", name: "Hrvatski" },
     { code: "mk", country: "MK", name: "Македонски" },
     { code: "ro", country: "RO", name: "Română" },
@@ -114,7 +115,6 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full font-montserrat shadow-md">
       <div className="w-full bg-[#2f7f35]">
         <div className="flex items-center justify-between">
-          {/* Logo */}
           <Link
             to="/"
             className="flex h-[78px] w-[210px] items-center justify-center bg-white px-4 sm:h-[88px] sm:w-[250px] md:h-[100px] md:w-[285px]"
@@ -126,7 +126,6 @@ const Header = () => {
             />
           </Link>
 
-          {/* Desktop Menu */}
           <nav className="hidden flex-1 items-center justify-center gap-7 px-6 lg:flex xl:gap-5">
             {navLinks.map((item, index) => (
               <div key={index} className="group relative">
@@ -175,7 +174,6 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Desktop Language */}
           <div className="relative mr-3 hidden items-center md:flex xl:mr-8">
             <button
               type="button"
@@ -221,7 +219,6 @@ const Header = () => {
             )}
           </div>
 
-          {/* Mobile Button */}
           <button
             onClick={() => setOpenMenu(!openMenu)}
             className="mr-4 p-2 text-white lg:hidden"
@@ -231,7 +228,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`overflow-hidden bg-white shadow-xl transition-all duration-300 lg:hidden ${
           openMenu ? "max-h-[950px]" : "max-h-0"
@@ -288,7 +284,6 @@ const Header = () => {
             </div>
           ))}
 
-          {/* Mobile Language */}
           <div className="pt-3">
             <button
               type="button"
